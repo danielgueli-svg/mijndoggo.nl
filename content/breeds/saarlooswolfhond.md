@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Nederlands, mysterieus en nét een tikje wolf: de Saarlooswolfhond is gevoelig en gereserveerd, waardoor rust, ruimte en ervaring geen luxe zijn maar basis.
+
 ## Temperament
 
-Gevoelig, gereserveerd, vertrouwen in slow-motion. Geen speelgoedwolf. Mooi als een sprookje, nét zo min een kermis-act. Ze bloeien bij rust en bekende mensen.
+Dit is geen speelgoedwolf en geen kermisact. Saarlozen bloeien bij bekende mensen, voorspelbaarheid en zachte begeleiding. Vertrouwen komt in slow motion. Niet koud, wél kieskeurig — en dat mag.
 
-Niet koud. Wel kieskeurig. Dat is oké.
+Forceer geen hondenparkfeest of drukke prikkeltsunami’s; dan gaat de magie verloren en groeit stress.
 
 ## Achtergrond
 
-Nederland, Leendert Saarloos, Duitse herder × wolf, daarna een ras met regels. Uniek, zeldzaam, niks voor impulskopers. Fokken hoort bij mensen die het ras kennen.
+Nederland, Leendert Saarloos: kruising Duitse herder × wolf, later een ras met strenge regels en een eigen karakter. Uniek, zeldzaam, niks voor impulskopers. Fokken hoort bij mensen die het ras echt kennen.
+
+MijnDoggo mag ze laten stralen — mét respect voor wat ze nodig hebben.
 
 ## Verzorging
 
-Ruimte, zachte training, geen prikkel-tsunami. Vacht: natuurlijk, borstel in de rui. Wandelen in het groen > winkelstraat op zaterdag.
+Ruimte, zachte training, veel groen. Vacht natuurlijk; borstelen in de rui. Winkelstraat op zaterdag is zelden hun geluk; een boswandeling wel. Socialisatie: voorzichtig, positief, in hun tempo.
 
-Socialisatie: voorzichtig, positief. Forceer geen hondenpark-feest.
+Geen “gewoon even even wennen aan chaos”: hun zenuwstelsel vraagt dosering.
 
 ## Voor wie?
 
-Ervaren baasjes, rust, ruimte. Kids-first circus: nee. Op MijnDoggo mogen ze stralen — mét respect voor wat ze nodig hebben.
+Voor ervaren baasjes met rust en ruimte. Kids-first circus: nee. Wie een bijzondere, gevoelige natuurhond zoekt én die behoeftes serieus neemt, kan iets heel bijzonders beleven. Impuls omdat het “stoer wolf” is: laat staan.

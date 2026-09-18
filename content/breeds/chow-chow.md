@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Met die leeuwenmanen en pluizige vacht lijkt de chow chow een knuffelbeer, terwijl het karakter eerder katachtig onafhankelijk is: warm voor de eigen mensen, niet van iedereen.
+
 ## Temperament
 
-De hond die doet alsof-ie een kat is: eigenwijs, schoon, niet van iedereen. Als ze van je houden is het een privilege. Een pluizig privilege.
+Chow chows zijn vaak eigenwijs, schoon op zichzelf en kieskeurig in contact. Als ze van je houden, voelt dat als een privilege — een pluizig privilege. Ze zijn geen typische “iedereen mag aaien”-honden, wel stoere teddyberen met handleiding.
 
-Niet de hond voor 'iedereen mag aaien'. Wel een stoere teddybeer met handleiding.
+Respect en rustige opvoeding werken beter dan gezeur of forceren. Gereserveerdheid is deel van het ras, geen persoonlijke afwijzing.
 
 ## Achtergrond
 
-China, oud ras, leeuwen-look, blauwzwarte tong — geen filter. Tempels, jacht, waken. Later show-pluis. De tong blijft het plot twist op verjaardagen.
+Een oud Chinees ras met leeuwenlook en de bekende blauwzwarte tong. Historisch verbonden aan tempels, jacht en waken; later ook showpluis. De tong blijft een gespreksonderwerp op verjaardagen, maar het karakter is belangrijker dan het plaatje.
+
+Wie alleen de look koopt, botst sneller op de onafhankelijke aard.
 
 ## Verzorging
 
-Vacht = full-time. Zomer = schaduw. Geen kaal scheren als 'oplossing' zonder plan. Beweging: wandelen, geen ultra. Training: respect, geen gezeur.
+De vacht is bijna een deeltaak: regelmatig borstelen, in de zomer schaduw, en niet zomaar kaal scheren “als oplossing” zonder goed plan. Beweging: wandelen is genoeg voor veel chows; ultralopen past zelden.
 
-Socialisatie vroeg, anders wordt reserved tot 'ga weg'. Plooien/huid droog houden.
+Socialiseer vroeg en positief, anders wordt gereserveerd al snel “ga weg”. Huidplooien droog en schoon houden voorkomt irritatie.
 
 ## Voor wie?
 
-Mensen die een onafhankelijke maat zoeken, geen velcro-golden. Kids-first wildhouse: skip. Geduld, grooming, en trots op die leeuwen-vibe: ja.
+Voor mensen die een onafhankelijke maat zoeken, geen velcro-golden. Een wild kids-first huis past slecht. Geduld, grooming en trots op die stoere uitstraling: ja. Wie constant knuffels van vreemden verwacht, kiest beter een ander ras.

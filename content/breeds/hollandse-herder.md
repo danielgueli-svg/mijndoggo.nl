@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Thuisras met werkethos: de Hollandse herder is alert, leerbaar en graag bezig, waardoor een helder plan in de week minstens zo belangrijk is als een mooie bril of streepjesvacht.
+
 ## Temperament
 
-Ons allroundertje: kort, lang of ruw haar, altijd die gouden bril. Ze willen iets dóén. Samen. Vandaag. Trots, vrolijk, nét een tikje nerdy-intelligent.
+Hollandse herders zijn intelligent, loyaal en vaak iets gereserveerder naar vreemden dan een typische golden — zonder koud te zijn. Ze willen werken, meedenken en beweging met betekenis. Verveling maakt slimme honden creatief, en niet altijd op de leuke manier.
 
-Zonder taak gaan ze jouw huis organiseren. Spoiler: jij hield niet van hun indeling.
+Met milde, consequente training en genoeg taken worden het betrouwbare, levendige partners.
 
 ## Achtergrond
 
-Nederlandse herdershond, bijna verdwenen, teruggefloten door fans. Drie vachttypes, één werkethos. Geen import-hype, wel roots in de polder.
+Nederlands herdersras, historisch veedrijven en boerderijwerk, met korthaar, langhaar en ruwhaar. De gestreepte “bril” is bekend, maar het werkkarakter is de kern. Relatief zeldzaam, trots Nederlands.
+
+Wie dit ras kiest, kiest ook een stukje lokale herdersgeschiedenis — mét moderne sport- en gezinstoepassingen.
 
 ## Verzorging
 
-Speuren, hoarding, fietsen, tricks. Niet acht uur solo op een kussen tot Netflix afloopt. Vacht hangt van het type af; ruwhaar is een lifestyle.
+Dagelijks bewegen plus hersenwerk: gehoorzaamheid, speuren, agility of herdersachtige spellen. Vacht afhankelijk van variant; ruwhaar vraagt meer grooming. Let op gewrichten en bouw intensiteit bij jongeren rustig op.
 
-Socialiseren en prikkels doseren. Slimme honden verzinnen anders hun eigen sport.
+Socialisatie en rustige beloning houden waakzaamheid vriendelijk in plaats van scherp.
 
 ## Voor wie?
 
-Actieve Nederlanders die een ras van hier willen. Training = quality time. Couch-only: skip. Kids oké als het huis meedoet met het avontuur.
+Voor actieve mensen die een Nederlands werkras willen zonder meteen FCI-drama. Gezin kan, mét structuur. Alleen de bank past slecht. Wie training leuk vindt en trots is op een thuisras, zit vaak goed.

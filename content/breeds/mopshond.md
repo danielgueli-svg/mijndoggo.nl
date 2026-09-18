@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+De mopshond is knuffelplicht met een gerimpeld gezicht: aanhankelijk en komisch, terwijl ademhaling, gewicht en hitte de serieuze kant van het verhaal vormen.
+
 ## Temperament
 
-Mopsen kijken alsof ze een geheim kenden. Meestal: 'ik wil op schoot'. Compact, grappig, niet gebouwd voor hittegolven. Clown, geen trail-ultra.
+Mopshonden willen bij je zijn, slapen graag dichtbij en brengen vaak een milde clowneske sfeer mee. Ze zijn sociabel, niet gebouwd voor marathontraining, en merken sfeer in huis.
 
-Aanhankelijk tot het plakkerig is. Snurken is de soundtrack.
+Met korte wandelingen, spel en veel nabijheid blijven ze warme metgezellen — mits je hun fysieke grenzen bewaakt.
 
 ## Achtergrond
 
-China, later Nederland en de rest van Europa — we zijn fan, ja. Plooien en uilenogen zijn het merk. De platte snoet is geen excuus om ze te laten hijgen in de middagzon.
+Oud gezelschapshondenras met Chinese wortels, later Europees salonfavoriet. Korte snuit, krulstaart, grote ogen: iconisch én anatomisch veeleisend. Populariteit vraagt extra zorgvuldigheid rond fok en gezondheid.
+
+Dit is een schoothond met geschiedenis, geen “onderhoudsvrije mini”.
 
 ## Verzorging
 
-Koel houden. Plooien droog. Niet te bol. Korte wandelingen, spel, geen vliegen-als-het-heet-is.
+Korte, rustige wandelingen; geen hitte of intense inspanning. Plooien schoon en droog houden, gewicht streng bewaken, ademhaling serieus nemen. Vlieg in ruimbagage en tropische middagen: vaak een hard nee van dierenartsen.
 
-Ogen, adem, gewicht: dierenarts is je co-baas. Mensenshampoo: nee.
+Kies gezond gefokte lijnen; dat voorkomt meer leed dan elk grappig filmpje goedmaakt.
 
 ## Voor wie?
 
-Mensen die een clown willen, geen berggeit. Kids: oké als ze zacht zijn. Hardcore sporties: kies een herder. Hitte-haters: jullie gaan het goed doen samen.
+Voor mensen die knuffels willen, genoeg thuis zijn en medische alertheid accepteren. Gezin oké met zachte kids. Hardlopers of “we nemen een hond voor kilometers”: ander ras. Wie comedy én zorg aankan, krijgt een trouwe rimpelvriend.

@@ -25,24 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Slim, loyaal en graag met een plan: de Duitse herder wil werken en meedenken, waardoor structuur en zachte duidelijkheid minstens zo belangrijk zijn als kilometers.
+
 ## Temperament
 
-De Duitse herder is die vriend die de groepsapp organiseert én de snacks meeneemt. Alert, trouw, gek op een taak. Zonder job wordt-ie een puber met te veel ideeën en een te scherpe mening over de brievenbus.
+Duitse herders zijn intelligent, trouw aan hun gezin en vaak waakzaam zonder dat ze “vanzelf” agressief zijn. Ze bloeien als ze een taak hebben en een baasje dat kalm leidinggeeft. Onzekerheid of chaos in huis maakt hen eerder gespannen.
 
-Loyaal tot in hun botten. Ze kiezen hun mensen en blijven plakken. Letterlijk, als je onder de douche staat.
+Met goede socialisatie en training worden het betrouwbare partners; zonder uitdaging zoeken ze zelf werk — niet altijd handig werk.
 
 ## Achtergrond
 
-Duitsland, eind 19e eeuw: Max von Stephanitz wilde dé herdershond. Werken, waken, meedenken. Politie en hulpdiensten knikten ja, en de rest van de wereld ook.
+Eind negentiende eeuw in Duitsland gevormd als herders- en gebruikshond, later wereldwijd politie-, reddings- en gezinshond. Het silhouette is iconisch; de inhoud hangt sterk af van foklijn, opvoeding en inzet.
 
-Er zit nog steeds een baan in hun lijf, ook als jouw 'schaap' een fiets is.
+Werkgeschiedenis betekent: brein en lichaam willen meedoen, ook als je “alleen maar” een gezinshond zoekt.
 
 ## Verzorging
 
-Veel beweging, veel breinwerk: speuren, tricks, fietsen. Vacht (korthaar of langhaar) vraagt borstel, vooral in de rui.
+Dagelijks bewegen plus mentale training: gehoorzaamheid, speuren, sport of andere taken. Dubbele vacht: borstelen, vooral in de rui. Let op heupen, ellebogen en gewicht; bouw intensieve sport bij jonge honden rustig op.
 
-Gewrichten serieus nemen: groeien niet forceren, ondergrond mixen, geen held-van-de-bank op puppy-leeftijd.
+Socialisatie en rustige beloningstraining voorkomen dat waakzaamheid de overhand krijgt.
 
 ## Voor wie?
 
-Voor mensen die samen avonturen willen sprokkelen en training leuk vinden. Niet voor 'even een stoere hond'. Wél voor baasjes die duidelijk, lief en consequent zijn.
+Voor mensen die tijd, training en aanwezigheid serieus nemen. Alleen bank zonder plan is oneerlijk. Gezin kan goed, als kids leren respectvol om te gaan en jij de hond mentale ruimte geeft. Wie een slimme, loyale maat wil én wil investeren, past vaak warm.

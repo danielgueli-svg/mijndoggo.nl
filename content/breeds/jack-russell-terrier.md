@@ -25,22 +25,26 @@ gallery:
     sfeer: false
 ---
 
+De Jack Russell lijkt een compacte batterij: dapper, speels en eindeloos nieuwsgierig, terwijl die energie om slimme uitlaatkleppen vraagt — anders zoekt-ie zelf een project.
+
 ## Temperament
 
-Kleine raketten. Jagen, graven, springen, checken of de wereld nog spannend is (ja). Slim, dapper, allergisch voor verveling. Comedy met scherpe rand.
+Jack Russells zijn alert, koppig-charmant en vaak dol op jagen, graven en stoeien. Klein lijf, groot karakter. Ze kunnen heerlijk met het gezin meedoen, mits jij grenzen zet zonder hun vonk te doven.
 
-Ze zijn niet 'gewoon een kleine hond'. Ze zijn een hele hond in een compacte verpakking.
+Verveling of te weinig neus- en renwerk leidt snel tot blaffen, graven of “verbouwingen” in huis. Met humor en consequentie blijft het een vrolijke storm.
 
 ## Achtergrond
 
-Engelse terriër, vossen, ds. John Russell. Later tv-beroemd, daarna in huizen waar iemand 'klein = rustig' dacht. Plot twist.
+Engelse terriër, gefokt om vos en ander klein wild te volgen — vandaar lef, snelheid en die onafhankelijke streak. Later populair als gezinshond, terwijl de jachtgenen zelden verdwijnen.
+
+Respecteer hun achtergrond: dit is geen schoothondje dat alleen bank wil, ook al past-ie wél op de bank.
 
 ## Verzorging
 
-Sport, gruifspel, denkspeelgoed, graafhoek in de tuin als je van je borders houdt. Vacht: glad of ruw, borstel is snel klaar.
+Veel beweging, speelsessies en denkspeelgoed. Vacht (glad of rough) relatief simpel; nagels en tanden niet vergeten. Stevig hek en lijnbesef: een geur kan hen ver leiden.
 
-Socialisatie, anders wordt elke fiets een plot. En ja: hek. Ze zijn Houdini-light.
+Train met beloning en duidelijkheid; forceren maakt koppigheid erger. Gewicht laag houden beschermt kleine gewrichten.
 
 ## Voor wie?
 
-Baasjes die extra tennisballen kopen en lachen om chaos. Niet voor 100% rust-zoekers. Kids oké als niemand de jack als knuffel-drone gebruikt.
+Voor actieve mensen met humor en tijd om te spelen. Gezin oké als kids niet tillen als een speelgoed. Studio zonder uitlaatplan: lastig. Wie de batterij serieus neemt, krijgt een trouwe, vrolijke vonk.

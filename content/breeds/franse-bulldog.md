@@ -25,22 +25,26 @@ gallery:
     sfeer: false
 ---
 
+Kleine tank met humor in de ogen: de Franse bulldog is aanhankelijk en humoristisch, terwijl ademhaling, hitte en gewicht wél serieuze aandacht vragen.
+
 ## Temperament
 
-Frenchies zijn compact, snurkend en terecht overtuigd van hun charme. Schoothond met de timing van een comedian. Sprintje, worst-oogjes, drie uur slaap.
+Franse bulldogs plakken graag aan hun mensen, slapen op de bank alsof het hun kantoor is, en brengen vaak een speelse, clowneske sfeer mee. Ze zijn sociaal, maar niet gebouwd voor ultralopen of tropische middagen.
 
-Ze zijn gek op hun mensen. Minder gek op tropische middagen. Die platte snoet is cute, geen hitteplan.
+Met milde training en genoeg kort spel blijven ze fijne stad- en gezinshonden — mits je hun fysieke grenzen respecteert.
 
 ## Achtergrond
 
-Engelse toy-bulldogs + Franse arbeiders in de 19e eeuw, daarna de salons. Van slachthuis-maatje tot stadsterrasse-icoon. Dezelfde kikkermond, andere postcode.
+Kleine buldogachtigen uit Engeland/Frankrijk die uitgroeiden tot een van de populairste stadsmaten. Korte snuit, bat-oren, compact lijf: charmant, maar die anatomie vraagt zorgvuldigheid rond adem, temperatuur en fokkeuzes.
+
+Populariteit maakt verantwoord fokken en realistische verwachtingen extra belangrijk.
 
 ## Verzorging
 
-Geen ultra-marathon. Wél korte wandelingen, spel, en airco-logica in de zomer. Huidplooien droog houden. Geen vliegen in vliegtuigen-als-bagage-gedoe: ademhaling eerst.
+Korte wandelingen, speelse momenten, geen intense hitte of lange stukken joggen. Huidplooien schoonhouden, gewicht strikt bewaken, ademhaling serieus nemen. Vliegverbod in ruimtje en warme dagen: geen discussie voor veel dierenartsen.
 
-Mensenshampoo? Nee. Te veel kilo's? Ook nee. Die borstkas is al een statement.
+Kies fokkers die gezondheid vooropzetten; dat is liefde, geen overdrijving.
 
 ## Voor wie?
 
-Stadsmensen die willen lachen om hun hond — en dat doe je, de hele tijd. Geen trail-ultra, wél een full-time knuffelcontract. Kids: vaak oké als ze respecteren dat het geen knuffelbeer-met-batterij is.
+Voor mensen die thuis zijn genoeg, knuffelen willen en acceptatie hebben voor medische alertheid. Gezin vaak oké als kids zacht zijn. Hardlopers of “we nemen een hond voor kilometers”: ander ras. Wie de comedy én de zorg aankan, krijgt een plakkerige vriend.

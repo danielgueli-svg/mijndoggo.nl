@@ -25,22 +25,26 @@ gallery:
     sfeer: false
 ---
 
+Oranje-wit met oorbelletjes: het kooikerhondje is een Nederlandse ster die vrolijk en alert is, terwijl gevoeligheid en goede socialisatie net zo belangrijk zijn als de schattige look.
+
 ## Temperament
 
-Klein, oranje-wit, vaak zwarte oor-tips als oorbellen. Attent, vrolijk bij hun mensen, een beetje gereserveerd bij vreemden. Geen kermis-hond, wél een parel.
+Kooikers zijn vaak speels, aanhankelijk bij hun mensen en wat gereserveerd naar drukte of vreemde situaties. Ze merken sfeer en bloeien bij rustige, positieve begeleiding. Te harde of chaotische aanpak maakt hen eerder onzeker dan “gehoorzamer”.
 
-Slim, gevoelig, kwispelt als een vlaggetje als het klikt.
+Met zachte training en genoeg spel worden het charmante, levendige gezinshonden.
 
 ## Achtergrond
 
-Nederland, eendenkooi, de kooiker lokte met de hond. Later bijna weg, toen een comeback. Een van de mooiste 'hé, écht NL'-spottingen in het park.
+Oud Nederlands ras, vroeger gebruikt bij de eendenkooi: lokken met kwispel en oranje vacht. Bijna verdwenen, later teruggebracht — nu een trots nationaal gezelschap én werk-/sporthondje.
+
+Die geschiedenis verklaart wendbaarheid, alertheid en de behoefte aan een baasje dat rust uitstraalt.
 
 ## Verzorging
 
-Rust + spel. Wandelen, retrieven, denkwerk. Vacht: borstel, oren. Niet overspoelen met vreemde hondenfeestjes.
+Wandelingen, apporteer- en denkspellen, en regelmatig borstelen van de oranje-witte vacht. Oren schoon houden. Socialiseer breed maar vriendelijk: nieuwe dingen in hapklare, positieve brokjes.
 
-Ze houden van hun pack. Alleen-thuis in doses opbouwen, niet dumpen.
+Gewicht en oren zijn klassieke aandachtspunten; overdrijf sport bij jonge honden niet.
 
 ## Voor wie?
 
-Mensen die rust en spel combineren. Geen 24/7 kermis. Kids: oké als het huis geen pretpark is. Trots NL, compact formaat.
+Voor mensen die een Nederlands, middelgroot karakter willen met gevoel en flair. Gezin vaak fijn als de sfeer niet constant hard is. Wie alleen Instagram-oren zoekt zonder trainingstijd, mist de kern. Met geduld en speelsheid is dit vaak goud.

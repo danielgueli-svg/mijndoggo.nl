@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Lang worstje, groots karakter: de teckel is dapper, koppig-charmant en neusgedreven, terwijl die rug om zachte omgang en een slank lijf vraagt.
+
 ## Temperament
 
-Teckels zijn een lach plus een jachtinstinct, low-to-the-ground. Koppig op een charmante manier. Als de neus een geur pakt, is de wereld 10 centimeter hoog en oneindig spannend.
+Teckels combineren lach en jachtinstinct, low-to-the-ground. Als de neus een geur pakt, wordt de wereld tien centimeter hoog en oneindig spannend. Trouw aan hun gezin, een beetje clown, een beetje generaal.
 
-Trouw aan hun pack. Een beetje clown, een beetje generaal.
+Milde consequentie werkt beter dan gezeur; hun charme is groot, hun wil ook.
 
 ## Achtergrond
 
-Duitsland: dassen uit holen, vandaar die worst-architectuur. Korthaar, ruwhaar, langhaar — dezelfde ruggengraat (letterlijk: wees lief voor die rug).
+Duitsland: dassen uit holen, vandaar die langwerpige architectuur. Korthaar, ruwhaar, langhaar — dezelfde ruggengraat (letterlijk: wees lief voor die rug). Jachtgeschiedenis blijft zichtbaar in lef en neus.
+
+Formaat varieert (kaninchen tot standaard), karakter blijft teckel.
 
 ## Verzorging
 
-Niet tillen als een tas aardappelen. Ondersteun de rug. Geen bank- fort-knox-sprongen. Gewicht eraf houden, anders moppert de wervelkolom later.
+Niet tillen als een zak aardappelen; ondersteun de rug. Geen bank-fortknox-sprongen. Gewicht eraf houden, anders moppert de wervelkolom later. Wandelen en neuzen: ja. Extreme agility: overleg met iemand die teckels kent.
 
-Wandelen en neuzen: ja. Agility-overkill: overleg met iemand die teckels kent.
+Vacht afhankelijk van variant; oren en gewicht zijn klassiekers.
 
 ## Voor wie?
 
-Voor mensen die een statement willen. Een schattig, laag-bij-de-grond statement. Gezin kan, als niemand de hond als levende slee gebruikt.
+Voor mensen die een statement willen — een schattig, laag-bij-de-grond statement — én de rug serieus nemen. Gezin kan, als niemand de hond als levende slee gebruikt. Wie alleen “aww” zegt zonder heffen-met-steun, leert het hardhandig.

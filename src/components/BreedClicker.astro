@@ -8,7 +8,7 @@ type Props = {
   intro?: string;
 };
 
-const { breeds, heading = "Klik een ras. Kwispel volgt.", intro } = Astro.props;
+const { breeds, heading = "Kies een ras — en leer hoe het écht bij jullie past", intro } = Astro.props;
 
 const sizes: { id: "alle" | BreedSize; label: string }[] = [
   { id: "alle", label: "Alle" },
@@ -29,7 +29,7 @@ const sizes: { id: "alle" | BreedSize; label: string }[] = [
         )
       }
     </div>
-    <p class="text-sm font-bold text-muted">{breeds.length} rassen in de mix</p>
+    <p class="text-sm font-bold text-muted">{breeds.length} rassen om te ontdekken</p>
   </div>
 
   <div class="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -38,7 +38,7 @@ const sizes: { id: "alle" | BreedSize; label: string }[] = [
       <input
         id="ras-zoek"
         type="search"
-        placeholder="Typ een ras… labrador, teckel, stabij"
+        placeholder="Zoek op rasnaam…"
         class="w-full rounded-full border-2 border-ink/15 bg-white px-5 py-3 text-sm font-bold shadow-pop outline-none placeholder:font-semibold placeholder:text-muted/70"
       />
     </label>
@@ -61,7 +61,7 @@ const sizes: { id: "alle" | BreedSize; label: string }[] = [
   </div>
 
   <p id="ras-leeg" class="mt-8 hidden rounded-[1.5rem] bg-white p-8 text-center font-bold text-muted ring-2 ring-ink/10">
-    Geen ras gevonden. Typfoutje? Of een superzeldzame mix die we nog moeten toevoegen?
+    Geen ras gevonden. Misschien een tipfoutje — of een zeldzame mix die we nog mogen toevoegen?
   </p>
 
   <div id="ras-grid" class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">

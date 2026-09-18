@@ -25,24 +25,26 @@ gallery:
     sfeer: false
 ---
 
+De golden retriever begroet de wereld alsof het bijna feest is: zacht, sociaal en graag dicht bij het gezin, met een glans die zowel vacht als karakter lijkt te hebben.
+
 ## Temperament
 
-Goldens groeten de wereld alsof het hun verjaardag is. Zacht in de omgang, gek op hun pack, en een tikkeltje overtuigd dat elke schoot een golden-formaat heeft.
+Goldens zijn vriendelijk, mensgericht en soms zo sociaal dat elke schoot “goldenformaat” lijkt. Training voelt vaak als een feestje, tot er een eend voorbijvliegt — dan wordt het onderhandelen met de neus.
 
-Ze zijn sociaal tot het almost-te-veel is. Training voelt als een feestje, tot iemand 'zit' zegt terwijl er een eend voorbijvliegt. Dan is het onderhandelen.
+Ze willen graag pleasen en samen zijn. Dat maakt ze warm in huis, terwijl te lange eenzaamheid zwaar valt. Een beetje foodmotivatie en veel hart: typisch golden.
 
 ## Achtergrond
 
-Schotland, 19e eeuw: jacht, apporteren, natte heide. De gouden vacht was functioneel en toevallig ook main-character energy.
+Schotland, negentiende eeuw: jacht, apporteren, natte heide. De gouden vacht was functioneel en toevallig ook fotogeniek. Nu zie je ze als gezinshond, therapiehond en alleskunner — dezelfde apporterende motor in een zachtere setting.
 
-Nu: therapiehond, gezinshond, Instagram-hond. Dezelfde motor, zachtere setting.
+Die jachtwortels verklaren waterliefde, balgekte en de drang om dingen terug te brengen.
 
 ## Verzorging
 
-Borstelritme is real. Regen + golden = geur van 'avontuur'. Oren, nagels, en een voerschema dat niet op puppy-ogen draait.
+Borstelritme is serieus, vooral in de rui; regen plus golden kan “avontuurlijk” ruiken. Oren, nagels en een voerschema dat niet alleen op puppyogen draait. Houd ze slank en in beweging: heupen en gewicht varen wel bij discipline.
 
-Heupen en gewicht: hou ze slank en in beweging. Saai advies, gouden resultaat.
+Zwemmen en apporteren zijn vaak gelukzaligheid, mits oren daarna droog genoeg blijven.
 
 ## Voor wie?
 
-Baasjes die holding paws serieus nemen. Actief, huis-aanwezig, dol op samen dingetjes doen. Alleen thuis van 8 tot 8 is hun nachtmerrie in slow motion.
+Voor baasjes die nabijheid serieus nemen: actief, vaak thuis, graag samen dingetjes doen. Alleen van acht tot acht is voor veel goldens slow-motion ellende. Gezin? Vaak een hit, als kids leren dat een kwispel geen klimvrijbrief is.

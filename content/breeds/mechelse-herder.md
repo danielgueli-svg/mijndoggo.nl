@@ -1,7 +1,7 @@
 ---
 name: Mechelse Herder
 shortName: Mechelaar
-tagline: Turbo-herder voor mensen met een plan.
+tagline: "Actieve herder voor mensen met een plan."
 size: groot
 energy: hoog
 goodWithKids: true
@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+De Mechelse herder is een werkmotor met hersens: loyaal en intens, waardoor dit ras vooral past bij mensen met een plan, ervaring en zin in dagelijkse training.
+
 ## Temperament
 
-Atleten. Politie, sport, speuren — dit ras gaat. Thuis ook een baan, geen 'gewoon knuffelen en klaar' (knuffelen mag, ná het werk). Scherp, slim, loyaal als de match klopt.
+Mechelaars zijn scherp, leerhongerig en sterk gericht op hun geleider. Ze willen taken, duidelijkheid en beweging met betekenis. Zonder dat worden ze onrustig of vinden ze zelf “werk” — vaak onhandig werk.
 
-Te veel hond als jij geen plan hebt. Eerlijk zijn is ook liefde.
+Dit is geen bankhond-met-occasionele-wandeling. Wél een fenomenale partner voor sport, geurwerk of andere serieuze hobby’s, mits de opvoeding rustig en consequent is.
 
 ## Achtergrond
 
-Malinois, België, Mechelen. Eén van de Belgische herders. Wereldwijd werk-icoon. Geen modehond, al ziet-ie eruit als een superheld-sticker.
+Belgische herdersvariant uit de regio Mechelen, historisch vee en later politie-, leger- en sportdomein. Wereldwijd bekend om drive en leerbaarheid. Populairiteit in sport betekent: niet elke Mechelaar past in elk huishouden.
+
+Kies fok en lijn die bij jouw levensstijl passen; “mooie herder” alleen is te dun als motivatie.
 
 ## Verzorging
 
-Elke dag trainen alsof het je hobby is, want dat moet het zijn. Vacht: makkelijk. Kop: niet makkelijk als-ie verveeld is.
+Dagelijkse fysieke én mentale arbeid. Korte vacht, relatief makkelijk. Bouw sport bij jongeren geleidelijk op; let op gewrichten. Socialisatie breed en positief, zodat drive niet met angst mengt.
 
-Socialisatie, bijtkracht respecteren, sporten op niveau. Dit is geen 'we zien wel'.
+Rust leren is net zo belangrijk als rennen: een aan-knop zonder uit-knop put iedereen uit.
 
 ## Voor wie?
 
-Baasjes die training leuk vinden, niet saai. Kids: alleen in een huis dat de hond ook werk geeft. Twijfel je? Kies een soepeler ras. Geen schande.
+Voor ervaren of zeer gemotiveerde baasjes met sport- of werkplan. Gezin alleen als de structuur stevig is. Impulskop omdat het “stoer” staat: skip. Wie uren wil investeren en calm leadership biedt, kan iets bijzonders bouwen.

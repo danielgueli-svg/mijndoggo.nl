@@ -18,17 +18,22 @@ const tips = (await getCollection("tips"))
   <Hero />
   <BreedClicker
     breeds={breeds}
-    intro="Geen saaie encyclopedie. Gewoon een vrolijke klikplaat: tik een ras aan en duik in de knuffelzone."
+    heading="Kies een ras — en leer hoe het écht bij jullie past"
+    intro="Geen droge naslagwerken, maar korte, warme verhalen over temperament, verzorging en voor wie een ras geschikt is, zodat je met een gerust hart kunt klikken. Tik een naam aan, lees in alle rust, en merk of die hond bij jouw leven past — of juist iets te veel vraagt voor dit seizoen."
   />
 
   <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
     <div class="flex items-end justify-between gap-4">
       <div>
         <p class="text-xs font-extrabold uppercase tracking-widest text-sky-deep">Tips & trucs</p>
-        <h2 class="mt-1 font-display text-3xl font-semibold sm:text-4xl">Even bijleren, zonder saai te worden</h2>
+        <h2 class="mt-1 font-display text-3xl font-semibold sm:text-4xl">Even bijleren — zonder dat het als huiswerk voelt</h2>
+        <p class="mt-2 max-w-2xl text-muted">
+          Of je nu een wasbeurt uitstelt, een wandeling wilt verbeteren, of gewoon wilt weten waar
+          jullie dit weekend mogen snuffelen: hier vind je tips die ademen, terwijl ze wél ergens op steunen.
+        </p>
       </div>
       <a href="/tips" class="hidden rounded-full bg-white px-4 py-2 text-sm font-extrabold shadow-pop ring-2 ring-ink/10 hover:bg-sun sm:inline-flex">
-        Alle tips
+        Alle tips bekijken
       </a>
     </div>
     <div class="mt-6 grid gap-4 md:grid-cols-3">
@@ -47,25 +52,27 @@ const tips = (await getCollection("tips"))
       }
     </div>
     <a href="/tips" class="mt-6 inline-flex rounded-full bg-white px-4 py-2 text-sm font-extrabold shadow-pop ring-2 ring-ink/10 hover:bg-sun sm:hidden">
-      Alle tips
+      Alle tips bekijken
     </a>
   </section>
 
   <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
     <div class="grid gap-6 overflow-hidden rounded-[2rem] bg-sky p-6 text-ink shadow-pop-lg ring-2 ring-ink/10 sm:p-10 md:grid-cols-[1.2fr_0.8fr]">
       <div>
-        <h2 class="font-display text-3xl font-semibold sm:text-4xl">Open source, net als een park: voor iedereen.</h2>
+        <h2 class="font-display text-3xl font-semibold sm:text-4xl">Open source — net als een park: van en voor iedereen</h2>
         <p class="mt-3 max-w-xl text-base font-semibold leading-relaxed">
-          {site.name} is MIT. Rassen voeg je toe via een datafile, tips via Markdown.
-          Perfect voor een Nederlandse schrijfbot die later de teksten oppoetst.
+          {site.name} staat onder de MIT-licentie, waardoor je rassen kunt toevoegen via een
+          eenvoudig bestand en tips via Markdown, zonder dat je eerst een backend hoeft te bouwen.
+          Handig als je later teksten wilt laten oppoetsen door een Nederlandstalige schrijfhulp,
+          terwijl de site zelf licht en open blijft.
         </p>
         <a href="/over" class="mt-5 inline-flex rounded-full bg-ink px-5 py-3 text-sm font-extrabold text-cream shadow-pop">
           Hoe het in elkaar zit
         </a>
       </div>
       <p class="self-center rounded-[1.4rem] bg-white/80 p-5 text-sm font-bold leading-relaxed">
-        Geen accounts in v1. Geen webshop. Wel een hoop staarten, een ras-klikker, en een
-        plekje voor jóuw hond — lokaal op je eigen apparaat.
+        In deze eerste versie zijn er geen accounts en geen webshop — wél een ras-klikker,
+        leesbare tips, en een plek voor jouw hond die lokaal op je eigen apparaat blijft.
       </p>
     </div>
   </section>

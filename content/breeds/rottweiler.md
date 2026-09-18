@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Stoere look, zachte kern — áls jij die kern voedt met rust, regels en nabijheid. De rottweiler neemt mensen serieus, waardoor eerlijke opvoeding het verschil maakt.
+
 ## Temperament
 
-Kalme krachtpatsers die hun mensen serieus nemen. Eerlijke opvoeding: stabiele lieve reus. Chaos: niet doen. Ze bloeien op nabijheid, regels, en een baasje dat niet zenuwachtig doet om hun imago.
+Rottweilers zijn vaak kalme krachtpatsers die bloeien bij nabijheid en duidelijke, milde leiding. Chaos of zenuwachtig “imago-gedoe” helpt niet. Waken zit erin; over-waken ook, als jij geen rustige richting geeft.
 
-Waken zit erin. Over-waken ook, als jij geen leiding geeft.
+Met vroege socialisatie en consequente vriendelijkheid worden het stabiele, aanhankelijke reuzen. Zonder dat wordt de stoere buitenkant zwaarder dan nodig.
 
 ## Achtergrond
 
-Rottweil, veedrijvers, Romeinse sporen in het verhaal. Slagershond, daarna gezin en werk. Het zwart-tan pak is iconisch. De inhoud bepaal jij.
+Verbonden aan Rottweil en veedrijvers, met Romeinse sporen in het verhaal: slagershond, later gezin- en werkhond. Het zwart-tan pak is iconisch; de inhoud bepaal jij mede door fokkeuze en opvoeding.
+
+Geschiedenis van kracht en werk betekent respect — geen statusspelletje.
 
 ## Verzorging
 
-Wandelen, training, samen chillen. Geen non-stop rennen, wél kwaliteit. Vacht: kort, rui is een seizoen.
+Wandelen, training, samen rustig bijtanken. Geen non-stop rennen nodig, wél kwaliteit en mentale helderheid. Korte vacht, seizoensrui. Gewicht, ellebogen en hart: checks via de dierenarts, geen paniek-Dr. Google.
 
-Socialisatie vroeg. Gewicht, ellebogen, hart: checks, geen drama-Dr. Google.
+Socialiseer vroeg en breed, zodat zelfvertrouwen groeit zonder scherpte.
 
 ## Voor wie?
 
-Mensen die tijd steken in de hond, niet in het ster-imago. Duidelijk, lief, aanwezig. Kids: kan, mét respect. Statuszoekers: ga ergens anders stoer doen.
+Voor mensen die tijd in de hond steken, niet in het sterimago. Duidelijk, lief, aanwezig. Kids: kan, mét respect. Statuszoekers: ergens anders stoer doen. Wie rust en relatie biedt, ontdekt vaak de zachte kern achter de look.

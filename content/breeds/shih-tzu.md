@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Keizerlijke pony, moderne bank: de shih tzu is aanhankelijke mini-royalty, terwijl dagelijkse vacht- en oogzorg het verschil maakt tussen schattig en vastgeplakt.
+
 ## Temperament
 
-Kleine royalty met full-time kapsel. Achter de pony: aanhankelijk, speels, CEO van het kussen. Sociale vlinder in mini. Geen ultraloop, wél 'oeh wat ben jij mooi'.
+Achter de fringe zit een speelse, aanhankelijke CEO van het kussen. Sociale vlinder in het klein, geen ultraloper. Ze merken sfeer: ruzie in huis voelen ze, en dat maakt hun dag somberder.
 
-Ze merken sfeer. Ruzie in huis? Zij gaan in hun feel-bad era.
+Met zachte omgang en genoeg kort contact blijven ze warme metgezellen die graag “mooi gevonden” worden — en vooral dichtbij.
 
 ## Achtergrond
 
-Tibet/China, paleizen, later de wereld. Leeuw-hond in de lore, schoothond in de praktijk. De fringe is historie én een statement.
+Tibet/China, paleizen, later de wereld. Leeuwhond in de lore, schoothond in de praktijk. De pony is historie én statement. Compact lijf, groot hart voor “hun” mensen.
+
+Paleisverleden betekent: gezelschap eerst, sportrecord later (of nooit).
 
 ## Verzorging
 
-Ogen en vacht: dagelijkse love. Klitten zijn geen persoonlijkheid. Korte wandelingen, tanden, en geen springen van hoge banken als hun lijf klein is.
+Ogen en vacht: dagelijkse liefde. Klitten zijn geen persoonlijkheid. Korte wandelingen, tandzorg, geen hoge banksprongen als het lijf klein en kwetsbaar is. Trim of lang haar: kies een ritme.
 
-Trim of lang haar: kies een ritme en blijf-ie cute in plaats van vastgeplakt.
+Ademhaling en hitte bij korte neuzen in de gaten houden; overdrijf inspanning niet.
 
 ## Voor wie?
 
-Baasjes die grooming oké vinden en een metgezel willen, geen sportmaat. Kids die zacht doen: yes. Chaos-kleuters die tillen als een tas: skip.
+Voor baasjes die grooming oké vinden en een metgezel willen, geen sportmaat. Kids die zacht doen: ja. Chaos-kleuters die tillen als een tas: skip. Wie kam en knuffel combineert, krijgt moderne bankroyalty die blijft stralen.

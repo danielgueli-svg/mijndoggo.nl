@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Praatgraag, tochtig en geboren voor kilometers: de Siberische husky is onafhankelijk en meute-sociaal, waardoor hek, kilometers en humor geen opties zijn maar voorwaarden.
+
 ## Temperament
 
-Huskies praten. Zingen, klagen, onderhandelen. Plus een ontsnappingsact waar Houdini voor applaudisseert. Onafhankelijk, social in de meute, niet per se 'pleaser'.
+Huskies praten, zingen, klagen en onderhandelen. Plus een ontsnappingsact waar je respect voor krijgt — of hoofdpijn van. Onafhankelijk, social in de meute, niet per se de klassieke pleaser. Ogen vol humor, marathonlijf: als de energie klopt, is het magie.
 
-Comedy-ogen, marathon-lijf. Als de energie klopt: magie.
+Zonder voldoende renwerk wordt die magie al snel een project in de tuin of de buurt.
 
 ## Achtergrond
 
-Siberië, Tsjoektsjen, sleeën, kou. Later Alaska en de rest van de wereld. Dit is geen wolf-cosplay. Dit is een sleehond in een woonwijk. Respecteer de cv.
+Siberië, Tsjoektsjen, sleeën, kou; later Alaska en de rest van de wereld. Dit is geen wolfverkleedpartij, dit is een sleehond in een woonwijk. Respecteer hun achtergrond: trekken, rennen, samenwerken in een team.
+
+Wie alleen het “wilde plaatje” wil, botst op de praktijk van rui, stem en ontsnappingskunst.
 
 ## Verzorging
 
-Rennen, fietsen, trekken, sneeuwpret. Vacht: blazen in de rui, twee lagen, géén kaal scheren 'omdat het zomer is'.
+Rennen, fietsen, trekken, winterpret. Dubbele vacht: stevig uitborstelen in de rui, géén kaal scheren “omdat het zomer is”. Hek plus verstand: alleen in de tuin is hun hobby vaak “exit”. Voer efficiënt; overgewicht past slecht bij dit systeem.
 
-Hek + verstand. Alleen in de tuin is hun hobby 'exit'. Voer: geen overgewicht, ze zijn efficiënt als een accu.
+Training met motivatie en consequentie; pure dominantiesprookjes werken hier zelden.
 
 ## Voor wie?
 
-Baasjes met kilometers in de week en humor. Studio zonder tuin + 12-uursdiensten: tenzij je keihard plant, skip. Kids oké als niemand de husky als knuffelwolf ziet.
+Voor baasjes met kilometers in de week en humor. Studio zonder tuin plus twaalfuursdiensten: tenzij je keihard plant, skip. Kids oké als niemand de husky als knuffelwolf ziet. Wie beweegt en lacht om het gejank, kan iets episch meemaken.

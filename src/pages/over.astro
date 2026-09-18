@@ -34,58 +34,73 @@ const uniqueCredits = [
 
 <BaseLayout
   title="Over MijnDoggo"
-  description="Wat MijnDoggo is, hoe je rassen en tips toevoegt, en waar de foto's vandaan komen."
+  description="Hoi — wij zijn MijnDoggo: een warme Nederlandstalige plek voor rassenverhalen, praktische tips en jouw hond."
 >
   <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
     <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Over</p>
-    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Hoi, wij zijn {site.name}</h1>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Hoi — wij zijn {site.name}</h1>
     <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink">
       <p>
-        Een Nederlandstalige hangout voor hondenvrienden. Cheerful, een beetje tiener-energie,
-        wél netjes. Geen webshop, geen account-gedoe in v1. Wél rassen om op te klikken,
-        tips die je kunt lezen, en een plekje voor jóuw hond.
+        MijnDoggo is een Nederlandstalige plek voor mensen die van honden houden — warm, een beetje
+        speels, en toch netjes genoeg om serieus te lezen als je écht iets wilt weten. In deze eerste
+        versie vind je geen webshop en geen accountgedoe, terwijl je wél kunt klikken door
+        rassenverhalen, tips kunt nalezen, en op je eigen apparaat een plekje kunt maken voor jouw hond.
       </p>
       <p>
-        De site is open source (MIT) en bewust licht: Astro, TypeScript, Tailwind.
-        Hosten op Cloudflare Pages of elke andere static host is een peulenschil.
+        De site is open source onder de MIT-licentie en bewust licht gebouwd met Astro, TypeScript
+        en Tailwind, zodat hosten op Cloudflare Pages of een andere static host bijna vanzelf gaat.
+        Klein teamgevoel, grote liefde voor staarten — en voldoende ruimte om later teksten te
+        verfijnen zonder de basis opnieuw te moeten uitvinden.
       </p>
     </div>
 
     <section class="mt-10 rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10 sm:p-8">
       <h2 class="font-display text-2xl font-semibold">Eigen honden, zonder backend</h2>
       <p class="mt-3 leading-relaxed text-muted">
-        Als je op een ras-pagina een hond toevoegt, slaan we dat op in <strong>localStorage</strong>
-        van jouw browser. Key: <code class="rounded bg-cream px-1.5 py-0.5 text-sm font-bold">mijndoggo.ownerDogs.v1</code>.
-        Niemand anders ziet jouw Pip — nog niet. Het datamodel in
+        Voeg je op een raspagina jouw eigen hond toe, dan bewaren we die gegevens in de
+        <strong>localStorage</strong> van jouw browser (sleutel:
+        <code class="rounded bg-cream px-1.5 py-0.5 text-sm font-bold">mijndoggo.ownerDogs.v1</code>),
+        waardoor niemand anders jouw Pip ziet — althans, nog niet. Het datamodel in
         <code class="rounded bg-cream px-1.5 py-0.5 text-sm font-bold">src/lib/owner-dogs.ts</code>
-        is al klaar voor een echte API.
+        is al voorbereid op een latere API, zodat privacy nu vooropstaat terwijl de deur naar iets
+        groters open blijft. Voor jou betekent dat: een persoonlijk hoekje zonder account, terwijl
+        de techniek achter de schermen al een beetje vooruitkijkt.
       </p>
     </section>
 
     <section class="mt-6 rounded-[1.8rem] bg-sun/40 p-6 ring-2 ring-ink/10 sm:p-8">
       <h2 class="font-display text-2xl font-semibold">Rassen toevoegen</h2>
       <p class="mt-3 leading-relaxed">
-        Nieuw ras? Drop <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/breeds/jouw-ras.md</code>
-        — verhaal (temperament, achtergrond, verzorging, voor wie) plus een gallery van ±3 Unsplash-foto's.
-        Contract: <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/BREEDS_CONTRACT.md</code>.
+        Wil je een nieuw ras toevoegen, dan drop je gewoon een Markdown-bestand in
+        <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/breeds/</code>
+        — met temperament, achtergrond, verzorging en “voor wie”, plus een kleine gallery van
+        ongeveer drie Unsplash-foto’s. De afspraken staan in
+        <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/BREEDS_CONTRACT.md</code>,
+        zodat iedereen dezelfde structuur aanhoudt terwijl de toon warm mag blijven. Zo plat als
+        het klinkt, zo fijn werkt het ook: één bestand erbij, en de ras-klikker groeit mee.
       </p>
     </section>
 
     <section class="mt-6 rounded-[1.8rem] bg-foam p-6 ring-2 ring-ink/10 sm:p-8">
       <h2 class="font-display text-2xl font-semibold">Tips van een schrijfbot</h2>
       <p class="mt-3 leading-relaxed">
-        Alle artikelen leven in <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/tips/</code>.
-        De contract-afspraken staan in <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/TIPS_CONTRACT.md</code>.
-        Een externe NL-bot kan die Markdown-bestanden overschrijven; de site leest ze bij de build.
+        Alle tipartikelen leven in
+        <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/tips/</code>,
+        met contractafspraken in
+        <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/TIPS_CONTRACT.md</code>,
+        zodat een externe Nederlandstalige schrijfhulp de Markdown mag herschrijven terwijl de site
+        ze bij de build weer inleest. Zo blijft de inhoud onderhoudbaar, zonder dat je voor elke
+        zin de hele codebase hoeft open te trekken. Handig voor wie later wil finetunen — en
+        geruststellend voor wie gewoon wil lezen.
       </p>
     </section>
 
     <section id="credits" class="mt-10">
       <h2 class="font-display text-2xl font-semibold">Foto's & licenties</h2>
       <p class="mt-3 leading-relaxed text-muted">
-        Alle foto's komen van <a class="font-bold text-sky-deep underline" href="https://unsplash.com">Unsplash</a>
-        (Unsplash License: vrij te gebruiken, ook commercieel). We kiezen alleen lieve, vrolijke honden.
-        Credit waar het hoort:
+        Alle foto’s komen van <a class="font-bold text-sky-deep underline" href="https://unsplash.com">Unsplash</a>
+        en vallen onder de Unsplash License, waardoor je ze vrij mag gebruiken — ook commercieel.
+        We kiezen bewust voor lieve, vrolijke hondenbeelden, en credit geven we waar het hoort:
       </p>
       <ul class="mt-4 space-y-2 text-sm font-bold">
         {

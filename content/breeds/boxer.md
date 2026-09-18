@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+De boxer combineert atletisch lijf met clownesk hart: loyaal, speels en vaak tot op hoge leeftijd een beetje puberaal — en dat is voor veel gezinnen juist de charme.
+
 ## Temperament
 
-Puber tot ze grijs worden — compliment. Stoeien, grijnzen, rare bekken, gezin als sport. Energiekwartiertje, bank, wéér een energiekwartiertje.
+Boxers stoeien, grijnzen en verzinnen rare bekken alsof het hun beroep is. Ze hebben energie in bursts: een wild kwartiertje, dan even bank, en daarna weer zin in spel. Loyaal en een beetje goofy willen ze vooral bij hun mensen zijn, niet in een kennel-routine.
 
-Loyaal en een beetje goofy. Ze willen hun mensen, niet een kennel-cv.
+Ze zijn vaak gezinsgericht, mits stoeien met duidelijke regels gebeurt zodat niemand overspoeld raakt.
 
 ## Achtergrond
 
-Duitsland, Bullenbeisser-lijn, later boxer. Korthaar-atleet met clownneus. Wereldwijd gezinshond, nog steeds met die 'ik ben tien' energie.
+Het ras heeft Duitse wortels (onder meer via de Bullenbeisser-lijn) en ontwikkelde zich tot de kortharige atleet die we nu kennen. Wereldwijd zijn ze geliefde gezinshonden, terwijl die “ik ben nog tien”-energie bij veel individuen blijft hangen.
+
+Kort gezegd: werkhistorie plus clownneus, verpakt in een sportief lijf.
 
 ## Verzorging
 
-Beweging in bursts, plus training als spel. Hitte: kortsnuit-alert, schaduw, geen middag-asfalt.
+Beweging in korte, intense sessies werkt vaak beter dan eindeloze draven, plus training die als spel voelt. Let op hitte: als kortsnuitras hebben ze sneller last van warmte, dus schaduw en geen middag-asfalt.
 
-Huid en rui: meh, overzichtelijk. Hart/kanker-checks horen bij volwassen boxers — gewoon een volwassen baasje zijn.
+Vacht en rui zijn overzichtelijk. Bij volwassen boxers horen hart- en andere gezondheidschecks bij verantwoord houderschap — gewoon een volwassen baasje zijn, zonder drama.
 
 ## Voor wie?
 
-Gezinnen die tegen een clown kunnen. Humor verplicht. Couch-only: ze vervelen zich luid. Kids: vaak een match als stoeien met regels gaat.
+Voor gezinnen die tegen een clown kunnen en humor in huis hebben. Alleen bank zonder beweging maakt hen luid en verveeld. Met kids is het vaak een match als stoeien nette grenzen heeft en jij tijd hebt voor wandelen én knuffelen.

@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Klein van formaat, groot van mening: de chihuahua gedraagt zich soms als CEO van de bank, terwijl dat lijfje warmte, respect en goede socialisatie keihard nodig heeft.
+
 ## Temperament
 
-Een chihuahua weegt soms minder dan je laptop en gedraagt zich als CEO. Dat is geen bug, dat is het ras. Dapper, alert, aanhankelijk bij 'hun' mens, sceptisch bij de rest.
+Chihuahua’s kunnen dapper, alert en sterk gericht op “hun” mens zijn, en sceptisch naar de rest van de wereld. Goed gesocialiseerd worden ze humoristische tas- en schootmaatjes; zonder die basis blijft het alarm vaak aan.
 
-Goed gesocialiseerd: tas-maatje met humor. Slecht gesocialiseerd: alarm dat nooit op snooze gaat.
+Neem hun karakter serieus, ook al wegen ze minder dan je laptop. Aanhankelijkheid en waakzaamheid zitten dicht bij elkaar — jij helpt ze het verschil te leren.
 
 ## Achtergrond
 
-Mexico, oud spul, later de Amerikaanse schoot. Ze zijn geen accessoire, al past-ie in je jas. Techiche: ze komen in korthaar en langhaar, allebei met een mening.
+Het ras heeft Mexicaanse wortels en werd later vooral als schoothond geliefd. Ze bestaan in kort- en langhaar, allebei met een mening. Klein formaat maakt hen geen accessoire: het blijft een hond met behoeften, grenzen en een stem.
+
+Die geschiedenis van nabijheid bij mensen verklaart waarom ze zo sterk op hun gezin kunnen plakken.
 
 ## Verzorging
 
-Kleine lijven koelen snel af en breken ook sneller. Regenjas is geen grap. Tanden en knieschijven: dierenarts in de loop houden.
+Kleine lijven koelen snel af en zijn kwetsbaarder bij ruwe omgang of trappen. Een jasje in de kou is geen grap. Tanden en knieën verdienen structurele dierenarts-aandacht.
 
-Wandelen mag, in hun tempo. Trappen als achtbaan? Optillen, rugvriendelijk.
+Wandelen mag, in hun tempo. Optillen bij steile trappen is vaak rugvriendelijker voor hen én voor jou. Socialisatie blijft een doorlopend thema, niet een weekendcursus.
 
 ## Voor wie?
 
-Voor baasjes die mini serieus nemen. Niet 'het is maar een kleine hond'. Wél warmte, socialisatie, en geen ruwe peuter-knuffel-olympics. Kids-first huis: vaak een andere match.
+Voor baasjes die mini serieus nemen — warmte, training en geen ruwe peuter-knuffelolympics. In een kids-first huis met wilde handen is een ander ras vaak eerlijker. Wie rustig, consequent en lief omgaat met een klein karakter, kan een trouwe schaduw vinden.

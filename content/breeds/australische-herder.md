@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Met die merlevacht lijkt de Australische herder soms uit een magazine te stappen, terwijl er onder die kleuren een echte werkmotor schuilt die graag iets te doen heeft.
+
 ## Temperament
 
-Zien eruit alsof ze een filter op hebben, motor inbegrepen. Rennen, werken, jou in de gaten houden. Lieve shadows die trucjes verzinnen als jij te lang op je telefoon zit.
+Australische herders zijn alert, sportief en sterk gericht op “hun” mensen. Ze houden je in de gaten, verzinnen graag trucjes als jij te lang stilzit, en kunnen — als ze weinig uitdaging krijgen — ook kinderen of zelfs de stofzuiger gaan “herderen”.
 
-Aandachtig tot het herdert. Soms herdert-ie de kids. Soms de stofzuiger.
+Dat aandachtige karakter is warm én intens: ze willen meedoen, meedenken en bewegen. Met duidelijke, vriendelijke begeleiding worden ze fijne schaduwen; zonder plan zoeken ze zelf een taak, en die is niet altijd wat jij in gedachten had.
 
 ## Achtergrond
 
-Ondanks de naam: Amerika, ranch, Baskische/Aussie-wortels in de mix. Merle is wow, geen must. De werkdrive is wel een must om te respecteren.
+Ondanks de naam komt dit ras vooral uit de Amerikaanse ranchtraditie, met wortels die onder meer Baskische herdershonden in de mix hebben. De merlevacht is opvallend, maar geen verplichting: wat je wél serieus moet nemen, is de werkdrive die bij het ras hoort.
+
+Ze zijn gefokt om te werken en te blijven opletten, waardoor een rustig bankleven zonder mentale en fysieke uitdaging zelden goed past.
 
 ## Verzorging
 
-Agility, hoarding, lange tochten. Acht uur zonder plan: minder yes. Vacht: borstel, vooral de broek.
+Denk aan dagelijkse beweging mét kopwerk: lange tochten, agility, speuren of andere sporten waarbij ze mogen nadenken. Acht uur alleen zonder plan voelt voor veel Aussies oneerlijk, want hun motor blijft draaien.
 
-Ogen/oren bij merle: fokken serieus, dierenarts bij twijfel. Jij regelt de volume-knop van hun dag.
+De vacht vraagt regelmatig borstelen, vooral rond de “broek”. Bij merle is extra aandacht voor ogen en oren verstandig; fok serieus en schakel bij twijfel de dierenarts in. Jij bepaalt het volume van hun dag — met rustmomenten én genoeg uitlaatkleppen.
 
 ## Voor wie?
 
-Sportmaatjes. Festival-energie in een mensenlijf. Gezin met tuin en agenda. Studio + nachtdienst: oneerlijk voor die merle-motor.
+Voor actieve mensen of gezinnen met tuin, tijd en een agenda waarin de hond meetelt. Diezelfde energie in een mensenlijf past beter dan een studio met nachtdiensten zonder opvang. Als je wilt trainen, wandelen en samen dingen doen, kan dit een stralende match zijn; zonder die inzet wordt het voor iedereen zwaar.
