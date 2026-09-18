@@ -1,6 +1,6 @@
 ---
 title: Hond wassen zonder badkamer-oorlog
-description: Natte-hond-geur de baas, zonder dat jij als washandje eindigt. Was alleen als het nodig is — met milde hondenshampoo en een chill stappenplan.
+description: Natte-hond-geur de baas, zonder dat jij als washandje eindigt. Een vrolijk stappenplan voor een relaxte wasbeurt.
 category: wassen
 heroImage: photo-1601758125946-6ec2ef64daf8
 heroImageAlt: Persoon knuffelt een blije hond op een lichte ondergrond
@@ -33,7 +33,7 @@ Afwasmiddel is geen noodoplossing. Dat ontvet veel te hard en kan de huid echt b
 
 ## Zo pak je het praktisch aan
 
-Begin met borstelen. Droge klitten haar je makkelijker weg dan natte. Zet alles klaar: handdoeken, antislipmat, verdunde shampoo, lauw water. Zo hoef je je hond niet half nat achter te laten terwijl jij iets zoekt.
+Begin met borstelen. Droge klitten haal je makkelijker weg dan natte. Zet alles klaar: handdoeken, antislipmat, verdunde shampoo, lauw water. Zo hoef je je hond niet half nat achter te laten terwijl jij iets zoekt.
 
 Test het water op je pols. Lauwwarm, niet heet. Maak de vacht goed nat, dicht bij de huid. Masseer de shampoo in van nek naar staart. Houd shampoo uit ogen, oren en snoet. Voor het gezicht werkt een vochtige doek vaak beter.
 
