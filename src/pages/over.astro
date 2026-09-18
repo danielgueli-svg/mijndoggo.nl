@@ -1,0 +1,104 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { loadBreeds } from "../lib/breeds";
+import { heroPhotos, site } from "../data/site";
+import { getCollection } from "astro:content";
+
+const tips = await getCollection("tips");
+const breeds = await loadBreeds();
+
+const photoCredits = [
+  ...heroPhotos.map((photo) => ({
+    ...photo,
+    where: "Hero",
+  })),
+  ...breeds.flatMap((breed) =>
+    breed.gallery.map((photo) => ({
+      ...photo,
+      where: breed.name,
+    })),
+  ),
+  ...tips.map((tip) => ({
+    unsplashId: tip.data.heroImage,
+    alt: tip.data.heroImageAlt,
+    photographer: tip.data.photographer,
+    unsplashUrl: tip.data.unsplashUrl,
+    where: tip.data.title,
+  })),
+];
+
+const uniqueCredits = [
+  ...new Map(photoCredits.map((item) => [item.unsplashUrl, item])).values(),
+];
+---
+
+<BaseLayout
+  title="Over MijnDoggo"
+  description="Wat MijnDoggo is, hoe je rassen en tips toevoegt, en waar de foto's vandaan komen."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Over</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Hoi, wij zijn {site.name}</h1>
+    <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink">
+      <p>
+        Een Nederlandstalige hangout voor hondenvrienden. Cheerful, een beetje tiener-energie,
+        wél netjes. Geen webshop, geen account-gedoe in v1. Wél rassen om op te klikken,
+        tips die je kunt lezen, en een plekje voor jóuw hond.
+      </p>
+      <p>
+        De site is open source (MIT) en bewust licht: Astro, TypeScript, Tailwind.
+        Hosten op Cloudflare Pages of elke andere static host is een peulenschil.
+      </p>
+    </div>
+
+    <section class="mt-10 rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Eigen honden, zonder backend</h2>
+      <p class="mt-3 leading-relaxed text-muted">
+        Als je op een ras-pagina een hond toevoegt, slaan we dat op in <strong>localStorage</strong>
+        van jouw browser. Key: <code class="rounded bg-cream px-1.5 py-0.5 text-sm font-bold">mijndoggo.ownerDogs.v1</code>.
+        Niemand anders ziet jouw Pip — nog niet. Het datamodel in
+        <code class="rounded bg-cream px-1.5 py-0.5 text-sm font-bold">src/lib/owner-dogs.ts</code>
+        is al klaar voor een echte API.
+      </p>
+    </section>
+
+    <section class="mt-6 rounded-[1.8rem] bg-sun/40 p-6 ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Rassen toevoegen</h2>
+      <p class="mt-3 leading-relaxed">
+        Nieuw ras? Drop <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/breeds/jouw-ras.md</code>
+        — verhaal (temperament, achtergrond, verzorging, voor wie) plus een gallery van ±3 Unsplash-foto's.
+        Contract: <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/BREEDS_CONTRACT.md</code>.
+      </p>
+    </section>
+
+    <section class="mt-6 rounded-[1.8rem] bg-foam p-6 ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Tips van een schrijfbot</h2>
+      <p class="mt-3 leading-relaxed">
+        Alle artikelen leven in <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/tips/</code>.
+        De contract-afspraken staan in <code class="rounded bg-white px-1.5 py-0.5 text-sm font-bold">content/TIPS_CONTRACT.md</code>.
+        Een externe NL-bot kan die Markdown-bestanden overschrijven; de site leest ze bij de build.
+      </p>
+    </section>
+
+    <section id="credits" class="mt-10">
+      <h2 class="font-display text-2xl font-semibold">Foto's & licenties</h2>
+      <p class="mt-3 leading-relaxed text-muted">
+        Alle foto's komen van <a class="font-bold text-sky-deep underline" href="https://unsplash.com">Unsplash</a>
+        (Unsplash License: vrij te gebruiken, ook commercieel). We kiezen alleen lieve, vrolijke honden.
+        Credit waar het hoort:
+      </p>
+      <ul class="mt-4 space-y-2 text-sm font-bold">
+        {
+          uniqueCredits.map((credit) => (
+            <li class="rounded-2xl bg-white px-4 py-3 ring-2 ring-ink/10">
+              <span class="text-muted">{credit.where} — </span>
+              <a class="text-sky-deep underline decoration-2 underline-offset-2" href={credit.unsplashUrl}>
+                {credit.photographer}
+              </a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </div>
+</BaseLayout>

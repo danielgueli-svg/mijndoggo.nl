@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+@theme {
+  --font-display: "Fredoka", "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  --color-sun: #ffc43d;
+  --color-sun-deep: #ee9b12;
+  --color-sky: #4ec4f5;
+  --color-sky-deep: #1b9ed8;
+  --color-coral: #ff6b6b;
+  --color-blush: #ff8fab;
+  --color-cream: #fff6e8;
+  --color-foam: #e7f7ff;
+  --color-ink: #1c2740;
+  --color-muted: #52607a;
+  --color-card: #ffffff;
+  --shadow-pop: 0 8px 0 0 rgb(28 39 64 / 0.14);
+  --shadow-pop-lg: 0 12px 0 0 rgb(28 39 64 / 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--color-sun);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-sky-deep);
+  outline-offset: 3px;
+}
+
+.paw-dots {
+  background-image: radial-gradient(circle at 20% 20%, rgb(255 196 61 / 0.35) 0 8px, transparent 9px),
+    radial-gradient(circle at 80% 0%, rgb(78 196 245 / 0.28) 0 10px, transparent 11px),
+    radial-gradient(circle at 90% 80%, rgb(255 143 171 / 0.28) 0 12px, transparent 13px),
+    radial-gradient(circle at 8% 78%, rgb(255 107 107 / 0.18) 0 9px, transparent 10px);
+}
+
+.prose-doggo {
+  --tw-prose-body: var(--color-ink);
+  --tw-prose-headings: var(--color-ink);
+  --tw-prose-links: var(--color-sky-deep);
+  --tw-prose-bold: var(--color-ink);
+  --tw-prose-quotes: var(--color-ink);
+  --tw-prose-quote-borders: var(--color-sun);
+  --tw-prose-bullets: var(--color-coral);
+}

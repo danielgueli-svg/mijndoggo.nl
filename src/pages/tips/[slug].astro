@@ -1,0 +1,58 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { unsplashSrc } from "../../lib/images";
+import { getCollection, render } from "astro:content";
+
+export async function getStaticPaths() {
+  const tips = await getCollection("tips");
+  return tips.map((tip) => ({
+    params: { slug: tip.id },
+    props: { tip },
+  }));
+}
+
+const { tip } = Astro.props;
+const { Content } = await render(tip);
+const image = unsplashSrc(tip.data.heroImage, 1400, 800);
+
+const categoryLabels: Record<string, string> = {
+  wassen: "Wassen",
+  wandelen: "Wandelen",
+  plekken: "Plekken",
+  voeding: "Voeding",
+  verzorging: "Verzorging",
+  overig: "Overig",
+};
+---
+
+<BaseLayout title={tip.data.title} description={tip.data.description} image={image}>
+  <article>
+    <header class="mx-auto max-w-3xl px-4 pb-6 pt-10 sm:px-6">
+      <p class="text-xs font-extrabold uppercase tracking-widest text-sky-deep">
+        {categoryLabels[tip.data.category] ?? tip.data.category} · {tip.data.minutes} min
+      </p>
+      <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">{tip.data.title}</h1>
+      <p class="mt-4 text-lg font-semibold text-muted">{tip.data.description}</p>
+    </header>
+    <figure class="mx-auto max-w-3xl overflow-hidden rounded-[2rem] px-4 sm:px-6">
+      <img
+        src={image}
+        alt={tip.data.heroImageAlt}
+        width="1400"
+        height="800"
+        class="aspect-[16/9] w-full rounded-[2rem] object-cover shadow-pop-lg ring-2 ring-ink/10"
+      />
+      <figcaption class="px-1 py-3 text-xs font-bold text-muted">
+        Foto: <a class="underline decoration-2 underline-offset-2" href={tip.data.unsplashUrl}>{tip.data.photographer}</a> · Unsplash
+      </figcaption>
+    </figure>
+    <div class="prose prose-doggo prose-lg mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <Content />
+    </div>
+    <p class="mx-auto max-w-3xl px-4 pb-10 text-sm font-bold sm:px-6">
+      <a class="text-sky-deep underline decoration-2 underline-offset-2" href="/tips">
+        ← Meer tips
+      </a>
+    </p>
+  </article>
+</BaseLayout>

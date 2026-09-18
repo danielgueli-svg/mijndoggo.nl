@@ -1,0 +1,67 @@
+---
+import { heroPhotos, heroSrc, site } from "../data/site";
+---
+
+<section class="relative overflow-hidden">
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:py-16">
+    <div>
+      <p class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral shadow-pop ring-2 ring-ink/10">
+        Helemaal NL · {site.domain}
+      </p>
+      <h1 class="mt-5 font-display text-4xl font-semibold leading-[1.05] text-ink sm:text-6xl">
+        Jouw hond.<br />Onze favs.<br />
+        <span class="text-sky-deep">Heleboel kwispel.</span>
+      </h1>
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">
+        {site.name} is de vrolijke hangout voor hondenvrienden. Klik een ras, lees de vibe,
+        en zet je eigen hond in de spotlight. Plus tips die klinken als een vriend, niet als een brochure.
+      </p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a
+          href="#rassen"
+          class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush"
+        >
+          Ontdek rassen
+        </a>
+        <a
+          href="/tips"
+          class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun"
+        >
+          Tips & trucs
+        </a>
+      </div>
+    </div>
+
+    <div class="relative mx-auto grid w-full max-w-md grid-cols-2 gap-3 sm:max-w-lg">
+      {
+        heroPhotos.map((photo, i) => (
+          <figure
+            class:list={[
+              "overflow-hidden rounded-[1.75rem] bg-white shadow-pop-lg ring-2 ring-ink/10",
+              i === 0 && "col-span-2 aspect-[16/9]",
+              i !== 0 && "aspect-[4/5]",
+            ]}
+          >
+            <img
+              src={heroSrc(photo.unsplashId)}
+              alt={photo.alt}
+              width="900"
+              height={i === 0 ? 560 : 1100}
+              class="h-full w-full object-cover"
+              loading={i === 0 ? "eager" : "lazy"}
+            />
+            <figcaption class="sr-only">
+              {photo.caption} — foto {photo.photographer} op Unsplash
+            </figcaption>
+          </figure>
+        ))
+      }
+      <div class="pointer-events-none absolute -left-4 top-8 hidden rotate-[-8deg] rounded-full bg-sun px-3 py-1 text-xs font-extrabold text-ink shadow-pop ring-2 ring-ink/10 sm:block">
+        cute overload
+      </div>
+      <div class="pointer-events-none absolute -right-2 bottom-16 hidden rotate-[6deg] rounded-full bg-sky px-3 py-1 text-xs font-extrabold text-ink shadow-pop ring-2 ring-ink/10 sm:block">
+        woef ✓
+      </div>
+    </div>
+  </div>
+</section>

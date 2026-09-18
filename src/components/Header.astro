@@ -1,0 +1,85 @@
+---
+import Logo from "./Logo.astro";
+import { nav, site } from "../data/site";
+
+const path = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-40 border-b-4 border-ink/10 bg-cream">
+  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
+    <a href="/" class="group flex items-center gap-2.5 rounded-full">
+      <Logo class="h-11 w-11 transition-transform group-hover:rotate-6 group-hover:scale-105" />
+      <span class="leading-tight">
+        <span class="font-display text-xl font-semibold tracking-tight text-ink sm:text-2xl">
+          {site.name}
+        </span>
+        <span class="block text-xs font-bold uppercase tracking-widest text-muted">
+          {site.domain}
+        </span>
+      </span>
+    </a>
+
+    <nav aria-label="Hoofdmenu" class="hidden items-center gap-1 md:flex">
+      {
+        nav.map((item) => {
+          const active =
+            item.href === "/"
+              ? path === "/"
+              : path === item.href || path.startsWith(`${item.href}/`);
+          return (
+            <a
+              href={item.href}
+              aria-current={active ? "page" : undefined}
+              class:list={[
+                "rounded-full px-4 py-2 text-sm font-extrabold transition",
+                active
+                  ? "bg-ink text-cream shadow-pop"
+                  : "text-ink hover:bg-sun",
+              ]}
+            >
+              {item.label}
+            </a>
+          );
+        })
+      }
+    </nav>
+
+    <button
+      id="menu-btn"
+      class="inline-flex items-center gap-2 rounded-full border-2 border-ink bg-white px-3 py-2 text-sm font-extrabold shadow-pop md:hidden"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobiel-menu"
+    >
+      Menu
+    </button>
+  </div>
+  <nav
+    id="mobiel-menu"
+    class="mx-auto hidden max-w-6xl flex-col gap-1 px-4 pb-4 md:hidden"
+    aria-label="Mobiel menu"
+  >
+    {
+      nav.map((item) => (
+        <a
+          href={item.href}
+          class="rounded-2xl bg-white px-4 py-3 font-extrabold text-ink shadow-sm ring-2 ring-ink/10"
+        >
+          {item.label}
+        </a>
+      ))
+    }
+  </nav>
+</header>
+
+<script>
+  const btn = document.getElementById("menu-btn");
+  const menu = document.getElementById("mobiel-menu");
+  btn?.addEventListener("click", () => {
+    const open = btn.getAttribute("aria-expanded") === "true";
+    btn.setAttribute("aria-expanded", String(!open));
+    menu?.classList.toggle("hidden", open);
+    menu?.classList.toggle("flex", !open);
+    btn.textContent = open ? "Menu" : "Sluit";
+  });
+</script>

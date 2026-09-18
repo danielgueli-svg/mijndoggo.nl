@@ -1,0 +1,42 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import TipCard from "../../components/TipCard.astro";
+import { unsplashSrc } from "../../lib/images";
+import { getCollection } from "astro:content";
+
+const tips = (await getCollection("tips")).sort(
+  (a, b) => a.data.publishedAt.getTime() - b.data.publishedAt.getTime(),
+);
+---
+
+<BaseLayout
+  title="Tips & trucs"
+  description="Wasgidsen, wandeltips, toffe plekken en voeding — in het Nederlands, zonder stijve brochuretoon."
+>
+  <div class="mx-auto max-w-6xl px-4 pb-4 pt-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-sky-deep">Tips & trucs</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Voor baasjes die het leuk willen houden</h1>
+    <p class="mt-3 max-w-2xl text-lg text-muted">
+      Geen college, wel bruikbare dingen. Wassen, wandelen, bakkie vol — in het Nederlands,
+      zonder stijve brochuretoon.
+    </p>
+  </div>
+
+  <section class="mx-auto max-w-6xl px-4 py-6 sm:px-6">
+    <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {
+        tips.map((tip) => (
+          <TipCard
+            href={`/tips/${tip.id}`}
+            title={tip.data.title}
+            description={tip.data.description}
+            category={tip.data.category}
+            minutes={tip.data.minutes}
+            image={unsplashSrc(tip.data.heroImage, 800, 450)}
+            imageAlt={tip.data.heroImageAlt}
+          />
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

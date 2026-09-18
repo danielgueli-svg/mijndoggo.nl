@@ -1,0 +1,78 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import OwnerDogs from "../../components/OwnerDogs.tsx";
+import PhotoGallery from "../../components/PhotoGallery.astro";
+import {
+  energyLabels,
+  loadBreedEntry,
+  loadBreeds,
+  sizeLabels,
+  toBreed,
+} from "../../lib/breeds";
+import { breedImageSrc } from "../../lib/images";
+import { render } from "astro:content";
+
+export async function getStaticPaths() {
+  const breeds = await loadBreeds();
+  return breeds.map((breed) => ({
+    params: { slug: breed.slug },
+    props: { slug: breed.slug },
+  }));
+}
+
+const { slug } = Astro.props;
+const entry = await loadBreedEntry(slug);
+if (!entry) {
+  throw new Error(`Onbekend ras: ${slug}`);
+}
+
+const breed = toBreed(entry);
+const { Content } = await render(entry);
+const ogImage = breedImageSrc(breed.image, 1400, 900);
+---
+
+<BaseLayout
+  title={breed.name}
+  description={breed.tagline}
+  image={ogImage}
+>
+  <article>
+    <header class="mx-auto max-w-6xl px-4 pb-4 pt-10 sm:px-6">
+      <p class="text-xs font-extrabold uppercase tracking-widest text-coral">
+        Ras · {breed.origin}
+      </p>
+      <h1 class="mt-2 font-display text-4xl font-semibold sm:text-6xl">{breed.name}</h1>
+      <p class="mt-4 max-w-2xl text-xl font-semibold text-muted">{breed.tagline}</p>
+      <ul class="mt-5 flex flex-wrap gap-2">
+        <li class="rounded-full bg-sun px-3 py-1 text-xs font-extrabold uppercase tracking-wide">
+          {sizeLabels[breed.size]}
+        </li>
+        <li class="rounded-full bg-sky px-3 py-1 text-xs font-extrabold uppercase tracking-wide">
+          {energyLabels[breed.energy]}
+        </li>
+        <li class="rounded-full bg-blush px-3 py-1 text-xs font-extrabold uppercase tracking-wide">
+          {breed.goodWithKids ? "Vaak fijn met kids" : "Niet per se een kids-first ras"}
+        </li>
+        {breed.traits.map((trait) => (
+          <li class="rounded-full bg-white px-3 py-1 text-xs font-extrabold uppercase tracking-wide ring-2 ring-ink/10">
+            {trait}
+          </li>
+        ))}
+      </ul>
+    </header>
+
+    <PhotoGallery images={breed.gallery} breedName={breed.name} />
+
+    <div class="prose prose-doggo prose-lg mx-auto max-w-3xl px-4 py-8 sm:px-6">
+      <Content />
+    </div>
+
+    <OwnerDogs client:load breedSlug={breed.slug} breedName={breed.shortName} />
+
+    <p class="mx-auto max-w-6xl px-4 pb-8 text-sm font-bold sm:px-6">
+      <a class="text-sky-deep underline decoration-2 underline-offset-2" href="/rassen">
+        ← Terug naar alle rassen
+      </a>
+    </p>
+  </article>
+</BaseLayout>
