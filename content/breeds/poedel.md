@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Slimme krullen in een feestoutfit: de poedel is leerhongerig en sociaal, terwijl trim en denkwerk minstens zo belangrijk zijn als het salonplaatje.
+
 ## Temperament
 
-Niet alleen oma's kalenderhond. Gekkig slim, graag bezig, dol op trucs. Toy, dwerg of koning: dezelfde vibe van 'ik snap het sneller, maar ik doe lief'.
+Poedels — of je nu toy, dwerg of koningsformaat kiest — zijn vaak gekkig slim, graag bezig en dol op trucs. Sociaal, een beetje clown, en voor veel neuzen wat vriendelijker bij allergie (geen garantie, wel een plus).
 
-Sociaal, een beetje clown, allergievriendelijker voor veel neuzen (geen garantie, wel een plus).
+Ze snappen sneller dan je denkt, waardoor verveling of te saaie routines al snel zichtbaar wordt. Houd het brein zoet, dan blijft de humor warm.
 
 ## Achtergrond
 
-Ooit waterhond in Duitsland, later Frans salon-icoon. De trim is historie: zwemvlies-look, niet alleen fashion. Onder het kapsel zit een atleet.
+Ooit waterhond (onder meer Duitse wortels), later Frans salonicoon. De klassieke trim heeft historische zwem-functie, niet alleen fashion. Onder het kapsel zit een atleet die wil apporteren, leren en bewegen.
+
+Formaat kiest je levensstijl; het karakter blijft herkenbaar poedel.
 
 ## Verzorging
 
-Trim en borstel zijn non-negotiable, anders woon je met een wolk. Oren droog na zwemmen. Beweging: wandelen plus denkwerk, niet alleen poseren.
+Trim en borstel zijn niet onderhandelbaar, anders woon je met een viltwolk. Oren droog na zwemmen. Beweging: wandelen plus denkwerk, niet alleen poseren. Bij kleinere poedels extra tandzorg.
 
-Tanden: kleine poedels, extra check. Trucs houden hun brein zoet.
+Trucs, geurwerk of agility houden hen scherp zonder dat je alleen maar kilometers hoeft te maken.
 
 ## Voor wie?
 
-Voor baasjes die grooming als bonding zien en een slimme maat willen. Show, sport of schoot: kies je formaat, houd de hersenen bezig.
+Voor baasjes die grooming als bonding zien en een slimme maat willen. Show, sport of schoot: kies je formaat, houd de hersenen bezig. Wie “onderhoudsvrij” zoekt, botst op de krullen; wie wél investeert, krijgt een veelzijdige vriend.

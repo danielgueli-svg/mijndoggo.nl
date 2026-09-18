@@ -25,22 +25,26 @@ gallery:
     sfeer: false
 ---
 
+De Drentsche patrijshond is een Nederlandse allrounder: vriendelijk, kwispelend en graag buiten, met een jachtneus die wandelingen nét iets spannender maakt.
+
 ## Temperament
 
-Vriendelijk, een tikkeltje koppig, dol op buiten. Oranje-wit hoort bij een zondagse heidewandeling. Ze willen bij het gezin, niet in een kennel-verhaal.
+Drenten zijn vaak sociaal, aanhankelijk en enthousiast zonder meteen over de top te gaan. De kwispel voelt soms als een zwaailicht: ze zijn blij dat je er bent. Tegelijk kan een geur of vogel de aandacht trekken, waardoor training en lijnwerk ertoe doen.
 
-Training met humor > sergeant. Ze werken met je mee als het leuk blijft.
+Ze willen graag meedoen met het gezin en bloeien bij milde, consequente begeleiding.
 
 ## Achtergrond
 
-Drenthe, patrijzen, boerderij en jacht in één hond. Nederlands ras om trots op te zijn. Geen hype-import, wel modderige poten.
+Een oorspronkelijk Nederlands jachthondenras uit Drenthe, vroeger de boerderij- en jachtmaat van het platteland. Oranje-witte tekening, vriendelijke uitstraling, veelzijdig in het veld.
+
+Die roots verklaren zowel de zachte omgang met mensen als de zin in snuffelen, zoeken en bewegen in de natuur.
 
 ## Verzorging
 
-Buiten, apporteer, lange neuswandelingen. Vacht: borstel, oren checken. Ze houden van velden, niet van 24/7 solo.
+Wandelingen met snuffelruimte, apporteer- of zoekspellen, en genoeg contact. Vacht is relatief onderhoudsarm, wel borstelen in de rui. Oren en gewicht in de gaten houden.
 
-Energie is vrolijk-hoog. Zonder uitlaatklep wordt koppig extra koppig.
+Als jachthond-in-ruste hebben ze baat bij taken die neus en lichaam combineren, zodat verveling niet tot kattenkwaad leidt.
 
 ## Voor wie?
 
-Mensen die NL-roots én modder oké vinden. Gezin met tuin/velden in de buurt. Pure stad zonder plan: dan moet jij de heide vervangen. Elke dag.
+Voor actieve gezinnen of individuen die van Nederlandse rassen houden en tijd buiten doorbrengen. Pure stad zonder wandelplan past minder. Wie een vrolijke, lokale allrounder zoekt mét respect voor de neus, zit vaak goed.

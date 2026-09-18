@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+De border collie is briljant en intens: een hond die wil werken, meedenken en bewegen, waardoor verveling al snel voelt als het begin van chaos.
+
 ## Temperament
 
-Brein op 200%. Ze herdersen schapen, kinderen, stofzuigers en soms jouw voeten. Intens, gevoelig, gek op werk. Verveling is hun villain origin story.
+Borders hebben een brein dat graag aan staat. Ze herderen schapen, maar ook kinderen, speelgoed of jouw voeten als er te weinig zinvolle taken zijn. Intens, gevoelig en gek op werk — dat is hun kern, niet een tijdelijke puberfase.
 
-Oogcontact is hun taal. Jij bent de zender. Doe het vriendelijk, anders verzinnen ze een eigen radiozender.
+Oogcontact is hun taal; jij bent de zender. Vriendelijke, consequente training werkt beter dan harde druk, want overprikkelde borders worden scherper, niet schattiger.
 
 ## Achtergrond
 
-Grens Engeland–Schotland, schapen, fluitjes, legendes. Nog steeds de koning van herdersproeven. Thuis zonder taak is een verspilde F1-auto op de oprit.
+Het ras komt van de grensstreek Engeland–Schotland, waar fluitjes, schapen en precisiewerk legendes maakten. Nog steeds blinken ze uit in herdersproeven en hondensport.
+
+Thuis zonder taak is ongeveer alsof je een racewagen op de oprit laat staan: de motor is er, de baan ontbreekt. Respecteer die geschiedenis, ook als je geen schapen hebt.
 
 ## Verzorging
 
-Elke dag sport plus brein: agility, frisbee, speuren, tricks. Vacht: borstel, klitten in de oksels. Stimulatie > extra kilometers zonder plan.
+Elke dag sport plus breinwerk: agility, frisbee, speuren, tricks of herdersachtige spellen. Puur kilometers maken zonder nadenken is vaak niet genoeg. Vacht: borstelen, letten op klitten in oksels en broek.
 
-Let op hun 'aan-knop'. Overprikkelde borders worden scherper, niet schattiger.
+Let op hun “aan-knop”: genoeg uitdaging, maar ook echte rust. Overstimulatie maakt hen piekerig of scherp; een goed ritme van werk en ontspanning houdt hen in balans.
 
 ## Voor wie?
 
-Actieve mensen die training leuk vinden. Bankhangers: dit is een project. Een mooi project, maar toch. Kids oké als het huis rustig genoeg is voor die slimme blik.
+Voor actieve mensen die training leuk vinden en tijd willen investeren. Bankhangers krijgen een project — soms een mooi project, maar wel intens. Met kids kan het, als het huis rustig genoeg blijft voor die slimme, gevoelige blik en jij de leiding vriendelijk houdt.

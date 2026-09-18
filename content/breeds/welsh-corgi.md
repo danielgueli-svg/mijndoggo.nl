@@ -25,22 +25,26 @@ gallery:
     sfeer: false
 ---
 
+Korte pootjes, royale blik, doorlopende charme: de corgi is een herder in compact formaat, waardoor training en rugvriendelijke zorg belangrijker zijn dan alleen “aww”.
+
 ## Temperament
 
-Hond van koninginnen én van iedereen die van een laag zwaartepunt houdt. Herderen katten, kids, sokken. Billen: ja, we moeten het daarover hebben. Ze denken dat ze groter zijn dan de bank.
+Corgi’s herderen graag — katten, kids, sokken — en denken soms dat ze groter zijn dan de bank. Komiek met stamboom, alert en leerbaar, mits jij oefent in plaats van alleen te lachen om de billen.
 
-Komiek met stamboom. Side-eye is een taalcursus.
+Zonder mentale uitdaging wordt herderen een flatbrede sport. Met humor én training blijft het charmant.
 
 ## Achtergrond
 
-Wales, Pembroke of Cardigan, vee drijven met enkels als target. Later royal, later meme. De pootjes zijn functioneel én een running gag.
+Wales: Pembroke of Cardigan, vee drijven met enkels als target. Later royal, later internetfavoriet. De pootjes zijn functioneel én een running gag — respecteer vooral de functie: herdersziel in een laag zwaartepunt.
+
+Kies de variant die bij je past, maar reken op energie en mening.
 
 ## Verzorging
 
-Wandelingen, puzzles, géén rug-olympics. Tillen met steun. Gewicht: extra kilo's haten hun rug.
+Wandelingen, puzzels, géén ruggymnastiek. Tillen met steun. Extra kilo’s haten hun rug. Vacht: rui als glitter — borstel mee. Train, anders herdert-ie de hele afdeling.
 
-Vacht: rui als glitter. Trainen, anders herdert-ie de hele flat.
+Bouw sport verstandig op; korte poten zijn geen excuus voor nul beweging, wél voor slim doseren.
 
 ## Voor wie?
 
-Baasjes die niet alleen 'aww' zeggen maar ook oefenen. Gezin: ja, met regels. Bank-only + chips: oneerlijk voor die herdersziel.
+Voor baasjes die niet alleen “aww” zeggen maar ook oefenen. Gezin: ja, met regels. Alleen bank plus chips: oneerlijk voor die herdersziel. Wie beweegt, lacht en traint, krijgt die typische corgi-blik én een loyale maat.

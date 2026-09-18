@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+De cavalier is zachte schootroyalty: sociaal, zoet en graag dichtbij, zonder dat het een fragiel museumstuk hoeft te zijn.
+
 ## Temperament
 
-Vriendelijkste hofhouding ooit. Mensen, honden, kussens, nóg een kussen. Niet te fragiel voor een parkloopje, te zacht om de hele dag alleen te piekeren. Dit is een hond die bij je wil zijn.
+Dit is een hond die bij je wil zijn — bij mensen, soms bij andere honden, en vrijwel altijd bij een kussen. Weinig “randjes”, veel hart. Ze merken sfeer en spanning in huis, waardoor jouw stress soms ook de hunne wordt.
 
-Zero edge, full heart. Soms té. Ze merken jouw stress en nemen 'm over.
+Niet te breekbaar voor een parkloopje, wél te gevoelig om de hele dag alleen te piekeren. Nabijheid is hun comfortzone.
 
 ## Achtergrond
 
-Britse royalty, Charles II, later de cavalier-scheiding van de King Charles. Schoothond met spaniel-oorvleugels. Paleis toen, bank nu.
+Britse royalty, verbonden aan Charles II, later onderscheiden als cavalier naast de King Charles-spaniël. Schoothond met spanieloren: paleis toen, bank nu.
+
+Die geschiedenis verklaart zowel de zachte omgang als de behoefte aan menselijk gezelschap.
 
 ## Verzorging
 
-Korte tot middel lange wandelingen, veel samen. Oren en vacht: borstel. Hart: dit ras vraagt checks, geen skip-de-dierenarts.
+Korte tot middelmatige wandelingen en veel samen-zijn. Oren en vacht vragen borstelritme; hartcontroles zijn bij dit ras geen optionele luxe. Geen extreme sport nodig, wél aandacht voor tanden en gewicht — schoothondjes krijgen sneller “extra toast”.
 
-Geen extreme sport. Wél tanden en gewicht, want schoothondjes krijgen extra toast.
+Regelmatige dierenartsbezoeken horen bij liefdevol houden, niet bij paniek.
 
 ## Voor wie?
 
-Mensen die thuis zijn (genoeg) en een zoete schaduw willen. Gezin: vaak een knuffelhit. Workaholics zonder plan: kies een zelfstandiger ras, of regel oppas alsof het school is.
+Voor mensen die genoeg thuis zijn (of goede opvang regelen) en een zoete schaduw willen. In een gezin vaak een knuffelhit. Workaholics zonder plan kiezen beter een zelfstandiger ras, of organiseren oppas alsof het school is — want alleen voelt voor veel cavaliers zwaar.

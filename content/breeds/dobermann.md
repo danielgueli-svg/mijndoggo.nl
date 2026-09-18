@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Strakke jas, plakkerig hart: de dobermann is alert en trouw, en bloeit als jij duidelijke, milde leiding geeft zonder het imago zwaarder te maken dan de hond.
+
 ## Temperament
 
-Superheld-jas, thuis vaak een overgroeide schoothond. Plakkerig, slim, sportief, gevoelig voor sfeer. Schreeuwen werkt niet. Samen oefenen wél.
+Dobermanns zijn vaak scherp van geest, loyaal aan hun mensen en graag dichtbij — soms letterlijk als schaduw. Ze merken spanning en vragen een baasje dat rustig en consequent is, zodat waakzaamheid niet omslaat in onzekerheid.
 
-Ze willen weten dat jij de leiding hebt zonder gedoe. Dan krijg je wow plus knuffel.
+Met goede socialisatie en training worden het stabiele, aanhankelijke partners; chaos of harde druk maakt hen eerder scherper dan “stoerder”.
 
 ## Achtergrond
 
-Duitsland, Herr Dobermann, belastinginner die een scherpe, trouwe maat wilde. Later politie, sport, gezin. De crop-oren-look is niet nodig om de hond te zijn.
+Het ras ontstond in Duitsland eind negentiende eeuw, verbonden aan belastingambtenaar Karl Friedrich Louis Dobermann, die een loyale, waakzame hond wilde. Later werd het een elegant werk- en gezinshondras met die iconische silhouet.
+
+Geschiedenis van waken en werken betekent: hersenen én lichaam willen iets zinvols doen.
 
 ## Verzorging
 
-Dagelijkse beweging en brein. Vacht: wasbord, klaar. Ze koelen snel af — trui in de kou is geen meme.
+Dagelijkse beweging, training en mentale uitdaging. Korte vacht, relatief weinig gedoe, wél aandacht voor gewrichten, hart en gewicht via de dierenarts. Socialisatie vroeg en breed: mensen, geluiden, situaties.
 
-Socialisatie, geen isolatie. Maag/draaien: verstandig voeren, niet sporten op volle maag.
+Hitte en gladde vloeren verdienen aandacht bij intensieve sport. Kwaliteit van contact weegt zwaarder dan eindeloze kilometers zonder plan.
 
 ## Voor wie?
 
-Baasjes die training elegant vinden en tijd hebben. Niet voor impuls-stoer. Kids: kan, in een rustig-duidelijk huis. Jij bent hun persoon. Wees er.
+Voor ervaren of leergierige baasjes die tijd steken in de relatie, niet in het sterimago. Kids kunnen, mét respect en begeleiding. Statuszoekers die alleen de look willen: kies iets anders. Wie rust, training en nabijheid biedt, krijgt vaak een diep verbonden hond.

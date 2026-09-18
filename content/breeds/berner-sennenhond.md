@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Drie kleuren en een groot, zacht hart: de Berner sennenhond voelt als een wandelende knuffelbank, mits je ruimte, tijd en een rustig groeitempo kunt bieden.
+
 ## Temperament
 
-Wandelende knuffelbanken. Groot, (later) kalm, vacht die sneeuw, modder en je hart vasthoudt. Pups zijn clowns die hun eigen poten nog installeren.
+Berners zijn over het algemeen zacht met hun mensen en groeien uit tot kalme, aanhankelijke reuzen. Pups zijn vaak nog onhandige clowns die hun eigen poten lijken te installeren, terwijl volwassenen liever knuffelen dan eindeloos ravotten.
 
-Zacht met hun mensen. Een beetje reserved bij drukte, smelten op de bank.
+Bij drukte kunnen ze wat gereserveerd zijn, maar thuis smelten ze vaak op de bank. Ze zoeken nabijheid zonder dat ze per se de hele buurt hoeven te vermaken.
 
 ## Achtergrond
 
-Zwitserse boerderijhond: karren, koeien, gezelschap. Drie kleuren als ansichtkaart. Geen alpine-modeaccessoire — wel een lijf dat je serieus moet nemen.
+Dit Zwitserse boerderijras hielp vroeger met karren, vee en gezelschap. De driekleurige vacht is iconisch, maar erachter zit een fors lijf dat je serieus moet nemen: niet als modeaccessoire, wel als hond met gewicht, groei en verzorgingsbehoeften.
+
+Ze horen bij mensen die ruimte en geduld hebben, zowel letterlijk als in de opvoeding.
 
 ## Verzorging
 
-Niet te gek rennen op jonge leeftijd. Groei is traag, gewrichten zijn een ding. Zomer: schaduw, geen middagwandeling over asfalt.
+Jonge Berners niet te wild laten rennen of springen: de groei gaat relatief traag en gewrichten vragen bescherming. In de zomer: schaduw en geen hete asfaltwandelingen midden op de dag.
 
-Stofzuiger gaat overtime. Borstel is bonding. Check met de dierenarts hun bekende rasdingen, zonder paniek-google.
+De vacht betekent stofzuigen en borstelen — vaak juist een fijn moment van bonding. Bespreek met de dierenarts bekende rasdingen zonder paniek te googelen; preventie en rustig tempo helpen meer dan piekeren.
 
 ## Voor wie?
 
-Mensen met ruimte, tijd, en zin in een lieve reus. Gezin: vaak goud. Tiny house + fulltime baan elders: oneerlijk voor iedereen.
+Voor mensen met ruimte, tijd en zin in een lieve reus. In een gezin met respectvolle kids is het vaak goud; in een tiny house met fulltime baan elders wordt het oneerlijk voor hond én mens. Als je wilt knuffelen, borstelen en rustig samenleven, past dit ras vaak warm.

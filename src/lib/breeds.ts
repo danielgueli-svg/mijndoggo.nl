@@ -27,9 +27,9 @@ export const sizeLabels: Record<BreedSize, string> = {
 };
 
 export const energyLabels: Record<BreedEnergy, string> = {
-  laag: "Chill",
+  laag: "Rustiger tempo",
   middel: "Vrolijk actief",
-  hoog: "Turbo",
+  hoog: "Veel energie",
 };
 
 export function coverImage(entry: BreedEntry): BreedImage {

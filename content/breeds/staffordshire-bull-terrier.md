@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Spierbundel met knuffelbediening: de stafford is stoer én zoet voor “zijn” mensen, terwijl imago-lawaai vaak harder praat dan de hond zelf.
+
 ## Temperament
 
-Staffies zijn stoer en zoet in één lijf. Plakken aan hun mensen, stoeien graag, en checken of de bank nog een staff-vormig gaatje overheeft. Veel spieren, nog meer hart.
+Staffies plakken aan hun gezin, stoeien graag en checken of de bank nog een staff-vormig gaatje overheeft. Veel spieren, nog meer hart. Ze zijn niet bedoeld als statusding; wél als jouw hond — duidelijk én lief opgevoed.
 
-Niet een statushond. Jouw hond. Duidelijk én lief opvoeden, dan bloeit-ie.
+Met vroege, rustige socialisatie bloeien ze; chaos-hondenschool als kermis helpt zelden.
 
 ## Achtergrond
 
-Engeland, 19e eeuw, later gezinsmaat. Het imago is lawaaiiger dan de hond. Wie een staff kent, kent vooral een knuffelkont met biceps.
+Engeland, negentiende eeuw, later vooral gezinsmaat. Het publieke imago is lawaaiiger dan veel individuele honden. Wie een staff kent, kent vaak een knuffelkont met biceps — mits de mens verantwoordelijkheid neemt.
+
+Geschiedenis vraagt nuance: niet ontkennen, wél eerlijk en liefdevol houden.
 
 ## Verzorging
 
-Stoeien + wandelen + denkspeelgoed. Huid: kort, zon slim aanpakken. Socialisatie: vroeg, rustig, geen chaos-hondenschool als kermis.
+Stoeien, wandelen, denkspeelgoed. Korte vacht; zon slim aanpakken. Gewicht en gewrichten bewaken: spiermassa is geen excuus voor chips. Socialiseer vroeg, rustig, positief.
 
-Gewicht en gewrichten in de gaten. Spiermassa is geen excuus voor chips.
+Training met beloning en duidelijkheid bouwt vertrouwen sneller dan harde mythes.
 
 ## Voor wie?
 
-Baasjes die tijd in de relatie steken, niet in het imago. Vaak fijn met 'hun' kids. Hondenpark-anarchie: niet hun genre. Jij kent je hond, dat telt.
+Voor baasjes die tijd in de relatie steken, niet in het imago. Vaak fijn met “hun” kids. Chaos in het hondenpark is niet hun genre. Jij kent je hond — dat telt. Statuszoekers: ga ergens anders stoer doen.

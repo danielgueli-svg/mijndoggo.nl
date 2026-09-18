@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Een witte wolk met vast schootabonnement: de maltezer is aanhankelijk en vrolijk in mini, terwijl vachtverzorging en tandzorg het verschil maken tussen sprookje en klittenchaos.
+
 ## Temperament
 
-Sneeuwballetjes met schoot-talent. Zacht, aanhankelijk, licht beledigd als je zonder hen naar de keuken loopt. Modder is hun aartsvijand, knuffels hun levensdoel.
+Maltezer zijn sociale schoothonden die graag bij “hun” mens zijn, speels blijven en sfeer aanvoelen. Ze zijn niet gebouwd als waakhond-op-steroiden, wél als metgezel die knuffels en korte avonturen wil.
 
-Niet laf, wél extra. Ze merken alles. Jouw mood ook.
+Alleen te lang thuis valt zwaar; nabijheid is hun comfort. Met milde training blijven ze charmante, lichte huisgenoten.
 
 ## Achtergrond
 
-Oud mediterraan gezelschapshondje, eilanden, havens, schootjes van mensen met smaak. De witte zijde is het merk. Onder de wolk: een alert maatske.
+Oud Mediterraan gezelschapshondenras, eeuwenlang geliefd om de witte vacht en het zachte karakter. Paleis- en salonverleden, nu bank en stadsleven. Onder de wolk zit een alert, soms koppig klein hondje — geen pluchen kussen.
+
+Geschiedenis van nabijheid verklaart de behoefte aan menselijk contact.
 
 ## Verzorging
 
-Vacht = lifestyle. Dagelijks borstelen of een puppy cut. Tranenstrepen, tanden, geen marathon.
+Dagelijks of bijna dagelijks borstelen, anders worden klitten de baas. Ogen schoonhouden (tranenstrepen), tanden serieus nemen. Korte wandelingen en binnenspel volstaan vaak; springen van hoge banken vermijden bij kwetsbare lijfjes.
 
-Korte wandelingen, veel samen-zijn. Alleen thuis? Dan wordt de wolk een sirene.
+Trim of lang haar: kies een ritme en houd het vol. Dat is liefde, geen ijdelheid.
 
 ## Voor wie?
 
-Wie een metgezel wil, geen trailbuddy. Elegant, nabij, een beetje diva. Kids die zacht zijn: oké. Ruw huis: kies een tank.
+Voor baasjes die grooming oké vinden en een zachte schaduw willen. Kids die zacht doen: ja. Ruwe peuterhanden: nee. Wie geen borstel wil zien, kiest een andere vacht. Met tijd voor schoot én kam krijgt je een wolk die blijft stralen.

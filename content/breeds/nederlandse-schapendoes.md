@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Onder die pluizenwolk zit een lenige herder met clownneus: vrolijk, werkgericht en graag in beweging, waardoor grooming én sport allebei op de agenda horen.
+
 ## Temperament
 
-Nederlandse herder in een festivalpruik. Onder het haar: lenig, vrolijk, werk plus kattenkwaad. Puberteit lijkt een abonnement. Agility-mensen knikken heftig.
+Schapendoezen zijn speels, intelligent en plakkerig van hart, met een puberteit die soms voelt als abonnement. Ze combineren herdersbrein met kattenkwaad: agility-mensen knikken herkennend. Zonder job wordt de wolk creatief in huis — niet altijd schattig creatief.
 
-Clownsneus, slim lijf, plakkerig hart.
+Met humor, training en genoeg uitlaatkleppen blijven ze stralende, clowneske partners.
 
 ## Achtergrond
 
-Nederlandse herdershond, bijna uitgestorven in de oorlog, teruggefokt. Geen poedel-cosplay: een herder met extra volume. Trots pluis van hier.
+Nederlandse herdershond, bijna uitgestorven in de oorlog en later teruggefokt. Geen poedelverkleedpartij: een herder met extra volume en trots lokale roots. Lang haar, wendbaar lijf, heldere blik achter de pony.
+
+Die geschiedenis van bijna-verdwijnen maakt zorgvuldige fok en echte inzet extra betekenisvol.
 
 ## Verzorging
 
-Borstelritueel = bonding. Skippen = dreadlocks. Sport: agility, tricks, rennen. Zonder job wordt de wolk een binnenhuis-architect.
+Borstelritueel is bonding; overslaan wordt dreadlocks. Sport: agility, tricks, rennen, denkwerk. Ogen soms verstopt achter haar — knippen voor zicht is zorg, geen ijdelheid.
 
-Ogen soms verstopt achter haar — knippen voor zicht is liefde, geen vanity.
+Jonge honden doseren in belasting; hersenen én spieren willen meedoen, maar overprikkeling helpt niemand.
 
 ## Voor wie?
 
-Actieve mensen die grooming als grap én taak zien. Gezin met humor. Bank-only: de pluizenwolk wint, en niet op de leuke manier.
+Voor actieve mensen die grooming als grap én taak zien. Gezin met humor past vaak. Alleen de bank: de pluizenwolk “wint”, en niet op de leuke manier. Wie beweegt, borstelt en lacht, vindt hier vaak een thuisras om trots op te zijn.

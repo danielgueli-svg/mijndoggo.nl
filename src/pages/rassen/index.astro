@@ -8,18 +8,21 @@ const breeds = await loadBreeds();
 
 <BaseLayout
   title="Rassen"
-  description="Overzicht van hondrassen op MijnDoggo. Klik een ras en lees de vibe — plus een plekje voor honden van eigenaren."
+  description="Van labrador tot stabij: filter op formaat, zoek op naam, en tik door naar het verhaal — zodat je in alle rust kunt kijken welk temperament bij jullie past."
 >
   <div class="mx-auto max-w-6xl px-4 pb-2 pt-10 sm:px-6">
     <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Ras-klikker</p>
-    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Alle rassen in één vrolijke grid</h1>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Alle rassen in één overzichtelijke grid</h1>
     <p class="mt-3 max-w-2xl text-lg text-muted">
-      Van labrador tot stabij. Filter op formaat, zoek op naam, en tik door naar het verhaal.
+      Van labrador tot stabij: filter op formaat, zoek op naam, en tik door naar het verhaal —
+      zodat je in alle rust kunt kijken welk temperament bij jullie past. Geen haast, geen druk:
+      gewoon een warme klikplaat met Nederlandse teksten die je écht iets vertellen over het
+      dagelijks leven met zo’n hond.
     </p>
   </div>
   <BreedClicker
     breeds={breeds}
-    heading="Kies je crush"
-    intro="Meer rassen? Drop een Markdown-bestand in content/breeds/. Echt, zo plat is het."
+    heading="Waar gaat je hart sneller van?"
+    intro="Mis je een ras? Dan drop je een Markdown-bestand in content/breeds/ — zo plat is het echt, terwijl de verhalen zelf wél de ruimte krijgen die ze verdienen. Filter, zoek, en lees verder als iets je aanspreekt; de rest kan wachten tot je eraan toe bent."
   />
 </BaseLayout>

@@ -25,22 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Een beagle is vrolijk en sociaal, maar als de neus een spoor oppikt, lijkt de rest van de wereld even bijzaak — en daar zit zowel de charme als de uitdaging.
+
 ## Temperament
 
-Beagles ruiken een boterham op drie straten. Vrolijk, sociaal, en selectief doof als de neus de leiding heeft. Kwispelen naar honden: check. Tunnel naar België in de tuin: ook check.
+Beagles zijn meutedieren: ze zoeken gezelschap, kwispelen graag naar andere honden en brengen een lichte, speelse sfeer mee. Tegelijk kunnen ze selectief doof lijken zodra een geur de leiding neemt, waardoor wandelingen soms meer snuffelavontuur dan nette route worden.
 
-Ze zijn pack-dieren. Alleen thuis janken ze hun cv vol.
+Alleen thuis valt hun meute-instinct op: zonder voldoende gezelschap of afleiding gaan sommigen piepen of janken. Met humor, structuur en genoeg snuffeltijd blijven ze meestal vrolijke huisgenoten.
 
 ## Achtergrond
 
-Engelse jachthond, hazen, meute. Die meute-stem (het beagle-lied) is feature, geen bug, al denkt je burencommissie daar anders over.
+De beagle komt uit Engeland als jachthond op hazen, vaak in meute. Die geschiedenis verklaart de neus, de sociale aard en het kenmerkende “beagle-lied” — typisch voor de hond, al denken buren daar soms anders over.
+
+Vandaag zijn ze vooral gezelschapshonden, maar de jachtgenen verdwijnen niet zomaar: de neus blijft het stuur.
 
 ## Verzorging
 
-Lijnvoering is survival. Snuffelwandelingen > saaie ronden. Voer achter slot: ze zijn hobbykoks met inbraakskills.
+Lijnvoering en een stevig hek zijn geen overdreven voorzorg, want een geurspoor kan ver leiden. Snuffelwandelingen werken beter dan saaie rondjes om het blok. Voer veilig opbergen: beagles zijn creatieve snackjagers.
 
-Oren: lang, dus checken op viezigheid. Gewicht: de neus vindt extra snacks eerder dan jij.
+Lange oren vragen regelmatige controle op vocht en viezigheid, en gewicht verdient aandacht omdat de neus snacks eerder vindt dan jij. Beweging plus neuswerk houdt hoofd én lijf in balans.
 
 ## Voor wie?
 
-Gezinnen die tegen een vrolijk koppeltje kunnen. Jagers-van-de-bank: nee. Humor + hek + tijd = beagle-geluk.
+Voor gezinnen of huishoudens die tegen een vrolijk, soms koppig karakter kunnen — mét tijd, hek en humor. Pure bankhangers zonder wandelplan krijgen het lastig, terwijl mensen die snuffelen, spelen en samen optrekken vaak een blijvende vriendschap vinden.

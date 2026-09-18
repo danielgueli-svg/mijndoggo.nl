@@ -25,24 +25,26 @@ gallery:
     sfeer: true
 ---
 
+Natte neus, groot hart en een zwak voor tennisballen: de labrador is vriendelijk tot in de staartpunt, terwijl beweging en een slim voerschema net zo belangrijk zijn als die beroemde knuffelblik.
+
 ## Temperament
 
-Labradors zijn de klasgenoten die altijd een extra koekje in hun tas hebben. Vriendelijk tot in hun staartpunt, een beetje food-obsessed, en dol op mensen — ook op de postbode, de buurvrouw, en die ene stoel die eigenlijk niet voor honden is.
+Labradors zijn sociale klasgenoten die graag pleasen, mensen opzoeken en soms vinden dat elke stoel eigenlijk voor honden is. Gek op eten, met een knipoog: ze liegen met hun ogen tot de bak leeg is — en vragen dan nog een ronde.
 
-Ze willen graag pleasen. Dat is hun superkracht én hun valkuil: zonder duidelijke regels eten ze ook jouw huiswerk. Letterlijk, soms.
+Zonder duidelijke, milde regels eten ze ook weleens iets wat niet van hen is. Met structuur en genoeg actie blijven ze warme, leerbare gezinshonden.
 
 ## Achtergrond
 
-Ooit visnetten binnenhalen in Newfoundland, later 'officieel' Brits als retriever. Water zit in hun cv. Die otterstaart is geen accessoire, het is een roer.
+Ooit netten en apport in Newfoundland, later “officieel” Brits als retriever. Water zit in hun geschiedenis; die otterstaart is meer roer dan accessoire. Vandaag: gezinshond, hulphond en klassieke “lieve grote hond” — terecht, al betekent lieve grote hond ook: veel hond.
 
-Vandaag zijn ze gezinshond, hulphond, en de default 'we willen een lieve grote hond'. Fair. Alleen: lieve grote hond = ook veel hond.
+Werk- en showlijnen verschillen in tempo; de vriendelijkheid zit meestal diep.
 
 ## Verzorging
 
-Beweging is geen optie, het is het abonnement. Lange wandelingen, zwemmen, apporteer-spel. Vacht: kort, wel een seizoensbui aan haren. Oren checken na de sloot.
+Beweging is een abonnement: lange wandelingen, zwemmen, apporteren. Korte vacht, wél seizoensrui. Oren checken na de sloot. Gewicht is het grote thema — labradors zijn meesters in snackonderhandeling.
 
-Let op gewicht. Labradors liegen met hun ogen tot de voerbak leeg is. En nog een keer.
+Heupen en ellebogen: slank houden en sport bij jongeren doseren. Training als spel werkt vaak fantastisch.
 
 ## Voor wie?
 
-Voor mensen die écht tijd hebben. Gezin? Vaak een hit, als kids leren dat een kwispel geen vrijbrief is om te klimmen. Appartement-only zonder plan: minder chill. Jij sport, jij lacht, jij deelt de bank: match.
+Voor mensen die écht tijd hebben. Gezin? Vaak een hit, als kids leren dat een kwispel geen klimkaart is. Appartement zonder plan: minder fijn. Jij beweegt, lacht en deelt de bank — dan voelt dit ras als thuiskomen.
