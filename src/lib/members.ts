@@ -230,10 +230,9 @@ export function createMember(input: MemberWrite): Member {
 export function placesByMemberCount(members: Member[]): PlaceCount[] {
   const counts = new Map<string, number>();
   for (const member of members) {
-    const plaats = member.woonplaats.trim();
+    const plaats = findNlPlace(member.woonplaats) ?? member.woonplaats.trim();
     if (!plaats) continue;
-    const key = plaats;
-    counts.set(key, (counts.get(key) ?? 0) + 1);
+    counts.set(plaats, (counts.get(plaats) ?? 0) + 1);
   }
   return [...counts.entries()]
     .map(([plaats, count]) => ({ plaats, count }))
@@ -242,6 +241,14 @@ export function placesByMemberCount(members: Member[]): PlaceCount[] {
 
 export function displayNickname(member: Member): string {
   return member.nickname || "Baasje";
+}
+
+export function isDemoMember(member: Member): boolean {
+  return member.id.startsWith("demo-");
+}
+
+export function memberPlace(member: Member): string {
+  return findNlPlace(member.woonplaats) ?? member.woonplaats.trim();
 }
 
 export function validateMemberWrite(input: MemberWrite): string[] {

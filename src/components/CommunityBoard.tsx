@@ -3,7 +3,9 @@ import { fold } from "../lib/text";
 import { filterNlPlaces, findNlPlace, isNlPlace } from "../lib/nl-places";
 import {
   displayNickname,
+  isDemoMember,
   listMembers,
+  memberPlace,
   placesByMemberCount,
   subscribeMembers,
   type Member,
@@ -47,17 +49,16 @@ export default function CommunityBoard() {
   );
 
   const filteredMembers = useMemo(() => {
-    if (!q) return dutchMembers;
+    if (!q) return [];
     return dutchMembers.filter((member) => {
-      const plaats = fold(member.woonplaats);
+      const plaats = fold(memberPlace(member));
+      if (selectedPlace) return plaats === fold(selectedPlace);
       return plaats.includes(q);
     });
-  }, [dutchMembers, q]);
+  }, [dutchMembers, q, selectedPlace]);
 
-  const places = useMemo(
-    () => placesByMemberCount(q ? filteredMembers : dutchMembers),
-    [dutchMembers, filteredMembers, q],
-  );
+  const places = useMemo(() => placesByMemberCount(dutchMembers), [dutchMembers]);
+  const hasDemo = dutchMembers.some(isDemoMember);
 
   const spots = useMemo(
     () => walkSpotsForCity(selectedPlace ?? query),
@@ -82,7 +83,8 @@ export default function CommunityBoard() {
           Plekken, gesorteerd op aantal baasjes
         </h2>
         <p className="mt-1 text-sm font-bold text-muted">
-          Alleen Nederlandse woonplaatsen, gesorteerd op aantal leden. Tik een plaats.
+          Sterkste community eerst. Tik een rij, of zoek hierboven.
+          {hasDemo ? " Een paar voorbeeld-baasjes staan klaar, zodat de lijst niet leeg is." : ""}
         </p>
         {!ready && <p className="mt-3 text-sm font-bold text-muted">Plekken laden…</p>}
         {ready && places.length === 0 && (
@@ -91,20 +93,25 @@ export default function CommunityBoard() {
           </p>
         )}
         {places.length > 0 && (
-          <ul className="mt-4 flex flex-wrap gap-2">
+          <ul className="mt-4 divide-y divide-ink/10 overflow-hidden rounded-[1.4rem] bg-white ring-2 ring-ink/10">
             {places.map((place) => {
-              const active = fold(query) === fold(place.plaats);
+              const active = selectedPlace
+                ? fold(selectedPlace) === fold(place.plaats)
+                : fold(query) === fold(place.plaats);
               return (
                 <li key={place.plaats}>
                   <button
                     type="button"
                     onClick={() => setQuery(active ? "" : place.plaats)}
-                    className={`rounded-full px-4 py-2 text-sm font-extrabold ring-2 ring-ink/10 ${
+                    className={`flex w-full items-center justify-between gap-3 px-4 py-3 text-left text-sm font-extrabold ${
                       active ? "bg-ink text-cream" : "bg-white hover:bg-sun"
                     }`}
                   >
-                    {place.plaats} · {place.count}{" "}
-                    {place.count === 1 ? "lid" : "leden"}
+                    <span>
+                      {place.plaats} · {place.count}{" "}
+                      {place.count === 1 ? "lid" : "leden"}
+                    </span>
+                    {active && <span className="text-[10px] font-extrabold uppercase tracking-widest">gekozen</span>}
                   </button>
                 </li>
               );
@@ -115,18 +122,21 @@ export default function CommunityBoard() {
 
       <section aria-labelledby="leden-titel">
         <h2 id="leden-titel" className="font-display text-2xl font-semibold">
-          {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Alle baasjes"}
+          {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Baasjes in een stad"}
         </h2>
         <p className="mt-1 text-sm font-bold text-muted">
           Nickname, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
         </p>
-        {ready && filteredMembers.length === 0 && (
+        {ready && !q && (
+          <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
+            Tik een plaats in de lijst of typ een stad, bijvoorbeeld Amsterdam.
+          </p>
+        )}
+        {ready && q && filteredMembers.length === 0 && (
           <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
             {nlHint
               ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Amsterdam of Utrecht."
-              : dutchMembers.length === 0
-                ? "Nog niemand aangemeld op dit apparaat."
-                : "Niemand in die woonplaats — probeer een andere Nederlandse stad, zoals Amsterdam."}
+              : "Niemand in die woonplaats — probeer een andere Nederlandse stad, zoals Amsterdam."}
           </p>
         )}
         {filteredMembers.length > 0 && (
@@ -138,7 +148,14 @@ export default function CommunityBoard() {
               >
                 <span>
                   <span className="font-extrabold">{displayNickname(member)}</span>
-                  <span className="mt-0.5 block text-sm font-bold text-muted">{member.breedName}</span>
+                  <span className="mt-0.5 block text-sm font-bold text-muted">
+                    {member.breedName || "Ras onbekend"}
+                  </span>
+                  {isDemoMember(member) && (
+                    <span className="mt-1 inline-block text-[10px] font-extrabold uppercase tracking-widest text-sky-deep">
+                      voorbeeld
+                    </span>
+                  )}
                 </span>
                 {member.wantsWalk ? (
                   <span className="shrink-0 rounded-full bg-sun px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide">
