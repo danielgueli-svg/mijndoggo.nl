@@ -1,5 +1,5 @@
 import { useMemo, useState } from "react";
-import type { CatalogBreed } from "../lib/catalog";
+import { ALPHABET, breedInitial, type CatalogBreed } from "../lib/catalog";
 import { fold } from "../lib/text";
 
 type Props = {
@@ -9,8 +9,6 @@ type Props = {
   id?: string;
   label?: string;
 };
-
-const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
 export default function BreedPicker({
   breeds,
@@ -30,8 +28,8 @@ export default function BreedPicker({
   const availableLetters = useMemo(() => {
     const set = new Set<string>();
     for (const breed of sorted) {
-      const first = fold(breed.name).charAt(0).toUpperCase();
-      if (LETTERS.includes(first)) set.add(first);
+      const first = breedInitial(breed.name);
+      if (ALPHABET.includes(first)) set.add(first);
     }
     return set;
   }, [sorted]);
@@ -40,7 +38,7 @@ export default function BreedPicker({
     const q = fold(query);
     return sorted.filter((breed) => {
       const name = fold(`${breed.name} ${breed.shortName}`);
-      const first = fold(breed.name).charAt(0).toUpperCase();
+      const first = breedInitial(breed.name);
       const letterOk = !letter || first === letter;
       const queryOk = !q || name.includes(q);
       return letterOk && queryOk;
@@ -48,6 +46,12 @@ export default function BreedPicker({
   }, [sorted, query, letter]);
 
   const selected = sorted.find((breed) => breed.slug === value);
+
+  function pick(breed: CatalogBreed) {
+    onChange(breed.slug);
+    setQuery(breed.name);
+    setLetter(null);
+  }
 
   return (
     <div className="grid gap-2">
@@ -61,86 +65,98 @@ export default function BreedPicker({
             setQuery(event.target.value);
             if (event.target.value) setLetter(null);
           }}
-          placeholder="Typ een ras, of tik een letter…"
+          placeholder="Typ een ras, of open de A–Z-lijst…"
+          autoComplete="off"
           className="rounded-2xl border-2 border-ink/10 bg-white px-4 py-2.5 font-bold"
         />
       </label>
 
-      <div className="flex flex-wrap gap-1" role="group" aria-label="Filter op beginletter">
-        <button
-          type="button"
-          onClick={() => setLetter(null)}
-          className={`rounded-full px-2.5 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
-            letter === null ? "bg-ink text-cream" : "bg-white text-ink hover:bg-sun"
-          }`}
-        >
-          Alle
-        </button>
-        {LETTERS.map((item) => {
-          const enabled = availableLetters.has(item);
-          const active = letter === item;
-          return (
-            <button
-              key={item}
-              type="button"
-              disabled={!enabled}
-              onClick={() => {
-                setLetter(item);
-                setQuery("");
-              }}
-              className={`rounded-full px-2 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
-                active
-                  ? "bg-ink text-cream"
-                  : enabled
-                    ? "bg-white text-ink hover:bg-sun"
-                    : "bg-white/50 text-muted/50"
-              }`}
-            >
-              {item}
-            </button>
-          );
-        })}
-      </div>
+      <details className="rounded-[1.2rem] bg-cream p-3 ring-2 ring-ink/10" open>
+        <summary className="cursor-pointer text-sm font-extrabold">
+          Kies uit de A–Z-lijst
+          <span className="ml-2 font-bold text-muted">
+            tik open, klik een ras — typen hoeft niet
+          </span>
+        </summary>
 
-      {selected && (
-        <p className="text-xs font-bold text-muted">
-          Gekozen: <span className="text-ink">{selected.name}</span>
-        </p>
-      )}
-
-      <ul
-        className="max-h-56 overflow-auto rounded-[1.2rem] bg-white p-1 ring-2 ring-ink/10"
-        role="listbox"
-        aria-label="Rassen"
-      >
-        {visible.length === 0 ? (
-          <li className="px-4 py-3 text-sm font-bold text-muted">Geen ras met die letter of naam.</li>
-        ) : (
-          visible.map((breed) => {
-            const active = breed.slug === value;
+        <div className="mt-3 flex flex-wrap gap-1" role="group" aria-label="Filter op beginletter">
+          <button
+            type="button"
+            onClick={() => setLetter(null)}
+            className={`rounded-full px-2.5 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+              letter === null ? "bg-ink text-cream" : "bg-white text-ink hover:bg-sun"
+            }`}
+          >
+            Alle
+          </button>
+          {ALPHABET.map((item) => {
+            const enabled = availableLetters.has(item);
+            const active = letter === item;
             return (
-              <li key={`${breed.custom ? "c" : "s"}-${breed.slug}`}>
-                <button
-                  type="button"
-                  role="option"
-                  aria-selected={active}
-                  onClick={() => onChange(breed.slug)}
-                  className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm font-extrabold ${
-                    active ? "bg-sun text-ink" : "hover:bg-foam"
-                  }`}
-                >
-                  <span>{breed.name}</span>
-                  {breed.custom && (
-                    <span className="text-[10px] font-extrabold uppercase tracking-widest text-sky-deep">
-                      Eigen
-                    </span>
-                  )}
-                </button>
-              </li>
+              <button
+                key={item}
+                type="button"
+                disabled={!enabled}
+                onClick={() => {
+                  setLetter(item);
+                  setQuery("");
+                }}
+                className={`rounded-full px-2 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+                  active
+                    ? "bg-ink text-cream"
+                    : enabled
+                      ? "bg-white text-ink hover:bg-sun"
+                      : "bg-white/50 text-muted/50"
+                }`}
+              >
+                {item}
+              </button>
             );
-          })
+          })}
+        </div>
+
+        {selected && (
+          <p className="mt-2 text-xs font-bold text-muted">
+            Gekozen: <span className="text-ink">{selected.name}</span>
+          </p>
         )}
-      </ul>
+
+        <ul
+          className="mt-2 max-h-56 overflow-auto rounded-[1.2rem] bg-white p-1 ring-2 ring-ink/10"
+          role="listbox"
+          aria-label="Rassen op alfabet"
+        >
+          {visible.length === 0 ? (
+            <li className="px-4 py-3 text-sm font-bold text-muted">
+              Geen ras met die letter of naam.
+            </li>
+          ) : (
+            visible.map((breed) => {
+              const active = breed.slug === value;
+              return (
+                <li key={`${breed.custom ? "c" : "s"}-${breed.slug}`}>
+                  <button
+                    type="button"
+                    role="option"
+                    aria-selected={active}
+                    onClick={() => pick(breed)}
+                    className={`flex w-full items-center justify-between rounded-2xl px-3 py-2 text-left text-sm font-extrabold ${
+                      active ? "bg-sun text-ink" : "hover:bg-foam"
+                    }`}
+                  >
+                    <span>{breed.name}</span>
+                    {breed.custom && (
+                      <span className="text-[10px] font-extrabold uppercase tracking-widest text-sky-deep">
+                        Eigen
+                      </span>
+                    )}
+                  </button>
+                </li>
+              );
+            })
+          )}
+        </ul>
+      </details>
     </div>
   );
 }

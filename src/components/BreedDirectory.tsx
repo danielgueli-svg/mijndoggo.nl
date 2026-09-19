@@ -1,6 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import {
+  ALPHABET,
   breedHref,
+  breedInitial,
   breedMatchesQuery,
   energyLabels,
   sizeLabels,
@@ -65,6 +67,7 @@ function BreedTile({ breed }: { breed: CatalogBreed }) {
 
 export default function BreedDirectory({ catalog, mode, heading, intro }: Props) {
   const [query, setQuery] = useState("");
+  const [letter, setLetter] = useState<string | null>(null);
   const [size, setSize] = useState<"alle" | BreedSize>("alle");
   const [custom, setCustom] = useState<CatalogBreed[]>([]);
 
@@ -91,10 +94,11 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
     }
     return all.filter((breed) => {
       const nameOk = breedMatchesQuery(breed, query);
+      const letterOk = !letter || breedInitial(breed.name) === letter;
       const sizeOk = size === "alle" || breed.size === size;
-      return nameOk && sizeOk;
+      return nameOk && letterOk && sizeOk;
     });
-  }, [all, mode, searching, query, size]);
+  }, [all, mode, searching, query, letter, size]);
 
   const countLabel =
     mode === "home" && !searching
@@ -127,11 +131,14 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
           <input
             type="search"
             value={query}
-            onChange={(event) => setQuery(event.target.value)}
+            onChange={(event) => {
+              setQuery(event.target.value);
+              if (event.target.value) setLetter(null);
+            }}
             placeholder={
               mode === "home"
-                ? "Zoek in alle rassen…"
-                : "Zoek op rasnaam…"
+                ? "Zoek een ras…"
+                : "Zoek een ras of tik een letter…"
             }
             className="w-full rounded-full border-2 border-ink/15 bg-white px-5 py-3 text-sm font-bold shadow-pop outline-none placeholder:font-semibold placeholder:text-muted/70"
           />
@@ -157,9 +164,108 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
         )}
       </div>
 
+      {mode === "all" && (
+        <div className="mt-3 flex flex-wrap gap-1" role="group" aria-label="Filter op beginletter">
+          <button
+            type="button"
+            onClick={() => setLetter(null)}
+            className={`rounded-full px-2.5 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+              letter === null ? "bg-ink text-cream" : "bg-white text-ink hover:bg-sun"
+            }`}
+          >
+            Alle
+          </button>
+          {ALPHABET.map((item) => {
+            const enabled = all.some((breed) => breedInitial(breed.name) === item);
+            return (
+              <button
+                key={item}
+                type="button"
+                disabled={!enabled}
+                onClick={() => {
+                  setLetter(item);
+                  setQuery("");
+                }}
+                className={`rounded-full px-2 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+                  letter === item
+                    ? "bg-ink text-cream"
+                    : enabled
+                      ? "bg-white hover:bg-sun"
+                      : "bg-white/50 text-muted/50"
+                }`}
+              >
+                {item}
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      <details className="mt-4 rounded-[1.2rem] bg-white p-4 ring-2 ring-ink/10" open={mode === "all"}>
+        <summary className="cursor-pointer text-sm font-extrabold">
+          Alle rassen A–Z
+          <span className="ml-2 font-bold text-muted">
+            tik open en klik een naam — typen hoeft niet
+          </span>
+        </summary>
+        {mode === "home" && (
+          <div className="mt-3 flex flex-wrap gap-1" role="group" aria-label="Filter op beginletter">
+            <button
+              type="button"
+              onClick={() => setLetter(null)}
+              className={`rounded-full px-2.5 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+                letter === null ? "bg-ink text-cream" : "bg-white text-ink hover:bg-sun"
+              }`}
+            >
+              Alle
+            </button>
+            {ALPHABET.map((item) => {
+              const enabled = all.some((breed) => breedInitial(breed.name) === item);
+              return (
+                <button
+                  key={item}
+                  type="button"
+                  disabled={!enabled}
+                  onClick={() => {
+                    setLetter(item);
+                    setQuery("");
+                  }}
+                  className={`rounded-full px-2 py-1 text-xs font-extrabold ring-2 ring-ink/10 ${
+                    letter === item
+                      ? "bg-ink text-cream"
+                      : enabled
+                        ? "bg-white hover:bg-sun"
+                        : "bg-white/50 text-muted/50"
+                  }`}
+                >
+                  {item}
+                </button>
+              );
+            })}
+          </div>
+        )}
+        <ul className="mt-3 columns-2 gap-x-6 text-sm font-extrabold sm:columns-3 md:columns-4">
+          {[...all]
+            .sort((a, b) => a.name.localeCompare(b.name, "nl"))
+            .filter((breed) => {
+              const letterOk = !letter || breedInitial(breed.name) === letter;
+              const nameOk = breedMatchesQuery(breed, query);
+              return letterOk && nameOk;
+            })
+            .map((breed) => (
+              <li key={`az-${breed.custom ? "c" : "s"}-${breed.slug}`} className="break-inside-avoid py-0.5">
+                <a className="text-sky-deep underline decoration-2 underline-offset-2" href={breedHref(breed)}>
+                  {breed.name}
+                </a>
+              </li>
+            ))}
+        </ul>
+      </details>
+
       {mode === "home" && !searching && (
         <p className="mt-3 text-sm font-bold text-muted">
-          We tonen acht bekende rassen. Typ hierboven om alles te doorzoeken — ook rassen die jij hebt toegevoegd.
+          We tonen acht bekende rassen. Typ hierboven of open A–Z om alles te klikken — ook rassen
+          die jij hebt toegevoegd.
         </p>
       )}
 

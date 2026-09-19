@@ -67,12 +67,12 @@ export default function CommunityBoard() {
   return (
     <div className="grid gap-8">
       <label className="grid gap-1 text-sm font-extrabold">
-        Zoek op woonplaats
+        Zoek op woonplaats / stad
         <input
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Nederlandse plaats, bijv. Haarlem…"
+          placeholder="Typ een stad, bijv. Amsterdam"
           className="w-full rounded-full border-2 border-ink/15 bg-white px-5 py-3 text-sm font-bold shadow-pop outline-none placeholder:font-semibold placeholder:text-muted/70"
         />
       </label>
@@ -115,16 +115,18 @@ export default function CommunityBoard() {
 
       <section aria-labelledby="leden-titel">
         <h2 id="leden-titel" className="font-display text-2xl font-semibold">
-          Baasjes
+          {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Alle baasjes"}
         </h2>
-        <p className="mt-1 text-sm font-bold text-muted">Bijnaam en ras.</p>
+        <p className="mt-1 text-sm font-bold text-muted">
+          Nickname, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
+        </p>
         {ready && filteredMembers.length === 0 && (
           <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
             {nlHint
-              ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Utrecht of Haarlem."
+              ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Amsterdam of Utrecht."
               : dutchMembers.length === 0
                 ? "Nog niemand aangemeld op dit apparaat."
-                : "Niemand in die woonplaats — probeer een andere Nederlandse stad."}
+                : "Niemand in die woonplaats — probeer een andere Nederlandse stad, zoals Amsterdam."}
           </p>
         )}
         {filteredMembers.length > 0 && (
@@ -134,12 +136,15 @@ export default function CommunityBoard() {
                 key={member.id}
                 className="flex items-center justify-between gap-3 rounded-[1.2rem] bg-white px-4 py-3 ring-2 ring-ink/10"
               >
-                <span className="font-extrabold">{displayNickname(member)}</span>
-                <span className="text-sm font-bold text-muted">
-                  {member.breedName}
-                  {member.woonplaats ? ` · ${member.woonplaats}` : ""}
-                  {member.wantsWalk ? " · wandelen" : ""}
+                <span>
+                  <span className="font-extrabold">{displayNickname(member)}</span>
+                  <span className="mt-0.5 block text-sm font-bold text-muted">{member.breedName}</span>
                 </span>
+                {member.wantsWalk ? (
+                  <span className="shrink-0 rounded-full bg-sun px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide">
+                    wandelen
+                  </span>
+                ) : null}
               </li>
             ))}
           </ul>

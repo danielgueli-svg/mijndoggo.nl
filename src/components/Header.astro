@@ -30,7 +30,9 @@ const isHome = path === "/";
           const active =
             item.href === "/"
               ? path === "/"
-              : path === item.href || path.startsWith(`${item.href}/`);
+              : path === item.href ||
+                path.startsWith(`${item.href}/`) ||
+                (item.href === "/community" && path === "/leden");
           return (
             <a
               href={item.href}

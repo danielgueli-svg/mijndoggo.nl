@@ -31,6 +31,17 @@ export function breedHref(breed: Pick<CatalogBreed, "slug" | "custom">): string 
     : `/rassen/${breed.slug}`;
 }
 
+export const ALPHABET = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+
+export function breedInitial(name: string): string {
+  return name
+    .trim()
+    .normalize("NFD")
+    .replace(/\p{M}/gu, "")
+    .charAt(0)
+    .toUpperCase();
+}
+
 export function breedMatchesQuery(breed: CatalogBreed, query: string): boolean {
   const q = query.trim().toLowerCase();
   if (!q) return true;
