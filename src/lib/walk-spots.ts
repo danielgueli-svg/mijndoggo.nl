@@ -127,7 +127,7 @@ export const CITY_WALK_SPOTS: WalkSpot[] = [
     kind: "park",
     city: "Eindhoven",
     aliases: ["eindhoven", "gestel"],
-    description: "Water, weides en een Dommellus. Ruim genoeg voor een stevige session.",
+    description: "Water, weides en een Dommellus. Ruim genoeg voor een stevige ronde.",
   },
   {
     id: "nijmegen-ooij",

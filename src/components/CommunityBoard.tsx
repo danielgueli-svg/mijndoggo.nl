@@ -126,7 +126,7 @@ export default function CommunityBoard() {
             {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Baasjes in een stad"}
           </h2>
           <p className="mt-1 text-sm font-bold text-muted">
-            Nickname, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
+            Bijnaam, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
           </p>
           {ready && !q && (
             <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">

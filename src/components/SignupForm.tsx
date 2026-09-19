@@ -78,7 +78,7 @@ export default function SignupForm({ catalog }: Props) {
       setErrors([
         error instanceof Error
           ? error.message
-          : "Opslaan ging mis. Check of je browser localStorage toestaat.",
+          : "Opslaan ging mis. Check of je browser lokale opslag toestaat.",
       ]);
     } finally {
       setBusy(false);
@@ -96,7 +96,7 @@ export default function SignupForm({ catalog }: Props) {
         Zet jezelf bij de baasjes
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-        Alleen <strong>e-mailadres</strong> is verplicht. Nickname, naam van de hond en
+        Alleen <strong>e-mailadres</strong> is verplicht. Bijnaam, naam van de hond en
         woonplaats mag je leeg laten. Geen wachtwoord, geen account — het blijft op dit
         apparaat.
       </p>
@@ -105,7 +105,7 @@ export default function SignupForm({ catalog }: Props) {
         <p className="mt-4 rounded-2xl bg-foam px-4 py-3 text-sm font-bold text-ink" role="status">
           {status}{" "}
           <a className="text-sky-deep underline decoration-2 underline-offset-2" href="/community">
-            Naar de community
+            Naar de leden
           </a>
           {statusHref ? (
             <>
@@ -136,7 +136,7 @@ export default function SignupForm({ catalog }: Props) {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-1 text-sm font-extrabold">
-            Nickname
+            Bijnaam
             <input
               value={nickname}
               onChange={(event) => setNickname(event.target.value)}

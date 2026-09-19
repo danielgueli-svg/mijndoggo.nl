@@ -222,7 +222,7 @@ export default function BreedEditor({ catalog }: Props) {
           ? "De foto’s zijn te groot voor dit apparaat. Haal er eentje af of kies een kleinere jpg."
           : error instanceof Error
             ? error.message
-            : "Opslaan ging mis. Check of je browser localStorage toestaat.",
+            : "Opslaan ging mis. Check of je browser lokale opslag toestaat.",
       ]);
       setBusy(false);
     }
@@ -241,8 +241,8 @@ export default function BreedEditor({ catalog }: Props) {
       <div className="rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10">
         <h1 className="font-display text-3xl font-semibold">Dit ras staat al in de catalogus</h1>
         <p className="mt-3 text-muted">
-          Ingebouwde rassen bewerk je niet in deze MVP. Voeg een eigen ras toe, of open het
-          bestaande verhaal.
+          Ingebouwde rassen bewerk je niet in deze eerste versie. Voeg een eigen ras toe, of
+          open het bestaande verhaal.
         </p>
         <div className="mt-5 flex flex-wrap gap-3">
           <a
@@ -267,7 +267,7 @@ export default function BreedEditor({ catalog }: Props) {
       <div className="rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10">
         <h1 className="font-display text-3xl font-semibold">Eigen ras niet gevonden</h1>
         <p className="mt-3 text-muted">
-          Dit slug staat niet in de localStorage van dit apparaat. Misschien een andere browser?
+          Dit eigen ras staat niet op dit apparaat. Misschien een andere browser?
         </p>
         <a
           href="/rassen/nieuw"

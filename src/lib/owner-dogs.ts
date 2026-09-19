@@ -161,7 +161,7 @@ export function validateOwnerDogWrite(input: OwnerDogWrite): string[] {
     errors.push("Leeftijd mag tussen 0 en 25 jaar.");
   }
   if (bio.length < 8) errors.push("Schrijf een kort biootje (minstens 8 tekens).");
-  if (bio.length > 280) errors.push("Bio mag max 280 tekens — keep it snappy.");
+  if (bio.length > 280) errors.push("Bio mag max 280 tekens — hou het kort.");
   if (input.photos.length > 3) errors.push("Maximaal 3 foto's voor nu.");
   return errors;
 }

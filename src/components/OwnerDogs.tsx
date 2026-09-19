@@ -116,7 +116,7 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
       setFormOpen(false);
       setStatus(`${dog.name} staat erbij. Hallo ${dog.name}!`);
     } catch {
-      setErrors(["Opslaan ging mis. Check of je browser localStorage toestaat."]);
+      setErrors(["Opslaan ging mis. Check of je browser lokale opslag toestaat."]);
     } finally {
       setBusy(false);
     }
@@ -142,9 +142,8 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
               Show je {breedName.toLowerCase()}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-              MVP: alles blijft op <strong>dit apparaat</strong> (localStorage). Geen account,
-              geen server. Later kunnen we dit 1-op-1 naar een echte API tillen — het datamodel
-              is er al klaar voor.
+              Alles blijft op <strong>dit apparaat</strong>. Geen account, geen server — alleen
+              jij ziet jouw hond hier.
             </p>
           </div>
           <button

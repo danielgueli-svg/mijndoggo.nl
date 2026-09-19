@@ -38,7 +38,7 @@ export default function BreedMembers({ breedSlug, breedName }: Props) {
       <p className="text-xs font-extrabold uppercase tracking-widest text-coral">Baasjes</p>
       <h2 className="mt-1 font-display text-2xl font-semibold">Baasjes voor dit ras</h2>
       <p className="mt-2 text-sm font-bold text-muted">
-        Nickname én woonplaats, zodat je ziet wie in de buurt is voor een rondje.
+        Bijnaam én woonplaats, zodat je ziet wie in de buurt is voor een rondje.
       </p>
 
       {!ready && <p className="mt-4 text-sm font-bold text-muted">Lijst ophalen…</p>}
