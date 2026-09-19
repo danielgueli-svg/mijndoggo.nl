@@ -4,10 +4,10 @@ export const POPULAR_BREED_SLUGS = [
   "golden-retriever",
   "duitse-herder",
   "franse-bulldog",
-  "teckel",
   "chihuahua",
+  "cocker-spaniel",
   "border-collie",
-  "berner-sennenhond",
+  "staffordshire-bull-terrier",
 ] as const;
 
 export type PopularBreedSlug = (typeof POPULAR_BREED_SLUGS)[number];

@@ -86,11 +86,9 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
 
   const visible = useMemo(() => {
     if (mode === "home" && !searching) {
-      const popular = POPULAR_BREED_SLUGS.map((slug) =>
-        all.find((breed) => breed.slug === slug),
-      ).filter((breed): breed is CatalogBreed => Boolean(breed));
-      const extras = all.filter((breed) => breed.custom);
-      return [...popular, ...extras].filter((breed) => size === "alle" || breed.size === size);
+      return POPULAR_BREED_SLUGS.map((slug) => all.find((breed) => breed.slug === slug)).filter(
+        (breed): breed is CatalogBreed => Boolean(breed),
+      );
     }
     return all.filter((breed) => {
       const nameOk = breedMatchesQuery(breed, query);
@@ -102,8 +100,7 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
 
   const countLabel =
     mode === "home" && !searching
-      ? `${visible.filter((breed) => !breed.custom).length} populaire rassen` +
-        (custom.length ? ` + ${custom.length} eigen` : "")
+      ? `${visible.length} populaire rassen`
       : `${visible.length} rassen`;
 
   return (
@@ -264,8 +261,8 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
 
       {mode === "home" && !searching && (
         <p className="mt-3 text-sm font-bold text-muted">
-          We tonen acht bekende rassen. Typ hierboven of open A–Z om alles te klikken — ook rassen
-          die jij hebt toegevoegd.
+          Acht bekende rassen. Typ hierboven om élk ras te vinden — ook rassen die jij hebt
+          toegevoegd.
         </p>
       )}
 
