@@ -10,6 +10,11 @@ export const CUSTOM_BREED_FALLBACK_IMAGE = {
   alt: "Honden rennen blij over een zandpad",
 };
 
+export type CustomBreedPhoto = {
+  url: string;
+  alt: string;
+};
+
 export type CustomBreed = {
   slug: string;
   name: string;
@@ -21,6 +26,7 @@ export type CustomBreed = {
   origin: string;
   traits: string[];
   story: string;
+  photos: CustomBreedPhoto[];
   createdAt: string;
   updatedAt: string;
 };
@@ -35,6 +41,7 @@ export type CustomBreedWrite = {
   origin: string;
   traits: string[];
   story: string;
+  photos: CustomBreedPhoto[];
 };
 
 function emitChange(): void {
@@ -50,7 +57,7 @@ function readAll(): CustomBreed[] {
     if (!raw) return [];
     const parsed: unknown = JSON.parse(raw);
     if (!Array.isArray(parsed)) return [];
-    return parsed.filter(isCustomBreed);
+    return parsed.filter(isCustomBreed).map(normalize);
   } catch {
     return [];
   }
@@ -59,6 +66,12 @@ function readAll(): CustomBreed[] {
 function writeAll(breeds: CustomBreed[]): void {
   localStorage.setItem(CUSTOM_BREEDS_STORAGE_KEY, JSON.stringify(breeds));
   emitChange();
+}
+
+function isPhoto(value: unknown): value is CustomBreedPhoto {
+  if (!value || typeof value !== "object") return false;
+  const photo = value as Partial<CustomBreedPhoto>;
+  return typeof photo.url === "string" && typeof photo.alt === "string" && photo.url.length > 8;
 }
 
 function isCustomBreed(value: unknown): value is CustomBreed {
@@ -72,6 +85,13 @@ function isCustomBreed(value: unknown): value is CustomBreed {
     typeof breed.story === "string" &&
     Array.isArray(breed.traits)
   );
+}
+
+function normalize(breed: CustomBreed): CustomBreed {
+  return {
+    ...breed,
+    photos: Array.isArray(breed.photos) ? breed.photos.filter(isPhoto) : [],
+  };
 }
 
 export function listCustomBreeds(): CustomBreed[] {
@@ -104,6 +124,7 @@ export function createCustomBreed(
     origin: input.origin.trim() || "Onbekend",
     traits: input.traits.map((trait) => trait.trim()).filter(Boolean),
     story: input.story.trim(),
+    photos: input.photos.slice(0, 3),
     slug: uniqueCustomSlug(input.name, [
       ...reservedSlugs,
       ...readAll().map((item) => item.slug),
@@ -127,6 +148,7 @@ export function updateCustomBreed(slug: string, input: CustomBreedWrite): Custom
     origin: input.origin.trim() || "Onbekend",
     traits: input.traits.map((trait) => trait.trim()).filter(Boolean),
     story: input.story.trim(),
+    photos: input.photos.slice(0, 3),
     slug,
     updatedAt: new Date().toISOString(),
   };
@@ -135,6 +157,7 @@ export function updateCustomBreed(slug: string, input: CustomBreedWrite): Custom
 }
 
 export function customBreedToCatalog(breed: CustomBreed): CatalogBreed {
+  const cover = breed.photos[0];
   return {
     slug: breed.slug,
     name: breed.name,
@@ -142,8 +165,8 @@ export function customBreedToCatalog(breed: CustomBreed): CatalogBreed {
     tagline: breed.tagline,
     size: breed.size,
     energy: breed.energy,
-    imageSrc: unsplashSrc(CUSTOM_BREED_FALLBACK_IMAGE.unsplashId, 640, 480),
-    imageAlt: CUSTOM_BREED_FALLBACK_IMAGE.alt,
+    imageSrc: cover?.url ?? unsplashSrc(CUSTOM_BREED_FALLBACK_IMAGE.unsplashId, 640, 480),
+    imageAlt: cover?.alt ?? CUSTOM_BREED_FALLBACK_IMAGE.alt,
     custom: true,
   };
 }
@@ -165,6 +188,7 @@ export function validateCustomBreedWrite(input: CustomBreedWrite): string[] {
   if (traits.length > 6) errors.push("Maximaal 6 trekjes.");
   if (story.length < 40) errors.push("Het korte verhaal mag wat langer — minstens 40 tekens.");
   if (story.length > 4000) errors.push("Verhaal mag max 4000 tekens.");
+  if (input.photos.length > 3) errors.push("Maximaal 3 rasfoto’s.");
   return errors;
 }
 

@@ -19,11 +19,22 @@ function storyParagraphs(story: string): string[] {
 export default function CustomBreedView() {
   const [breed, setBreed] = useState<CustomBreed | null>(null);
   const [ready, setReady] = useState(false);
+  const [banner, setBanner] = useState<string | null>(null);
 
   useEffect(() => {
-    const slug = new URLSearchParams(window.location.search).get("slug")?.trim() ?? "";
-    setBreed(slug ? getCustomBreed(slug) ?? null : null);
+    const params = new URLSearchParams(window.location.search);
+    const slug = params.get("slug")?.trim() ?? "";
+    const found = slug ? getCustomBreed(slug) ?? null : null;
+    setBreed(found);
     setReady(true);
+    if (found && params.get("nieuw") === "1") {
+      setBanner(`${found.name} staat live — op deze pagina én op de homepage.`);
+    } else if (found && params.get("bewerkt") === "1") {
+      setBanner(`Wijzigingen van ${found.name} staan live op deze pagina en op home.`);
+    }
+    if (found) {
+      document.title = `${found.name} · MijnDoggo`;
+    }
   }, []);
 
   if (!ready) {
@@ -60,10 +71,25 @@ export default function CustomBreedView() {
     );
   }
 
-  const image = unsplashSrc(CUSTOM_BREED_FALLBACK_IMAGE.unsplashId, 1200, 800);
+  const fallback = unsplashSrc(CUSTOM_BREED_FALLBACK_IMAGE.unsplashId, 1200, 800);
+  const gallery = breed.photos.length
+    ? breed.photos.slice(0, 3)
+    : [{ url: fallback, alt: CUSTOM_BREED_FALLBACK_IMAGE.alt }];
 
   return (
     <article>
+      {banner && (
+        <p
+          className="mx-auto mt-6 max-w-6xl rounded-[1.2rem] bg-foam px-4 py-3 text-sm font-bold text-ink ring-2 ring-ink/10 sm:px-6"
+          role="status"
+        >
+          {banner}{" "}
+          <a className="text-sky-deep underline decoration-2 underline-offset-2" href="/#rassen">
+            Naar de homepage-klikker
+          </a>
+        </p>
+      )}
+
       <header className="mx-auto max-w-6xl px-4 pb-4 pt-10 sm:px-6">
         <p className="text-xs font-extrabold uppercase tracking-widest text-coral">
           Eigen ras · {breed.origin}
@@ -99,13 +125,26 @@ export default function CustomBreedView() {
         </ul>
       </header>
 
-      <figure className="mx-auto max-w-xs overflow-hidden px-4 sm:px-6">
-        <img
-          src={image}
-          alt={CUSTOM_BREED_FALLBACK_IMAGE.alt}
-          className="aspect-[4/3] w-full rounded-2xl object-cover ring-2 ring-ink/10"
-        />
-      </figure>
+      <section className="breed-photo-compact mx-auto max-w-xl px-4 py-4 sm:px-6" aria-label={`Foto's van de ${breed.name}`}>
+        <p className="text-xs font-extrabold uppercase tracking-widest text-coral">Fotogalerij</p>
+        <h2 className="mt-1 font-display text-2xl font-semibold">Even kijken. Even kwispelen.</h2>
+        <div className="mt-4 grid grid-cols-3 gap-2">
+          {gallery.map((photo, index) => (
+            <figure
+              key={`${photo.url.slice(0, 24)}-${index}`}
+              className="overflow-hidden rounded-2xl bg-white shadow-pop ring-2 ring-ink/10"
+            >
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                width="420"
+                height="320"
+                className="aspect-[4/3] w-full object-cover"
+              />
+            </figure>
+          ))}
+        </div>
+      </section>
 
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
         <details className="rounded-[1.8rem] bg-white p-5 shadow-pop ring-2 ring-ink/10 sm:p-8">
@@ -125,6 +164,10 @@ export default function CustomBreedView() {
       <p className="mx-auto max-w-6xl px-4 pb-8 text-sm font-bold sm:px-6">
         <a className="text-sky-deep underline decoration-2 underline-offset-2" href="/rassen">
           ← Terug naar alle rassen
+        </a>
+        {" · "}
+        <a className="text-sky-deep underline decoration-2 underline-offset-2" href="/#rassen">
+          Naar home
         </a>
       </p>
     </article>

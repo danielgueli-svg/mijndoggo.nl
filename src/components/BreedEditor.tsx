@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
-import type { BreedEnergy, BreedSize, CatalogBreed } from "../lib/catalog";
+import { energyLabels, sizeLabels, type BreedEnergy, type BreedSize, type CatalogBreed } from "../lib/catalog";
+import { filesToPhotos, type LocalPhoto } from "../lib/compress-image";
 import {
   createCustomBreed,
   getCustomBreed,
@@ -7,6 +8,11 @@ import {
   validateCustomBreedWrite,
   type CustomBreedWrite,
 } from "../lib/custom-breeds";
+import {
+  firstOwnerDogForBreed,
+  upsertFirstOwnerDog,
+  validateOwnerDogWrite,
+} from "../lib/owner-dogs";
 
 type Props = {
   catalog: CatalogBreed[];
@@ -20,6 +26,73 @@ function parseTraits(raw: string): string[] {
     .split(",")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function PhotoField({
+  label,
+  hint,
+  photos,
+  onChange,
+  alt,
+}: {
+  label: string;
+  hint: string;
+  photos: LocalPhoto[];
+  onChange: (photos: LocalPhoto[]) => void;
+  alt: string;
+}) {
+  const [busy, setBusy] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  async function onFiles(files: FileList | null) {
+    setBusy(true);
+    setError(null);
+    const result = await filesToPhotos(files, photos, alt);
+    onChange(result.photos);
+    if (result.error) setError(result.error);
+    setBusy(false);
+  }
+
+  return (
+    <div className="grid gap-2">
+      <p className="text-sm font-extrabold">{label}</p>
+      <p className="text-xs font-bold text-muted">{hint}</p>
+      <label className="relative inline-flex w-fit">
+        <input
+          type="file"
+          accept="image/*"
+          multiple
+          onChange={(event) => void onFiles(event.target.files)}
+          className="absolute inset-0 cursor-pointer opacity-0"
+          aria-label={label}
+        />
+        <span className="rounded-full bg-sun px-4 py-2 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10">
+          {busy ? "Foto’s laden…" : "Kies foto’s"}
+        </span>
+      </label>
+      {photos.length > 0 && (
+        <ul className="flex flex-wrap gap-3">
+          {photos.map((photo, index) => (
+            <li key={`${photo.url.slice(0, 24)}-${index}`} className="relative">
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                className="h-24 w-24 rounded-2xl object-cover ring-2 ring-ink/10"
+              />
+              <button
+                type="button"
+                className="absolute -right-2 -top-2 rounded-full bg-ink px-2 text-xs font-extrabold text-white"
+                onClick={() => onChange(photos.filter((_, i) => i !== index))}
+              >
+                ×
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      {error && <p className="text-sm font-bold text-coral">{error}</p>}
+    </div>
+  );
 }
 
 export default function BreedEditor({ catalog }: Props) {
@@ -37,6 +110,11 @@ export default function BreedEditor({ catalog }: Props) {
   const [origin, setOrigin] = useState("");
   const [traitsRaw, setTraitsRaw] = useState("");
   const [story, setStory] = useState("");
+  const [photos, setPhotos] = useState<LocalPhoto[]>([]);
+  const [dogName, setDogName] = useState("");
+  const [dogAge, setDogAge] = useState("2");
+  const [dogBio, setDogBio] = useState("");
+  const [dogPhotos, setDogPhotos] = useState<LocalPhoto[]>([]);
   const [errors, setErrors] = useState<string[]>([]);
   const [busy, setBusy] = useState(false);
 
@@ -68,13 +146,21 @@ export default function BreedEditor({ catalog }: Props) {
     setOrigin(existing.origin);
     setTraitsRaw(existing.traits.join(", "));
     setStory(existing.story);
+    setPhotos(existing.photos);
+    const dog = firstOwnerDogForBreed(slug);
+    if (dog) {
+      setDogName(dog.name);
+      setDogAge(String(dog.ageYears));
+      setDogBio(dog.bio);
+      setDogPhotos(dog.photos);
+    }
     setReady(true);
   }, [catalog]);
 
   const reserved = useMemo(() => catalog.map((breed) => breed.slug), [catalog]);
   const editing = Boolean(editSlug) && !catalogLocked && !missing;
 
-  function onSubmit(event: FormEvent) {
+  async function onSubmit(event: FormEvent) {
     event.preventDefault();
     const input: CustomBreedWrite = {
       name,
@@ -86,8 +172,24 @@ export default function BreedEditor({ catalog }: Props) {
       origin,
       traits: parseTraits(traitsRaw),
       story,
+      photos: photos.map((photo) => ({
+        ...photo,
+        alt: photo.alt || name.trim() || "Eigen ras",
+      })),
     };
     const nextErrors = validateCustomBreedWrite(input);
+    const dogStarted = Boolean(dogName.trim() || dogBio.trim() || dogPhotos.length);
+    if (dogStarted) {
+      nextErrors.push(
+        ...validateOwnerDogWrite({
+          breedSlug: editSlug ?? "nieuw",
+          name: dogName,
+          ageYears: Number(dogAge),
+          bio: dogBio,
+          photos: dogPhotos,
+        }),
+      );
+    }
     if (nextErrors.length) {
       setErrors(nextErrors);
       return;
@@ -99,12 +201,28 @@ export default function BreedEditor({ catalog }: Props) {
         editing && editSlug
           ? updateCustomBreed(editSlug, input)
           : createCustomBreed(input, reserved);
-      window.location.href = `/rassen/eigen?slug=${encodeURIComponent(saved.slug)}`;
+      if (dogStarted) {
+        await upsertFirstOwnerDog(saved.slug, {
+          name: dogName,
+          ageYears: Number(dogAge),
+          bio: dogBio,
+          photos: dogPhotos.map((photo) => ({
+            ...photo,
+            alt: photo.alt || `${dogName} de ${saved.shortName}`,
+          })),
+        });
+      }
+      const flag = editing ? "bewerkt=1" : "nieuw=1";
+      window.location.href = `/rassen/eigen?slug=${encodeURIComponent(saved.slug)}&${flag}`;
     } catch (error) {
+      const quota =
+        error instanceof DOMException && error.name === "QuotaExceededError";
       setErrors([
-        error instanceof Error
-          ? error.message
-          : "Opslaan ging mis. Check of je browser localStorage toestaat.",
+        quota
+          ? "De foto’s zijn te groot voor dit apparaat. Haal er eentje af of kies een kleinere jpg."
+          : error instanceof Error
+            ? error.message
+            : "Opslaan ging mis. Check of je browser localStorage toestaat.",
       ]);
       setBusy(false);
     }
@@ -170,11 +288,11 @@ export default function BreedEditor({ catalog }: Props) {
         {editing ? `Pas ${name || "je ras"} aan` : "Voeg een ras toe"}
       </h1>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-        Client-MVP: na opslaan staat het ras meteen op de homepage (bij zoeken, en als eigen ras
-        naast de acht populaire) en op een eigen ras-pagina. Alleen op dit apparaat.
+        Publiceren zet het ras meteen op de homepage én op een eigen pagina — met jouw foto’s en
+        (als je wilt) je eigen hond. Bewerken kan daarna opnieuw. Alles blijft op dit apparaat.
       </p>
 
-      <form onSubmit={onSubmit} className="mt-6 grid gap-4">
+      <form onSubmit={(event) => void onSubmit(event)} className="mt-6 grid gap-4">
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-1 text-sm font-extrabold">
             Rasnaam
@@ -221,7 +339,7 @@ export default function BreedEditor({ catalog }: Props) {
             >
               {sizes.map((item) => (
                 <option key={item} value={item}>
-                  {item}
+                  {sizeLabels[item]}
                 </option>
               ))}
             </select>
@@ -235,7 +353,7 @@ export default function BreedEditor({ catalog }: Props) {
             >
               {energies.map((item) => (
                 <option key={item} value={item}>
-                  {item}
+                  {energyLabels[item]}
                 </option>
               ))}
             </select>
@@ -285,6 +403,64 @@ export default function BreedEditor({ catalog }: Props) {
           />
         </label>
 
+        <PhotoField
+          label="Foto’s van het ras (max 3)"
+          hint="De eerste foto wordt de tegel op de homepage. Blijft op dit apparaat."
+          photos={photos}
+          onChange={setPhotos}
+          alt={name || "Eigen ras"}
+        />
+
+        <fieldset className="grid gap-4 rounded-[1.4rem] bg-foam p-4 ring-2 ring-ink/10">
+          <legend className="px-1 text-sm font-extrabold">Jouw hond bij dit ras (optioneel)</legend>
+          <p className="-mt-2 text-xs font-bold text-muted">
+            Na publiceren staat die op de ras-pagina. Leeg laten kan — je kunt ’m later nog
+            toevoegen.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2">
+            <label className="grid gap-1 text-sm font-extrabold">
+              Naam van je hond
+              <input
+                value={dogName}
+                onChange={(event) => setDogName(event.target.value)}
+                maxLength={32}
+                placeholder="Bijv. Pip"
+                className="rounded-2xl border-2 border-ink/10 bg-white px-4 py-2.5 font-bold"
+              />
+            </label>
+            <label className="grid gap-1 text-sm font-extrabold">
+              Leeftijd (jaar)
+              <input
+                value={dogAge}
+                onChange={(event) => setDogAge(event.target.value)}
+                type="number"
+                min={0}
+                max={25}
+                step={0.5}
+                className="rounded-2xl border-2 border-ink/10 bg-white px-4 py-2.5 font-bold"
+              />
+            </label>
+          </div>
+          <label className="grid gap-1 text-sm font-extrabold">
+            Kort biootje
+            <textarea
+              value={dogBio}
+              onChange={(event) => setDogBio(event.target.value)}
+              maxLength={280}
+              rows={3}
+              placeholder="Gek op plassen in plassen, allergisch voor stofzuigers."
+              className="rounded-2xl border-2 border-ink/10 bg-white px-4 py-2.5 font-bold"
+            />
+          </label>
+          <PhotoField
+            label="Foto’s van jouw hond (max 3)"
+            hint="Optioneel. Zichtbaar op de ras-pagina onder ‘Honden van eigenaren’."
+            photos={dogPhotos}
+            onChange={setDogPhotos}
+            alt={dogName || "Hond van een eigenaar"}
+          />
+        </fieldset>
+
         {errors.length > 0 && (
           <ul className="list-disc space-y-1 rounded-2xl bg-blush/30 px-5 py-3 text-sm font-bold text-ink">
             {errors.map((error) => (
@@ -299,7 +475,11 @@ export default function BreedEditor({ catalog }: Props) {
             disabled={busy}
             className="rounded-full bg-ink px-5 py-3 text-sm font-extrabold text-cream shadow-pop disabled:opacity-60"
           >
-            {busy ? "Opslaan…" : editing ? "Wijzigingen publiceren" : "Publiceren op home & ras-pagina"}
+            {busy
+              ? "Opslaan…"
+              : editing
+                ? "Wijzigingen publiceren"
+                : "Publiceren op home & ras-pagina"}
           </button>
           <a
             href="/rassen"

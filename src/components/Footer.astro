@@ -1,19 +1,23 @@
 ---
 import { nav, site } from "../data/site";
 import Logo from "./Logo.astro";
+
+const isHome = Astro.url.pathname === "/";
 ---
 
 <footer class="mt-16 border-t-4 border-ink/10 bg-ink text-cream">
-  <div class="mx-auto grid max-w-6xl gap-8 px-4 py-12 sm:px-6 md:grid-cols-3">
+  <div class:list={["mx-auto max-w-6xl px-4 py-12 sm:px-6", isHome ? "grid gap-8 md:grid-cols-2" : "grid gap-8 md:grid-cols-3"]}>
     <div>
       <div class="flex items-center gap-2">
         <Logo class="h-16 w-16" loading="lazy" />
         <p class="font-display text-2xl font-semibold">{site.name}</p>
       </div>
-      <p class="mt-3 max-w-sm text-sm leading-relaxed text-cream/80">
-        Gemaakt met liefde, tennisballen en een beetje zand in de auto — helemaal in het
-        Nederlands, voor baasjes in Nederland.
-      </p>
+      {!isHome && (
+        <p class="mt-3 max-w-sm text-sm leading-relaxed text-cream/80">
+          Hondenmensen ontmoeten, tips delen, en een wandeling plannen — helemaal in het
+          Nederlands.
+        </p>
+      )}
     </div>
     <div>
       <p class="text-xs font-extrabold uppercase tracking-widest text-sun">Navigeren</p>
@@ -29,15 +33,19 @@ import Logo from "./Logo.astro";
         }
       </ul>
     </div>
-    <div>
-      <p class="text-xs font-extrabold uppercase tracking-widest text-sun">Credits</p>
-      <p class="mt-3 text-sm leading-relaxed text-cream/80">
-        Foto’s van Unsplash — zie
-        <a class="font-bold text-sun underline decoration-2 underline-offset-2" href="/over#credits">
-          credits
-        </a>.
-      </p>
-      <p class="mt-4 text-sm text-cream/70">© {new Date().getFullYear()} {site.name}</p>
-    </div>
+    {!isHome && (
+      <div>
+        <p class="text-xs font-extrabold uppercase tracking-widest text-sun">Credits</p>
+        <p class="mt-3 text-sm leading-relaxed text-cream/80">
+          Foto’s van Unsplash — zie
+          <a class="font-bold text-sun underline decoration-2 underline-offset-2" href="/over#credits">
+            credits
+          </a>.
+        </p>
+      </div>
+    )}
   </div>
+  <p class="mx-auto max-w-6xl px-4 pb-10 text-sm text-cream/70 sm:px-6">
+    © {new Date().getFullYear()} {site.name}
+  </p>
 </footer>
