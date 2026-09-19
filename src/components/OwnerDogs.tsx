@@ -20,13 +20,13 @@ function DogPhoto({ dog }: { dog: OwnerDog }) {
       <img
         src={photo.url}
         alt={photo.alt}
-        className="aspect-[4/3] w-full object-cover"
+        className="breed-content-photo"
       />
     );
   }
   return (
     <div
-      className="flex aspect-[4/3] flex-col items-center justify-center gap-2 bg-sun/70"
+      className="breed-content-photo flex flex-col items-center justify-center gap-2 bg-sun/70"
       aria-hidden="true"
     >
       <svg viewBox="0 0 64 64" className="h-14 w-14" fill="none">
