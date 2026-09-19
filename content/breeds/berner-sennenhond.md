@@ -13,15 +13,15 @@ gallery:
     photographer: David Trinks
     unsplashUrl: https://unsplash.com/photos/tiLifk_FbZU
     sfeer: false
-  - unsplashId: photo-1697399993191-d2f1a1e16b76
-    alt: Berner sennenhond in de sneeuw
-    photographer: Megan Dujardin
-    unsplashUrl: https://unsplash.com/photos/8ABKawCffJI
+  - unsplashId: photo-1730677769210-7b5a39d0635e
+    alt: Berner sennenhond in profiel, driekleurige lange vacht
+    photographer: Darwin Brandis
+    unsplashUrl: https://unsplash.com/photos/E7r22buVxtQ
     sfeer: false
-  - unsplashId: photo-1622149160902-c4753d9023ed
-    alt: Berner sennenhond ligt in het gras
-    photographer: Kenzie Wattier
-    unsplashUrl: https://unsplash.com/photos/uvimcfkjwBc
+  - unsplashId: photo-1621101164063-ba88826cb918
+    alt: Berner sennenhond staat aan de lijn, klassieke driekleur
+    photographer: Hamza Gharnati
+    unsplashUrl: https://unsplash.com/photos/9S4GyfpxnTI
     sfeer: false
 ---
 

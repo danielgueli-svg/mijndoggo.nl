@@ -46,6 +46,10 @@ body {
     radial-gradient(circle at 8% 78%, rgb(255 107 107 / 0.18) 0 9px, transparent 10px);
 }
 
+.breed-photo-compact img {
+  max-height: 9rem;
+}
+
 .prose-doggo {
   --tw-prose-body: var(--color-ink);
   --tw-prose-headings: var(--color-ink);

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { filesToPhotos } from "../lib/compress-image";
 import {
   createOwnerDogRepository,
   validateOwnerDogWrite,
@@ -11,21 +12,6 @@ type Props = {
 };
 
 const repo = createOwnerDogRepository();
-
-async function compressImage(file: File): Promise<string> {
-  const bitmap = await createImageBitmap(file);
-  const max = 720;
-  const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
-  const width = Math.round(bitmap.width * scale);
-  const height = Math.round(bitmap.height * scale);
-  const canvas = document.createElement("canvas");
-  canvas.width = width;
-  canvas.height = height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("Kon de foto niet verkleinen.");
-  ctx.drawImage(bitmap, 0, 0, width, height);
-  return canvas.toDataURL("image/jpeg", 0.72);
-}
 
 function DogPhoto({ dog }: { dog: OwnerDog }) {
   const photo = dog.photos.find((item) => item.url.length > 8);
@@ -91,17 +77,9 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
     setBusy(true);
     setErrors([]);
     try {
-      const next = [...photos];
-      for (const file of Array.from(files)) {
-        if (next.length >= 3) break;
-        if (!file.type.startsWith("image/")) {
-          setErrors(["Alleen foto's, geen pdf'tjes of geheime kattenplannen."]);
-          continue;
-        }
-        const url = await compressImage(file);
-        next.push({ url, alt: `${name || "Hond"} van een eigenaar` });
-      }
-      setPhotos(next);
+      const result = await filesToPhotos(files, photos, `${name || "Hond"} van een eigenaar`);
+      setPhotos(result.photos);
+      if (result.error) setErrors([result.error]);
     } catch {
       setErrors(["Die foto wilde niet meewerken. Probeer een kleinere jpg of png."]);
     } finally {

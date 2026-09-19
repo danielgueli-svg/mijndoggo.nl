@@ -22,6 +22,8 @@ export function heroSrc(id: string): string {
 export const nav = [
   { href: "/", label: "Home" },
   { href: "/rassen", label: "Rassen" },
+  { href: "/community", label: "Community" },
+  { href: "/aanmelden", label: "Aanmelden" },
   { href: "/tips", label: "Tips" },
   { href: "/intro", label: "Intro" },
   { href: "/over", label: "Over" },
