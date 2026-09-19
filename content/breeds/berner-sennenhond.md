@@ -13,16 +13,16 @@ gallery:
     photographer: David Trinks
     unsplashUrl: https://unsplash.com/photos/tiLifk_FbZU
     sfeer: false
-  - unsplashId: photo-1551433052-c4da99383ed2
-    alt: Blije gestreepte hond kijkt omhoog
-    photographer: veera Batlu
-    unsplashUrl: https://unsplash.com/photos/hPKsJSpf3BY
-    sfeer: true
-  - unsplashId: photo-1601758228041-f3b2795255f1
-    alt: Puppy bij zachte handen
-    photographer: Alvan Nee
-    unsplashUrl: https://unsplash.com/photos/1wnkZSwdG1c
-    sfeer: true
+  - unsplashId: photo-1697399993191-d2f1a1e16b76
+    alt: Berner sennenhond in de sneeuw
+    photographer: Megan Dujardin
+    unsplashUrl: https://unsplash.com/photos/8ABKawCffJI
+    sfeer: false
+  - unsplashId: photo-1622149160902-c4753d9023ed
+    alt: Berner sennenhond ligt in het gras
+    photographer: Kenzie Wattier
+    unsplashUrl: https://unsplash.com/photos/uvimcfkjwBc
+    sfeer: false
 ---
 
 Drie kleuren en een groot, zacht hart: de Berner sennenhond voelt als een wandelende knuffelbank, mits je ruimte, tijd en een rustig groeitempo kunt bieden.

@@ -18,11 +18,11 @@ gallery:
     photographer: Meg von Haartman
     unsplashUrl: https://unsplash.com/photos/wCnXOZaLrTc
     sfeer: false
-  - unsplashId: photo-1591946614720-90a587da4a36
-    alt: Roodbruine hond met een knuffel in de bek
-    photographer: Joyce G
-    unsplashUrl: https://unsplash.com/photos/w7Zyu2Au-pM
-    sfeer: true
+  - unsplashId: photo-1543466835-00a7907e9de1
+    alt: Beagle lacht met open bek
+    photographer: Jaime Spain
+    unsplashUrl: https://unsplash.com/photos/photo-1543466835-00a7907e9de1
+    sfeer: false
 ---
 
 Een beagle is vrolijk en sociaal, maar als de neus een spoor oppikt, lijkt de rest van de wereld even bijzaak — en daar zit zowel de charme als de uitdaging.

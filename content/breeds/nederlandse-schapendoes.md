@@ -12,7 +12,7 @@ gallery:
     alt: Twee pluizige schapenhonden in de sneeuw
     photographer: Unsplash
     unsplashUrl: https://unsplash.com/photos/H8w62GJNGbo
-    sfeer: true
+    sfeer: false
 ---
 
 Onder die pluizenwolk zit een lenige herder met clownneus: vrolijk, werkgericht en graag in beweging, waardoor grooming én sport allebei op de agenda horen.

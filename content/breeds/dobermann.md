@@ -13,11 +13,16 @@ gallery:
     photographer: Ile Gorgievski
     unsplashUrl: https://unsplash.com/photos/vKzRKRmANbM
     sfeer: false
-  - unsplashId: photo-1543466835-00a7907e9de1
-    alt: Blije hond lacht met open bek
-    photographer: Jaime Spain
-    unsplashUrl: https://unsplash.com/photos/photo-1543466835-00a7907e9de1
-    sfeer: true
+  - unsplashId: photo-1556546346-ad2946663684
+    alt: Dobermann ligt relaxed binnen
+    photographer: Leonardo Baldissara
+    unsplashUrl: https://unsplash.com/photos/xhvNYC3lr9s
+    sfeer: false
+  - unsplashId: photo-1745354819707-1f275b5db03a
+    alt: Dobermann kijkt nieuwsgierig door een hek
+    photographer: Look Again Digital
+    unsplashUrl: https://unsplash.com/photos/rrbtpWW8Hd0
+    sfeer: false
 ---
 
 Strakke jas, plakkerig hart: de dobermann is alert en trouw, en bloeit als jij duidelijke, milde leiding geeft zonder het imago zwaarder te maken dan de hond.

@@ -187,4 +187,34 @@ export const photos = {
     photographer: "Bonnie Kittle",
     unsplashUrl: "https://unsplash.com/photos/A8iLzP4sS-Q",
   },
+  yellowLabSnow: {
+    unsplashId: "photo-1579129293745-038d751019b7",
+    alt: "Gele labrador kijkt recht in de camera, sneeuw op de neus",
+    photographer: "Pete Nuij",
+    unsplashUrl: "https://unsplash.com/photos/cRDATsSz1dI",
+  },
+  chocolateLabBeach: {
+    unsplashId: "photo-1572977422688-7f2dd9339644",
+    alt: "Chocoladebruine labrador met een tennisbal op het strand",
+    photographer: "Reed Naliboff",
+    unsplashUrl: "https://unsplash.com/photos/UZv4EPNpVUY",
+  },
+  merleAussie: {
+    unsplashId: "photo-1770345629583-01333c1c31b0",
+    alt: "Merle Australische herder met blauwe ogen in het gras",
+    photographer: "Unsplash",
+    unsplashUrl: "https://unsplash.com/photos/h2HWYeq-IE0",
+  },
+  malinoisDemo: {
+    unsplashId: "photo-1747578442579-db44208456ad",
+    alt: "Mechelse herder aan de lijn tijdens een demonstratie",
+    photographer: "G-R Mottez",
+    unsplashUrl: "https://unsplash.com/photos/oU9tVBNp-lU",
+  },
+  rottweilerField: {
+    unsplashId: "photo-1665333354010-050f08f35907",
+    alt: "Rottweiler zit rechtop in een herfstveld",
+    photographer: "Unsplash",
+    unsplashUrl: "https://unsplash.com/photos/M_6O3jJ-alk",
+  },
 } as const satisfies Record<string, BreedImage>;

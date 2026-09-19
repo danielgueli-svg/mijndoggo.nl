@@ -9,9 +9,14 @@ origin: Nederland
 traits: [oranje-wit, attent, Nederlands]
 gallery:
   - unsplashId: photo-1530281700549-e82e7bf110d6
-    alt: Roodbruine hond rent blij langs de zee
+    alt: Oranje-bruine jachthond rent blij langs de zee
     photographer: Pauline Loroy
     unsplashUrl: https://unsplash.com/photos/U3aF7hgUSrk
+    sfeer: true
+  - unsplashId: photo-1591946614720-90a587da4a36
+    alt: Oranje-bruine jachthond met een knuffel in de bek
+    photographer: Joyce G
+    unsplashUrl: https://unsplash.com/photos/w7Zyu2Au-pM
     sfeer: true
 ---
 

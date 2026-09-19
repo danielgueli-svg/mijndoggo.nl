@@ -18,11 +18,11 @@ gallery:
     photographer: Matteo Vistocco
     unsplashUrl: https://unsplash.com/photos/whh8epxdObk
     sfeer: false
-  - unsplashId: photo-1444212477490-ca407925329e
-    alt: Twee honden rennen blij over een veld
-    photographer: James Barker
-    unsplashUrl: https://unsplash.com/photos/photo-1444212477490-ca407925329e
-    sfeer: true
+  - unsplashId: photo-1763672060269-80a958aa3bdb
+    alt: Zwart-bruine teckel kijkt omhoog
+    photographer: Anna Spoljar
+    unsplashUrl: https://unsplash.com/photos/O6Y39bIEHrM
+    sfeer: false
 ---
 
 Lang worstje, groots karakter: de teckel is dapper, koppig-charmant en neusgedreven, terwijl die rug om zachte omgang en een slank lijf vraagt.

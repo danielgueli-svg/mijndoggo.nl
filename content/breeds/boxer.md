@@ -13,16 +13,16 @@ gallery:
     photographer: Mauricio Sordille
     unsplashUrl: https://unsplash.com/photos/z5PF9BZqC7s
     sfeer: false
-  - unsplashId: photo-1598586896079-3d3964c57862
-    alt: Blije stevige puppy kijkt omhoog
-    photographer: Erik Mclean
-    unsplashUrl: https://unsplash.com/photos/FUJKlGPsidU
-    sfeer: true
-  - unsplashId: photo-1602792970992-256310933afc
-    alt: Stevige puppy op de boerderij
+  - unsplashId: photo-1710478122312-1ca86aa0b6a5
+    alt: Volwassen boxer ligt relaxed in het gras
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/m9qqvJ4nqww
-    sfeer: true
+    unsplashUrl: https://unsplash.com/photos/kgG6Ky3XrBs
+    sfeer: false
+  - unsplashId: photo-1554713388-77c211c0529d
+    alt: Boxer in profiel in de sneeuw
+    photographer: Elen Yatsenko
+    unsplashUrl: https://unsplash.com/photos/20G_DymxJkI
+    sfeer: false
 ---
 
 De boxer combineert atletisch lijf met clownesk hart: loyaal, speels en vaak tot op hoge leeftijd een beetje puberaal — en dat is voor veel gezinnen juist de charme.

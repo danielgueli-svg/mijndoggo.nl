@@ -9,20 +9,20 @@ origin: Engeland
 traits: [turbo, dapper, grappig]
 gallery:
   - unsplashId: photo-1561037404-61cd46aa615b
-    alt: Kleine hond kijkt vriendelijk in de camera
+    alt: Jack russell terriër kijkt vriendelijk in de camera
     photographer: Jamie Street
     unsplashUrl: https://unsplash.com/photos/pToUUdN_PZc
     sfeer: false
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
+  - unsplashId: photo-1667688573274-79353379e472
+    alt: Jack russell terriër met bruine tekening buiten
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
-    sfeer: true
-  - unsplashId: photo-1541599540903-216a46ca1dc0
-    alt: Stevige puppy leunt relaxed op een houten rand
-    photographer: Christopher Ayme
-    unsplashUrl: https://unsplash.com/photos/XvS-uKUoUmk
-    sfeer: true
+    unsplashUrl: https://unsplash.com/photos/B7Eg1R3--Mc
+    sfeer: false
+  - unsplashId: photo-1760528543365-2a51c306095a
+    alt: Jack russell terriër springt blij in het gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/nxkHKgu3fWs
+    sfeer: false
 ---
 
 De Jack Russell lijkt een compacte batterij: dapper, speels en eindeloos nieuwsgierig, terwijl die energie om slimme uitlaatkleppen vraagt — anders zoekt-ie zelf een project.

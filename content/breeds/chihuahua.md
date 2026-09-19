@@ -13,16 +13,16 @@ gallery:
     photographer: Erwin Bosman
     unsplashUrl: https://unsplash.com/photos/C3A-0kZRH4Y
     sfeer: false
-  - unsplashId: photo-1623689278873-6981e40013ec
-    alt: Zachte close-up van een lieve hond
-    photographer: Anna Stampfli
-    unsplashUrl: https://unsplash.com/photos/X9KcXxvP3II
-    sfeer: true
-  - unsplashId: photo-1537151625747-768eb6cf92b2
-    alt: Blije hond met een bandana, helemaal knuffel
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/photo-1537151625747-768eb6cf92b2
-    sfeer: true
+  - unsplashId: photo-1772969281767-9495083d89f2
+    alt: Langharige beige chihuahua in profiel
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/AeYhjwE7aDk
+    sfeer: false
+  - unsplashId: photo-1757169038235-490360e3fa7b
+    alt: Witte chihuahua-puppy met bruine oren op een deken
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/IWtDH7AGMXY
+    sfeer: false
 ---
 
 Klein van formaat, groot van mening: de chihuahua gedraagt zich soms als CEO van de bank, terwijl dat lijfje warmte, respect en goede socialisatie keihard nodig heeft.

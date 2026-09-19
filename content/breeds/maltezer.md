@@ -9,20 +9,20 @@ origin: Middellandse Zee
 traits: [zijdezacht, schoot, elegant]
 gallery:
   - unsplashId: photo-1755526932767-330459e23b41
-    alt: Witte maltezer-puppy op een groen vlak
+    alt: Witte maltezer-puppy kijkt omhoog
     photographer: Kateryna Hliznitsova
     unsplashUrl: https://unsplash.com/photos/rJaIU3h1sN4
     sfeer: false
   - unsplashId: photo-1561905887-3461f30ee843
-    alt: Witte pluizige hond kijkt vrolijk omhoog
+    alt: Witte maltezer kijkt vrolijk omhoog
     photographer: Olga Kravchuk
     unsplashUrl: https://unsplash.com/photos/PZcz2Q38j6g
     sfeer: false
-  - unsplashId: photo-1744206247439-4b63f5300a5f
-    alt: Iemand fotografeert een pluizige witte puppy
-    photographer: wu yi
-    unsplashUrl: https://unsplash.com/photos/AttyUjQM1p4
-    sfeer: true
+  - unsplashId: photo-1718101688401-c6bc867105b3
+    alt: Maltezer in het gras met open bek
+    photographer: Mike Cuerpo
+    unsplashUrl: https://unsplash.com/photos/bAh4emC2h1U
+    sfeer: false
 ---
 
 Een witte wolk met vast schootabonnement: de maltezer is aanhankelijk en vrolijk in mini, terwijl vachtverzorging en tandzorg het verschil maken tussen sprookje en klittenchaos.

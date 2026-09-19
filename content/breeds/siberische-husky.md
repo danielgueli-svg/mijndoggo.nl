@@ -13,16 +13,16 @@ gallery:
     photographer: Tamas Pap
     unsplashUrl: https://unsplash.com/photos/kG71BXh8KFw
     sfeer: false
-  - unsplashId: photo-1601758125946-6ec2ef64daf8
-    alt: Iemand knuffelt een blije hond
-    photographer: Jamie Street
-    unsplashUrl: https://unsplash.com/photos/a-person-holding-a-dog-in-their-arms-p2A5CAcqaVg
-    sfeer: true
-  - unsplashId: photo-1450778869180-41d0601e046e
-    alt: Twee honden kijken samen omhoog
-    photographer: James Barker
-    unsplashUrl: https://unsplash.com/photos/photo-1450778869180-41d0601e046e
-    sfeer: true
+  - unsplashId: photo-1568572933382-74d440642117
+    alt: Husky met blauwe ogen, dichtbij
+    photographer: Tadeusz Lakota
+    unsplashUrl: https://unsplash.com/photos/T-FU0WgNLYo
+    sfeer: false
+  - unsplashId: photo-1757640229892-fc67365dfb19
+    alt: Siberische husky in het gouden avondlicht
+    photographer: Alef Morais
+    unsplashUrl: https://unsplash.com/photos/kqIK0uLY8G0
+    sfeer: false
 ---
 
 Praatgraag, tochtig en geboren voor kilometers: de Siberische husky is onafhankelijk en meute-sociaal, waardoor hek, kilometers en humor geen opties zijn maar voorwaarden.

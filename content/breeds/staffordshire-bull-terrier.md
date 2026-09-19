@@ -13,11 +13,11 @@ gallery:
     photographer: Jordan Bigelow
     unsplashUrl: https://unsplash.com/photos/yE1Q3Rld2SI
     sfeer: false
-  - unsplashId: photo-1576201836106-db1758fd1c97
-    alt: Gouden puppy rent blij over het gras
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1576201836106-db1758fd1c97
-    sfeer: true
+  - unsplashId: photo-1643811677506-4a9c4b7d0d7a
+    alt: Zwarte staffordshire bull terriër in close-up
+    photographer: Martin Dalsgaard
+    unsplashUrl: https://unsplash.com/photos/AE6_2jdr2S0
+    sfeer: false
 ---
 
 Spierbundel met knuffelbediening: de stafford is stoer én zoet voor “zijn” mensen, terwijl imago-lawaai vaak harder praat dan de hond zelf.

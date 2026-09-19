@@ -8,15 +8,10 @@ goodWithKids: true
 origin: Nederland (Friesland)
 traits: [Fries, zeldzaam, veelzijdig]
 gallery:
-  - unsplashId: photo-1477884213360-7e9d7dcc1e48
-    alt: Blije zwart-witte hond op straat
-    photographer: Leio McLaren
-    unsplashUrl: https://unsplash.com/photos/x_bNR6Yk0NY
-    sfeer: true
-  - unsplashId: photo-1503256207526-0d5d80fa2f47
-    alt: Blije zwart-witte hond kijkt omhoog
+  - unsplashId: photo-1585188148616-eda680a3aa34
+    alt: Zwart-witte staande jachthond in de sneeuw
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1503256207526-0d5d80fa2f47
+    unsplashUrl: https://unsplash.com/photos/4vsT7N6z9ww
     sfeer: true
 ---
 

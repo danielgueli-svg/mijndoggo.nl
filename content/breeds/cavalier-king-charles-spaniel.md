@@ -18,11 +18,11 @@ gallery:
     photographer: Unsplash
     unsplashUrl: https://unsplash.com/photos/ufafkaZsiHc
     sfeer: false
-  - unsplashId: photo-1583511655826-05700d52f4d9
-    alt: Kleine pluizige hond in een bananen-shirt
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/Qb0P67LulNY
-    sfeer: true
+  - unsplashId: photo-1759122738958-d08d6ab838ef
+    alt: Cavalier king charles spaniël zit in hoog gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/SpmQx6HN-e0
+    sfeer: false
 ---
 
 De cavalier is zachte schootroyalty: sociaal, zoet en graag dichtbij, zonder dat het een fragiel museumstuk hoeft te zijn.

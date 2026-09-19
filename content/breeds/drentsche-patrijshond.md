@@ -9,7 +9,7 @@ origin: Nederland
 traits: [Drents, vriendelijk, buitenmens]
 gallery:
   - unsplashId: photo-1544568100-847a948585b9
-    alt: Roodbruine hond lacht op een zandpad
+    alt: Roodbruine jachthond lacht op een zandpad
     photographer: Jamie Street
     unsplashUrl: https://unsplash.com/photos/UtrE5DcgEyg
     sfeer: true
