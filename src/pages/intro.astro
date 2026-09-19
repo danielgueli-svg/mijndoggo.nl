@@ -1,0 +1,89 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { site } from "../data/site";
+---
+
+<BaseLayout
+  title="Kennismaken — verbinden met mede-hondenliefhebbers"
+  description="MijnDoggo is bedoeld als warme Nederlandse plek waar je niet alleen rassen en tips leest, maar ook het gevoel krijgt dat je er niet alleen voor staat — met andere baasjes die net zo week worden van een kwispel als jij."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Kennismaken</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">
+      Hier vind je elkaar, via de honden die jullie dierbaar zijn
+    </h1>
+    <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink">
+      <p>
+        {site.name} is bedoeld als warme Nederlandse plek waar je niet alleen rassen en tips leest,
+        maar ook het gevoel krijgt dat je er niet alleen voor staat — met andere baasjes die net zo
+        week worden van een kwispel als jij. Je komt hier niet om een profiel te vullen of een chat
+        open te houden, maar om herkenning te vinden in verhalen over temperament, verzorging en
+        het dagelijks leven met een hond.
+      </p>
+    </div>
+
+    <section class="mt-10 rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Wat je hier kunt doen</h2>
+      <p class="mt-3 leading-relaxed text-muted">
+        Je bladert door Nederlandse rasverhalen over karakter, achtergrond, verzorging en voor wie
+        een hond écht past, zodat je in alle rust kunt kijken wat bij jullie ritme hoort. Daarnaast
+        liggen er praktische tips klaar — wassen, wandelen, voeding, die eerste weken met een pup —
+        in een toon die voelt als een gesprek aan de keukentafel, niet als een brochure. En op elke
+        raspagina kun je jouw eigen hond erbij zetten: naam, leeftijd, een kort biootje en een paar
+        foto’s, bewaard op dit apparaat, zodat je een persoonlijk hoekje hebt zonder account.
+      </p>
+    </section>
+
+    <section class="mt-6 rounded-[1.8rem] bg-sun/40 p-6 ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Hoe “verbinden” hier vandaag werkt</h2>
+      <p class="mt-3 leading-relaxed">
+        Verbinden betekent hier: elkaar tegenkomen via de honden die jullie dierbaar zijn, niet via
+        een sociaal netwerk met accounts, volgers of een chat. Je leest dezelfde rasverhalen, deelt
+        dezelfde vragen over wandelen of vacht, en — als je dat wilt — zet je jouw hond op een
+        raspagina, waar die voorlopig alleen op jouw eigen apparaat blijft staan. Niemand anders ziet
+        jouw Pip, en dat is expres zo: we beloven geen gemeenschap die er nog niet is, terwijl we
+        wél de deur openhouden voor later, als er ooit een warme, Nederlandse ontmoetingsplek bij
+        mag komen.
+      </p>
+    </section>
+
+    <section class="mt-6 rounded-[1.8rem] bg-foam p-6 ring-2 ring-ink/10 sm:p-8">
+      <h2 class="font-display text-2xl font-semibold">Een paar zachte omgangsregels</h2>
+      <p class="mt-3 leading-relaxed">
+        We houden het vriendelijk, ook als jullie honden totaal verschillend zijn, want oordeel over
+        ras, formaat of “echte” hondenmensen hoort hier niet thuis. Schrijf alsof je naast iemand
+        aan de keukentafel zit: nieuwsgierig, een beetje zacht, en zonder iemand kleiner te maken.
+        En het allerbelangrijkste blijft dierenwelzijn: een schattige foto is nooit belangrijker dan
+        een hond die zich veilig, gezien en goed verzorgd voelt.
+      </p>
+    </section>
+
+    <section class="mt-10">
+      <h2 class="font-display text-2xl font-semibold">Verder kijken</h2>
+      <p class="mt-3 leading-relaxed text-muted">
+        Zin om te beginnen? Kies wat nu het fijnst voelt — een rasverhaal, een tip, of gewoon even
+        lezen hoe {site.name} in elkaar zit.
+      </p>
+      <div class="mt-6 flex flex-wrap gap-3">
+        <a
+          href="/rassen"
+          class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush"
+        >
+          Ontdek de rassen
+        </a>
+        <a
+          href="/tips"
+          class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun"
+        >
+          Lees tips
+        </a>
+        <a
+          href="/over"
+          class="rounded-full bg-ink px-5 py-3 text-sm font-extrabold text-cream shadow-pop transition hover:-translate-y-0.5"
+        >
+          Over MijnDoggo
+        </a>
+      </div>
+    </section>
+  </div>
+</BaseLayout>
