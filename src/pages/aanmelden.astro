@@ -1,0 +1,25 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import SignupForm from "../components/SignupForm.tsx";
+import { loadBreeds } from "../lib/breeds";
+import { toCatalogBreed } from "../lib/serialize-breeds";
+
+const catalog = (await loadBreeds()).map(toCatalogBreed);
+---
+
+<BaseLayout
+  title="Aanmelden"
+  description="Meld je aan bij MijnDoggo: e-mail, optioneel bijnaam, hond en Nederlandse woonplaats, plus je ras en of je wilt wandelen."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Aanmelden</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Doe mee met de baasjes</h1>
+    <p class="mt-3 text-lg text-muted">
+      Alleen e-mail is verplicht. Woonplaats kiest je uit Nederlandse plaatsen — dit is een
+      Nederlandse community.
+    </p>
+    <div class="mt-8">
+      <SignupForm client:load catalog={catalog} />
+    </div>
+  </div>
+</BaseLayout>

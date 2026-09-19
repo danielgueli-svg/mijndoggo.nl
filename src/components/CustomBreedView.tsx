@@ -99,11 +99,11 @@ export default function CustomBreedView() {
         </ul>
       </header>
 
-      <figure className="mx-auto max-w-6xl overflow-hidden px-4 sm:px-6">
+      <figure className="mx-auto max-w-xs overflow-hidden px-4 sm:px-6">
         <img
           src={image}
           alt={CUSTOM_BREED_FALLBACK_IMAGE.alt}
-          className="aspect-[16/9] w-full rounded-[1.8rem] object-cover ring-2 ring-ink/10"
+          className="aspect-[4/3] w-full rounded-2xl object-cover ring-2 ring-ink/10"
         />
       </figure>
 

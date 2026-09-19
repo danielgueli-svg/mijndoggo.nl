@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { fold } from "../lib/text";
+import { filterNlPlaces, findNlPlace, isNlPlace } from "../lib/nl-places";
 import {
   displayNickname,
   listMembers,
@@ -37,21 +38,31 @@ export default function CommunityBoard() {
   }, []);
 
   const q = fold(query);
+  const nlHint = q.length > 0 && filterNlPlaces(query).length === 0;
+  const selectedPlace = findNlPlace(query);
+
+  const dutchMembers = useMemo(
+    () => members.filter((member) => !member.woonplaats || isNlPlace(member.woonplaats)),
+    [members],
+  );
 
   const filteredMembers = useMemo(() => {
-    if (!q) return members;
-    return members.filter((member) => {
+    if (!q) return dutchMembers;
+    return dutchMembers.filter((member) => {
       const plaats = fold(member.woonplaats);
       return plaats.includes(q);
     });
-  }, [members, q]);
+  }, [dutchMembers, q]);
 
   const places = useMemo(
-    () => placesByMemberCount(q ? filteredMembers : members),
-    [members, filteredMembers, q],
+    () => placesByMemberCount(q ? filteredMembers : dutchMembers),
+    [dutchMembers, filteredMembers, q],
   );
 
-  const spots = useMemo(() => walkSpotsForCity(query), [query]);
+  const spots = useMemo(
+    () => walkSpotsForCity(selectedPlace ?? query),
+    [selectedPlace, query],
+  );
 
   return (
     <div className="grid gap-8">
@@ -61,7 +72,7 @@ export default function CommunityBoard() {
           type="search"
           value={query}
           onChange={(event) => setQuery(event.target.value)}
-          placeholder="Bijv. Haarlem, Utrecht, Den Haag…"
+          placeholder="Nederlandse plaats, bijv. Haarlem…"
           className="w-full rounded-full border-2 border-ink/15 bg-white px-5 py-3 text-sm font-bold shadow-pop outline-none placeholder:font-semibold placeholder:text-muted/70"
         />
       </label>
@@ -71,7 +82,7 @@ export default function CommunityBoard() {
           Plekken, gesorteerd op aantal baasjes
         </h2>
         <p className="mt-1 text-sm font-bold text-muted">
-          Woonplaatsen van aangemelde mensen. Tik een plaats om te filteren.
+          Alleen Nederlandse woonplaatsen, gesorteerd op aantal leden. Tik een plaats.
         </p>
         {!ready && <p className="mt-3 text-sm font-bold text-muted">Plekken laden…</p>}
         {ready && places.length === 0 && (
@@ -92,8 +103,8 @@ export default function CommunityBoard() {
                       active ? "bg-ink text-cream" : "bg-white hover:bg-sun"
                     }`}
                   >
-                    {place.plaats}
-                    <span className="ml-2 text-xs font-bold opacity-70">{place.count}</span>
+                    {place.plaats} · {place.count}{" "}
+                    {place.count === 1 ? "lid" : "leden"}
                   </button>
                 </li>
               );
@@ -109,9 +120,11 @@ export default function CommunityBoard() {
         <p className="mt-1 text-sm font-bold text-muted">Bijnaam en ras.</p>
         {ready && filteredMembers.length === 0 && (
           <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
-            {members.length === 0
-              ? "Nog niemand aangemeld op dit apparaat."
-              : "Niemand in die woonplaats — probeer een andere stad."}
+            {nlHint
+              ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Utrecht of Haarlem."
+              : dutchMembers.length === 0
+                ? "Nog niemand aangemeld op dit apparaat."
+                : "Niemand in die woonplaats — probeer een andere Nederlandse stad."}
           </p>
         )}
         {filteredMembers.length > 0 && (
@@ -124,7 +137,8 @@ export default function CommunityBoard() {
                 <span className="font-extrabold">{displayNickname(member)}</span>
                 <span className="text-sm font-bold text-muted">
                   {member.breedName}
-                  {member.wantsWalk ? " · wandelt" : ""}
+                  {member.woonplaats ? ` · ${member.woonplaats}` : ""}
+                  {member.wantsWalk ? " · wandelen" : ""}
                 </span>
               </li>
             ))}

@@ -10,6 +10,7 @@ import {
   validateMemberWrite,
 } from "../lib/members";
 import BreedPicker from "./BreedPicker";
+import PlacePicker from "./PlacePicker";
 
 type Props = {
   catalog: CatalogBreed[];
@@ -25,6 +26,7 @@ export default function SignupForm({ catalog }: Props) {
   const [wantsWalk, setWantsWalk] = useState(false);
   const [errors, setErrors] = useState<string[]>([]);
   const [status, setStatus] = useState<string | null>(null);
+  const [statusHref, setStatusHref] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
   useEffect(() => {
@@ -54,6 +56,7 @@ export default function SignupForm({ catalog }: Props) {
     if (nextErrors.length) {
       setErrors(nextErrors);
       setStatus(null);
+      setStatusHref(null);
       return;
     }
     setBusy(true);
@@ -70,6 +73,7 @@ export default function SignupForm({ catalog }: Props) {
       setStatus(
         `${who} staat in de community${member.wantsWalk ? " — en wil graag wandelen" : ""}.`,
       );
+      setStatusHref(`/rassen/${member.breedSlug}`);
     } catch (error) {
       setErrors([
         error instanceof Error
@@ -93,7 +97,8 @@ export default function SignupForm({ catalog }: Props) {
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
         Alleen e-mail is verplicht. Bijnaam, hondennaam en woonplaats mag je leeg laten.
-        Alles blijft op <strong>dit apparaat</strong> (localStorage) — geen server, geen account-wachtwoord.
+        Woonplaats is alleen een <strong>Nederlandse plaats</strong>. Alles blijft op dit
+        apparaat (localStorage).
       </p>
 
       {status && (
@@ -102,6 +107,14 @@ export default function SignupForm({ catalog }: Props) {
           <a className="text-sky-deep underline decoration-2 underline-offset-2" href="/community">
             Naar de community
           </a>
+          {statusHref ? (
+            <>
+              {" · "}
+              <a className="text-sky-deep underline decoration-2 underline-offset-2" href={statusHref}>
+                Naar je ras-pagina
+              </a>
+            </>
+          ) : null}
         </p>
       )}
 
@@ -119,7 +132,7 @@ export default function SignupForm({ catalog }: Props) {
           />
         </label>
 
-        <div className="grid gap-4 sm:grid-cols-3">
+        <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-1 text-sm font-extrabold">
             Bijnaam
             <input
@@ -140,17 +153,9 @@ export default function SignupForm({ catalog }: Props) {
               className="rounded-2xl border-2 border-ink/10 bg-cream px-4 py-2.5 font-bold"
             />
           </label>
-          <label className="grid gap-1 text-sm font-extrabold">
-            Woonplaats
-            <input
-              value={woonplaats}
-              onChange={(event) => setWoonplaats(event.target.value)}
-              maxLength={48}
-              placeholder="Optioneel"
-              className="rounded-2xl border-2 border-ink/10 bg-cream px-4 py-2.5 font-bold"
-            />
-          </label>
         </div>
+
+        <PlacePicker value={woonplaats} onChange={setWoonplaats} />
 
         <BreedPicker breeds={breeds} value={breedSlug} onChange={setBreedSlug} />
 

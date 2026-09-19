@@ -1,7 +1,122 @@
+import { findNlPlace } from "./nl-places";
 import { looksLikeEmail } from "./text";
 
 export const MEMBERS_STORAGE_KEY = "mijndoggo.members.v1";
+export const MEMBERS_SEED_KEY = "mijndoggo.members.seeded.v1";
 export const MEMBERS_CHANGED_EVENT = "mijndoggo:members";
+
+const DEMO_MEMBERS: Member[] = [
+  {
+    id: "demo-floortje",
+    email: "demo.floortje@mijndoggo.nl",
+    nickname: "Floortje",
+    dogName: "Pip",
+    woonplaats: "Haarlem",
+    breedSlug: "labrador-retriever",
+    breedName: "Labrador Retriever",
+    wantsWalk: true,
+    createdAt: "2026-01-02T10:00:00.000Z",
+  },
+  {
+    id: "demo-max",
+    email: "demo.max@mijndoggo.nl",
+    nickname: "Max",
+    dogName: "Bink",
+    woonplaats: "Amsterdam",
+    breedSlug: "golden-retriever",
+    breedName: "Golden Retriever",
+    wantsWalk: true,
+    createdAt: "2026-01-03T10:00:00.000Z",
+  },
+  {
+    id: "demo-noor",
+    email: "demo.noor@mijndoggo.nl",
+    nickname: "Noor",
+    dogName: "Kees",
+    woonplaats: "Amsterdam",
+    breedSlug: "franse-bulldog",
+    breedName: "Franse Bulldog",
+    wantsWalk: false,
+    createdAt: "2026-01-04T10:00:00.000Z",
+  },
+  {
+    id: "demo-tim",
+    email: "demo.tim@mijndoggo.nl",
+    nickname: "Tim",
+    dogName: "Saar",
+    woonplaats: "Amsterdam",
+    breedSlug: "border-collie",
+    breedName: "Border Collie",
+    wantsWalk: true,
+    createdAt: "2026-01-05T10:00:00.000Z",
+  },
+  {
+    id: "demo-lisa",
+    email: "demo.lisa@mijndoggo.nl",
+    nickname: "Lisa",
+    dogName: "Bram",
+    woonplaats: "Utrecht",
+    breedSlug: "teckel",
+    breedName: "Teckel",
+    wantsWalk: true,
+    createdAt: "2026-01-06T10:00:00.000Z",
+  },
+  {
+    id: "demo-joost",
+    email: "demo.joost@mijndoggo.nl",
+    nickname: "Joost",
+    dogName: "Nala",
+    woonplaats: "Utrecht",
+    breedSlug: "duitse-herder",
+    breedName: "Duitse Herder",
+    wantsWalk: false,
+    createdAt: "2026-01-07T10:00:00.000Z",
+  },
+  {
+    id: "demo-sana",
+    email: "demo.sana@mijndoggo.nl",
+    nickname: "Sana",
+    dogName: "Ollie",
+    woonplaats: "Haarlem",
+    breedSlug: "chihuahua",
+    breedName: "Chihuahua",
+    wantsWalk: true,
+    createdAt: "2026-01-08T10:00:00.000Z",
+  },
+  {
+    id: "demo-daan",
+    email: "demo.daan@mijndoggo.nl",
+    nickname: "Daan",
+    dogName: "Bo",
+    woonplaats: "Den Haag",
+    breedSlug: "berner-sennenhond",
+    breedName: "Berner Sennenhond",
+    wantsWalk: true,
+    createdAt: "2026-01-09T10:00:00.000Z",
+  },
+  {
+    id: "demo-mirte",
+    email: "demo.mirte@mijndoggo.nl",
+    nickname: "Mirte",
+    dogName: "Fien",
+    woonplaats: "Rotterdam",
+    breedSlug: "cocker-spaniel",
+    breedName: "Cocker Spaniël",
+    wantsWalk: false,
+    createdAt: "2026-01-10T10:00:00.000Z",
+  },
+  {
+    id: "demo-kars",
+    email: "demo.kars@mijndoggo.nl",
+    nickname: "Kars",
+    dogName: "Loek",
+    woonplaats: "Groningen",
+    breedSlug: "staffordshire-bull-terrier",
+    breedName: "Staffordshire Bull Terriër",
+    wantsWalk: true,
+    createdAt: "2026-01-11T10:00:00.000Z",
+  },
+];
 
 export type Member = {
   id: string;
@@ -36,7 +151,7 @@ function emitChange(): void {
   }
 }
 
-function readAll(): Member[] {
+function readRaw(): Member[] {
   if (typeof localStorage === "undefined") return [];
   try {
     const raw = localStorage.getItem(MEMBERS_STORAGE_KEY);
@@ -47,6 +162,20 @@ function readAll(): Member[] {
   } catch {
     return [];
   }
+}
+
+function seedIfNeeded(): Member[] {
+  const existing = readRaw();
+  if (existing.length > 0) return existing;
+  if (typeof localStorage === "undefined") return [];
+  if (localStorage.getItem(MEMBERS_SEED_KEY)) return existing;
+  writeAll(DEMO_MEMBERS);
+  localStorage.setItem(MEMBERS_SEED_KEY, "1");
+  return DEMO_MEMBERS;
+}
+
+function readAll(): Member[] {
+  return seedIfNeeded();
 }
 
 function writeAll(members: Member[]): void {
@@ -88,7 +217,7 @@ export function createMember(input: MemberWrite): Member {
     email,
     nickname: input.nickname.trim(),
     dogName: input.dogName.trim(),
-    woonplaats: input.woonplaats.trim(),
+    woonplaats: findNlPlace(input.woonplaats) ?? "",
     breedSlug: input.breedSlug,
     breedName: input.breedName,
     wantsWalk: input.wantsWalk,
@@ -123,7 +252,9 @@ export function validateMemberWrite(input: MemberWrite): string[] {
   if (email.length > 120) errors.push("E-mail mag max 120 tekens.");
   if (input.nickname.trim().length > 32) errors.push("Bijnaam mag max 32 tekens.");
   if (input.dogName.trim().length > 32) errors.push("Hondennaam mag max 32 tekens.");
-  if (input.woonplaats.trim().length > 48) errors.push("Woonplaats mag max 48 tekens.");
+  if (input.woonplaats.trim() && !findNlPlace(input.woonplaats)) {
+    errors.push("Kies een Nederlandse woonplaats uit de lijst.");
+  }
   if (!input.breedSlug.trim() || !input.breedName.trim()) {
     errors.push("Kies een ras uit de lijst.");
   }
