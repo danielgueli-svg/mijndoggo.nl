@@ -247,7 +247,7 @@ export function displayNickname(member: Member): string {
 export function validateMemberWrite(input: MemberWrite): string[] {
   const errors: string[] = [];
   const email = input.email.trim();
-  if (!email) errors.push("E-mail is verplicht.");
+  if (!email) errors.push("E-mailadres is verplicht.");
   else if (!looksLikeEmail(email)) errors.push("Dat e-mailadres ziet er nog niet helemaal goed uit.");
   if (email.length > 120) errors.push("E-mail mag max 120 tekens.");
   if (input.nickname.trim().length > 32) errors.push("Bijnaam mag max 32 tekens.");

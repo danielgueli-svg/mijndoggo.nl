@@ -71,7 +71,7 @@ export default function SignupForm({ catalog }: Props) {
       setWantsWalk(false);
       const who = member.nickname || member.email;
       setStatus(
-        `${who} staat in de community${member.wantsWalk ? " — en wil graag wandelen" : ""}.`,
+        `Gelukt! ${who} staat erbij${member.wantsWalk ? " — en wil graag wandelen" : ""}.`,
       );
       setStatusHref(`/rassen/${member.breedSlug}`);
     } catch (error) {
@@ -96,9 +96,9 @@ export default function SignupForm({ catalog }: Props) {
         Zet jezelf bij de baasjes
       </h2>
       <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-        Alleen e-mail is verplicht. Bijnaam, hondennaam en woonplaats mag je leeg laten.
-        Woonplaats is alleen een <strong>Nederlandse plaats</strong>. Alles blijft op dit
-        apparaat (localStorage).
+        Alleen <strong>e-mailadres</strong> is verplicht. Nickname, naam van de hond en
+        woonplaats mag je leeg laten. Geen wachtwoord, geen account — het blijft op dit
+        apparaat.
       </p>
 
       {status && (
@@ -120,13 +120,15 @@ export default function SignupForm({ catalog }: Props) {
 
       <form onSubmit={onSubmit} className="mt-5 grid gap-4">
         <label className="grid gap-1 text-sm font-extrabold">
-          E-mail <span className="font-bold text-coral">*</span>
+          E-mailadres <span className="font-bold text-coral">*</span>
           <input
             type="email"
             required
+            aria-required="true"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             autoComplete="email"
+            inputMode="email"
             placeholder="jij@voorbeeld.nl"
             className="rounded-2xl border-2 border-ink/10 bg-cream px-4 py-2.5 font-bold"
           />
@@ -134,17 +136,18 @@ export default function SignupForm({ catalog }: Props) {
 
         <div className="grid gap-4 sm:grid-cols-2">
           <label className="grid gap-1 text-sm font-extrabold">
-            Bijnaam
+            Nickname
             <input
               value={nickname}
               onChange={(event) => setNickname(event.target.value)}
               maxLength={32}
+              autoComplete="nickname"
               placeholder="Optioneel"
               className="rounded-2xl border-2 border-ink/10 bg-cream px-4 py-2.5 font-bold"
             />
           </label>
           <label className="grid gap-1 text-sm font-extrabold">
-            Naam van je hond
+            Naam van de hond
             <input
               value={dogName}
               onChange={(event) => setDogName(event.target.value)}
