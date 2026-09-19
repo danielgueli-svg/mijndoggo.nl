@@ -1,36 +1,47 @@
 ---
+import Logo from "./Logo.astro";
 import { heroPhotos, heroSrc, site } from "../data/site";
 ---
 
 <section class="relative overflow-hidden">
-  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 py-10 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:py-16">
-    <div>
-      <p class="inline-flex items-center gap-2 rounded-full bg-white px-3 py-1 text-xs font-extrabold uppercase tracking-widest text-coral shadow-pop ring-2 ring-ink/10">
-        Helemaal in het Nederlands · {site.domain}
-      </p>
-      <h1 class="mt-5 font-display text-4xl font-semibold leading-[1.05] text-ink sm:text-6xl">
-        Jouw hond in het middelpunt —
-        <span class="text-sky-deep">en een beetje rust voor jou erbij</span>
+  <div class="mx-auto flex max-w-6xl flex-col items-center px-4 pb-4 pt-10 text-center sm:px-6 sm:pt-14">
+    <a href="/" class="group flex flex-col items-center gap-3">
+      <Logo class="h-28 w-28 drop-shadow-lg transition-transform group-hover:rotate-6 group-hover:scale-105 sm:h-36 sm:w-36" />
+      <span class="leading-tight">
+        <span class="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          {site.name}
+        </span>
+        <span class="mt-1 block text-xs font-bold uppercase tracking-widest text-muted">
+          {site.domain}
+        </span>
+      </span>
+    </a>
+  </div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-10 pt-6 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:pb-16">
+    <div class="text-center lg:text-left">
+      <h1 class="font-display text-4xl font-semibold leading-[1.08] text-ink sm:text-6xl">
+        <span class="block">Andere hondenmensen.</span>
+        <span class="block text-sky-deep">Jouw tips.</span>
+        <span class="block">Samen naar buiten.</span>
       </h1>
-      <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">
-        Misschien zoek je een ras dat bij jullie ritme past, of gewoon een tip die voelt als
-        een zacht gesprek aan de keukentafel — en precies daarvoor is {site.name} bedoeld.
-        Je bladert door Nederlandse rassenverhalen, leest praktische tips zonder stijve toon,
-        en kunt op je eigen apparaat een plekje maken voor jouw hond, terwijl niemand anders meekijkt.
-        Geen accountgedoe, geen webshop: wel warmte, feiten en een kwispel die je herkent.
+      <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted lg:max-w-xl">
+        MijnDoggo is de plek om andere hondenbezitters te ontmoeten: deel foto’s, wissel tips uit,
+        en plan een wandeling als jullie klikken. Warm, Nederlands, en gemaakt voor baasjes die hun
+        hond serieus nemen — zonder zwaar te doen.
       </p>
-      <div class="mt-7 flex flex-wrap gap-3">
+      <div class="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
         <a
-          href="#rassen"
+          href="/intro"
           class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush"
         >
-          Ontdek de rassen
+          Ontmoet &amp; tips
         </a>
         <a
-          href="/tips"
+          href="/rassen"
           class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun"
         >
-          Lees tips & trucs
+          Bekijk rassen
         </a>
       </div>
     </div>

@@ -3,21 +3,26 @@ import Logo from "./Logo.astro";
 import { nav, site } from "../data/site";
 
 const path = Astro.url.pathname;
+const isHome = path === "/";
 ---
 
 <header class="sticky top-0 z-40 border-b-4 border-ink/10 bg-cream">
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3 sm:px-6">
-    <a href="/" class="group flex items-center gap-2.5 rounded-full">
-      <Logo class="h-11 w-11 transition-transform group-hover:rotate-6 group-hover:scale-105" />
-      <span class="leading-tight">
-        <span class="font-display text-xl font-semibold tracking-tight text-ink sm:text-2xl">
-          {site.name}
-        </span>
-        <span class="block text-xs font-bold uppercase tracking-widest text-muted">
-          {site.domain}
-        </span>
-      </span>
-    </a>
+  <div class:list={["mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6", isHome ? "justify-end" : "justify-between"]}>
+    {
+      !isHome && (
+        <a href="/" class="group flex items-center gap-3 rounded-full">
+          <Logo class="h-14 w-14 transition-transform group-hover:rotate-6 group-hover:scale-105 sm:h-16 sm:w-16" />
+          <span class="leading-tight">
+            <span class="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
+              {site.name}
+            </span>
+            <span class="block text-xs font-bold uppercase tracking-widest text-muted">
+              {site.domain}
+            </span>
+          </span>
+        </a>
+      )
+    }
 
     <nav aria-label="Hoofdmenu" class="hidden items-center gap-1 md:flex">
       {

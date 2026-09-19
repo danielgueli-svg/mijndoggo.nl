@@ -1,0 +1,48 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="Intro"
+  description="MijnDoggo is een warm Nederlands platform om andere hondenbezitters te ontmoeten: je deelt foto’s van je hond, wisselt tips en tricks uit, en spreekt — als het klikt — af voor een wandeling."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Intro</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">
+      Ontmoet andere hondenbaasjes
+    </h1>
+    <div class="mt-6 space-y-4 text-lg leading-relaxed text-ink">
+      <p>
+        MijnDoggo is een warm Nederlands platform om andere hondenbezitters te ontmoeten: je deelt
+        foto’s van je hond, wisselt tips en tricks uit, en spreekt — als het klikt — af voor een
+        wandeling. Geen stijve club, wel herkenning: dezelfde vragen over vacht, voer of “hoe krijg
+        ik ’m rustig langs de fietsers?”, terwijl je merkt dat je niet de enige bent die met een
+        natte handdoek in de gang staat.
+      </p>
+      <p>
+        Blader door de
+        <a class="font-bold text-sky-deep underline decoration-2 underline-offset-2" href="/rassen">rassen</a>
+        om te zien wie bij jullie past, of open de
+        <a class="font-bold text-sky-deep underline decoration-2 underline-offset-2" href="/tips">tips</a>
+        en stuur er eentje door naar iemand die het ook kan gebruiken. En zet gerust een foto klaar
+        — want een kwispel zegt soms meer dan een lange uitleg, en samen naar buiten voelt meteen
+        een stuk lichter.
+      </p>
+    </div>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a
+        href="/rassen"
+        class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush"
+      >
+        Ontdek de rassen
+      </a>
+      <a
+        href="/tips"
+        class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun"
+      >
+        Lees tips
+      </a>
+    </div>
+  </div>
+</BaseLayout>
