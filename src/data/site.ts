@@ -4,9 +4,9 @@ import { photos, type BreedImage } from "./photos";
 export const site = {
   name: "MijnDoggo",
   domain: "mijndoggo.nl",
-  tagline: "De warme Nederlandse plek voor hondenliefhebbers.",
+  tagline: "Andere hondenmensen. Jouw tips. Samen naar buiten.",
   description:
-    "Misschien zoek je een ras dat bij jullie ritme past, of een tip die voelt als een zacht gesprek aan de keukentafel. MijnDoggo is de warme Nederlandse plek voor rassenverhalen, praktische tips en jouw hond.",
+    "MijnDoggo is de plek om andere hondenbezitters te ontmoeten: deel foto’s, wissel tips uit, en plan een wandeling als jullie klikken. Warm, Nederlands, en gemaakt voor baasjes die hun hond serieus nemen — zonder zwaar te doen.",
 };
 
 export const heroPhotos: Array<BreedImage & { caption: string }> = [
