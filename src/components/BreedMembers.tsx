@@ -11,9 +11,8 @@ type Props = {
   breedName: string;
 };
 
-function memberLine(member: Member): string {
-  const name = displayNickname(member);
-  return member.woonplaats ? `${name} · ${member.woonplaats}` : name;
+function plaatsOf(member: Member): string {
+  return member.woonplaats.trim();
 }
 
 export default function BreedMembers({ breedSlug, breedName }: Props) {
@@ -39,7 +38,7 @@ export default function BreedMembers({ breedSlug, breedName }: Props) {
       <p className="text-xs font-extrabold uppercase tracking-widest text-coral">Baasjes</p>
       <h2 className="mt-1 font-display text-2xl font-semibold">Baasjes voor dit ras</h2>
       <p className="mt-2 text-sm font-bold text-muted">
-        Nickname van wie een {breedName.toLowerCase()} heeft aangemeld.
+        Nickname én woonplaats, zodat je ziet wie in de buurt is voor een rondje.
       </p>
 
       {!ready && <p className="mt-4 text-sm font-bold text-muted">Lijst ophalen…</p>}
@@ -57,7 +56,12 @@ export default function BreedMembers({ breedSlug, breedName }: Props) {
         <ul className="mt-4 divide-y divide-ink/10">
           {listed.map((member) => (
             <li key={member.id} className="flex items-baseline justify-between gap-3 py-2.5">
-              <span className="font-extrabold">{memberLine(member)}</span>
+              <span className="font-extrabold">
+                {displayNickname(member)}
+                {plaatsOf(member) ? (
+                  <span className="font-bold text-muted"> · {plaatsOf(member)}</span>
+                ) : null}
+              </span>
               {member.wantsWalk && (
                 <span className="shrink-0 rounded-full bg-sun px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide">
                   wandelen
