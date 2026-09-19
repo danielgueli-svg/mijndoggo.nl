@@ -18,6 +18,8 @@ const {
 
 const pageTitle = title ? `${title} · ${site.name}` : `${site.name} — ${site.tagline}`;
 const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://mijndoggo.nl").toString();
+const ogImage =
+  image ?? new URL("/logo-doghead.png", Astro.site ?? "https://mijndoggo.nl").toString();
 ---
 
 <!doctype html>
@@ -29,13 +31,15 @@ const canonical = new URL(Astro.url.pathname, Astro.site ?? "https://mijndoggo.n
     <title>{pageTitle}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonical} />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta property="og:type" content="website" />
     <meta property="og:locale" content="nl_NL" />
     <meta property="og:title" content={pageTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
-    {image && <meta property="og:image" content={image} />}
+    <meta property="og:image" content={ogImage} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://images.unsplash.com" />
