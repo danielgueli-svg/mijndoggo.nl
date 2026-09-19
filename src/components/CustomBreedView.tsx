@@ -125,21 +125,21 @@ export default function CustomBreedView() {
         </ul>
       </header>
 
-      <section className="breed-photo-compact mx-auto max-w-xl px-4 py-4 sm:px-6" aria-label={`Foto's van de ${breed.name}`}>
+      <section className="breed-photo-compact mx-auto px-4 py-3 sm:px-6" aria-label={`Foto's van de ${breed.name}`}>
         <p className="text-xs font-extrabold uppercase tracking-widest text-coral">Fotogalerij</p>
-        <h2 className="mt-1 font-display text-2xl font-semibold">Even kijken. Even kwispelen.</h2>
-        <div className="mt-4 grid grid-cols-3 gap-2">
+        <h2 className="mt-1 font-display text-xl font-semibold">Even kijken. Even kwispelen.</h2>
+        <div className="mt-3 grid grid-cols-3 gap-1.5">
           {gallery.map((photo, index) => (
             <figure
               key={`${photo.url.slice(0, 24)}-${index}`}
-              className="overflow-hidden rounded-2xl bg-white shadow-pop ring-2 ring-ink/10"
+              className="overflow-hidden rounded-xl bg-white shadow-pop ring-2 ring-ink/10"
             >
               <img
                 src={photo.url}
                 alt={photo.alt}
-                width="420"
-                height="320"
-                className="aspect-[4/3] w-full object-cover"
+                width="280"
+                height="210"
+                className="w-full object-cover"
               />
             </figure>
           ))}
@@ -152,7 +152,7 @@ export default function CustomBreedView() {
             Kort verhaal
             <span className="ml-2 text-sm font-bold text-muted">tik om te openen</span>
           </summary>
-          <p className="mt-4 text-lg leading-relaxed text-ink">
+          <p className="breed-story mt-4 text-lg leading-relaxed text-ink">
             {storyParagraphs(breed.story)[0] ?? breed.tagline}
           </p>
         </details>
