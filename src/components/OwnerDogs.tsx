@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState, type FormEvent } from "react";
+import { filesToPhotos } from "../lib/compress-image";
 import {
   createOwnerDogRepository,
   validateOwnerDogWrite,
@@ -11,21 +12,6 @@ type Props = {
 };
 
 const repo = createOwnerDogRepository();
-
-async function compressImage(file: File): Promise<string> {
-  const bitmap = await createImageBitmap(file);
-  const max = 720;
-  const scale = Math.min(1, max / Math.max(bitmap.width, bitmap.height));
-  const width = Math.round(bitmap.width * scale);
-  const height = Math.round(bitmap.height * scale);
-  const canvas = document.createElement("canvas");
-  canvas.width = width;
-  canvas.height = height;
-  const ctx = canvas.getContext("2d");
-  if (!ctx) throw new Error("Kon de foto niet verkleinen.");
-  ctx.drawImage(bitmap, 0, 0, width, height);
-  return canvas.toDataURL("image/jpeg", 0.72);
-}
 
 function DogPhoto({ dog }: { dog: OwnerDog }) {
   const photo = dog.photos.find((item) => item.url.length > 8);
@@ -91,17 +77,9 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
     setBusy(true);
     setErrors([]);
     try {
-      const next = [...photos];
-      for (const file of Array.from(files)) {
-        if (next.length >= 3) break;
-        if (!file.type.startsWith("image/")) {
-          setErrors(["Alleen foto's, geen pdf'tjes of geheime kattenplannen."]);
-          continue;
-        }
-        const url = await compressImage(file);
-        next.push({ url, alt: `${name || "Hond"} van een eigenaar` });
-      }
-      setPhotos(next);
+      const result = await filesToPhotos(files, photos, `${name || "Hond"} van een eigenaar`);
+      setPhotos(result.photos);
+      if (result.error) setErrors([result.error]);
     } catch {
       setErrors(["Die foto wilde niet meewerken. Probeer een kleinere jpg of png."]);
     } finally {
@@ -138,7 +116,7 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
       setFormOpen(false);
       setStatus(`${dog.name} staat erbij. Hallo ${dog.name}!`);
     } catch {
-      setErrors(["Opslaan ging mis. Check of je browser localStorage toestaat."]);
+      setErrors(["Opslaan ging mis. Check of je browser lokale opslag toestaat."]);
     } finally {
       setBusy(false);
     }
@@ -164,9 +142,8 @@ export default function OwnerDogs({ breedSlug, breedName }: Props) {
               Show je {breedName.toLowerCase()}
             </h2>
             <p className="mt-2 max-w-2xl text-sm leading-relaxed text-muted">
-              MVP: alles blijft op <strong>dit apparaat</strong> (localStorage). Geen account,
-              geen server. Later kunnen we dit 1-op-1 naar een echte API tillen — het datamodel
-              is er al klaar voor.
+              Alles blijft op <strong>dit apparaat</strong>. Geen account, geen server — alleen
+              jij ziet jouw hond hier.
             </p>
           </div>
           <button

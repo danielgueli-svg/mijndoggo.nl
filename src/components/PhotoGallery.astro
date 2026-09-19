@@ -11,35 +11,25 @@ const { images, breedName } = Astro.props;
 const photos = images.slice(0, 3);
 ---
 
-<section class="mx-auto max-w-6xl px-4 py-4 sm:px-6" aria-label={`Foto's van de ${breedName}`}>
+<section class="breed-photo-compact mx-auto max-w-xl px-4 py-4 sm:px-6" aria-label={`Foto's van de ${breedName}`}>
   <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Fotogalerij</p>
-  <h2 class="mt-1 font-display text-3xl font-semibold">Even kijken. Even kwispelen.</h2>
-  <div class="mt-5 grid gap-3 sm:grid-cols-3 sm:grid-rows-2">
+  <h2 class="mt-1 font-display text-2xl font-semibold">Even kijken. Even kwispelen.</h2>
+  <div class="mt-4 grid grid-cols-3 gap-2">
     {
       photos.map((photo, index) => (
-        <figure
-          class:list={[
-            "overflow-hidden rounded-[1.6rem] bg-white shadow-pop ring-2 ring-ink/10",
-            index === 0 && "sm:col-span-2 sm:row-span-2",
-          ]}
-        >
+        <figure class="overflow-hidden rounded-2xl bg-white shadow-pop ring-2 ring-ink/10">
           <img
-            src={breedImageSrc(photo, index === 0 ? 1400 : 800, index === 0 ? 1000 : 720)}
+            src={breedImageSrc(photo, 420, 320)}
             alt={photo.alt}
-            width={index === 0 ? 1400 : 800}
-            height={index === 0 ? 1000 : 720}
-            class:list={[
-              "w-full object-cover",
-              index === 0 ? "aspect-[4/3] sm:h-full sm:aspect-auto" : "aspect-[4/3]",
-            ]}
+            width="420"
+            height="320"
+            class="aspect-[4/3] w-full object-cover"
             loading={index === 0 ? "eager" : "lazy"}
           />
-          <figcaption class="px-3 py-2 text-xs font-bold text-muted">
-            Foto:{" "}
+          <figcaption class="px-2 py-1.5 text-[10px] font-bold leading-tight text-muted">
             <a class="underline decoration-2 underline-offset-2" href={photo.unsplashUrl}>
               {photo.photographer}
-            </a>{" "}
-            · Unsplash
+            </a>
           </figcaption>
         </figure>
       ))

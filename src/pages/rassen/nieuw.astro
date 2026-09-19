@@ -1,0 +1,17 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import BreedEditor from "../../components/BreedEditor.tsx";
+import { loadBreeds } from "../../lib/breeds";
+import { toCatalogBreed } from "../../lib/serialize-breeds";
+
+const catalog = (await loadBreeds()).map(toCatalogBreed);
+---
+
+<BaseLayout
+  title="Ras toevoegen"
+  description="Voeg een ras toe of bewerk het: naam, verhaal, foto’s en je eigen hond. Na opslaan staat het meteen op de homepage en een eigen ras-pagina."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <BreedEditor client:load catalog={catalog} />
+  </div>
+</BaseLayout>

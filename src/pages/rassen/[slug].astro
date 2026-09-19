@@ -2,15 +2,16 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import OwnerDogs from "../../components/OwnerDogs.tsx";
 import PhotoGallery from "../../components/PhotoGallery.astro";
+import BreedMembers from "../../components/BreedMembers.tsx";
 import {
   energyLabels,
   loadBreedEntry,
   loadBreeds,
+  shortBreedStory,
   sizeLabels,
   toBreed,
 } from "../../lib/breeds";
 import { breedImageSrc } from "../../lib/images";
-import { render } from "astro:content";
 
 export async function getStaticPaths() {
   const breeds = await loadBreeds();
@@ -27,7 +28,7 @@ if (!entry) {
 }
 
 const breed = toBreed(entry);
-const { Content } = await render(entry);
+const story = shortBreedStory(entry.body ?? breed.tagline);
 const ogImage = breedImageSrc(breed.image, 1400, 900);
 ---
 
@@ -63,8 +64,15 @@ const ogImage = breedImageSrc(breed.image, 1400, 900);
 
     <PhotoGallery images={breed.gallery} breedName={breed.name} />
 
-    <div class="prose prose-doggo prose-lg mx-auto max-w-3xl px-4 py-8 sm:px-6">
-      <Content />
+    <div class="mx-auto grid max-w-6xl gap-8 px-4 py-8 sm:px-6 lg:grid-cols-[minmax(0,1fr)_20rem]">
+      <details class="rounded-[1.8rem] bg-white p-5 shadow-pop ring-2 ring-ink/10 sm:p-8">
+        <summary class="cursor-pointer list-none font-display text-2xl font-semibold [&::-webkit-details-marker]:hidden">
+          Kort verhaal
+          <span class="ml-2 text-sm font-bold text-muted">tik om te openen</span>
+        </summary>
+        <p class="mt-4 text-lg leading-relaxed text-ink">{story}</p>
+      </details>
+      <BreedMembers client:load breedSlug={breed.slug} breedName={breed.shortName} />
     </div>
 
     <OwnerDogs client:load breedSlug={breed.slug} breedName={breed.shortName} />

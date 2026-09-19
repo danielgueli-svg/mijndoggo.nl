@@ -1,14 +1,14 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
-import BreedClicker from "../components/BreedClicker.astro";
+import BreedDirectory from "../components/BreedDirectory.tsx";
 import TipCard from "../components/TipCard.astro";
 import { loadBreeds } from "../lib/breeds";
 import { unsplashSrc } from "../lib/images";
+import { toCatalogBreed } from "../lib/serialize-breeds";
 import { getCollection } from "astro:content";
-import { site } from "../data/site";
 
-const breeds = await loadBreeds();
+const catalog = (await loadBreeds()).map(toCatalogBreed);
 const tips = (await getCollection("tips"))
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured))
   .slice(0, 3);
@@ -16,10 +16,12 @@ const tips = (await getCollection("tips"))
 
 <BaseLayout>
   <Hero />
-  <BreedClicker
-    breeds={breeds}
-    heading="Kies een ras — en leer hoe het écht bij jullie past"
-    intro="Geen droge naslagwerken, maar korte, warme verhalen over temperament, verzorging en voor wie een ras geschikt is, zodat je met een gerust hart kunt klikken. Tik een naam aan, lees in alle rust, en merk of die hond bij jouw leven past — of juist iets te veel vraagt voor dit seizoen."
+  <BreedDirectory
+    client:load
+    catalog={catalog}
+    mode="home"
+    heading="Acht bekende rassen — zoek hierboven naar alle"
+    intro="We zetten acht populaire honden vooraan. Typ in het zoekveld om élk ras te vinden — inclusief rassen die jij zelf hebt toegevoegd."
   />
 
   <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
@@ -54,26 +56,5 @@ const tips = (await getCollection("tips"))
     <a href="/tips" class="mt-6 inline-flex rounded-full bg-white px-4 py-2 text-sm font-extrabold shadow-pop ring-2 ring-ink/10 hover:bg-sun sm:hidden">
       Alle tips bekijken
     </a>
-  </section>
-
-  <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
-    <div class="grid gap-6 overflow-hidden rounded-[2rem] bg-sky p-6 text-ink shadow-pop-lg ring-2 ring-ink/10 sm:p-10 md:grid-cols-[1.2fr_0.8fr]">
-      <div>
-        <h2 class="font-display text-3xl font-semibold sm:text-4xl">Open source — net als een park: van en voor iedereen</h2>
-        <p class="mt-3 max-w-xl text-base font-semibold leading-relaxed">
-          {site.name} staat onder de MIT-licentie, waardoor je rassen kunt toevoegen via een
-          eenvoudig bestand en tips via Markdown, zonder dat je eerst een backend hoeft te bouwen.
-          Handig als je later teksten wilt laten oppoetsen door een Nederlandstalige schrijfhulp,
-          terwijl de site zelf licht en open blijft.
-        </p>
-        <a href="/over" class="mt-5 inline-flex rounded-full bg-ink px-5 py-3 text-sm font-extrabold text-cream shadow-pop">
-          Hoe het in elkaar zit
-        </a>
-      </div>
-      <p class="self-center rounded-[1.4rem] bg-white/80 p-5 text-sm font-bold leading-relaxed">
-        In deze eerste versie zijn er geen accounts en geen webshop — wél een ras-klikker,
-        leesbare tips, en een plek voor jouw hond die lokaal op je eigen apparaat blijft.
-      </p>
-    </div>
   </section>
 </BaseLayout>

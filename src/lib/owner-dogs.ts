@@ -44,6 +44,7 @@ export type OwnerDogDeleteResponse = { ok: true };
 export type OwnerDogRepository = {
   listByBreed: (breedSlug: string) => Promise<OwnerDog[]>;
   create: (input: OwnerDogWrite) => Promise<OwnerDog>;
+  update: (id: string, input: OwnerDogWrite) => Promise<OwnerDog>;
   remove: (breedSlug: string, id: string) => Promise<void>;
 };
 
@@ -88,11 +89,26 @@ export function createLocalStorageOwnerDogRepository(): OwnerDogRepository {
     async create(input) {
       const dog: OwnerDog = {
         ...input,
+        name: input.name.trim(),
+        bio: input.bio.trim(),
         id: crypto.randomUUID(),
         createdAt: new Date().toISOString(),
       };
       writeAll([dog, ...readAll()]);
       return dog;
+    },
+    async update(id, input) {
+      const existing = readAll().find((dog) => dog.id === id);
+      if (!existing) throw new Error("Deze hond staat niet op dit apparaat.");
+      const updated: OwnerDog = {
+        ...existing,
+        ...input,
+        name: input.name.trim(),
+        bio: input.bio.trim(),
+        id,
+      };
+      writeAll(readAll().map((dog) => (dog.id === id ? updated : dog)));
+      return updated;
     },
     async remove(breedSlug, id) {
       writeAll(
@@ -109,6 +125,31 @@ export function createOwnerDogRepository(): OwnerDogRepository {
   return createLocalStorageOwnerDogRepository();
 }
 
+/** First owner-dog on this breed, newest first — used by the breed editor. */
+export function firstOwnerDogForBreed(breedSlug: string): OwnerDog | undefined {
+  return readAll()
+    .filter((dog) => dog.breedSlug === breedSlug)
+    .sort((a, b) => b.createdAt.localeCompare(a.createdAt))[0];
+}
+
+export async function upsertFirstOwnerDog(
+  breedSlug: string,
+  input: Omit<OwnerDogWrite, "breedSlug">,
+): Promise<OwnerDog | null> {
+  const name = input.name.trim();
+  if (!name) return null;
+  const repo = createOwnerDogRepository();
+  const write: OwnerDogWrite = {
+    breedSlug,
+    name,
+    ageYears: input.ageYears,
+    bio: input.bio,
+    photos: input.photos.slice(0, 3),
+  };
+  const existing = firstOwnerDogForBreed(breedSlug);
+  return existing ? repo.update(existing.id, write) : repo.create(write);
+}
+
 export function validateOwnerDogWrite(input: OwnerDogWrite): string[] {
   const errors: string[] = [];
   const name = input.name.trim();
@@ -120,7 +161,7 @@ export function validateOwnerDogWrite(input: OwnerDogWrite): string[] {
     errors.push("Leeftijd mag tussen 0 en 25 jaar.");
   }
   if (bio.length < 8) errors.push("Schrijf een kort biootje (minstens 8 tekens).");
-  if (bio.length > 280) errors.push("Bio mag max 280 tekens — keep it snappy.");
+  if (bio.length > 280) errors.push("Bio mag max 280 tekens — hou het kort.");
   if (input.photos.length > 3) errors.push("Maximaal 3 foto's voor nu.");
   return errors;
 }

@@ -20,8 +20,10 @@ export function heroSrc(id: string): string {
 }
 
 export const nav = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Start" },
   { href: "/rassen", label: "Rassen" },
+  { href: "/community", label: "Leden" },
+  { href: "/aanmelden", label: "Aanmelden" },
   { href: "/tips", label: "Tips" },
   { href: "/intro", label: "Intro" },
   { href: "/over", label: "Over" },
