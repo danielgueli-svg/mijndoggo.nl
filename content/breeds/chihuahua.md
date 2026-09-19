@@ -8,20 +8,20 @@ goodWithKids: false
 origin: Mexico
 traits: [dapper, alert, schoothond]
 gallery:
-  - unsplashId: photo-1561037404-61cd46aa615b
-    alt: Kleine hond kijkt vriendelijk in de camera
-    photographer: Jamie Street
-    unsplashUrl: https://unsplash.com/photos/pToUUdN_PZc
+  - unsplashId: photo-1767454979220-c92e699d29d3
+    alt: Kleine zwart-bruine chihuahua staat buiten
+    photographer: Erwin Bosman
+    unsplashUrl: https://unsplash.com/photos/C3A-0kZRH4Y
+    sfeer: false
+  - unsplashId: photo-1623689278873-6981e40013ec
+    alt: Zachte close-up van een lieve hond
+    photographer: Anna Stampfli
+    unsplashUrl: https://unsplash.com/photos/X9KcXxvP3II
     sfeer: true
-  - unsplashId: photo-1583511655826-05700d52f4d9
-    alt: Kleine pluizige hond in een bananen-shirt
+  - unsplashId: photo-1537151625747-768eb6cf92b2
+    alt: Blije hond met een bandana, helemaal knuffel
     photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/Qb0P67LulNY
-    sfeer: true
-  - unsplashId: photo-1518020382113-a7e8fc38eac9
-    alt: Zwarte mopshond met grote ogen
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1518020382113-a7e8fc38eac9
+    unsplashUrl: https://unsplash.com/photos/photo-1537151625747-768eb6cf92b2
     sfeer: true
 ---
 

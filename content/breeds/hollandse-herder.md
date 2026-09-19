@@ -8,20 +8,10 @@ goodWithKids: true
 origin: Nederland
 traits: [Nederlands, werkplezier, brillenkop]
 gallery:
-  - unsplashId: photo-1544568100-847a948585b9
-    alt: Roodbruine hond lacht op een zandpad
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1544568100-847a948585b9
-    sfeer: true
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
-    sfeer: false
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
+  - unsplashId: photo-1743617206502-6a4144e02fb1
+    alt: Kortharige herdershond zit geconcentreerd buiten
+    photographer: Caroline Badran
+    unsplashUrl: https://unsplash.com/photos/D1bM9AIrY6w
     sfeer: true
 ---
 

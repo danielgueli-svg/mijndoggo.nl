@@ -18,10 +18,10 @@ gallery:
     photographer: Jay Wennington
     unsplashUrl: https://unsplash.com/photos/l-50vJy5f9c
     sfeer: false
-  - unsplashId: photo-1552053831-71594a27632d
-    alt: Blije retriever met een gele tulp in de bek
-    photographer: Jamie Street
-    unsplashUrl: https://unsplash.com/photos/BJaNDEHARvE
+  - unsplashId: photo-1507146426996-ef05306b995a
+    alt: Gouden puppy met een rood halsbandje
+    photographer: Berkay Gumustekin
+    unsplashUrl: https://unsplash.com/photos/ngqyo2AYYnE
     sfeer: false
 ---
 

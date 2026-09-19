@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Duitsland
 traits: [clown, sportief, gezinsgek]
 gallery:
-  - unsplashId: photo-1541599540903-216a46ca1dc0
-    alt: Stevige puppy leunt relaxed op een houten rand
-    photographer: Christopher Ayme
-    unsplashUrl: https://unsplash.com/photos/XvS-uKUoUmk
+  - unsplashId: photo-1760121635250-19b425f04b90
+    alt: Bruin-witte boxer-puppy zit buiten
+    photographer: Mauricio Sordille
+    unsplashUrl: https://unsplash.com/photos/z5PF9BZqC7s
     sfeer: false
-  - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
-    photographer: Mihály Köles
-    unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
+  - unsplashId: photo-1598586896079-3d3964c57862
+    alt: Blije stevige puppy kijkt omhoog
+    photographer: Erik Mclean
+    unsplashUrl: https://unsplash.com/photos/FUJKlGPsidU
     sfeer: true
-  - unsplashId: photo-1583511655857-d19b40a7a54e
-    alt: Franse bulldog in een geel shirt tegen een blauwe achtergrond
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/5PVXkqt2s9k
+  - unsplashId: photo-1602792970992-256310933afc
+    alt: Stevige puppy op de boerderij
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/m9qqvJ4nqww
     sfeer: true
 ---
 

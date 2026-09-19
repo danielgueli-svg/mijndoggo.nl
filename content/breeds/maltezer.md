@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Middellandse Zee
 traits: [zijdezacht, schoot, elegant]
 gallery:
-  - unsplashId: photo-1596492784531-6e6eb5ea9993
-    alt: Witte pluizige hond tegen een roze achtergrond
-    photographer: Victor Grabarczyk
-    unsplashUrl: https://unsplash.com/photos/N04FIfHhv_k
-    sfeer: true
-  - unsplashId: photo-1534361960057-19889db9621e
-    alt: Witte krulhond rent dolblij door het gras
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1534361960057-19889db9621e
-    sfeer: true
-  - unsplashId: photo-1529429617124-95b109e86bb8
-    alt: Witte pluizenbol in de zon
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1529429617124-95b109e86bb8
+  - unsplashId: photo-1755526932767-330459e23b41
+    alt: Witte maltezer-puppy op een groen vlak
+    photographer: Kateryna Hliznitsova
+    unsplashUrl: https://unsplash.com/photos/rJaIU3h1sN4
+    sfeer: false
+  - unsplashId: photo-1561905887-3461f30ee843
+    alt: Witte pluizige hond kijkt vrolijk omhoog
+    photographer: Olga Kravchuk
+    unsplashUrl: https://unsplash.com/photos/PZcz2Q38j6g
+    sfeer: false
+  - unsplashId: photo-1744206247439-4b63f5300a5f
+    alt: Iemand fotografeert een pluizige witte puppy
+    photographer: wu yi
+    unsplashUrl: https://unsplash.com/photos/AttyUjQM1p4
     sfeer: true
 ---
 

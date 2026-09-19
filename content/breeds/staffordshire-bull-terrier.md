@@ -8,20 +8,15 @@ goodWithKids: true
 origin: Engeland
 traits: [trouw, stevig, knuffelkont]
 gallery:
-  - unsplashId: photo-1541599540903-216a46ca1dc0
-    alt: Stevige puppy leunt relaxed op een houten rand
-    photographer: Christopher Ayme
-    unsplashUrl: https://unsplash.com/photos/XvS-uKUoUmk
+  - unsplashId: photo-1600369671738-fa3a43efeced
+    alt: Blije stafford-puppy zit rechtop
+    photographer: Jordan Bigelow
+    unsplashUrl: https://unsplash.com/photos/yE1Q3Rld2SI
     sfeer: false
-  - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
-    photographer: Mihály Köles
-    unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
-    sfeer: true
-  - unsplashId: photo-1583511655857-d19b40a7a54e
-    alt: Franse bulldog in een geel shirt tegen een blauwe achtergrond
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/5PVXkqt2s9k
+  - unsplashId: photo-1576201836106-db1758fd1c97
+    alt: Gouden puppy rent blij over het gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/photo-1576201836106-db1758fd1c97
     sfeer: true
 ---
 

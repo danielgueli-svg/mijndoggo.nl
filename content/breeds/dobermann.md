@@ -8,20 +8,15 @@ goodWithKids: true
 origin: Duitsland
 traits: [strak, slim, plakkerig]
 gallery:
-  - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
-    photographer: Mihály Köles
-    unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
+  - unsplashId: photo-1757781956803-2efc6921abe9
+    alt: Dobermann zit aandachtig buiten, bergen op de achtergrond
+    photographer: Ile Gorgievski
+    unsplashUrl: https://unsplash.com/photos/vKzRKRmANbM
     sfeer: false
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
-    sfeer: true
-  - unsplashId: photo-1568572933382-74d440642117
-    alt: Husky met blauwe ogen, dichtbij
-    photographer: Tadeusz Lakota
-    unsplashUrl: https://unsplash.com/photos/T-FU0WgNLYo
+  - unsplashId: photo-1543466835-00a7907e9de1
+    alt: Blije hond lacht met open bek
+    photographer: Jaime Spain
+    unsplashUrl: https://unsplash.com/photos/photo-1543466835-00a7907e9de1
     sfeer: true
 ---
 

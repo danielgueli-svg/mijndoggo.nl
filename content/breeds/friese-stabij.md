@@ -13,15 +13,10 @@ gallery:
     photographer: Leio McLaren
     unsplashUrl: https://unsplash.com/photos/x_bNR6Yk0NY
     sfeer: true
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
-    sfeer: true
-  - unsplashId: photo-1544568100-847a948585b9
-    alt: Roodbruine hond lacht op een zandpad
+  - unsplashId: photo-1503256207526-0d5d80fa2f47
+    alt: Blije zwart-witte hond kijkt omhoog
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1544568100-847a948585b9
+    unsplashUrl: https://unsplash.com/photos/photo-1503256207526-0d5d80fa2f47
     sfeer: true
 ---
 

@@ -8,21 +8,21 @@ goodWithKids: true
 origin: Verenigd Koninkrijk
 traits: [briljant, sportief, intens]
 gallery:
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
+  - unsplashId: photo-1765934785570-beb8c9a36446
+    alt: Blije merle border collie in het gras
+    photographer: Alvan Nee
+    unsplashUrl: https://unsplash.com/photos/Obj1nsA6F64
     sfeer: false
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
-    sfeer: true
-  - unsplashId: photo-1548199973-03cce0bbc87b
-    alt: Een corgi en een ruige hond rennen blij over een zandpad
-    photographer: James Barker
-    unsplashUrl: https://unsplash.com/photos/v3-zcCWMjKY
-    sfeer: true
+  - unsplashId: photo-1630272134652-556377e792a9
+    alt: Zwart-witte border collie in profiel
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/qqVxZID_FEY
+    sfeer: false
+  - unsplashId: photo-1627676673061-8dac2a298855
+    alt: Zwart-witte border collie in het gras
+    photographer: Ramiro Pianarosa
+    unsplashUrl: https://unsplash.com/photos/cHHVhLMo79g
+    sfeer: false
 ---
 
 De border collie is briljant en intens: een hond die wil werken, meedenken en bewegen, waardoor verveling al snel voelt als het begin van chaos.

@@ -10,18 +10,18 @@ traits: [slim, krullen, showstopper]
 gallery:
   - unsplashId: photo-1534361960057-19889db9621e
     alt: Witte krulhond rent dolblij door het gras
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1534361960057-19889db9621e
+    photographer: Joe Caione
+    unsplashUrl: https://unsplash.com/photos/qO-PIF84Vxg
     sfeer: false
-  - unsplashId: photo-1596492784531-6e6eb5ea9993
-    alt: Witte pluizige hond tegen een roze achtergrond
-    photographer: Victor Grabarczyk
-    unsplashUrl: https://unsplash.com/photos/N04FIfHhv_k
-    sfeer: true
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
+  - unsplashId: photo-1778637276733-29304f46f0ef
+    alt: Witte poedel kijkt zacht in de camera
+    photographer: Tong A Pao
+    unsplashUrl: https://unsplash.com/photos/3QpzA6iBmcQ
+    sfeer: false
+  - unsplashId: photo-1760876909340-32e513f8a742
+    alt: Pluizige witte hond kijkt in de camera
+    photographer: Sebastian Laverde
+    unsplashUrl: https://unsplash.com/photos/-uEu0nM-by4
     sfeer: true
 ---
 

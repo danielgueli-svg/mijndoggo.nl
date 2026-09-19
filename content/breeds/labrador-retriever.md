@@ -13,15 +13,15 @@ gallery:
     photographer: Jamie Street
     unsplashUrl: https://unsplash.com/photos/BJaNDEHARvE
     sfeer: false
-  - unsplashId: photo-1633722715463-d30f4f325e24
-    alt: Golden retriever glimlacht in het gras
-    photographer: Tyler Casey
-    unsplashUrl: https://unsplash.com/photos/r4HxOKyeuOY
-    sfeer: false
-  - unsplashId: photo-1530281700549-e82e7bf110d6
-    alt: Roodbruine hond rent blij langs de zee
-    photographer: Pauline Loroy
-    unsplashUrl: https://unsplash.com/photos/U3aF7hgUSrk
+  - unsplashId: photo-1518717758536-85ae29035b6d
+    alt: Blije puppy met warme ogen
+    photographer: Krista Mangulsone
+    unsplashUrl: https://unsplash.com/photos/9gz3wfHr65U
+    sfeer: true
+  - unsplashId: photo-1589924691995-400dc9ecc119
+    alt: Hond kijkt verwachtingsvol bij de voerbak
+    photographer: Bonnie Kittle
+    unsplashUrl: https://unsplash.com/photos/A8iLzP4sS-Q
     sfeer: true
 ---
 

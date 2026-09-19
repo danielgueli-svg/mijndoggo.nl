@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Zwitserland
 traits: [zacht, groot, knuffelberg]
 gallery:
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
+  - unsplashId: photo-1753113721819-2c75bc6a57bf
+    alt: Berner sennenhond zit blij tussen het groen
+    photographer: David Trinks
+    unsplashUrl: https://unsplash.com/photos/tiLifk_FbZU
+    sfeer: false
+  - unsplashId: photo-1551433052-c4da99383ed2
+    alt: Blije gestreepte hond kijkt omhoog
+    photographer: veera Batlu
+    unsplashUrl: https://unsplash.com/photos/hPKsJSpf3BY
     sfeer: true
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
-    sfeer: true
-  - unsplashId: photo-1558788353-f76d92427f16
-    alt: Close-up van een vrolijke golden retriever
-    photographer: Jay Wennington
-    unsplashUrl: https://unsplash.com/photos/l-50vJy5f9c
+  - unsplashId: photo-1601758228041-f3b2795255f1
+    alt: Puppy bij zachte handen
+    photographer: Alvan Nee
+    unsplashUrl: https://unsplash.com/photos/1wnkZSwdG1c
     sfeer: true
 ---
 

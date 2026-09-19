@@ -8,20 +8,10 @@ goodWithKids: true
 origin: België
 traits: [turbo, werk, scherp]
 gallery:
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
-    sfeer: false
-  - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
-    photographer: Mihály Köles
-    unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
-    sfeer: true
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
+  - unsplashId: photo-1693507078013-b4256d9baf9f
+    alt: Kortharige herdershond tegen een blauwe lucht
+    photographer: Sabbra Cadabra
+    unsplashUrl: https://unsplash.com/photos/bBH_LitbjXI
     sfeer: true
 ---
 

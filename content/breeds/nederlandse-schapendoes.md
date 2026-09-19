@@ -8,20 +8,10 @@ goodWithKids: true
 origin: Nederland
 traits: [pluis, lenig, clown]
 gallery:
-  - unsplashId: photo-1529429617124-95b109e86bb8
-    alt: Witte pluizenbol in de zon
+  - unsplashId: photo-1549145507-f58b3ad6adad
+    alt: Twee pluizige schapenhonden in de sneeuw
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1529429617124-95b109e86bb8
-    sfeer: true
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
-    sfeer: true
-  - unsplashId: photo-1534361960057-19889db9621e
-    alt: Witte krulhond rent dolblij door het gras
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1534361960057-19889db9621e
+    unsplashUrl: https://unsplash.com/photos/H8w62GJNGbo
     sfeer: true
 ---
 
