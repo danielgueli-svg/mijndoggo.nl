@@ -13,20 +13,20 @@ export type WalkSpot = {
 
 export const ALWAYS_WALK_SPOTS: WalkSpot[] = [
   {
-    id: "altijd-strand",
-    name: "Strand",
+    id: "altijd-strandwandeling",
+    name: "Strandwandeling",
     kind: "strand",
     city: "",
-    aliases: ["kust", "zee", "zand"],
+    aliases: ["kust", "zee", "zand", "strandwandeling"],
     description:
-      "Altijd in de buurt als je een stukje rijdt: zand, wind en een natte hond. Houd rekening met seizoensregels en aangelijnde zones.",
+      "Altijd een optie, ook als je stad niet aan zee ligt: zand, wind en een natte hond. Check seizoensregels en aangelijnde zones.",
   },
   {
-    id: "altijd-bos",
-    name: "Bos",
+    id: "altijd-boswandeling",
+    name: "Boswandeling",
     kind: "bos",
     city: "",
-    aliases: ["bomen", "boswachter", "wandelbos"],
+    aliases: ["bomen", "boswachter", "wandelbos", "boswandeling"],
     description:
       "Altijd een goed plan: schaduw, takken en snuffelpaadjes. In het broedseizoen vaak aangelijnd — check het bord bij de ingang.",
   },
@@ -40,6 +40,14 @@ export const CITY_WALK_SPOTS: WalkSpot[] = [
     city: "Amsterdam",
     aliases: ["amsterdam", "ams"],
     description: "Breed, groen en altijd iemand om te begroeten — houd ’m kort bij de paden op drukke uren.",
+  },
+  {
+    id: "amsterdam-westerpark",
+    name: "Westerpark",
+    kind: "park",
+    city: "Amsterdam",
+    aliases: ["amsterdam", "ams"],
+    description: "Gras, cultuur en een losloopveld — fijn als Vondel te druk voelt.",
   },
   {
     id: "amsterdam-bos",
@@ -56,6 +64,14 @@ export const CITY_WALK_SPOTS: WalkSpot[] = [
     city: "Rotterdam",
     aliases: ["rotterdam", "kralingen"],
     description: "Bos, plas en renners. Fijn voor een lange lus aan de oostkant van de stad.",
+  },
+  {
+    id: "rotterdam-zuiderpark",
+    name: "Zuiderpark",
+    kind: "park",
+    city: "Rotterdam",
+    aliases: ["rotterdam", "charlois"],
+    description: "Groot stadspark met ruimte om te racen. Check waar loslopen mag.",
   },
   {
     id: "den-haag-scheveningen",
@@ -102,7 +118,7 @@ export const CITY_WALK_SPOTS: WalkSpot[] = [
     name: "Noorderplantsoen",
     kind: "park",
     city: "Groningen",
-    aliases: ["groningen", "stad"],
+    aliases: ["groningen"],
     description: "Stadspark met vijvers en korte rondjes — handig na school of werk.",
   },
   {

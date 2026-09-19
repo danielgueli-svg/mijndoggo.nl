@@ -120,98 +120,91 @@ export default function CommunityBoard() {
         )}
       </section>
 
-      <section aria-labelledby="leden-titel">
-        <h2 id="leden-titel" className="font-display text-2xl font-semibold">
-          {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Baasjes in een stad"}
-        </h2>
-        <p className="mt-1 text-sm font-bold text-muted">
-          Nickname, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
-        </p>
-        {ready && !q && (
-          <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
-            Tik een plaats in de lijst of typ een stad, bijvoorbeeld Amsterdam.
+      <div className={q ? "grid gap-8 lg:grid-cols-2 lg:items-start" : "grid gap-8"}>
+        <section aria-labelledby="leden-titel">
+          <h2 id="leden-titel" className="font-display text-2xl font-semibold">
+            {q ? `Baasjes in ${selectedPlace ?? query.trim()}` : "Baasjes in een stad"}
+          </h2>
+          <p className="mt-1 text-sm font-bold text-muted">
+            Nickname, welk ras, en of ze openstaan voor een wandeling — alle rassen door elkaar.
           </p>
-        )}
-        {ready && q && filteredMembers.length === 0 && (
-          <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
-            {nlHint
-              ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Amsterdam of Utrecht."
-              : "Niemand in die woonplaats — probeer een andere Nederlandse stad, zoals Amsterdam."}
-          </p>
-        )}
-        {filteredMembers.length > 0 && (
-          <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-            {filteredMembers.map((member) => (
-              <li
-                key={member.id}
-                className="flex items-center justify-between gap-3 rounded-[1.2rem] bg-white px-4 py-3 ring-2 ring-ink/10"
-              >
-                <span>
-                  <span className="font-extrabold">{displayNickname(member)}</span>
-                  <span className="mt-0.5 block text-sm font-bold text-muted">
-                    {member.breedName || "Ras onbekend"}
-                  </span>
-                  {isDemoMember(member) && (
-                    <span className="mt-1 inline-block text-[10px] font-extrabold uppercase tracking-widest text-sky-deep">
-                      voorbeeld
-                    </span>
-                  )}
-                </span>
-                {member.wantsWalk ? (
-                  <span className="shrink-0 rounded-full bg-sun px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide">
-                    wandelen
-                  </span>
-                ) : null}
-              </li>
-            ))}
-          </ul>
-        )}
-      </section>
-
-      <section aria-labelledby="wandelen-titel">
-        <h2 id="wandelen-titel" className="font-display text-2xl font-semibold">
-          Wandelen in de buurt
-        </h2>
-        <p className="mt-1 text-sm font-bold text-muted">
-          Plekken bij je stad, en <strong>altijd</strong> strand en bos.
-        </p>
-
-        {spots.nearby.length > 0 && (
-          <div className="mt-4">
-            <p className="text-xs font-extrabold uppercase tracking-widest text-coral">
-              Bij {query.trim()}
+          {ready && !q && (
+            <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
+              Tik een plaats in de lijst of typ een stad, bijvoorbeeld Amsterdam.
             </p>
-            <ul className="mt-2 grid gap-3 md:grid-cols-2">
-              {spots.nearby.map((spot) => (
+          )}
+          {ready && q && filteredMembers.length === 0 && (
+            <p className="mt-3 rounded-[1.3rem] bg-white px-4 py-5 text-sm font-bold text-muted ring-2 ring-ink/10">
+              {nlHint
+                ? "Alleen Nederlandse plaatsen — probeer bijvoorbeeld Amsterdam of Utrecht."
+                : "Niemand in die woonplaats — probeer een andere Nederlandse stad, zoals Amsterdam."}
+            </p>
+          )}
+          {filteredMembers.length > 0 && (
+            <ul className="mt-4 grid gap-2">
+              {filteredMembers.map((member) => (
+                <li
+                  key={member.id}
+                  className="flex items-center justify-between gap-3 rounded-[1.2rem] bg-white px-4 py-3 ring-2 ring-ink/10"
+                >
+                  <span>
+                    <span className="font-extrabold">{displayNickname(member)}</span>
+                    <span className="mt-0.5 block text-sm font-bold text-muted">
+                      {member.breedName || "Ras onbekend"}
+                    </span>
+                    {isDemoMember(member) && (
+                      <span className="mt-1 inline-block text-[10px] font-extrabold uppercase tracking-widest text-sky-deep">
+                        voorbeeld
+                      </span>
+                    )}
+                  </span>
+                  {member.wantsWalk ? (
+                    <span className="shrink-0 rounded-full bg-sun px-2 py-0.5 text-[10px] font-extrabold uppercase tracking-wide">
+                      wandelen
+                    </span>
+                  ) : null}
+                </li>
+              ))}
+            </ul>
+          )}
+        </section>
+
+        {q && (
+          <section aria-labelledby="wandelen-titel">
+            <h2 id="wandelen-titel" className="font-display text-2xl font-semibold">
+              Wandelen bij {selectedPlace ?? query.trim()}
+            </h2>
+            <p className="mt-1 text-sm font-bold text-muted">
+              Populaire uitlaatplekken in de buurt, plus altijd een{" "}
+              <strong>strandwandeling</strong> en een <strong>boswandeling</strong>.
+            </p>
+
+            {spots.nearby.length > 0 && (
+              <ul className="mt-4 grid gap-3">
+                {spots.nearby.map((spot) => (
+                  <SpotCard key={spot.id} spot={spot} />
+                ))}
+              </ul>
+            )}
+
+            {spots.nearby.length === 0 && (
+              <p className="mt-4 rounded-[1.3rem] bg-foam px-4 py-3 text-sm font-bold text-muted">
+                Geen specifieke plek in onze lijst voor “{query.trim()}”. Strandwandeling en
+                boswandeling blijven hieronder staan.
+              </p>
+            )}
+
+            <p className="mt-4 text-xs font-extrabold uppercase tracking-widest text-sky-deep">
+              Altijd: strandwandeling &amp; boswandeling
+            </p>
+            <ul className="mt-2 grid gap-3">
+              {spots.always.map((spot) => (
                 <SpotCard key={spot.id} spot={spot} />
               ))}
             </ul>
-          </div>
+          </section>
         )}
-
-        {query.trim() && spots.nearby.length === 0 && (
-          <p className="mt-4 rounded-[1.3rem] bg-foam px-4 py-3 text-sm font-bold text-muted">
-            Geen specifieke plek in onze lijst voor “{query.trim()}”. Strand en bos blijven hieronder staan.
-          </p>
-        )}
-
-        {!query.trim() && (
-          <p className="mt-4 rounded-[1.3rem] bg-foam px-4 py-3 text-sm font-bold text-muted">
-            Zoek een woonplaats hierboven om plekken in de buurt te zien. Strand en bos staan altijd klaar.
-          </p>
-        )}
-
-        <div className="mt-4">
-          <p className="text-xs font-extrabold uppercase tracking-widest text-sky-deep">
-            Altijd: strand &amp; bos
-          </p>
-          <ul className="mt-2 grid gap-3 md:grid-cols-2">
-            {spots.always.map((spot) => (
-              <SpotCard key={spot.id} spot={spot} />
-            ))}
-          </ul>
-        </div>
-      </section>
+      </div>
     </div>
   );
 }
