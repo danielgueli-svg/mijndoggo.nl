@@ -73,7 +73,7 @@ export default function SignupForm({ catalog }: Props) {
       setStatus(
         `Gelukt! ${who} staat erbij${member.wantsWalk ? " — en wil graag wandelen" : ""}.`,
       );
-      setStatusHref(`/rassen/${member.breedSlug}`);
+      setStatusHref(member.breedSlug ? `/rassen/${member.breedSlug}` : null);
     } catch (error) {
       setErrors([
         error instanceof Error
@@ -160,7 +160,12 @@ export default function SignupForm({ catalog }: Props) {
 
         <PlacePicker value={woonplaats} onChange={setWoonplaats} />
 
-        <BreedPicker breeds={breeds} value={breedSlug} onChange={setBreedSlug} />
+        <BreedPicker
+          breeds={breeds}
+          value={breedSlug}
+          onChange={setBreedSlug}
+          label="Ras van mijn hond"
+        />
 
         <label className="flex items-start gap-3 rounded-2xl bg-foam px-4 py-3 text-sm font-extrabold">
           <input
@@ -170,9 +175,9 @@ export default function SignupForm({ catalog }: Props) {
             className="mt-1 h-4 w-4 accent-coral"
           />
           <span>
-            Ik wil wandelen met andere baasjes
+            Ik sta open voor een wandeling samen
             <span className="block font-bold text-muted">
-              Dan zien anderen in de community dat je openstaat voor een rondje.
+              Met ras + dit vinkje kom je op de ras-pagina bij “Baasjes die willen wandelen”.
             </span>
           </span>
         </label>

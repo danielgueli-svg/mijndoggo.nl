@@ -7,11 +7,18 @@ type Props = {
   value: string;
   onChange: (slug: string) => void;
   id?: string;
+  label?: string;
 };
 
 const LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
 
-export default function BreedPicker({ breeds, value, onChange, id = "ras-kiezer" }: Props) {
+export default function BreedPicker({
+  breeds,
+  value,
+  onChange,
+  id = "ras-kiezer",
+  label = "Ras van mijn hond",
+}: Props) {
   const [query, setQuery] = useState("");
   const [letter, setLetter] = useState<string | null>(null);
 
@@ -45,7 +52,7 @@ export default function BreedPicker({ breeds, value, onChange, id = "ras-kiezer"
   return (
     <div className="grid gap-2">
       <label className="grid gap-1 text-sm font-extrabold" htmlFor={id}>
-        Ras
+        {label}
         <input
           id={id}
           type="search"

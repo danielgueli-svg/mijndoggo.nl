@@ -255,8 +255,8 @@ export function validateMemberWrite(input: MemberWrite): string[] {
   if (input.woonplaats.trim() && !findNlPlace(input.woonplaats)) {
     errors.push("Kies een Nederlandse woonplaats uit de lijst.");
   }
-  if (!input.breedSlug.trim() || !input.breedName.trim()) {
-    errors.push("Kies een ras uit de lijst.");
+  if (input.wantsWalk && (!input.breedSlug.trim() || !input.breedName.trim())) {
+    errors.push("Kies het ras van je hond om op de ras-pagina te staan.");
   }
   return errors;
 }
