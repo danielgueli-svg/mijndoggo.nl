@@ -13,15 +13,15 @@ gallery:
     photographer: Tamas Pap
     unsplashUrl: https://unsplash.com/photos/kG71BXh8KFw
     sfeer: false
-  - unsplashId: photo-1568572933382-74d440642117
-    alt: Husky met blauwe ogen, dichtbij
-    photographer: Tadeusz Lakota
-    unsplashUrl: https://unsplash.com/photos/T-FU0WgNLYo
-    sfeer: false
-  - unsplashId: photo-1529429617124-95b109e86bb8
-    alt: Witte pluizenbol in de zon
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1529429617124-95b109e86bb8
+  - unsplashId: photo-1601758125946-6ec2ef64daf8
+    alt: Iemand knuffelt een blije hond
+    photographer: Jamie Street
+    unsplashUrl: https://unsplash.com/photos/a-person-holding-a-dog-in-their-arms-p2A5CAcqaVg
+    sfeer: true
+  - unsplashId: photo-1450778869180-41d0601e046e
+    alt: Twee honden kijken samen omhoog
+    photographer: James Barker
+    unsplashUrl: https://unsplash.com/photos/photo-1450778869180-41d0601e046e
     sfeer: true
 ---
 

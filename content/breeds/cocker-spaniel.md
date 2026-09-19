@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Engeland
 traits: [orenvlucht, zacht, vrolijk]
 gallery:
-  - unsplashId: photo-1591946614720-90a587da4a36
-    alt: Roodbruine hond met een knuffel in de bek
-    photographer: Joyce G
-    unsplashUrl: https://unsplash.com/photos/w7Zyu2Au-pM
+  - unsplashId: photo-1750924378381-3fbdfcdc67bb
+    alt: Cocker spaniel staat blij buiten
+    photographer: Valentin
+    unsplashUrl: https://unsplash.com/photos/QBgN_tweHBo
     sfeer: false
-  - unsplashId: photo-1560807707-8cc77767d783
-    alt: Cavalier king charles spaniël kijkt over de rand
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1560807707-8cc77767d783
-    sfeer: true
-  - unsplashId: photo-1530281700549-e82e7bf110d6
-    alt: Roodbruine hond rent blij langs de zee
-    photographer: Pauline Loroy
-    unsplashUrl: https://unsplash.com/photos/U3aF7hgUSrk
+  - unsplashId: photo-1767463130546-1e0bffcd906f
+    alt: Cocker spaniel zit in het gras
+    photographer: Tanya Barrow
+    unsplashUrl: https://unsplash.com/photos/ah1X0SpRlUc
+    sfeer: false
+  - unsplashId: photo-1762339107529-dbe425684df6
+    alt: Lichtbruine cocker spaniel in het gras
+    photographer: Tanya Barrow
+    unsplashUrl: https://unsplash.com/photos/Lts7p8zUxu4
     sfeer: false
 ---
 

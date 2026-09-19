@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Duitsland
 traits: [koppig, dapper, knuffelworst]
 gallery:
-  - unsplashId: photo-1548199973-03cce0bbc87b
-    alt: Een corgi en een ruige hond rennen blij over een zandpad
+  - unsplashId: photo-1748667955740-dfea57f74bf7
+    alt: Rode teckel ligt relaxed in een mand
+    photographer: Max Bvp
+    unsplashUrl: https://unsplash.com/photos/eUvqqxzvuwU
+    sfeer: false
+  - unsplashId: photo-1746034137968-d0c21ec8111e
+    alt: Teckel kijkt zacht omhoog
+    photographer: Matteo Vistocco
+    unsplashUrl: https://unsplash.com/photos/whh8epxdObk
+    sfeer: false
+  - unsplashId: photo-1444212477490-ca407925329e
+    alt: Twee honden rennen blij over een veld
     photographer: James Barker
-    unsplashUrl: https://unsplash.com/photos/v3-zcCWMjKY
-    sfeer: true
-  - unsplashId: photo-1612536057832-2ff7ead58194
-    alt: Corgi met papieren hartjes
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/t2kROzL5P_c
-    sfeer: true
-  - unsplashId: photo-1477884213360-7e9d7dcc1e48
-    alt: Blije zwart-witte hond op straat
-    photographer: Leio McLaren
-    unsplashUrl: https://unsplash.com/photos/x_bNR6Yk0NY
+    unsplashUrl: https://unsplash.com/photos/photo-1444212477490-ca407925329e
     sfeer: true
 ---
 

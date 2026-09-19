@@ -13,15 +13,15 @@ gallery:
     photographer: Mihály Köles
     unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
     sfeer: false
-  - unsplashId: photo-1541599540903-216a46ca1dc0
-    alt: Stevige puppy leunt relaxed op een houten rand
-    photographer: Christopher Ayme
-    unsplashUrl: https://unsplash.com/photos/XvS-uKUoUmk
+  - unsplashId: photo-1571327510235-889e0cf4ad1f
+    alt: Blije hond kijkt omhoog naar een stok
+    photographer: Radmila Miheeva
+    unsplashUrl: https://unsplash.com/photos/DgqFoVbccWU
     sfeer: true
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
+  - unsplashId: photo-1554312931-5462764f0b65
+    alt: Stevige hond op pad, van achteren gezien
+    photographer: Gabriel Forsberg
+    unsplashUrl: https://unsplash.com/photos/bIinCsJqCq4
     sfeer: true
 ---
 

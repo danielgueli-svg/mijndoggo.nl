@@ -10,18 +10,18 @@ traits: [zoet, sociaal, schootroyalty]
 gallery:
   - unsplashId: photo-1560807707-8cc77767d783
     alt: Cavalier king charles spaniël kijkt over de rand
+    photographer: T.R Photography
+    unsplashUrl: https://unsplash.com/photos/TzjMd7i5WQI
+    sfeer: false
+  - unsplashId: photo-1617756229720-6d26f4d79ae2
+    alt: Bruin-witte cavalier kijkt zacht in de camera
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1560807707-8cc77767d783
+    unsplashUrl: https://unsplash.com/photos/ufafkaZsiHc
     sfeer: false
   - unsplashId: photo-1583511655826-05700d52f4d9
     alt: Kleine pluizige hond in een bananen-shirt
     photographer: Karsten Winegeart
     unsplashUrl: https://unsplash.com/photos/Qb0P67LulNY
-    sfeer: true
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
     sfeer: true
 ---
 

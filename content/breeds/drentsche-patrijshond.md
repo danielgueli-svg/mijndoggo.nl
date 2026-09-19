@@ -10,19 +10,9 @@ traits: [Drents, vriendelijk, buitenmens]
 gallery:
   - unsplashId: photo-1544568100-847a948585b9
     alt: Roodbruine hond lacht op een zandpad
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1544568100-847a948585b9
-    sfeer: false
-  - unsplashId: photo-1530281700549-e82e7bf110d6
-    alt: Roodbruine hond rent blij langs de zee
-    photographer: Pauline Loroy
-    unsplashUrl: https://unsplash.com/photos/U3aF7hgUSrk
-    sfeer: false
-  - unsplashId: photo-1591946614720-90a587da4a36
-    alt: Roodbruine hond met een knuffel in de bek
-    photographer: Joyce G
-    unsplashUrl: https://unsplash.com/photos/w7Zyu2Au-pM
-    sfeer: false
+    photographer: Jamie Street
+    unsplashUrl: https://unsplash.com/photos/UtrE5DcgEyg
+    sfeer: true
 ---
 
 De Drentsche patrijshond is een Nederlandse allrounder: vriendelijk, kwispelend en graag buiten, met een jachtneus die wandelingen nét iets spannender maakt.

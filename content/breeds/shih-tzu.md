@@ -8,20 +8,20 @@ goodWithKids: true
 origin: Tibet / China
 traits: [ponyhaar, chill, schoot]
 gallery:
-  - unsplashId: photo-1583511655826-05700d52f4d9
-    alt: Kleine pluizige hond in een bananen-shirt
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/Qb0P67LulNY
+  - unsplashId: photo-1610385874395-e75e493098b7
+    alt: Wit-bruine shih tzu-puppy loopt naar voren
+    photographer: Varun Kumar e.k
+    unsplashUrl: https://unsplash.com/photos/z3QxarNFCBo
     sfeer: false
-  - unsplashId: photo-1560807707-8cc77767d783
-    alt: Cavalier king charles spaniël kijkt over de rand
+  - unsplashId: photo-1769868072425-d7975412529a
+    alt: Kleine bruine krulhond in een wit jurkje
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1560807707-8cc77767d783
+    unsplashUrl: https://unsplash.com/photos/ntT2u7RSTKM
     sfeer: true
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
+  - unsplashId: photo-1528310148982-03940d522f20
+    alt: Zwarte hond ligt relaxed op een kussen
+    photographer: charlesdeluvio
+    unsplashUrl: https://unsplash.com/photos/IL9vpVg6fPE
     sfeer: true
 ---
 

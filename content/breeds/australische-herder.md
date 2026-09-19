@@ -13,15 +13,15 @@ gallery:
     photographer: Tamas Tuzes-Katai
     unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
     sfeer: false
-  - unsplashId: photo-1551717743-49959800b1f6
-    alt: Twee blije corgi's kijken omhoog
-    photographer: Alvan Nee
-    unsplashUrl: https://unsplash.com/photos/T-0WGZNDDcs
+  - unsplashId: photo-1742301874145-d00ca3b37d7f
+    alt: Rood-witte herdershond in het groen
+    photographer: Timur Shakerzianov
+    unsplashUrl: https://unsplash.com/photos/-1umQm86yoY
     sfeer: true
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
+  - unsplashId: photo-1600500398321-8c4fb92df5d8
+    alt: Zwart-witte herderspuppy ligt relaxed
+    photographer: Silas van Overeem
+    unsplashUrl: https://unsplash.com/photos/VubBxZ36x6g
     sfeer: true
 ---
 

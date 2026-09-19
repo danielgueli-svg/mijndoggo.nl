@@ -22,7 +22,7 @@ gallery:
     alt: Een corgi en een ruige hond rennen blij over een zandpad
     photographer: James Barker
     unsplashUrl: https://unsplash.com/photos/v3-zcCWMjKY
-    sfeer: false
+    sfeer: true
 ---
 
 Korte pootjes, royale blik, doorlopende charme: de corgi is een herder in compact formaat, waardoor training en rugvriendelijke zorg belangrijker zijn dan alleen “aww”.

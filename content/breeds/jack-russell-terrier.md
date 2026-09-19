@@ -13,16 +13,16 @@ gallery:
     photographer: Jamie Street
     unsplashUrl: https://unsplash.com/photos/pToUUdN_PZc
     sfeer: false
-  - unsplashId: photo-1477884213360-7e9d7dcc1e48
-    alt: Blije zwart-witte hond op straat
-    photographer: Leio McLaren
-    unsplashUrl: https://unsplash.com/photos/x_bNR6Yk0NY
-    sfeer: false
-  - unsplashId: photo-1548199973-03cce0bbc87b
-    alt: Een corgi en een ruige hond rennen blij over een zandpad
-    photographer: James Barker
-    unsplashUrl: https://unsplash.com/photos/v3-zcCWMjKY
-    sfeer: false
+  - unsplashId: photo-1615751072497-5f5169febe17
+    alt: Pluizige hond van dichtbij, helemaal knuffel
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
+    sfeer: true
+  - unsplashId: photo-1541599540903-216a46ca1dc0
+    alt: Stevige puppy leunt relaxed op een houten rand
+    photographer: Christopher Ayme
+    unsplashUrl: https://unsplash.com/photos/XvS-uKUoUmk
+    sfeer: true
 ---
 
 De Jack Russell lijkt een compacte batterij: dapper, speels en eindeloos nieuwsgierig, terwijl die energie om slimme uitlaatkleppen vraagt — anders zoekt-ie zelf een project.

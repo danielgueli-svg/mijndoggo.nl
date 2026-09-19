@@ -13,16 +13,16 @@ gallery:
     photographer: Andrea Lightfoot
     unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
     sfeer: false
-  - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
-    photographer: Mihály Köles
-    unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
-    sfeer: true
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
-    sfeer: true
+  - unsplashId: photo-1765064518787-323550fa32d5
+    alt: Duitse herder in profiel buiten
+    photographer: Dmytro Glazunov
+    unsplashUrl: https://unsplash.com/photos/QZIvqcMt6Qo
+    sfeer: false
+  - unsplashId: photo-1453487977089-77350a275ec5
+    alt: Langharige herdershond in profiel aan het water
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/i1AS4tkfbj4
+    sfeer: false
 ---
 
 Slim, loyaal en graag met een plan: de Duitse herder wil werken en meedenken, waardoor structuur en zachte duidelijkheid minstens zo belangrijk zijn als kilometers.

@@ -12,17 +12,7 @@ gallery:
     alt: Roodbruine hond rent blij langs de zee
     photographer: Pauline Loroy
     unsplashUrl: https://unsplash.com/photos/U3aF7hgUSrk
-    sfeer: false
-  - unsplashId: photo-1544568100-847a948585b9
-    alt: Roodbruine hond lacht op een zandpad
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1544568100-847a948585b9
-    sfeer: false
-  - unsplashId: photo-1591946614720-90a587da4a36
-    alt: Roodbruine hond met een knuffel in de bek
-    photographer: Joyce G
-    unsplashUrl: https://unsplash.com/photos/w7Zyu2Au-pM
-    sfeer: false
+    sfeer: true
 ---
 
 Oranje-wit met oorbelletjes: het kooikerhondje is een Nederlandse ster die vrolijk en alert is, terwijl gevoeligheid en goede socialisatie net zo belangrijk zijn als de schattige look.

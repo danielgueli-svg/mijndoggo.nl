@@ -9,19 +9,9 @@ origin: Nederland
 traits: [gereserveerd, uniek, natuurhond]
 gallery:
   - unsplashId: photo-1568572933382-74d440642117
-    alt: Husky met blauwe ogen, dichtbij
+    alt: Wolfachtige hond met lichte ogen, dichtbij
     photographer: Tadeusz Lakota
     unsplashUrl: https://unsplash.com/photos/T-FU0WgNLYo
-    sfeer: false
-  - unsplashId: photo-1605568427561-40dd23c2acea
-    alt: Blije siberische husky in het gras
-    photographer: Tamas Pap
-    unsplashUrl: https://unsplash.com/photos/kG71BXh8KFw
-    sfeer: false
-  - unsplashId: photo-1553882809-a4f57e59501d
-    alt: Langharige herdershond met warme ogen
-    photographer: Andrea Lightfoot
-    unsplashUrl: https://unsplash.com/photos/rNFyi7e2lN4
     sfeer: true
 ---
 

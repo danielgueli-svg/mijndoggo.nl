@@ -13,15 +13,15 @@ gallery:
     photographer: Meriç Dağlı
     unsplashUrl: https://unsplash.com/photos/lqsKj0P_COk
     sfeer: false
-  - unsplashId: photo-1615751072497-5f5169febe17
-    alt: Pluizige hond van dichtbij, helemaal knuffel
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1615751072497-5f5169febe17
-    sfeer: true
   - unsplashId: photo-1529429617124-95b109e86bb8
     alt: Witte pluizenbol in de zon
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1529429617124-95b109e86bb8
+    photographer: Lui Peng
+    unsplashUrl: https://unsplash.com/photos/ybHtKz5He9Y
+    sfeer: true
+  - unsplashId: photo-1596492784531-6e6eb5ea9993
+    alt: Witte pluizige hond tegen een roze achtergrond
+    photographer: Victor Grabarczyk
+    unsplashUrl: https://unsplash.com/photos/N04FIfHhv_k
     sfeer: true
 ---
 

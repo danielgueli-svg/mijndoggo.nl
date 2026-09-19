@@ -10,19 +10,19 @@ traits: [plooien, schoot, komisch]
 gallery:
   - unsplashId: photo-1518020382113-a7e8fc38eac9
     alt: Zwarte mopshond met grote ogen
-    photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/photo-1518020382113-a7e8fc38eac9
+    photographer: charlesdeluvio
+    unsplashUrl: https://unsplash.com/photos/K4mSJ7kc0As
     sfeer: false
-  - unsplashId: photo-1583511655857-d19b40a7a54e
-    alt: Franse bulldog in een geel shirt tegen een blauwe achtergrond
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/5PVXkqt2s9k
-    sfeer: true
-  - unsplashId: photo-1583337130417-3346a1be7dee
-    alt: Franse bulldog in een geel hoodie-shirt
-    photographer: Karsten Winegeart
-    unsplashUrl: https://unsplash.com/photos/photo-1583337130417-3346a1be7dee
-    sfeer: true
+  - unsplashId: photo-1536002506692-2cac1612e1b7
+    alt: Fawn mopshond-puppy met een strikje
+    photographer: Alicja Duchiewicz-Potocka
+    unsplashUrl: https://unsplash.com/photos/ob3IAKDhibw
+    sfeer: false
+  - unsplashId: photo-1577611612259-3c222e97c514
+    alt: Close-up van een fawn mopshond
+    photographer: Sebastian Coman
+    unsplashUrl: https://unsplash.com/photos/ExJKlXHVdHs
+    sfeer: false
 ---
 
 De mopshond is knuffelplicht met een gerimpeld gezicht: aanhankelijk en komisch, terwijl ademhaling, gewicht en hitte de serieuze kant van het verhaal vormen.

@@ -8,16 +8,16 @@ goodWithKids: true
 origin: Engeland
 traits: [neuswerk, vrolijk, hobbykok]
 gallery:
-  - unsplashId: photo-1477884213360-7e9d7dcc1e48
-    alt: Blije zwart-witte hond op straat
-    photographer: Leio McLaren
-    unsplashUrl: https://unsplash.com/photos/x_bNR6Yk0NY
-    sfeer: true
-  - unsplashId: photo-1561037404-61cd46aa615b
-    alt: Kleine hond kijkt vriendelijk in de camera
-    photographer: Jamie Street
-    unsplashUrl: https://unsplash.com/photos/pToUUdN_PZc
-    sfeer: true
+  - unsplashId: photo-1505333365657-364654b0625b
+    alt: Driekleurige beagle kijkt nieuwsgierig over een boot
+    photographer: Agnieszka Boeske
+    unsplashUrl: https://unsplash.com/photos/WYoeCS2vefc
+    sfeer: false
+  - unsplashId: photo-1753737632802-cf56b157abba
+    alt: Blije beagle kijkt recht in de camera
+    photographer: Meg von Haartman
+    unsplashUrl: https://unsplash.com/photos/wCnXOZaLrTc
+    sfeer: false
   - unsplashId: photo-1591946614720-90a587da4a36
     alt: Roodbruine hond met een knuffel in de bek
     photographer: Joyce G
