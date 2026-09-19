@@ -8,21 +8,21 @@ goodWithKids: true
 origin: Verenigde Staten
 traits: [merle, sportief, aandachtig]
 gallery:
-  - unsplashId: photo-1587300003388-59208cc962cb
-    alt: Blije herdershond op het strand
-    photographer: Tamas Tuzes-Katai
-    unsplashUrl: https://unsplash.com/photos/N7Ain41n_bU
+  - unsplashId: photo-1770345629583-01333c1c31b0
+    alt: Merle Australische herder met blauwe ogen in het gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/h2HWYeq-IE0
     sfeer: false
-  - unsplashId: photo-1742301874145-d00ca3b37d7f
-    alt: Rood-witte herdershond in het groen
-    photographer: Timur Shakerzianov
-    unsplashUrl: https://unsplash.com/photos/-1umQm86yoY
-    sfeer: true
-  - unsplashId: photo-1600500398321-8c4fb92df5d8
-    alt: Zwart-witte herderspuppy ligt relaxed
-    photographer: Silas van Overeem
-    unsplashUrl: https://unsplash.com/photos/VubBxZ36x6g
-    sfeer: true
+  - unsplashId: photo-1678818546450-da128f70a133
+    alt: Zwart-witte Australische herder ligt in het gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/LEnfEFBOSRU
+    sfeer: false
+  - unsplashId: photo-1628506701058-cdd1e363930c
+    alt: Merle Australische herder-puppy op een geel dekentje
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/ZB4zmR1vvMk
+    sfeer: false
 ---
 
 Met die merlevacht lijkt de Australische herder soms uit een magazine te stappen, terwijl er onder die kleuren een echte werkmotor schuilt die graag iets te doen heeft.

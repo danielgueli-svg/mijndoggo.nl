@@ -8,11 +8,16 @@ goodWithKids: true
 origin: België
 traits: [turbo, werk, scherp]
 gallery:
-  - unsplashId: photo-1693507078013-b4256d9baf9f
-    alt: Kortharige herdershond tegen een blauwe lucht
-    photographer: Sabbra Cadabra
-    unsplashUrl: https://unsplash.com/photos/bBH_LitbjXI
-    sfeer: true
+  - unsplashId: photo-1747578442579-db44208456ad
+    alt: Mechelse herder aan de lijn tijdens een demonstratie
+    photographer: G-R Mottez
+    unsplashUrl: https://unsplash.com/photos/oU9tVBNp-lU
+    sfeer: false
+  - unsplashId: photo-1550801845-94b460790a90
+    alt: Kortharige herdershond staat blij in het hoge gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/RfZhl0_0wD4
+    sfeer: false
 ---
 
 De Mechelse herder is een werkmotor met hersens: loyaal en intens, waardoor dit ras vooral past bij mensen met een plan, ervaring en zin in dagelijkse training.

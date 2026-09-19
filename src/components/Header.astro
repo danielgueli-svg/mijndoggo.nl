@@ -7,11 +7,11 @@ const isHome = path === "/";
 ---
 
 <header class="sticky top-0 z-40 border-b-4 border-ink/10 bg-cream">
-  <div class:list={["mx-auto flex max-w-6xl items-center gap-4 px-4 py-3 sm:px-6", isHome ? "justify-end" : "justify-between"]}>
+  <div class:list={["mx-auto flex max-w-6xl items-center gap-4 px-4 py-4 sm:px-6", isHome ? "justify-end" : "justify-between"]}>
     {
       !isHome && (
         <a href="/" class="group flex items-center gap-3 rounded-full">
-          <Logo class="h-14 w-14 transition-transform group-hover:rotate-6 group-hover:scale-105 sm:h-16 sm:w-16" />
+          <Logo class="h-24 w-24 transition-transform group-hover:rotate-6 group-hover:scale-105 sm:h-28 sm:w-28" />
           <span class="leading-tight">
             <span class="font-display text-2xl font-semibold tracking-tight text-ink sm:text-3xl">
               {site.name}

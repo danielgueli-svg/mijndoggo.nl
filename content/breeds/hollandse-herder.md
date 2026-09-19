@@ -13,6 +13,11 @@ gallery:
     photographer: Caroline Badran
     unsplashUrl: https://unsplash.com/photos/D1bM9AIrY6w
     sfeer: true
+  - unsplashId: photo-1676294362221-764f1ff246fd
+    alt: Herdershond ligt in het hoge gras
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/kWwaV4qdql0
+    sfeer: true
 ---
 
 Thuisras met werkethos: de Hollandse herder is alert, leerbaar en graag bezig, waardoor een helder plan in de week minstens zo belangrijk is als een mooie bril of streepjesvacht.

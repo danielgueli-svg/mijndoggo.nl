@@ -8,21 +8,21 @@ goodWithKids: true
 origin: Canada / Verenigd Koninkrijk
 traits: [vriendelijk, watergek, leerbaar]
 gallery:
-  - unsplashId: photo-1552053831-71594a27632d
-    alt: Blije retriever met een gele tulp in de bek
-    photographer: Jamie Street
-    unsplashUrl: https://unsplash.com/photos/BJaNDEHARvE
+  - unsplashId: photo-1579129293745-038d751019b7
+    alt: Gele labrador kijkt recht in de camera, sneeuw op de neus
+    photographer: Pete Nuij
+    unsplashUrl: https://unsplash.com/photos/cRDATsSz1dI
     sfeer: false
   - unsplashId: photo-1518717758536-85ae29035b6d
-    alt: Blije puppy met warme ogen
+    alt: Chocoladebruine labrador steekt de tong uit
     photographer: Krista Mangulsone
     unsplashUrl: https://unsplash.com/photos/9gz3wfHr65U
-    sfeer: true
-  - unsplashId: photo-1589924691995-400dc9ecc119
-    alt: Hond kijkt verwachtingsvol bij de voerbak
-    photographer: Bonnie Kittle
-    unsplashUrl: https://unsplash.com/photos/A8iLzP4sS-Q
-    sfeer: true
+    sfeer: false
+  - unsplashId: photo-1572977422688-7f2dd9339644
+    alt: Chocoladebruine labrador met een tennisbal op het strand
+    photographer: Reed Naliboff
+    unsplashUrl: https://unsplash.com/photos/UZv4EPNpVUY
+    sfeer: false
 ---
 
 Natte neus, groot hart en een zwak voor tennisballen: de labrador is vriendelijk tot in de staartpunt, terwijl beweging en een slim voerschema net zo belangrijk zijn als die beroemde knuffelblik.

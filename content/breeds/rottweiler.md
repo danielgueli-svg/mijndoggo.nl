@@ -9,20 +9,20 @@ origin: Duitsland
 traits: [krachtig, kalm, trouw]
 gallery:
   - unsplashId: photo-1567752881298-894bb81f9379
-    alt: Vrolijke zwart-bruine hond met open bek
+    alt: Rottweiler in profiel met open bek
     photographer: Mihály Köles
     unsplashUrl: https://unsplash.com/photos/8j4WZh2iTZc
     sfeer: false
-  - unsplashId: photo-1571327510235-889e0cf4ad1f
-    alt: Blije hond kijkt omhoog naar een stok
-    photographer: Radmila Miheeva
-    unsplashUrl: https://unsplash.com/photos/DgqFoVbccWU
-    sfeer: true
-  - unsplashId: photo-1554312931-5462764f0b65
-    alt: Stevige hond op pad, van achteren gezien
-    photographer: Gabriel Forsberg
-    unsplashUrl: https://unsplash.com/photos/bIinCsJqCq4
-    sfeer: true
+  - unsplashId: photo-1665333354010-050f08f35907
+    alt: Rottweiler zit rechtop in een herfstveld
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/M_6O3jJ-alk
+    sfeer: false
+  - unsplashId: photo-1640262653842-3da89bc3e9b0
+    alt: Rottweiler staat blij aan de lijn
+    photographer: Unsplash
+    unsplashUrl: https://unsplash.com/photos/pgZ84X4Z4yM
+    sfeer: false
 ---
 
 Stoere look, zachte kern — áls jij die kern voedt met rust, regels en nabijheid. De rottweiler neemt mensen serieus, waardoor eerlijke opvoeding het verschil maakt.

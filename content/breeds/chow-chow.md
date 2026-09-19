@@ -13,16 +13,16 @@ gallery:
     photographer: Meriç Dağlı
     unsplashUrl: https://unsplash.com/photos/lqsKj0P_COk
     sfeer: false
-  - unsplashId: photo-1529429617124-95b109e86bb8
-    alt: Witte pluizenbol in de zon
-    photographer: Lui Peng
-    unsplashUrl: https://unsplash.com/photos/ybHtKz5He9Y
-    sfeer: true
-  - unsplashId: photo-1596492784531-6e6eb5ea9993
-    alt: Witte pluizige hond tegen een roze achtergrond
-    photographer: Victor Grabarczyk
-    unsplashUrl: https://unsplash.com/photos/N04FIfHhv_k
-    sfeer: true
+  - unsplashId: photo-1773010783295-4ddefec1805a
+    alt: Rode chow chow staat op een bospad
+    photographer: Łukasz Rawa
+    unsplashUrl: https://unsplash.com/photos/h4AFvjCFLTg
+    sfeer: false
+  - unsplashId: photo-1642711512184-d4933d282ccd
+    alt: Rode chow chow loopt over een pad in het bos
+    photographer: Łukasz Rawa
+    unsplashUrl: https://unsplash.com/photos/_XQGtxgfJoM
+    sfeer: false
 ---
 
 Met die leeuwenmanen en pluizige vacht lijkt de chow chow een knuffelbeer, terwijl het karakter eerder katachtig onafhankelijk is: warm voor de eigen mensen, niet van iedereen.

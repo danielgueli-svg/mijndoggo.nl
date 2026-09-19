@@ -9,20 +9,20 @@ origin: Tibet / China
 traits: [ponyhaar, chill, schoot]
 gallery:
   - unsplashId: photo-1610385874395-e75e493098b7
-    alt: Wit-bruine shih tzu-puppy loopt naar voren
+    alt: Shih tzu-puppy loopt over een glanzende vloer
     photographer: Varun Kumar e.k
     unsplashUrl: https://unsplash.com/photos/z3QxarNFCBo
     sfeer: false
-  - unsplashId: photo-1769868072425-d7975412529a
-    alt: Kleine bruine krulhond in een wit jurkje
+  - unsplashId: photo-1753128681452-d5c28c345ca3
+    alt: Shih tzu in een donker shirt, tongetje uit
+    photographer: Picnu
+    unsplashUrl: https://unsplash.com/photos/Y47PfLZE3us
+    sfeer: false
+  - unsplashId: photo-1629755590546-f95805384911
+    alt: Shih tzu tegen een rode achtergrond
     photographer: Unsplash
-    unsplashUrl: https://unsplash.com/photos/ntT2u7RSTKM
-    sfeer: true
-  - unsplashId: photo-1528310148982-03940d522f20
-    alt: Zwarte hond ligt relaxed op een kussen
-    photographer: charlesdeluvio
-    unsplashUrl: https://unsplash.com/photos/IL9vpVg6fPE
-    sfeer: true
+    unsplashUrl: https://unsplash.com/photos/lQ8WvR54MOU
+    sfeer: false
 ---
 
 Keizerlijke pony, moderne bank: de shih tzu is aanhankelijke mini-royalty, terwijl dagelijkse vacht- en oogzorg het verschil maakt tussen schattig en vastgeplakt.

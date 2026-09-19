@@ -8,10 +8,10 @@ goodWithKids: false
 origin: Nederland
 traits: [gereserveerd, uniek, natuurhond]
 gallery:
-  - unsplashId: photo-1568572933382-74d440642117
-    alt: Wolfachtige hond met lichte ogen, dichtbij
-    photographer: Tadeusz Lakota
-    unsplashUrl: https://unsplash.com/photos/T-FU0WgNLYo
+  - unsplashId: photo-1629952073127-4633eeb2f350
+    alt: Wolfachtige grijze herdershond in profiel
+    photographer: Cortney Chummoungpak
+    unsplashUrl: https://unsplash.com/photos/e2CUN5csvIA
     sfeer: true
 ---
 
