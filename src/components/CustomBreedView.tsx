@@ -113,11 +113,9 @@ export default function CustomBreedView() {
             Kort verhaal
             <span className="ml-2 text-sm font-bold text-muted">tik om te openen</span>
           </summary>
-          <div className="mt-4 space-y-4 text-lg leading-relaxed text-ink">
-            {storyParagraphs(breed.story).map((paragraph) => (
-              <p key={paragraph.slice(0, 24)}>{paragraph}</p>
-            ))}
-          </div>
+          <p className="mt-4 text-lg leading-relaxed text-ink">
+            {storyParagraphs(breed.story)[0] ?? breed.tagline}
+          </p>
         </details>
         <BreedMembers breedSlug={breed.slug} breedName={breed.shortName} />
       </div>

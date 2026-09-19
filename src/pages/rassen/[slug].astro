@@ -7,11 +7,11 @@ import {
   energyLabels,
   loadBreedEntry,
   loadBreeds,
+  shortBreedStory,
   sizeLabels,
   toBreed,
 } from "../../lib/breeds";
 import { breedImageSrc } from "../../lib/images";
-import { render } from "astro:content";
 
 export async function getStaticPaths() {
   const breeds = await loadBreeds();
@@ -28,7 +28,7 @@ if (!entry) {
 }
 
 const breed = toBreed(entry);
-const { Content } = await render(entry);
+const story = shortBreedStory(entry.body ?? breed.tagline);
 const ogImage = breedImageSrc(breed.image, 1400, 900);
 ---
 
@@ -70,9 +70,7 @@ const ogImage = breedImageSrc(breed.image, 1400, 900);
           Kort verhaal
           <span class="ml-2 text-sm font-bold text-muted">tik om te openen</span>
         </summary>
-        <div class="prose prose-doggo prose-lg mt-4 max-w-none prose-img:mx-auto prose-img:max-w-[14rem] prose-img:rounded-2xl">
-          <Content />
-        </div>
+        <p class="mt-4 text-lg leading-relaxed text-ink">{story}</p>
       </details>
       <BreedMembers client:load breedSlug={breed.slug} breedName={breed.shortName} />
     </div>

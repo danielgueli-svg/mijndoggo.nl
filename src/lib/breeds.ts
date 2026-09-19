@@ -76,3 +76,9 @@ export async function loadBreedEntry(
   const entries = await getCollection("breeds");
   return entries.find((entry) => entry.id === slug);
 }
+
+/** Eerste alinea vóór de H2's — kort verhaaltje, geen heel essay. */
+export function shortBreedStory(markdown: string): string {
+  const intro = markdown.split(/^##\s+/m)[0]?.trim() ?? "";
+  return intro.replace(/\s+/g, " ").trim();
+}
