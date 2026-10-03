@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import CustomBreedView from "../../components/CustomBreedView.tsx";
+---
+
+<BaseLayout
+  title="Eigen ras"
+  description="Een ras dat jij hebt toegevoegd op dit apparaat — met kort verhaal, baasjes en de mogelijkheid om te bewerken."
+>
+  <CustomBreedView client:load />
+</BaseLayout>

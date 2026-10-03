@@ -1,0 +1,60 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/Hero.astro";
+import BreedDirectory from "../components/BreedDirectory.tsx";
+import TipCard from "../components/TipCard.astro";
+import { loadBreeds } from "../lib/breeds";
+import { unsplashSrc } from "../lib/images";
+import { toCatalogBreed } from "../lib/serialize-breeds";
+import { getCollection } from "astro:content";
+
+const catalog = (await loadBreeds()).map(toCatalogBreed);
+const tips = (await getCollection("tips"))
+  .sort((a, b) => Number(b.data.featured) - Number(a.data.featured))
+  .slice(0, 3);
+---
+
+<BaseLayout>
+  <Hero />
+  <BreedDirectory
+    client:load
+    catalog={catalog}
+    mode="home"
+    heading="Acht bekende rassen — zoek hierboven naar alle"
+    intro="We zetten acht populaire honden vooraan. Typ in het zoekveld om élk ras te vinden — inclusief rassen die jij zelf hebt toegevoegd."
+  />
+
+  <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+    <div class="flex items-end justify-between gap-4">
+      <div>
+        <p class="text-xs font-extrabold uppercase tracking-widest text-sky-deep">Tips & trucs</p>
+        <h2 class="mt-1 font-display text-3xl font-semibold sm:text-4xl">Even bijleren — zonder dat het als huiswerk voelt</h2>
+        <p class="mt-2 max-w-2xl text-muted">
+          Of je nu een wasbeurt uitstelt, een wandeling wilt verbeteren, of gewoon wilt weten waar
+          jullie dit weekend mogen snuffelen: hier vind je tips die ademen, terwijl ze wél ergens op steunen.
+        </p>
+      </div>
+      <a href="/tips" class="hidden rounded-full bg-white px-4 py-2 text-sm font-extrabold shadow-pop ring-2 ring-ink/10 hover:bg-sun sm:inline-flex">
+        Alle tips bekijken
+      </a>
+    </div>
+    <div class="mt-6 grid gap-4 md:grid-cols-3">
+      {
+        tips.map((tip) => (
+          <TipCard
+            href={`/tips/${tip.id}`}
+            title={tip.data.title}
+            description={tip.data.description}
+            category={tip.data.category}
+            minutes={tip.data.minutes}
+            image={unsplashSrc(tip.data.heroImage, 800, 450)}
+            imageAlt={tip.data.heroImageAlt}
+          />
+        ))
+      }
+    </div>
+    <a href="/tips" class="mt-6 inline-flex rounded-full bg-white px-4 py-2 text-sm font-extrabold shadow-pop ring-2 ring-ink/10 hover:bg-sun sm:hidden">
+      Alle tips bekijken
+    </a>
+  </section>
+</BaseLayout>

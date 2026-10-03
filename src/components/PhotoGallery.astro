@@ -1,0 +1,38 @@
+---
+import { breedImageSrc } from "../lib/images";
+import type { BreedImage } from "../data/photos";
+
+type Props = {
+  images: BreedImage[];
+  breedName: string;
+};
+
+const { images, breedName } = Astro.props;
+const photos = images.slice(0, 3);
+---
+
+<section class="breed-photo-compact mx-auto px-4 py-3 sm:px-6" aria-label={`Foto's van de ${breedName}`}>
+  <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Fotogalerij</p>
+  <h2 class="mt-1 font-display text-xl font-semibold">Even kijken. Even kwispelen.</h2>
+  <div class="mt-3 grid grid-cols-3 gap-1.5">
+    {
+      photos.map((photo, index) => (
+        <figure class="overflow-hidden rounded-xl bg-white shadow-pop ring-2 ring-ink/10">
+          <img
+            src={breedImageSrc(photo, 280, 210)}
+            alt={photo.alt}
+            width="280"
+            height="210"
+            class="w-full object-cover"
+            loading={index === 0 ? "eager" : "lazy"}
+          />
+          <figcaption class="px-2 py-1.5 text-[10px] font-bold leading-tight text-muted">
+            <a class="underline decoration-2 underline-offset-2" href={photo.unsplashUrl}>
+              {photo.photographer}
+            </a>
+          </figcaption>
+        </figure>
+      ))
+    }
+  </div>
+</section>

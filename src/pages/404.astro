@@ -1,0 +1,21 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Pagina kwijt" description="Die pagina liep achter een eekhoorn aan.">
+  <div class="mx-auto max-w-lg px-4 py-20 text-center sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">404</p>
+    <h1 class="mt-3 font-display text-4xl font-semibold">Die pagina rende weg</h1>
+    <p class="mt-4 text-lg font-semibold text-muted">
+      Misschien achter een eekhoorn aan. Wij blijven hier, met rassen en tips.
+    </p>
+    <div class="mt-8 flex flex-wrap justify-center gap-3">
+      <a class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop" href="/">
+        Naar home
+      </a>
+      <a class="rounded-full bg-white px-5 py-3 text-sm font-extrabold shadow-pop ring-2 ring-ink/10" href="/rassen">
+        Alle rassen
+      </a>
+    </div>
+  </div>
+</BaseLayout>

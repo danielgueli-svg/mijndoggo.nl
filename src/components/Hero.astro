@@ -1,0 +1,74 @@
+---
+import Logo from "./Logo.astro";
+import { heroPhotos, heroSrc, site } from "../data/site";
+---
+
+<section class="relative overflow-hidden">
+  <div class="mx-auto flex max-w-6xl flex-col items-center px-4 pb-4 pt-10 text-center sm:px-6 sm:pt-14">
+    <a href="/" class="group flex flex-col items-center gap-3">
+      <Logo class="h-56 w-56 drop-shadow-lg transition-transform group-hover:rotate-6 group-hover:scale-105 sm:h-72 sm:w-72" />
+      <span class="leading-tight">
+        <span class="font-display text-3xl font-semibold tracking-tight text-ink sm:text-4xl">
+          {site.name}
+        </span>
+        <span class="mt-1 block text-xs font-bold uppercase tracking-widest text-muted">
+          {site.domain}
+        </span>
+      </span>
+    </a>
+  </div>
+
+  <div class="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-10 pt-6 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:pb-16">
+    <div class="text-center lg:text-left">
+      <h1 class="font-display text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-5xl">
+        MijnDoggo is de plek om andere hondenbezitters te ontmoeten: deel foto’s, wissel tips uit, en plan een wandeling
+      </h1>
+      <div class="mt-7 flex flex-wrap justify-center gap-3 lg:justify-start">
+        <a
+          href="/aanmelden"
+          class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush"
+        >
+          Aanmelden
+        </a>
+        <a
+          href="/community"
+          class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun"
+        >
+          Community
+        </a>
+      </div>
+    </div>
+
+    <div class="relative mx-auto grid w-full max-w-md grid-cols-2 gap-3 sm:max-w-lg">
+      {
+        heroPhotos.map((photo, i) => (
+          <figure
+            class:list={[
+              "overflow-hidden rounded-[1.75rem] bg-white shadow-pop-lg ring-2 ring-ink/10",
+              i === 0 && "col-span-2 aspect-[16/9]",
+              i !== 0 && "aspect-[4/5]",
+            ]}
+          >
+            <img
+              src={heroSrc(photo.unsplashId)}
+              alt={photo.alt}
+              width="900"
+              height={i === 0 ? 560 : 1100}
+              class="h-full w-full object-cover"
+              loading={i === 0 ? "eager" : "lazy"}
+            />
+            <figcaption class="sr-only">
+              {photo.caption} — foto {photo.photographer} op Unsplash
+            </figcaption>
+          </figure>
+        ))
+      }
+      <div class="pointer-events-none absolute -left-4 top-8 hidden rotate-[-8deg] rounded-full bg-sun px-3 py-1 text-xs font-extrabold text-ink shadow-pop ring-2 ring-ink/10 sm:block">
+        knuffelalarm
+      </div>
+      <div class="pointer-events-none absolute -right-2 bottom-16 hidden rotate-[6deg] rounded-full bg-sky px-3 py-1 text-xs font-extrabold text-ink shadow-pop ring-2 ring-ink/10 sm:block">
+        woef ✓
+      </div>
+    </div>
+  </div>
+</section>
