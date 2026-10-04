@@ -1,5 +1,5 @@
 import { useEffect, useId, useMemo, useRef, useState, type ReactNode } from "react";
-import { breedHref, breedMatchesQuery, type CatalogBreed } from "../lib/catalog";
+import { breedHref, type CatalogBreed } from "../lib/catalog";
 import {
   customBreedToCatalog,
   listCustomBreeds,
@@ -53,26 +53,22 @@ export default function HeaderSearch({ breeds }: Props) {
   }, []);
 
   useEffect(() => {
-    const onPointer = (event: PointerEvent) => {
-      if (!rootRef.current?.contains(event.target as Node)) setOpen(null);
-    };
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "Escape") setOpen(null);
     };
-    document.addEventListener("pointerdown", onPointer);
     document.addEventListener("keydown", onKey);
-    return () => {
-      document.removeEventListener("pointerdown", onPointer);
-      document.removeEventListener("keydown", onKey);
-    };
+    return () => document.removeEventListener("keydown", onKey);
   }, []);
 
   const breedHits = useMemo(() => {
-    const q = ras.trim();
+    const q = fold(ras);
     if (!q) return [];
-    const seen = new Set(breeds.map((breed) => breed.slug));
+    const catalog = Array.isArray(breeds) ? breeds : [];
+    const seen = new Set(catalog.map((breed) => breed.slug));
     const extra = custom.filter((breed) => !seen.has(breed.slug));
-    return [...breeds, ...extra].filter((breed) => breedMatchesQuery(breed, q)).slice(0, LIMIT);
+    return [...catalog, ...extra]
+      .filter((breed) => fold(`${breed.name} ${breed.shortName}`).includes(q))
+      .slice(0, LIMIT);
   }, [breeds, custom, ras]);
 
   const spotHits = useMemo(() => (plek.trim() ? searchWalkSpots(plek).slice(0, LIMIT) : []), [plek]);
@@ -253,7 +249,8 @@ function SearchField({
       {open && (
         <div
           id={listId}
-          className="absolute left-0 right-0 z-50 mt-2 max-h-72 overflow-auto rounded-2xl bg-white py-1 text-left shadow-pop-lg ring-2 ring-ink/10"
+          onMouseDown={(event) => event.preventDefault()}
+          className="z-30 mt-2 max-h-72 overflow-auto rounded-2xl bg-white py-1 text-left shadow-pop ring-2 ring-ink/10"
         >
           {children}
         </div>
