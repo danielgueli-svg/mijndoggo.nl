@@ -1,13 +1,9 @@
 ---
 import Logo from "./Logo.astro";
-import HeaderSearch from "./HeaderSearch.tsx";
 import { nav, site } from "../data/site";
-import { loadBreeds } from "../lib/breeds";
-import { toCatalogBreed } from "../lib/serialize-breeds";
 
 const path = Astro.url.pathname;
 const isHome = path === "/";
-const breeds = (await loadBreeds()).map(toCatalogBreed);
 ---
 
 <header class="sticky top-0 z-40 border-b-4 border-ink/10 bg-cream">
@@ -81,9 +77,6 @@ const breeds = (await loadBreeds()).map(toCatalogBreed);
       ))
     }
   </nav>
-  <div class="mx-auto max-w-6xl px-4 pb-4 sm:px-6">
-    <HeaderSearch client:load breeds={breeds} />
-  </div>
 </header>
 
 <script>

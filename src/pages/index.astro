@@ -2,6 +2,7 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero.astro";
 import BreedDirectory from "../components/BreedDirectory.tsx";
+import HeaderSearch from "../components/HeaderSearch.tsx";
 import TipCard from "../components/TipCard.astro";
 import { loadBreeds } from "../lib/breeds";
 import { unsplashSrc } from "../lib/images";
@@ -16,6 +17,9 @@ const tips = (await getCollection("tips"))
 
 <BaseLayout>
   <Hero />
+  <div class="mx-auto max-w-6xl px-4 pt-2 sm:px-6">
+    <HeaderSearch client:load breeds={catalog} />
+  </div>
   <BreedDirectory
     client:load
     catalog={catalog}
