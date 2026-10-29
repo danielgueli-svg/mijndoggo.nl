@@ -11,7 +11,7 @@ f.querySelectorAll('fieldset[data-max]').forEach(fs => {
 // Optional place + radius. Miles if the UK is among the chosen countries, otherwise km.
 const rad = f.querySelector('select[name=radius]'), place = f.querySelector('input[name=place]');
 const syncRadius = () => {
-  const mi = f.querySelector('input[name=country][value=GB]:checked'), unit = mi ? 'mi' : 'km';
+  const mi = f.querySelector('input[name=country][value^="GB-"]:checked'), unit = mi ? 'mi' : 'km';
   if (rad.dataset.unit === unit) return; rad.dataset.unit = unit;
   rad.innerHTML = rad.dataset[unit].split(',').map(v => `<option value="${v}">${v} ${unit === 'mi' ? 'miles' : 'km'}</option>`).join('');
 };

@@ -19,7 +19,7 @@ for f in ne["features"]:
             for i in range(n): out.append((y1 + (y2 - y1) * i / n, x1 + (x2 - x1) * i / n))
 P = json.load(open("data/places.json")); res = []
 for row in P:
-    cc, name, la, lo = row[:4]; reach = {}
+    cc, name, la, lo = row[:4]; cc = "GB" if cc.startswith("GB-") else cc; reach = {}
     near = {}
     for o, ps in pts.items():
         if o == cc: continue
@@ -29,5 +29,20 @@ for row in P:
         hit = sorted(o for o, d in near.items() if d <= r)
         if hit: reach[k] = hit
     res.append([cc, name, la, lo, reach])
+# UK is split into 4 selectable countries. Natural Earth has GB as one: assign places to a nation,
+# map reach "GB" (IE places -> GB-NIR, others -> GB-ENG), and add the England-Scotland / England-Wales land borders coarsely.
+SUB = {"Edinburgh": "GB-SCT", "Glasgow": "GB-SCT", "Aberdeen": "GB-SCT", "Cardiff": "GB-WLS", "Swansea": "GB-WLS", "Belfast": "GB-NIR"}
+UKB = {("GB-ENG", "GB-SCT"): [(55.0, -3.06), (55.17, -2.75), (55.35, -2.48), (55.6, -2.2), (55.77, -2.03)],
+       ("GB-ENG", "GB-WLS"): [(51.64, -2.67), (51.85, -2.9), (52.07, -3.13), (52.4, -3.05), (52.65, -3.1), (52.93, -3.05), (53.2, -2.95)]}
+for r in res:
+    if r[0] == "GB": r[0] = SUB.get(r[1], "GB-ENG")
+    for k in list(r[4]):
+        r[4][k] = sorted({("GB-NIR" if r[0] == "IE" else "GB-ENG") if c == "GB" else c for c in r[4][k]})
+    if r[0].startswith("GB-"):
+        for (a, b), line in UKB.items():
+            if r[0] not in (a, b): continue
+            other = b if r[0] == a else a; d = min(hav(r[2], r[3], y, x) for y, x in line)
+            for k, rad in RADII.items():
+                if d <= rad: r[4][k] = sorted(set(r[4].get(k, [])) | {other})
 json.dump(res, open("data/places.json", "w"), ensure_ascii=False, separators=(",", ":"))
 print(sum(1 for r in res if r[4]), "of", len(res), "places reach a border at some radius")
