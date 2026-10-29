@@ -578,5 +578,15 @@
   "author": "Rhododendrites",
   "license": "CC BY-SA 4.0",
   "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Bernese Mountain Dog": {
+  "file": "/img/breeds/bernese-mountain-dog-640.webp",
+  "file_small": "/img/breeds/bernese-mountain-dog-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Bernese_Mountain_Dog_(4513769952).jpg",
+  "author": "Shari F from Vancouver, Canada",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0"
  }
 }
