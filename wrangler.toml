@@ -1,4 +1,8 @@
-name = "puppyalert"
+name = "mijndoggo-preview"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-10-01"
-# D1 / email / Mollie bindings to be added at deploy time (not configured yet).
+# Shared PuppyAlert D1, READ-ONLY use (SELECT COUNT only). No migrations from this repo.
+[[d1_databases]]
+binding = "LISTINGS"
+database_name = "puppyalert-listings"
+database_id = "2c984792-7b8c-4e82-a213-84e252824590"
