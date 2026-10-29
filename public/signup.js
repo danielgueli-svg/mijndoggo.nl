@@ -11,7 +11,7 @@ f.querySelectorAll('fieldset[data-max]').forEach(fs => {
 f.addEventListener('submit', async e => {
   e.preventDefault();
   const st = f.querySelector('.status'), fd = new FormData(f);
-  const body = { lang: f.dataset.lang, email: fd.get('email'), email2: fd.get('email2'), consent: !!fd.get('consent'), breeds: fd.getAll('breed'), countries: fd.getAll('country') };
+  const body = { lang: f.dataset.lang, email: fd.get('email'), email2: fd.get('email2'), consent: !!fd.get('consent'), breeds: fd.getAll('breed'), countries: fd.getAll('country'), plan: fd.get('plan') };
   const mis = f.querySelector('.mis'); mis.hidden = fd.get('email') === fd.get('email2');
   if (!mis.hidden) { st.textContent = f.dataset.mis; return; }
   if (!body.breeds.length || !body.countries.length) { st.textContent = f.dataset.need; return; }

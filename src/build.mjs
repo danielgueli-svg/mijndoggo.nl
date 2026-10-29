@@ -19,19 +19,23 @@ for (const l of LANGS) {
 <title>${esc(T.title)}</title><meta name="description" content="${esc(T.desc)}"><link rel="canonical" href="${SITE}${path(l)}">${hreflang}
 <link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="${esc(T.title)}"><meta property="og:url" content="${SITE}${path(l)}"><meta property="og:image" content="${SITE}/logo-doghead.png"></head>
-<body><header class="site-header"><div class="wrap"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="44" height="44"><span class="wordmark">PuppyAlert</span></a></div></header>
-<main id="content"><section class="hero"><div class="wrap langbar">${langMenu(l)}</div><div class="wrap split"><div class="hero-copy">
-<p class="eyebrow">${esc(T.eyebrow)}</p><h1>${esc(T.h1)}</h1><p class="hero-line">${esc(T.lead)}</p>
-<h2>${esc(T.h_story)}</h2><p>${esc(T.story).replace('{GJH}', GJH)}</p>
-<h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p>
-<h2>${esc(T.h_net)}</h2><p>${esc(T.net)}</p><p class="badge-soon">${esc(T.counts)}</p>
+<body><header class="site-header"><div class="wrap head-row"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="40" height="40"><span class="wordmark">PuppyAlert</span></a>${langMenu(l)}</div></header>
+<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
+<p class="eyebrow">${esc(T.eyebrow)}</p><h1>${esc(T.h1a)} <span class="h1-accent">${esc(T.h1b)}</span></h1><p class="hero-line">${esc(T.h1line)}</p><p class="lead">${esc(T.lead)}</p>
 </div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
-<fieldset data-max="3" data-msg="maxB"><legend>${esc(T.s1)}</legend><details class="picker"><summary>${esc(T.pickB)} (<span class="n">0</span>/3)</summary><div class="chips">${opts('breed', [...breeds].sort((a, b) => a.localeCompare(b, l)).map(b => [b, esc(b)]))}</div></details><p class="limit" hidden></p></fieldset>
-<fieldset data-max="3" data-msg="maxC"><legend>${esc(T.s2)}</legend><details class="picker"><summary>${esc(T.pickC)} (<span class="n">0</span>/3)</summary><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div></details><p class="limit" hidden></p></fieldset>
-<fieldset><legend>${esc(T.s3)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
-<p class="pay">${esc(T.pay)}</p><label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label><p class="small">${esc(T.optin)}</p>
-<button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset></form></div></div></section></main>
-<footer class="site-footer"><div class="wrap">© PuppyAlert.eu</div></footer><script src="/signup.js" defer></script></body></html>`;
+<fieldset data-max="3" data-msg="maxB"><legend class="step">${esc(T.st1)}</legend><details class="picker"><summary><span>${esc(T.pickB)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('breed', [...breeds].sort((a, b) => a.localeCompare(b, l)).map(b => [b, esc(b)]))}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset data-max="3" data-msg="maxC"><legend class="step">${esc(T.st2)}</legend><details class="picker"><summary><span>${esc(T.pickC)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset><legend class="step">${esc(T.st3)}</legend><div class="plans"><label class="plan"><input type="radio" name="plan" value="6m" checked><span>${esc(T.p6)}</span></label><label class="plan"><input type="radio" name="plan" value="12m"><span>${esc(T.p12)}</span></label></div><p class="note">${esc(T.payoff)}</p></fieldset>
+<fieldset><legend class="step">${esc(T.st4)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
+<label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label>
+<button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset>
+<ul class="card-notes"><li>${esc(T.optin)}</li><li>${esc(T.noauto)}</li></ul></form></div></div></section>
+<section class="section trust"><div class="wrap two"><div><h2>${esc(T.h_story)}</h2><p>${esc(T.story).replace('{GJH}', GJH)}</p></div><div><h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p></div></div></section>
+<section class="section preview"><div class="wrap"><h2>${esc(T.h_prev)}</h2><p class="example-tag">${esc(T.prev_note)}</p>
+<div class="mail" aria-label="${esc(T.prev_note)}"><div class="mail-head"><p>${esc(T.m_from)}</p><p><strong>${esc(T.m_subj)}</strong></p></div><div class="mail-body"><img src="/logo-doghead.png" alt="" width="36" height="36"><p>${esc(T.m_body)}</p><span class="mail-btn">${esc(T.m_btn)}</span><p class="mail-foot"><u>${esc(T.m_unsub)}</u></p></div></div></div></section>
+<section class="section countries"><div class="wrap"><h2>${esc(T.h_ctry)}</h2><p>${esc(T.ctry_note)}</p><ul class="ctry-grid">${cs.map(([cc, f, n]) => `<li><span>${f} ${esc(n)}</span><span class="badge-soon">${esc(T.soon)}</span></li>`).join('')}</ul></div></section></main>
+<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">PuppyAlert</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© PuppyAlert.eu</p></div></footer>
+<script src="/signup.js" defer></script></body></html>`;
   mkdirSync(OUT + path(l), { recursive: true }); writeFileSync(OUT + path(l) + 'index.html', html);
 }
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);

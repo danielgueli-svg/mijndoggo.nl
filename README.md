@@ -20,3 +20,7 @@ Static site + Cloudflare Pages Functions, same pattern as EuroRentAlert (`src/bu
 - Instant first email: once opt-in is confirmed **and** payment is paid, query breeders/puppies already indexed for the chosen breeds × countries. If any match, send them right away. If none, send only a welcome email.
 - After that, new listings go out as normal alert emails. Anything already in the first email is never repeated (track sent listing IDs per subscriber).
 - GDPR: every email carries a one-click unsubscribe link (+ `List-Unsubscribe` header).
+
+## Plans (preview-wra branch)
+- Shown: €12 / 6 months, €20 / year. **Payments are OFF**: no Mollie call; the button only starts double opt-in and says payment opens later. When enabled, amounts come from the server only.
+- Page sections: header (logo + wordmark, language menu), hero + signup card, story / why-cheap, example alert email (clearly labelled, no real or invented breeders or counts), EU country cards ("Coming soon", no numbers), footer.
