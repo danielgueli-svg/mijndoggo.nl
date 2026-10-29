@@ -528,5 +528,55 @@
   "author": "Ralf Lotys (Sicherlich)",
   "license": "CC BY 3.0",
   "license_url": "https://creativecommons.org/licenses/by/3.0"
+ },
+ "Border Terrier": {
+  "file": "/img/breeds/border-terrier-640.webp",
+  "file_small": "/img/breeds/border-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Border_terrier_2.JPG",
+  "author": "Emmanuelle Adjoa Bessi",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Pomeranian": {
+  "file": "/img/breeds/pomeranian-640.webp",
+  "file_small": "/img/breeds/pomeranian-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Pomeranian_profile.jpg",
+  "author": "Горбунова М.С.",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Dobermann": {
+  "file": "/img/breeds/dobermann-640.webp",
+  "file_small": "/img/breeds/dobermann-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Dobermann_Pinscher.jpg",
+  "author": "Canarian",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "English Bulldog": {
+  "file": "/img/breeds/english-bulldog-640.webp",
+  "file_small": "/img/breeds/english-bulldog-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:English_Bulldog_red_%26_white.jpg",
+  "author": "Canarian",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Maltipoo": {
+  "file": "/img/breeds/maltipoo-640.webp",
+  "file_small": "/img/breeds/maltipoo-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Maltipoo_dog_(11995).jpg",
+  "author": "Rhododendrites",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
  }
 }
