@@ -49,7 +49,7 @@ for (const l of LANGS) {
   const cs = countries.map(row => ({ row, cc: row[0], flag: row[1], name: cname(row, l) })).sort((a, b) => a.name.localeCompare(b.name, l));
   // Homepage: language selector + country selector, no signup form.
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<h1>${esc(T.h1a)} <span class="h1-accent">${esc(T.h1b)}</span></h1><p class="hero-line">${esc(T.h1line)}</p><div class="hero-story">${story(T)}</div>
+<h1>${esc(T.heroH)}</h1><p class="hero-line">${esc(T.heroSub)}</p><div class="hero-story">${story(T)}</div>
 </div><div class="card"><h2 class="card-title">${esc(T.homeStep)}</h2>
 <label class="step"><select class="go" aria-label="${esc(T.homeCard)}"><option value="">${esc(T.chooseC)}</option>${cs.map(c => `<option value="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</option>`).join('')}</select></label>
 <ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>

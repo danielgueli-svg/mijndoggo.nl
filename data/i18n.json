@@ -75,7 +75,9 @@
   "backHome": "All countries",
   "closed": "Coming soon! We're putting the final touches on alerts here. Check back shortly.",
   "chooseLang": "Choose your language",
-  "homeStep": "Step 1 · Where are you looking for a puppy?"
+  "homeStep": "Where are you looking for a puppy?",
+  "heroH": "Your puppy, without the endless searching.",
+  "heroSub": "We keep an eye on breeders for you. New litter of the breed you want? You'll hear about it by email straight away."
  },
  "nl": {
   "name": "Nederlands",
@@ -153,7 +155,9 @@
   "backHome": "Alle landen",
   "closed": "Binnenkort! We leggen de laatste hand aan de alerts hier. Kom snel nog eens kijken.",
   "chooseLang": "Kies je taal",
-  "homeStep": "Stap 1 · Waar zoek je een pup?"
+  "homeStep": "Waar zoek je een pup?",
+  "heroH": "Jouw pup, zonder eindeloos zoeken.",
+  "heroSub": "Wij houden de fokkers voor je in de gaten. Is er een nieuw nestje met het ras dat je zoekt? Dan krijg je meteen een mail."
  },
  "de": {
   "name": "Deutsch",
@@ -231,7 +235,9 @@
   "backHome": "Alle Länder",
   "closed": "Bald geht's los! Wir legen hier letzte Hand an die Alerts. Schau bald wieder vorbei.",
   "chooseLang": "Wähle deine Sprache",
-  "homeStep": "Schritt 1 · Wo suchst du einen Welpen?"
+  "homeStep": "Wo suchst du einen Welpen?",
+  "heroH": "Dein Welpe, ohne endloses Suchen.",
+  "heroSub": "Wir behalten die Züchter für dich im Blick. Gibt es einen neuen Wurf deiner Wunschrasse? Dann bekommst du sofort eine Mail."
  },
  "fr": {
   "name": "Français",
@@ -309,7 +315,9 @@
   "backHome": "Tous les pays",
   "closed": "Bientôt ! On peaufine les alertes ici. Revenez très vite.",
   "chooseLang": "Choisissez votre langue",
-  "homeStep": "Étape 1 · Où cherchez-vous un chiot ?"
+  "homeStep": "Où cherchez-vous un chiot ?",
+  "heroH": "Votre chiot, sans chercher pendant des heures.",
+  "heroSub": "Nous surveillons les éleveurs pour vous. Une nouvelle portée de la race qui vous plaît ? Vous recevez aussitôt un e-mail."
  },
  "it": {
   "name": "Italiano",
@@ -387,6 +395,8 @@
   "backHome": "Tutti i paesi",
   "closed": "In arrivo! Stiamo dando gli ultimi ritocchi agli avvisi qui. Torna a trovarci presto.",
   "chooseLang": "Scegli la tua lingua",
-  "homeStep": "Passo 1 · Dove stai cercando un cucciolo?"
+  "homeStep": "Dove cerchi un cucciolo?",
+  "heroH": "Il tuo cucciolo, senza cercare all'infinito.",
+  "heroSub": "Teniamo d'occhio gli allevatori al posto tuo. C'è una nuova cucciolata della razza che cerchi? Ti arriva subito un'email."
  }
 }
