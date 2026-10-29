@@ -88,7 +88,8 @@
   "bOthers": "Other breeds",
   "bH": "Puppy alerts by breed",
   "bStep": "Which breed are you looking for?",
-  "bChoose": "Choose a breed"
+  "bChoose": "Choose a breed",
+  "bPop": "Popular breeds"
  },
  "nl": {
   "name": "Nederlands",
@@ -179,7 +180,8 @@
   "bOthers": "Andere rassen",
   "bH": "Puppy-alerts per ras",
   "bStep": "Welk ras zoek je?",
-  "bChoose": "Kies een ras"
+  "bChoose": "Kies een ras",
+  "bPop": "Populaire rassen"
  },
  "de": {
   "name": "Deutsch",
@@ -270,7 +272,8 @@
   "bOthers": "Weitere Rassen",
   "bH": "Welpen-Alerts nach Rasse",
   "bStep": "Welche Rasse suchst du?",
-  "bChoose": "Rasse wählen"
+  "bChoose": "Rasse wählen",
+  "bPop": "Beliebte Rassen"
  },
  "fr": {
   "name": "Français",
@@ -361,7 +364,8 @@
   "bOthers": "Autres races",
   "bH": "Alertes chiots par race",
   "bStep": "Quelle race vous fait craquer ?",
-  "bChoose": "Choisir une race"
+  "bChoose": "Choisir une race",
+  "bPop": "Races populaires"
  },
  "it": {
   "name": "Italiano",
@@ -452,6 +456,7 @@
   "bOthers": "Altre razze",
   "bH": "Avvisi cuccioli per razza",
   "bStep": "Che razza stai cercando?",
-  "bChoose": "Scegli una razza"
+  "bChoose": "Scegli una razza",
+  "bPop": "Razze più amate"
  }
 }
