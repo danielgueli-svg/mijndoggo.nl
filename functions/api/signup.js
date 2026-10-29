@@ -5,6 +5,7 @@ export async function onRequestPost({ request }) {
   let b; try { b = await request.json(); } catch { return Response.json({ ok: false, error: 'bad_json' }, { status: 400 }); }
   const breeds = [...new Set(b.breeds || [])], countries = [...new Set(b.countries || [])];
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(b.email || '') || !b.consent) return Response.json({ ok: false, error: 'email_or_consent' }, { status: 400 });
+  if (String(b.email).trim().toLowerCase() !== String(b.email2 || '').trim().toLowerCase()) return Response.json({ ok: false, error: 'email_mismatch' }, { status: 400 });
   if (!breeds.length || breeds.length > 3 || !breeds.every(x => BREEDS.has(x))) return Response.json({ ok: false, error: 'breeds' }, { status: 400 });
   if (!countries.length || countries.length > 3 || !countries.every(x => EU.has(x))) return Response.json({ ok: false, error: 'countries' }, { status: 400 });
   // TODO: insert pending subscriber; create Mollie payment with SERVER-SIDE amount (never from client); send double opt-in email.

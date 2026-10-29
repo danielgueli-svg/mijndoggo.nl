@@ -10,9 +10,9 @@ Static site + Cloudflare Pages Functions, same pattern as EuroRentAlert (`src/bu
 - Counts show "coming soon". No numbers, no listings, no prices anywhere on the site.
 
 ## Signup
-1. Breeds: multi-select, max 3 (top 20 list in `data/breeds.json`).
-2. Countries: multi-select, max 3, EU-27.
-3. Email + consent + payment placeholder (no price shown). At a limit, the rest greys out with a translated message. Server re-validates limits.
+1. Breeds: fold-open picker (alphabetical), multi-select, max 3 (top 20 list in `data/breeds.json`).
+2. Countries: fold-open picker (alphabetical per language), multi-select, max 3, EU-27.
+3. Email + confirm email (must match; checked client- and server-side) + consent + payment placeholder (no price shown). At a limit, the rest greys out with a translated message. Server re-validates limits.
 
 ## Backend behaviour (to build; `functions/api/*` are stubs)
 - Payment: Mollie, set up later with Mollie Payments BOT. The amount lives **server-side only**; Daniel sets the price.

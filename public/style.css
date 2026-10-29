@@ -40,3 +40,7 @@ input[type=email]{display:block;width:100%;margin-top:.3rem;padding:.7rem;border
 button{width:100%;background:var(--accent);color:#fff;border:0;border-radius:var(--radius);padding:.85rem;font:inherit;font-weight:600;cursor:pointer}
 button:hover{background:var(--green)}
 .site-footer{background:var(--green-deep);color:var(--on-dark-2);padding:2rem 0;font-size:.9rem}
+.picker{border:1px solid var(--border);border-radius:var(--radius)}
+.picker summary{cursor:pointer;padding:.7rem .9rem;font-weight:600;list-style:none;display:flex;justify-content:space-between}
+.picker summary::after{content:"▾"}.picker[open] summary::after{content:"▴"}
+.picker .chips{padding:0 .9rem .9rem}

@@ -25,10 +25,10 @@ for (const l of LANGS) {
 <h2>${esc(T.h_story)}</h2><p>${esc(T.story).replace('{GJH}', GJH)}</p>
 <h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p>
 <h2>${esc(T.h_net)}</h2><p>${esc(T.net)}</p><p class="badge-soon">${esc(T.counts)}</p>
-</div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-need="${esc(T.need)}">
-<fieldset data-max="3" data-msg="maxB"><legend>${esc(T.s1)}</legend><div class="chips">${opts('breed', breeds.map(b => [b, esc(b)]))}</div><p class="limit" hidden></p></fieldset>
-<fieldset data-max="3" data-msg="maxC"><legend>${esc(T.s2)}</legend><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div><p class="limit" hidden></p></fieldset>
-<fieldset><legend>${esc(T.s3)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label>
+</div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
+<fieldset data-max="3" data-msg="maxB"><legend>${esc(T.s1)}</legend><details class="picker"><summary>${esc(T.pickB)} (<span class="n">0</span>/3)</summary><div class="chips">${opts('breed', [...breeds].sort((a, b) => a.localeCompare(b, l)).map(b => [b, esc(b)]))}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset data-max="3" data-msg="maxC"><legend>${esc(T.s2)}</legend><details class="picker"><summary>${esc(T.pickC)} (<span class="n">0</span>/3)</summary><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset><legend>${esc(T.s3)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
 <p class="pay">${esc(T.pay)}</p><label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label><p class="small">${esc(T.optin)}</p>
 <button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset></form></div></div></section></main>
 <footer class="site-footer"><div class="wrap">© PuppyAlert.eu</div></footer><script src="/signup.js" defer></script></body></html>`;
