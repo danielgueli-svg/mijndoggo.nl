@@ -1,7 +1,6 @@
 // STUB. Validates input; storing, confirmation email, and Mollie payment are not wired yet (see README).
 const BREEDS = new Set(["Labrador Retriever","Golden Retriever","Border Collie","Jack Russell Terrier","German Shepherd","Cocker Spaniel","Dachshund/Teckel","French Bulldog","Chihuahua","Australian Shepherd","Cane Corso","Rottweiler","Staffordshire Bull Terrier","Cavalier King Charles","English Springer Spaniel","Cockapoo","Cavapoo","Labradoodle","Berner Sennenhond","Maltipoo"]);
-const REGIONS = {"AT": ["Burgenland", "Kärnten", "Niederösterreich", "Oberösterreich", "Salzburg", "Steiermark", "Tirol", "Vorarlberg", "Wien"], "CZ": ["Praha", "Středočeský kraj", "Jihočeský kraj", "Plzeňský kraj", "Karlovarský kraj", "Ústecký kraj", "Liberecký kraj", "Královéhradecký kraj", "Pardubický kraj", "Kraj Vysočina", "Jihomoravský kraj", "Olomoucký kraj", "Zlínský kraj", "Moravskoslezský kraj"], "DE": ["Baden-Württemberg", "Bayern", "Berlin", "Brandenburg", "Bremen", "Hamburg", "Hessen", "Mecklenburg-Vorpommern", "Niedersachsen", "Nordrhein-Westfalen", "Rheinland-Pfalz", "Saarland", "Sachsen", "Sachsen-Anhalt", "Schleswig-Holstein", "Thüringen"], "ES": ["Andalucía", "Aragón", "Asturias", "Illes Balears", "Canarias", "Cantabria", "Castilla y León", "Castilla-La Mancha", "Cataluña", "Comunitat Valenciana", "Extremadura", "Galicia", "La Rioja", "Comunidad de Madrid", "Región de Murcia", "Navarra", "País Vasco", "Ceuta", "Melilla"], "FR": ["Auvergne-Rhône-Alpes", "Bourgogne-Franche-Comté", "Bretagne", "Centre-Val de Loire", "Corse", "Grand Est", "Hauts-de-France", "Île-de-France", "Normandie", "Nouvelle-Aquitaine", "Occitanie", "Pays de la Loire", "Provence-Alpes-Côte d'Azur", "Guadeloupe", "Martinique", "Guyane", "La Réunion", "Mayotte"], "GB": ["England", "Scotland", "Wales", "Northern Ireland"], "IT": ["Abruzzo", "Basilicata", "Calabria", "Campania", "Emilia-Romagna", "Friuli-Venezia Giulia", "Lazio", "Liguria", "Lombardia", "Marche", "Molise", "Piemonte", "Puglia", "Sardegna", "Sicilia", "Toscana", "Trentino-Alto Adige", "Umbria", "Valle d'Aosta", "Veneto"], "PL": ["Dolnośląskie", "Kujawsko-Pomorskie", "Lubelskie", "Lubuskie", "Łódzkie", "Małopolskie", "Mazowieckie", "Opolskie", "Podkarpackie", "Podlaskie", "Pomorskie", "Śląskie", "Świętokrzyskie", "Warmińsko-Mazurskie", "Wielkopolskie", "Zachodniopomorskie"], "RO": ["Nord-Vest", "Centru", "Nord-Est", "Sud-Est", "Sud-Muntenia", "București-Ilfov", "Sud-Vest Oltenia", "Vest"], "SE": ["Blekinge", "Dalarna", "Gotland", "Gävleborg", "Halland", "Jämtland", "Jönköping", "Kalmar", "Kronoberg", "Norrbotten", "Skåne", "Stockholm", "Södermanland", "Uppsala", "Värmland", "Västerbotten", "Västernorrland", "Västmanland", "Västra Götaland", "Örebro", "Östergötland"]};
-const EU = new Set("GB AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE".split(' '));
+const EU = new Set("AT BE BG HR CY CZ DK EE FI FR DE GR HU IE IT LV LT LU MT NL PL PT RO SK SI ES SE".split(' '));
 export async function onRequestPost({ request }) {
   let b; try { b = await request.json(); } catch { return Response.json({ ok: false, error: 'bad_json' }, { status: 400 }); }
   const breeds = [...new Set(b.breeds || [])], countries = [...new Set(b.countries || [])];
@@ -9,18 +8,8 @@ export async function onRequestPost({ request }) {
   if (String(b.email).trim().toLowerCase() !== String(b.email2 || '').trim().toLowerCase()) return Response.json({ ok: false, error: 'email_mismatch' }, { status: 400 });
   if (!breeds.length || breeds.length > 3 || !breeds.every(x => BREEDS.has(x))) return Response.json({ ok: false, error: 'breeds' }, { status: 400 });
   if (!countries.length || countries.length > 3 || !countries.every(x => EU.has(x))) return Response.json({ ok: false, error: 'countries' }, { status: 400 });
-  // Optional regions: { CC: [region, ...] } only for selected countries that have regions; empty/absent = whole country.
-  const regions = {};
-  for (const [cc, list] of Object.entries(b.regions || {})) {
-    if (!countries.includes(cc) || !REGIONS[cc] || !Array.isArray(list)) return Response.json({ ok: false, error: 'regions' }, { status: 400 });
-    const u = [...new Set(list)];
-    if (!u.every(r => REGIONS[cc].includes(r))) return Response.json({ ok: false, error: 'regions' }, { status: 400 });
-    if (u.length && u.length < REGIONS[cc].length) regions[cc] = u; // all ticked = same as whole country
-  }
   if (!['6m', '12m'].includes(b.plan)) return Response.json({ ok: false, error: 'plan' }, { status: 400 });
   // Payments are OFF: no Mollie call. When enabled: Mollie one-off payment only, no mandates/recurring; no auto-renewal. Plan prices (server-side only when enabled): 6m = EUR 12.00, 12m = EUR 20.00.
-  // Stored alert shape: { email, lang, breeds: [..<=3], countries: [..<=3], regions: { CC: [..] } (omitted cc = whole country), plan: '6m'|'12m', status: 'pending' }
-  const alert = { email: b.email.trim().toLowerCase(), lang: b.lang, breeds, countries, regions, plan: b.plan, status: 'pending' };
   // TODO: insert pending subscriber; create Mollie payment with SERVER-SIDE amount (never from client); send double opt-in email.
-  return Response.json({ ok: true, pending: true, alert: { breeds: alert.breeds, countries: alert.countries, regions: alert.regions, plan: alert.plan } });
+  return Response.json({ ok: true, pending: true });
 }

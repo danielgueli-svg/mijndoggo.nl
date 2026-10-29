@@ -50,14 +50,10 @@
   "m_btn": "View on the breeder's website",
   "m_unsub": "Unsubscribe",
   "h_ctry": "Countries",
-  "ctry_note": "Choose up to 3 countries when you sign up. In larger countries you can narrow it down to regions.",
+  "ctry_note": "Choose up to 3 EU countries when you sign up.",
   "soon": "Coming soon",
   "f_unsub": "Every email has an unsubscribe link.",
-  "once": "One-time payment. No auto-renewal.",
-  "regIn": "Regions in {c}",
-  "regAll": "all",
-  "regSel": "{n} selected",
-  "regHint": "Optional. Leave it as is to get alerts from the whole country."
+  "once": "One-time payment. No auto-renewal."
  },
  "nl": {
   "name": "Nederlands",
@@ -110,14 +106,10 @@
   "m_btn": "Bekijk op de site van de fokker",
   "m_unsub": "Afmelden",
   "h_ctry": "Landen",
-  "ctry_note": "Kies bij het aanmelden tot 3 landen. In grotere landen kun je het beperken tot regio's.",
+  "ctry_note": "Kies bij het aanmelden tot 3 EU-landen.",
   "soon": "Binnenkort",
   "f_unsub": "Elke mail heeft een afmeldlink.",
-  "once": "Eenmalige betaling. Wordt niet automatisch verlengd.",
-  "regIn": "Regio's in {c}",
-  "regAll": "alle",
-  "regSel": "{n} gekozen",
-  "regHint": "Optioneel. Laat je het zo, dan krijg je alerts uit het hele land."
+  "once": "Eenmalige betaling. Wordt niet automatisch verlengd."
  },
  "de": {
   "name": "Deutsch",
@@ -170,14 +162,10 @@
   "m_btn": "Auf der Website des Züchters ansehen",
   "m_unsub": "Abmelden",
   "h_ctry": "Länder",
-  "ctry_note": "Wähle bei der Anmeldung bis zu 3 Länder. In größeren Ländern kannst du auf Regionen eingrenzen.",
+  "ctry_note": "Wähle bei der Anmeldung bis zu 3 EU-Länder.",
   "soon": "Demnächst",
   "f_unsub": "Jede E-Mail enthält einen Abmeldelink.",
-  "once": "Einmalige Zahlung. Keine automatische Verlängerung.",
-  "regIn": "Regionen in {c}",
-  "regAll": "alle",
-  "regSel": "{n} ausgewählt",
-  "regHint": "Optional. Lässt du es so, bekommst du Alerts aus dem ganzen Land."
+  "once": "Einmalige Zahlung. Keine automatische Verlängerung."
  },
  "fr": {
   "name": "Français",
@@ -230,13 +218,9 @@
   "m_btn": "Voir sur le site de l'éleveur",
   "m_unsub": "Se désinscrire",
   "h_ctry": "Pays",
-  "ctry_note": "Choisissez jusqu'à 3 pays à l'inscription. Dans les grands pays, vous pouvez cibler des régions.",
+  "ctry_note": "Choisissez jusqu'à 3 pays de l'UE à l'inscription.",
   "soon": "Bientôt",
   "f_unsub": "Chaque e-mail contient un lien de désinscription.",
-  "once": "Paiement unique. Pas de renouvellement automatique.",
-  "regIn": "Régions : {c}",
-  "regAll": "toutes",
-  "regSel": "{n} choisie(s)",
-  "regHint": "Facultatif. Sans choix, vous recevez les alertes de tout le pays."
+  "once": "Paiement unique. Pas de renouvellement automatique."
  }
 }
