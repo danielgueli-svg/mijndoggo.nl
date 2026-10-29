@@ -1,0 +1,4 @@
+name = "puppyalert"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-10-01"
+# D1 / email / Mollie bindings to be added at deploy time (not configured yet).

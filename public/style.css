@@ -1,0 +1,18 @@
+:root{--bg:#fff8ef;--ink:#3b2a1a;--accent:#ff8a3d;--soft:#ffe3c7;--green:#5bb381}
+*{box-sizing:border-box}body{margin:0;font-family:"Nunito","Trebuchet MS",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.top{display:flex;justify-content:space-between;align-items:center;padding:12px 20px;max-width:1100px;margin:auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink);font-weight:800;font-size:1.6rem}
+.lang{position:relative}.lang summary{cursor:pointer;background:#fff;border:2px solid var(--soft);border-radius:999px;padding:6px 14px;list-style:none}
+.lang ul{position:absolute;right:0;background:#fff;border-radius:12px;box-shadow:0 6px 20px #0002;list-style:none;margin:6px 0;padding:8px 14px;z-index:5}
+.lang a{color:var(--ink)}.grid{display:grid;grid-template-columns:1fr 1fr;gap:32px;max-width:1100px;margin:auto;padding:20px}
+@media(max-width:800px){.grid{grid-template-columns:1fr}}
+h2{color:var(--accent);margin-bottom:4px}.left a{color:var(--accent);font-weight:700}
+.soon{display:inline-block;background:var(--soft);border-radius:999px;padding:6px 14px;font-weight:700}
+form{background:#fff;border-radius:24px;padding:20px;box-shadow:0 8px 30px #ff8a3d22}fieldset{border:0;margin:0 0 16px;padding:0}legend{font-weight:800;font-size:1.1rem;margin-bottom:8px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}.chip input{position:absolute;opacity:0}.chip span{display:inline-block;border:2px solid var(--soft);border-radius:999px;padding:4px 12px;cursor:pointer}
+.chip input:checked+span{background:var(--accent);border-color:var(--accent);color:#fff}.chip input:focus-visible+span{outline:2px solid var(--ink)}
+.chip.off span{opacity:.4;cursor:not-allowed}.limit{color:#c0502a;font-weight:700}
+input[type=email]{display:block;width:100%;padding:10px;border:2px solid var(--soft);border-radius:12px;font:inherit;margin-top:4px}
+.pay{background:var(--bg);border:2px dashed var(--soft);border-radius:12px;padding:10px}.small{font-size:.9rem}
+button{background:var(--green);color:#fff;border:0;border-radius:999px;padding:12px 24px;font:inherit;font-weight:800;cursor:pointer}
+footer{text-align:center;padding:30px;font-size:.9rem}
