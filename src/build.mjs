@@ -64,6 +64,33 @@ ${sections(T, l, cs)}<script src="/signup.js" defer></script></body></html>`);
     if (l === 'en') sm.push(pf);
   }
 }
+// Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
+const BP = J('data/breed_pages.json'), LI = Object.fromEntries(LANGS.map((l, i) => [l, i]));
+const bName = (b, l) => b[LI[l]];
+const breedIdx = l => `${pre(l)}/${i18n[l].bSeg}/`, breedPath = (l, b) => `${breedIdx(l)}${slugify(bName(b, l))}/`;
+const bSlugs = new Set(); for (const l of LANGS) for (const b of BP) { const p = breedPath(l, b); if (bSlugs.has(p)) throw new Error('dup breed path ' + p); bSlugs.add(p); }
+for (const l of LANGS) {
+  const T = i18n[l];
+  const cs = countries.map(row => ({ row, name: cname(row, l), flag: row[1] })).sort((a, b) => a.name.localeCompare(b.name, l));
+  const picker = `<div class="card"><h2 class="card-title">${esc(T.homeStep)}</h2>
+<label class="step"><select class="go" aria-label="${esc(T.homeStep)}"><option value="">${esc(T.chooseC)}</option>${cs.map(c => `<option value="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</option>`).join('')}</select></label>
+<p class="closed">${esc(T.closed)}</p><ul class="card-notes"><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div>`;
+  const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
+  const list = skip => `<ul class="ctry-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
+  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">PuppyAlert</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© PuppyAlert.eu</p></div></footer><script src="/home.js" defer></script></body></html>`;
+  write(breedIdx(l), head(l, `${T.bH} | PuppyAlert`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
+<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div>${picker}</div></section>
+<section class="section countries"><div class="wrap"><h2>${esc(T.bAll)}</h2>${list()}</div></section></main>${foot}`);
+  if (l === 'en') sm.push(breedIdx);
+  for (const b of BP) {
+    const pf = x => breedPath(x, b), r = s => s.replaceAll('{b}', bName(b, l));
+    write(pf(l), head(l, r(T.bTitle), r(T.bDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
+<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1><p class="lead">${esc(r(T.bLead))}</p><p><span class="badge-soon dark">${esc(T.soon)}</span></p></div>${picker}</div></section>
+<section class="section trust"><div class="wrap two"><div>${story(T)}</div><div><h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p></div></div></section>
+<section class="section countries"><div class="wrap"><h2>${esc(T.bOthers)}</h2>${list(b)}</div></section></main>${foot}`);
+    if (l === 'en') sm.push(pf);
+  }
+}
 // 301 redirects (Cloudflare Pages _redirects). Language homepages /nl/ /de/ /fr/ are real pages and always win:
 // no rule ever targets a bare /<lang>/ path, and iso shortcuts only exist one level deeper (/<lang>/<iso>/).
 const R = new Map(), add = (from, to) => { if (from !== to && !R.has(from)) R.set(from, to); };

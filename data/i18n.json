@@ -77,7 +77,16 @@
   "chooseLang": "Choose your language",
   "homeStep": "Where are you looking for a puppy?",
   "heroH": "Your puppy, without the endless searching.",
-  "heroSub": "We keep an eye on breeders for you. New litter of the breed you want? You'll hear about it by email straight away."
+  "heroSub": "We keep an eye on breeders for you. New litter of the breed you want? You'll hear about it by email straight away.",
+  "bSeg": "breeds",
+  "bAll": "All breeds",
+  "bTitle": "{b} puppies: get an email when a new litter is born | PuppyAlert",
+  "bDesc": "Looking for a {b} puppy? PuppyAlert keeps an eye on breeders and emails you as soon as there is a new {b} litter.",
+  "bEyebrow": "Puppy alerts · {b}",
+  "bH1": "Looking for a {b} puppy?",
+  "bLead": "You don't have to check breeder sites every day. We keep watch for new {b} litters and send you an email the moment one turns up. You just choose where you're looking.",
+  "bOthers": "Other breeds",
+  "bH": "Puppy alerts by breed"
  },
  "nl": {
   "name": "Nederlands",
@@ -157,7 +166,16 @@
   "chooseLang": "Kies je taal",
   "homeStep": "Waar zoek je een pup?",
   "heroH": "Jouw pup, zonder eindeloos zoeken.",
-  "heroSub": "Wij houden de fokkers voor je in de gaten. Is er een nieuw nestje met het ras dat je zoekt? Dan krijg je meteen een mail."
+  "heroSub": "Wij houden de fokkers voor je in de gaten. Is er een nieuw nestje met het ras dat je zoekt? Dan krijg je meteen een mail.",
+  "bSeg": "rassen",
+  "bAll": "Alle rassen",
+  "bTitle": "{b} pup? Krijg een mail bij een nieuw nestje | PuppyAlert",
+  "bDesc": "Zoek je een {b} pup? PuppyAlert houdt de fokkers in de gaten en mailt je zodra er een nieuw {b}-nestje is.",
+  "bEyebrow": "Puppy-alerts · {b}",
+  "bH1": "Op zoek naar een {b} pup?",
+  "bLead": "Je hoeft niet elke dag zelf alle fokkers af te speuren. Wij letten op nieuwe nestjes {b} en sturen je meteen een mail als er een is. Jij kiest alleen waar je zoekt.",
+  "bOthers": "Andere rassen",
+  "bH": "Puppy-alerts per ras"
  },
  "de": {
   "name": "Deutsch",
@@ -237,7 +255,16 @@
   "chooseLang": "Wähle deine Sprache",
   "homeStep": "Wo suchst du einen Welpen?",
   "heroH": "Dein Welpe, ohne endloses Suchen.",
-  "heroSub": "Wir behalten die Züchter für dich im Blick. Gibt es einen neuen Wurf deiner Wunschrasse? Dann bekommst du sofort eine Mail."
+  "heroSub": "Wir behalten die Züchter für dich im Blick. Gibt es einen neuen Wurf deiner Wunschrasse? Dann bekommst du sofort eine Mail.",
+  "bSeg": "rassen",
+  "bAll": "Alle Rassen",
+  "bTitle": "{b} Welpen: Mail bei jedem neuen Wurf | PuppyAlert",
+  "bDesc": "Du suchst einen {b} Welpen? PuppyAlert behält die Züchter im Blick und schreibt dir, sobald es einen neuen {b} Wurf gibt.",
+  "bEyebrow": "Welpen-Alerts · {b}",
+  "bH1": "Du suchst einen {b} Welpen?",
+  "bLead": "Du musst nicht jeden Tag selbst die Züchterseiten durchklicken. Wir halten Ausschau nach neuen {b} Würfen und schreiben dir sofort, wenn einer auftaucht. Du sagst uns nur, wo du suchst.",
+  "bOthers": "Weitere Rassen",
+  "bH": "Welpen-Alerts nach Rasse"
  },
  "fr": {
   "name": "Français",
@@ -317,7 +344,16 @@
   "chooseLang": "Choisissez votre langue",
   "homeStep": "Où cherchez-vous un chiot ?",
   "heroH": "Votre chiot, sans chercher pendant des heures.",
-  "heroSub": "Nous surveillons les éleveurs pour vous. Une nouvelle portée de la race qui vous plaît ? Vous recevez aussitôt un e-mail."
+  "heroSub": "Nous surveillons les éleveurs pour vous. Une nouvelle portée de la race qui vous plaît ? Vous recevez aussitôt un e-mail.",
+  "bSeg": "races",
+  "bAll": "Toutes les races",
+  "bTitle": "Chiot {b} : recevez un mail à chaque nouvelle portée | PuppyAlert",
+  "bDesc": "Vous cherchez un chiot {b} ? PuppyAlert surveille les éleveurs et vous écrit dès qu’une nouvelle portée {b} apparaît.",
+  "bEyebrow": "Alertes chiots · {b}",
+  "bH1": "Vous cherchez un chiot {b} ?",
+  "bLead": "Inutile de faire le tour des éleveurs tous les jours. On guette les nouvelles portées {b} pour vous et on vous écrit dès qu’il y en a une. Dites-nous simplement où vous cherchez.",
+  "bOthers": "Autres races",
+  "bH": "Alertes chiots par race"
  },
  "it": {
   "name": "Italiano",
@@ -397,6 +433,15 @@
   "chooseLang": "Scegli la tua lingua",
   "homeStep": "Dove cerchi un cucciolo?",
   "heroH": "Il tuo cucciolo, senza cercare all'infinito.",
-  "heroSub": "Teniamo d'occhio gli allevatori al posto tuo. C'è una nuova cucciolata della razza che cerchi? Ti arriva subito un'email."
+  "heroSub": "Teniamo d'occhio gli allevatori al posto tuo. C'è una nuova cucciolata della razza che cerchi? Ti arriva subito un'email.",
+  "bSeg": "razze",
+  "bAll": "Tutte le razze",
+  "bTitle": "Cuccioli di {b}: una mail a ogni nuova cucciolata | PuppyAlert",
+  "bDesc": "Cerchi un cucciolo di {b}? PuppyAlert tiene d’occhio gli allevatori e ti scrive appena nasce una nuova cucciolata di {b}.",
+  "bEyebrow": "Avvisi cuccioli · {b}",
+  "bH1": "Cerchi un cucciolo di {b}?",
+  "bLead": "Niente più giri quotidiani sui siti degli allevatori. Teniamo d’occhio le nuove cucciolate di {b} e ti scriviamo appena ne spunta una. Tu ci dici solo dove cerchi.",
+  "bOthers": "Altre razze",
+  "bH": "Avvisi cuccioli per razza"
  }
 }
