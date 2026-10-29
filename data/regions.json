@@ -1,0 +1,12 @@
+{
+"AT":["Burgenland","Kärnten","Niederösterreich","Oberösterreich","Salzburg","Steiermark","Tirol","Vorarlberg","Wien"],
+"CZ":["Praha","Středočeský kraj","Jihočeský kraj","Plzeňský kraj","Karlovarský kraj","Ústecký kraj","Liberecký kraj","Královéhradecký kraj","Pardubický kraj","Kraj Vysočina","Jihomoravský kraj","Olomoucký kraj","Zlínský kraj","Moravskoslezský kraj"],
+"DE":["Baden-Württemberg","Bayern","Berlin","Brandenburg","Bremen","Hamburg","Hessen","Mecklenburg-Vorpommern","Niedersachsen","Nordrhein-Westfalen","Rheinland-Pfalz","Saarland","Sachsen","Sachsen-Anhalt","Schleswig-Holstein","Thüringen"],
+"ES":["Andalucía","Aragón","Asturias","Illes Balears","Canarias","Cantabria","Castilla y León","Castilla-La Mancha","Cataluña","Comunitat Valenciana","Extremadura","Galicia","La Rioja","Comunidad de Madrid","Región de Murcia","Navarra","País Vasco","Ceuta","Melilla"],
+"FR":["Auvergne-Rhône-Alpes","Bourgogne-Franche-Comté","Bretagne","Centre-Val de Loire","Corse","Grand Est","Hauts-de-France","Île-de-France","Normandie","Nouvelle-Aquitaine","Occitanie","Pays de la Loire","Provence-Alpes-Côte d'Azur","Guadeloupe","Martinique","Guyane","La Réunion","Mayotte"],
+"GB":["England","Scotland","Wales","Northern Ireland"],
+"IT":["Abruzzo","Basilicata","Calabria","Campania","Emilia-Romagna","Friuli-Venezia Giulia","Lazio","Liguria","Lombardia","Marche","Molise","Piemonte","Puglia","Sardegna","Sicilia","Toscana","Trentino-Alto Adige","Umbria","Valle d'Aosta","Veneto"],
+"PL":["Dolnośląskie","Kujawsko-Pomorskie","Lubelskie","Lubuskie","Łódzkie","Małopolskie","Mazowieckie","Opolskie","Podkarpackie","Podlaskie","Pomorskie","Śląskie","Świętokrzyskie","Warmińsko-Mazurskie","Wielkopolskie","Zachodniopomorskie"],
+"RO":["Nord-Vest","Centru","Nord-Est","Sud-Est","Sud-Muntenia","București-Ilfov","Sud-Vest Oltenia","Vest"],
+"SE":["Blekinge","Dalarna","Gotland","Gävleborg","Halland","Jämtland","Jönköping","Kalmar","Kronoberg","Norrbotten","Skåne","Stockholm","Södermanland","Uppsala","Värmland","Västerbotten","Västernorrland","Västmanland","Västra Götaland","Örebro","Östergötland"]
+}

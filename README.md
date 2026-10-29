@@ -26,3 +26,10 @@ Static site + Cloudflare Pages Functions, same pattern as EuroRentAlert (`src/bu
 - Page sections: header (logo + wordmark, language menu), hero + signup card, story / why-cheap, example alert email (clearly labelled, no real or invented breeders or counts), EU country cards ("Coming soon", no numbers), footer.
 - Mollie: **one-off payments only** (`sequenceType: oneoff`). No customers/mandates, no recurring or subscription API.
 - The confirmation email, welcome email, and any future FAQ and terms must state: one-time payment, no auto-renewal. The alert simply ends after 6 months / 1 year. (No email templates exist yet; this applies when they are added.)
+
+## Optional regions
+Larger countries have an optional fold-open "Regions in X (all)" under the country once it's selected (`data/regions.json`): AT, CZ, DE, ES, FR, GB, IT, PL, RO, SE. Leaving it alone (or ticking all) = whole country. Smaller countries (NL, BE, LU, …) have no regions. GB (England, Scotland, Wales, Northern Ireland) is selectable in addition to the EU-27.
+- Stored alert shape: `{ email, lang, breeds[≤3], countries[≤3], regions: { CC: [region…] }, plan, status }`; a country missing from `regions` means the whole country. The server (`functions/api/signup.js`) validates every region against the list for that country.
+- **Matching must respect regions**: a listing in country CC matches only if `regions[CC]` is absent or contains the listing's region. This applies to the instant first email and to all later alerts.
+- Emails: when regions are set, the welcome and alert emails show them through a `{regions}` placeholder (e.g. "Germany: Bayern, Hessen"). When none are set, the placeholder is left out.
+- **Manage-alert settings page (spec only, not built yet):** reached from a signed link in every email. It must offer the same editing as signup: breeds (max 3), countries (max 3), and the same optional regions per country, with the same server validation. It also shows the alert period end date (one-time payment, no auto-renewal) and the unsubscribe link.
