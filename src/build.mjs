@@ -50,8 +50,8 @@ for (const l of LANGS) {
   // Homepage: language selector + country selector, no signup form.
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <h1>${esc(T.heroH)}</h1><p class="hero-line">${esc(T.heroSub)}</p><div class="hero-story">${story(T)}</div>
-</div><div class="card"><h2 class="card-title">${esc(T.homeStep)}</h2>
-<label class="step"><select class="go" aria-label="${esc(T.homeCard)}"><option value="">${esc(T.chooseC)}</option>${cs.map(c => `<option value="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</option>`).join('')}</select></label>
+</div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2>
+<label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${[...J('data/breed_pages.json')].map(b => [b[LANGS.indexOf(l)], `${pre(l)}/${T.bSeg}/${slugify(b[LANGS.indexOf(l)])}/`]).sort((a, b) => a[0].localeCompare(b[0], l)).map(([n, u]) => `<option value="${u}">${esc(n)}</option>`).join('')}</select></label>
 <ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>
 ${sections(T, l, cs, true)}<script src="/home.js" defer></script></body></html>`);
   if (l === 'en') sm.push(homePath);
