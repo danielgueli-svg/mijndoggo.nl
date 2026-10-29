@@ -9,7 +9,7 @@ export async function onRequestPost({ request }) {
   if (!breeds.length || breeds.length > 3 || !breeds.every(x => BREEDS.has(x))) return Response.json({ ok: false, error: 'breeds' }, { status: 400 });
   if (!countries.length || countries.length > 3 || !countries.every(x => EU.has(x))) return Response.json({ ok: false, error: 'countries' }, { status: 400 });
   if (!['6m', '12m'].includes(b.plan)) return Response.json({ ok: false, error: 'plan' }, { status: 400 });
-  // Payments are OFF: no Mollie call. Plan prices (server-side only when enabled): 6m = EUR 12.00, 12m = EUR 20.00.
+  // Payments are OFF: no Mollie call. When enabled: Mollie one-off payment only, no mandates/recurring; no auto-renewal. Plan prices (server-side only when enabled): 6m = EUR 12.00, 12m = EUR 20.00.
   // TODO: insert pending subscriber; create Mollie payment with SERVER-SIDE amount (never from client); send double opt-in email.
   return Response.json({ ok: true, pending: true });
 }

@@ -22,5 +22,7 @@ Static site + Cloudflare Pages Functions, same pattern as EuroRentAlert (`src/bu
 - GDPR: every email carries a one-click unsubscribe link (+ `List-Unsubscribe` header).
 
 ## Plans (preview-wra branch)
-- Shown: €12 / 6 months, €20 / year. **Payments are OFF**: no Mollie call; the button only starts double opt-in and says payment opens later. When enabled, amounts come from the server only.
+- Shown: €12 for 6 months, €20 for 1 year. **One-time payment, NOT a subscription, no auto-renewal.** **Payments are OFF**: no Mollie call; the button only starts double opt-in and says payment opens later. When enabled, amounts come from the server only.
 - Page sections: header (logo + wordmark, language menu), hero + signup card, story / why-cheap, example alert email (clearly labelled, no real or invented breeders or counts), EU country cards ("Coming soon", no numbers), footer.
+- Mollie: **one-off payments only** (`sequenceType: oneoff`). No customers/mandates, no recurring or subscription API.
+- The confirmation email, welcome email, and any future FAQ and terms must state: one-time payment, no auto-renewal. The alert simply ends after 6 months / 1 year. (No email templates exist yet; this applies when they are added.)

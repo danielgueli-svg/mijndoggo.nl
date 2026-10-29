@@ -36,10 +36,10 @@
   "h1line": "New puppy available? We'll email you.",
   "st1": "Step 1 · Choose breeds",
   "st2": "Step 2 · Choose countries",
-  "st3": "Step 3 · Choose a plan",
+  "st3": "Step 3 · Choose your alert period",
   "st4": "Step 4 · Your email",
   "p6": "€12 for 6 months",
-  "p12": "€20 per year",
+  "p12": "€20 for 1 year",
   "payoff": "Payment isn't open yet. For now you just confirm your email, and we'll let you know when payment opens.",
   "noauto": "No subscription: we never charge you automatically.",
   "h_prev": "What an alert looks like",
@@ -52,7 +52,8 @@
   "h_ctry": "Countries",
   "ctry_note": "Choose up to 3 EU countries when you sign up.",
   "soon": "Coming soon",
-  "f_unsub": "Every email has an unsubscribe link."
+  "f_unsub": "Every email has an unsubscribe link.",
+  "once": "One-time payment. No auto-renewal."
  },
  "nl": {
   "name": "Nederlands",
@@ -91,12 +92,12 @@
   "h1line": "Nieuwe pup beschikbaar? Wij mailen je.",
   "st1": "Stap 1 · Kies rassen",
   "st2": "Stap 2 · Kies landen",
-  "st3": "Stap 3 · Kies een abonnement",
+  "st3": "Stap 3 · Kies je alertperiode",
   "st4": "Stap 4 · Je e-mailadres",
   "p6": "€12 voor 6 maanden",
-  "p12": "€20 per jaar",
+  "p12": "€20 voor 1 jaar",
   "payoff": "Betalen kan nog niet. Je bevestigt nu alleen je e-mailadres, en we laten je weten wanneer betalen mogelijk is.",
-  "noauto": "Geen abonnement dat vanzelf doorloopt: we schrijven nooit automatisch af.",
+  "noauto": "Geen abonnement: we schrijven nooit automatisch af.",
   "h_prev": "Zo ziet een alert eruit",
   "prev_note": "Alleen een voorbeeld. Geen echte fokker of pup.",
   "m_from": "Van: PuppyAlert",
@@ -107,7 +108,8 @@
   "h_ctry": "Landen",
   "ctry_note": "Kies bij het aanmelden tot 3 EU-landen.",
   "soon": "Binnenkort",
-  "f_unsub": "Elke mail heeft een afmeldlink."
+  "f_unsub": "Elke mail heeft een afmeldlink.",
+  "once": "Eenmalige betaling. Wordt niet automatisch verlengd."
  },
  "de": {
   "name": "Deutsch",
@@ -146,10 +148,10 @@
   "h1line": "Neuer Welpe verfügbar? Wir schreiben dir.",
   "st1": "Schritt 1 · Rassen wählen",
   "st2": "Schritt 2 · Länder wählen",
-  "st3": "Schritt 3 · Tarif wählen",
+  "st3": "Schritt 3 · Alert-Zeitraum wählen",
   "st4": "Schritt 4 · Deine E-Mail",
   "p6": "12 € für 6 Monate",
-  "p12": "20 € pro Jahr",
+  "p12": "20 € für 1 Jahr",
   "payoff": "Die Zahlung ist noch nicht freigeschaltet. Du bestätigst jetzt nur deine E-Mail, und wir sagen dir Bescheid, sobald die Zahlung öffnet.",
   "noauto": "Kein Abo: Wir buchen nie automatisch ab.",
   "h_prev": "So sieht ein Alert aus",
@@ -162,7 +164,8 @@
   "h_ctry": "Länder",
   "ctry_note": "Wähle bei der Anmeldung bis zu 3 EU-Länder.",
   "soon": "Demnächst",
-  "f_unsub": "Jede E-Mail enthält einen Abmeldelink."
+  "f_unsub": "Jede E-Mail enthält einen Abmeldelink.",
+  "once": "Einmalige Zahlung. Keine automatische Verlängerung."
  },
  "fr": {
   "name": "Français",
@@ -201,10 +204,10 @@
   "h1line": "Un nouveau chiot disponible ? On vous écrit.",
   "st1": "Étape 1 · Choisir les races",
   "st2": "Étape 2 · Choisir les pays",
-  "st3": "Étape 3 · Choisir une formule",
+  "st3": "Étape 3 · Choisir la durée de l'alerte",
   "st4": "Étape 4 · Votre e-mail",
   "p6": "12 € pour 6 mois",
-  "p12": "20 € par an",
+  "p12": "20 € pour 1 an",
   "payoff": "Le paiement n'est pas encore ouvert. Pour l'instant, vous confirmez seulement votre e-mail, et nous vous préviendrons à l'ouverture du paiement.",
   "noauto": "Pas d'abonnement : nous ne prélevons jamais automatiquement.",
   "h_prev": "À quoi ressemble une alerte",
@@ -217,6 +220,7 @@
   "h_ctry": "Pays",
   "ctry_note": "Choisissez jusqu'à 3 pays de l'UE à l'inscription.",
   "soon": "Bientôt",
-  "f_unsub": "Chaque e-mail contient un lien de désinscription."
+  "f_unsub": "Chaque e-mail contient un lien de désinscription.",
+  "once": "Paiement unique. Pas de renouvellement automatique."
  }
 }
