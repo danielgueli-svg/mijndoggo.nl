@@ -50,10 +50,17 @@
   "m_btn": "View on the breeder's website",
   "m_unsub": "Unsubscribe",
   "h_ctry": "Countries",
-  "ctry_note": "Choose up to 3 EU countries when you sign up.",
+  "ctry_note": "Choose up to 3 countries when you sign up. You can also pick a place and a distance.",
   "soon": "Coming soon",
   "f_unsub": "Every email has an unsubscribe link.",
-  "once": "One-time payment. No auto-renewal."
+  "once": "One-time payment. No auto-renewal.",
+  "nearT": "Near a place (optional)",
+  "nearPlace": "Town or city",
+  "nearPh": "Start typing, e.g. Utrecht",
+  "nearRad": "Within",
+  "nearHint": "Skip this to get alerts from all of your chosen countries. The distance can cross borders.",
+  "nearBad": "Pick a place from the list.",
+  "xb": "Also show puppies across the border"
  },
  "nl": {
   "name": "Nederlands",
@@ -106,10 +113,17 @@
   "m_btn": "Bekijk op de site van de fokker",
   "m_unsub": "Afmelden",
   "h_ctry": "Landen",
-  "ctry_note": "Kies bij het aanmelden tot 3 EU-landen.",
+  "ctry_note": "Kies bij het aanmelden tot 3 landen. Je kunt ook een plaats en een afstand kiezen.",
   "soon": "Binnenkort",
   "f_unsub": "Elke mail heeft een afmeldlink.",
-  "once": "Eenmalige betaling. Wordt niet automatisch verlengd."
+  "once": "Eenmalige betaling. Wordt niet automatisch verlengd.",
+  "nearT": "In de buurt van een plaats (optioneel)",
+  "nearPlace": "Plaats",
+  "nearPh": "Begin te typen, bijv. Utrecht",
+  "nearRad": "Binnen",
+  "nearHint": "Sla dit over voor alerts uit al je gekozen landen. De afstand mag over de grens gaan.",
+  "nearBad": "Kies een plaats uit de lijst.",
+  "xb": "Ook pups over de grens tonen"
  },
  "de": {
   "name": "Deutsch",
@@ -162,10 +176,17 @@
   "m_btn": "Auf der Website des Züchters ansehen",
   "m_unsub": "Abmelden",
   "h_ctry": "Länder",
-  "ctry_note": "Wähle bei der Anmeldung bis zu 3 EU-Länder.",
+  "ctry_note": "Wähle bei der Anmeldung bis zu 3 Länder. Du kannst auch einen Ort und einen Umkreis wählen.",
   "soon": "Demnächst",
   "f_unsub": "Jede E-Mail enthält einen Abmeldelink.",
-  "once": "Einmalige Zahlung. Keine automatische Verlängerung."
+  "once": "Einmalige Zahlung. Keine automatische Verlängerung.",
+  "nearT": "In der Nähe eines Ortes (optional)",
+  "nearPlace": "Ort oder Stadt",
+  "nearPh": "Tippe los, z. B. Utrecht",
+  "nearRad": "Im Umkreis von",
+  "nearHint": "Überspringe das, um Alerts aus allen gewählten Ländern zu bekommen. Der Umkreis darf über Grenzen gehen.",
+  "nearBad": "Wähle einen Ort aus der Liste.",
+  "xb": "Auch Welpen jenseits der Grenze zeigen"
  },
  "fr": {
   "name": "Français",
@@ -218,9 +239,16 @@
   "m_btn": "Voir sur le site de l'éleveur",
   "m_unsub": "Se désinscrire",
   "h_ctry": "Pays",
-  "ctry_note": "Choisissez jusqu'à 3 pays de l'UE à l'inscription.",
+  "ctry_note": "Choisissez jusqu'à 3 pays à l'inscription. Vous pouvez aussi choisir un lieu et une distance.",
   "soon": "Bientôt",
   "f_unsub": "Chaque e-mail contient un lien de désinscription.",
-  "once": "Paiement unique. Pas de renouvellement automatique."
+  "once": "Paiement unique. Pas de renouvellement automatique.",
+  "nearT": "Près d'un lieu (facultatif)",
+  "nearPlace": "Ville",
+  "nearPh": "Commencez à taper, ex. Utrecht",
+  "nearRad": "Dans un rayon de",
+  "nearHint": "Sans lieu, vous recevez les alertes de tous les pays choisis. Le rayon peut dépasser les frontières.",
+  "nearBad": "Choisissez un lieu dans la liste.",
+  "xb": "Afficher aussi les chiots de l'autre côté de la frontière"
  }
 }

@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 const J = p => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
-const i18n = J('data/i18n.json'), breeds = J('data/breeds.json'), countries = J('data/countries.json');
+const i18n = J('data/i18n.json'), breeds = J('data/breeds.json'), countries = J('data/countries.json'), places = J('data/places.json');
 const SITE = 'https://puppyalert.eu', OUT = new URL('../dist/', import.meta.url).pathname;
 const LANGS = ['en', 'nl', 'de', 'fr']; // en = default at /, others at /<lang>/
 const path = l => l === 'en' ? '/' : `/${l}/`;
@@ -22,9 +22,12 @@ for (const l of LANGS) {
 <body><header class="site-header"><div class="wrap head-row"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="40" height="40"><span class="wordmark">PuppyAlert</span></a>${langMenu(l)}</div></header>
 <main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <p class="eyebrow">${esc(T.eyebrow)}</p><h1>${esc(T.h1a)} <span class="h1-accent">${esc(T.h1b)}</span></h1><p class="hero-line">${esc(T.h1line)}</p><p class="lead">${esc(T.lead)}</p>
-</div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
+</div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-nearbad="${esc(T.nearBad)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
 <fieldset data-max="3" data-msg="maxB"><legend class="step">${esc(T.st1)}</legend><details class="picker"><summary><span>${esc(T.pickB)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('breed', [...breeds].sort((a, b) => a.localeCompare(b, l)).map(b => [b, esc(b)]))}</div></details><p class="limit" hidden></p></fieldset>
-<fieldset data-max="3" data-msg="maxC"><legend class="step">${esc(T.st2)}</legend><details class="picker"><summary><span>${esc(T.pickC)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset data-max="3" data-msg="maxC"><legend class="step">${esc(T.st2)}</legend><details class="picker"><summary><span>${esc(T.pickC)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div></details><p class="limit" hidden></p>
+<details class="picker near"><summary><span>${esc(T.nearT)}</span></summary><div class="near-body"><p class="note">${esc(T.nearHint)}</p>
+<label>${esc(T.nearPlace)}<input type="text" name="place" list="places" placeholder="${esc(T.nearPh)}" autocomplete="off"></label><datalist id="places">${places.map(([cc, n, , , reach]) => `<option value="${esc(n)} (${cc})" data-reach='${esc(JSON.stringify(reach))}'>`).join('')}</datalist>
+<label>${esc(T.nearRad)}<select name="radius" data-km="50,100,150" data-mi="50,100"></select></label><label class="consent xb" hidden><input type="checkbox" name="crossBorder" checked> ${esc(T.xb)}</label><p class="limit badplace" hidden>${esc(T.nearBad)}</p></div></details></fieldset>
 <fieldset><legend class="step">${esc(T.st3)}</legend><div class="plans"><label class="plan"><input type="radio" name="plan" value="6m" checked><span>${esc(T.p6)}</span></label><label class="plan"><input type="radio" name="plan" value="12m"><span>${esc(T.p12)}</span></label></div><p class="note"><strong>${esc(T.once)}</strong> ${esc(T.payoff)}</p></fieldset>
 <fieldset><legend class="step">${esc(T.st4)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
 <label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label>
