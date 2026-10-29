@@ -1,0 +1,408 @@
+{
+ "Labrador Retriever": {
+  "en": "Famous for a nose that never quits and a tail that never stops. Give a Lab a job and a ball, and you have a friend for life.",
+  "nl": "Beroemd om zijn neus en zijn eeuwig kwispelende staart. Geef een Labrador een bal en een taak, en hij is dolgelukkig.",
+  "de": "Bekannt für seine Spürnase und den Schwanz, der nie stillsteht. Ein Ball und eine Aufgabe, und er ist rundum glücklich.",
+  "fr": "Célèbre pour son flair et sa queue qui ne s'arrête jamais. Une balle, une mission, et le voilà comblé.",
+  "it": "Famoso per il fiuto e la coda che non si ferma mai. Una palla e un compito, e lo rendi felicissimo."
+ },
+ "Golden Retriever": {
+  "en": "The sunny one. Goldens greet strangers like old friends and still carry your slippers with pride.",
+  "nl": "Altijd zonnig. Een Golden begroet vreemden als oude vrienden en brengt trots je sloffen.",
+  "de": "Der Sonnenschein. Goldens begrüßen Fremde wie alte Freunde und bringen stolz deine Hausschuhe.",
+  "fr": "Un rayon de soleil. Le Golden accueille les inconnus comme de vieux amis et vous rapporte fièrement vos chaussons.",
+  "it": "Un raggio di sole. Il Golden saluta gli sconosciuti come vecchi amici e ti porta fiero le pantofole."
+ },
+ "Cockapoo": {
+  "en": "Cocker charm meets poodle brains. Cheerful, clever and happiest right next to you on the sofa.",
+  "nl": "Cocker-charme met poedelhersens. Vrolijk, slim en het liefst naast jou op de bank.",
+  "de": "Cocker-Charme trifft Pudel-Köpfchen. Fröhlich, schlau und am liebsten neben dir auf dem Sofa.",
+  "fr": "Le charme du cocker, la tête du caniche. Joyeux, malin et ravi de squatter le canapé avec vous.",
+  "it": "Il fascino del cocker con il cervello del barboncino. Allegro, sveglio e felice accanto a te sul divano."
+ },
+ "Cavapoo": {
+  "en": "Small, soft and full of cuddles. A Cavapoo turns any lap into its favourite place.",
+  "nl": "Klein, zacht en dol op knuffels. Elke schoot wordt meteen zijn lievelingsplek.",
+  "de": "Klein, weich und verschmust. Jeder Schoß wird sofort sein Lieblingsplatz.",
+  "fr": "Petit, tout doux et câlin. Le moindre genou devient vite sa place préférée.",
+  "it": "Piccolo, morbido e coccolone. Ogni grembo diventa subito il suo posto preferito."
+ },
+ "Labradoodle": {
+  "en": "Bouncy curls and a big heart. Labradoodles bring Lab friendliness with a playful poodle twist.",
+  "nl": "Springerige krullen en een groot hart: de vriendelijkheid van een Labrador met poedelpit.",
+  "de": "Wuschelige Locken und ein großes Herz: Labrador-Freundlichkeit mit Pudel-Pfiff.",
+  "fr": "Des boucles rebondies et un grand cœur : la gentillesse du Labrador, l'espièglerie du caniche.",
+  "it": "Riccioli vivaci e un cuore grande: la dolcezza del Labrador con il brio del barboncino."
+ },
+ "Goldendoodle": {
+  "en": "Teddy-bear looks with Golden warmth. Goldendoodles think everyone is invited to the party.",
+  "nl": "Een teddybeer met een Golden-hart. Volgens een Goldendoodle is iedereen welkom op het feest.",
+  "de": "Teddybär-Look mit Golden-Herz. Für einen Goldendoodle ist jeder zur Party eingeladen.",
+  "fr": "Une bouille de nounours et le cœur d'un Golden. Pour lui, tout le monde est invité à la fête.",
+  "it": "Aspetto da orsacchiotto e cuore da Golden. Per lui alla festa sono invitati tutti."
+ },
+ "Maltipoo": {
+  "en": "Pocket-sized and full of personality. Maltipoos are bright little shadows who love to learn tricks.",
+  "nl": "Zakformaat met een grote persoonlijkheid. Een slimme kleine schaduw die graag kunstjes leert.",
+  "de": "Im Taschenformat, aber voller Persönlichkeit. Ein kluger kleiner Schatten, der gern Tricks lernt.",
+  "fr": "Format poche, grande personnalité. Une petite ombre futée qui adore apprendre des tours.",
+  "it": "Formato tascabile, personalità enorme. Una piccola ombra sveglia che adora imparare giochetti."
+ },
+ "French Bulldog": {
+  "en": "Bat ears, big eyes and a clown at heart. Frenchies are city-sized comedians.",
+  "nl": "Vleermuisoren, grote ogen en een clown van binnen. De Franse Bulldog is een komiek op stadsformaat.",
+  "de": "Fledermausohren, große Augen und ein Clown im Herzen. Ein Komiker im Stadtformat.",
+  "fr": "Oreilles de chauve-souris, grands yeux et âme de clown. Un vrai comique format citadin.",
+  "it": "Orecchie a pipistrello, occhioni e anima da clown. Un comico in formato città."
+ },
+ "English Bulldog": {
+  "en": "A sturdy softie with a famous grumpy face that hides a very sweet nature.",
+  "nl": "Een stevige knuffelbeer: dat beroemde norse gezicht verbergt een heel lief karakter.",
+  "de": "Ein kräftiger Softie: hinter dem berühmten Grummelgesicht steckt ein ganz sanftes Wesen.",
+  "fr": "Un costaud tout tendre : sa célèbre mine bougonne cache un caractère adorable.",
+  "it": "Un duro dal cuore tenero: dietro quel famoso muso imbronciato c'è un carattere dolcissimo."
+ },
+ "Dachshund": {
+  "en": "Long body, brave heart. The sausage dog was bred to face badgers and still thinks it's ten feet tall.",
+  "nl": "Lang lijf, dapper hart. De teckel werd gefokt om dassen te trotseren en voelt zich nog steeds een reus.",
+  "de": "Langer Körper, mutiges Herz. Der Dackel jagte einst Dachse und hält sich bis heute für einen Riesen.",
+  "fr": "Long corps, cœur de lion. Le teckel chassait le blaireau et se croit toujours immense.",
+  "it": "Corpo lungo, cuore impavido. Il bassotto affrontava i tassi e si crede ancora un gigante."
+ },
+ "Cocker Spaniel": {
+  "en": "The merry cocker: silky ears and a tail that wags the whole dog.",
+  "nl": "De vrolijke cocker: zijdezachte oren en een staart die de hele hond laat kwispelen.",
+  "de": "Der fröhliche Cocker: seidige Ohren und eine Rute, die den ganzen Hund wedeln lässt.",
+  "fr": "Le joyeux cocker : oreilles soyeuses et une queue qui fait remuer tout le chien.",
+  "it": "Il cocker allegro: orecchie di seta e una coda che fa scodinzolare tutto il cane."
+ },
+ "English Springer Spaniel": {
+  "en": "Named for springing birds from cover, and that bounce never leaves them. Tireless and joyful outdoors.",
+  "nl": "Genoemd naar het opjagen van vogels, en die veerkracht verliezen ze nooit. Onvermoeibaar en blij buiten.",
+  "de": "Benannt nach dem Aufscheuchen von Vögeln, und diesen Schwung behält er. Draußen unermüdlich und fröhlich.",
+  "fr": "Son nom vient du gibier qu'il fait lever, et il garde ce ressort. Infatigable et joyeux en plein air.",
+  "it": "Il nome viene dal far alzare la selvaggina, e quella molla non la perde mai. Instancabile e felice all'aperto."
+ },
+ "Cavalier King Charles Spaniel": {
+  "en": "A royal favourite with melting eyes. Cavaliers are gentle, easygoing and made for cuddles.",
+  "nl": "Lieveling van koningen, met smeltende ogen. Zachtaardig, relaxed en gemaakt om te knuffelen.",
+  "de": "Liebling der Könige, mit Schmelzblick. Sanft, entspannt und wie gemacht zum Kuscheln.",
+  "fr": "Chouchou des rois au regard fondant. Doux, facile à vivre et taillé pour les câlins.",
+  "it": "Il preferito dei re, con occhi che sciolgono. Dolce, tranquillo e nato per le coccole."
+ },
+ "German Shepherd": {
+  "en": "Brains, courage and focus. There's a reason this breed works with police and rescue teams worldwide.",
+  "nl": "Slim, moedig en gefocust. Niet voor niets werkt dit ras wereldwijd bij politie en reddingsteams.",
+  "de": "Klug, mutig und konzentriert. Nicht umsonst arbeitet diese Rasse weltweit bei Polizei und Rettung.",
+  "fr": "Intelligent, courageux et concentré. Ce n'est pas un hasard s'il travaille avec la police et les secours.",
+  "it": "Intelligente, coraggioso e concentrato. Non a caso lavora con polizia e soccorso in tutto il mondo."
+ },
+ "White Swiss Shepherd": {
+  "en": "A snow-white shepherd with a soft soul. Calm, attentive and wonderful with family.",
+  "nl": "Een sneeuwwitte herder met een zachte ziel. Rustig, oplettend en heerlijk in het gezin.",
+  "de": "Ein schneeweißer Schäferhund mit sanfter Seele. Ruhig, aufmerksam und toll in der Familie.",
+  "fr": "Un berger blanc comme neige à l'âme douce. Calme, attentif et formidable en famille.",
+  "it": "Un pastore bianco come la neve dall'animo dolce. Calmo, attento e splendido in famiglia."
+ },
+ "Border Collie": {
+  "en": "Often called the smartest dog in the world. A Border Collie can learn a new word faster than you can teach it.",
+  "nl": "Vaak de slimste hond ter wereld genoemd. Een Border Collie leert sneller dan jij kunt uitleggen.",
+  "de": "Gilt oft als klügster Hund der Welt. Ein Border Collie lernt schneller, als du erklären kannst.",
+  "fr": "Souvent cité comme le chien le plus intelligent au monde. Il apprend plus vite que vous n'expliquez.",
+  "it": "Spesso definito il cane più intelligente del mondo. Impara più in fretta di quanto tu riesca a spiegare."
+ },
+ "Staffordshire Bull Terrier": {
+  "en": "Muscle on the outside, marshmallow inside. Staffies adore their people and show it with full-body wiggles.",
+  "nl": "Spieren van buiten, marshmallow van binnen. Een Staffie aanbidt zijn mensen en kwispelt met zijn hele lijf.",
+  "de": "Außen Muskeln, innen Marshmallow. Staffies vergöttern ihre Menschen und wackeln vor Freude mit dem ganzen Körper.",
+  "fr": "Du muscle dehors, de la guimauve dedans. Le Staffie adore les siens et se tortille de joie.",
+  "it": "Muscoli fuori, marshmallow dentro. Lo Staffie adora la sua famiglia e si dimena tutto dalla gioia."
+ },
+ "Dobermann": {
+  "en": "Sleek, athletic and deeply devoted. A Dobermann is a velvet-coated bodyguard who loves the sofa too.",
+  "nl": "Slank, atletisch en zeer toegewijd. Een lijfwacht in fluweel die ook dol is op de bank.",
+  "de": "Elegant, athletisch und tief verbunden. Ein Bodyguard im Samtmantel, der auch das Sofa liebt.",
+  "fr": "Élancé, athlétique et très attaché. Un garde du corps en velours qui adore aussi le canapé.",
+  "it": "Slanciato, atletico e devotissimo. Una guardia del corpo in velluto che ama anche il divano."
+ },
+ "Cane Corso": {
+  "en": "An ancient Italian guardian with a calm, steady presence. Imposing to look at, gentle with its family.",
+  "nl": "Een oude Italiaanse waker met een rustige uitstraling. Indrukwekkend om te zien, zacht voor zijn gezin.",
+  "de": "Ein uralter italienischer Wächter mit ruhiger Ausstrahlung. Imposant anzusehen, sanft zur Familie.",
+  "fr": "Un ancien gardien italien à la présence calme. Impressionnant, mais tendre avec sa famille.",
+  "it": "Antico guardiano italiano dalla presenza calma. Imponente a vedersi, dolce con la sua famiglia."
+ },
+ "Rottweiler": {
+  "en": "Once a cattle-driving butcher's dog, now a confident, steady guardian with a big soft spot for its family.",
+  "nl": "Ooit een veedrijver, nu een zelfverzekerde waker met een groot zwak voor zijn gezin.",
+  "de": "Einst Treibhund der Metzger, heute ein selbstsicherer Beschützer mit großem Herz für seine Familie.",
+  "fr": "Ancien chien de bouvier, aujourd'hui un gardien sûr de lui au grand cœur pour sa famille.",
+  "it": "Un tempo cane da bovari, oggi un guardiano sicuro di sé con un debole per la sua famiglia."
+ },
+ "Boxer": {
+  "en": "The Peter Pan of dogs. Boxers stay playful puppies at heart for years and years.",
+  "nl": "De Peter Pan onder de honden. Een Boxer blijft jarenlang een speelse pup van binnen.",
+  "de": "Der Peter Pan unter den Hunden. Ein Boxer bleibt jahrelang ein verspielter Welpe im Herzen.",
+  "fr": "Le Peter Pan des chiens. Le Boxer reste un chiot joueur dans l'âme pendant des années.",
+  "it": "Il Peter Pan dei cani. Il Boxer resta un cucciolo giocherellone per anni e anni."
+ },
+ "Poodle": {
+  "en": "Far more than a fancy haircut. Poodles are clever, athletic water dogs who learn anything.",
+  "nl": "Veel meer dan een chique kapsel. Poedels zijn slimme, sportieve waterhonden die alles leren.",
+  "de": "Viel mehr als eine schicke Frisur. Pudel sind kluge, sportliche Wasserhunde, die alles lernen.",
+  "fr": "Bien plus qu'une coupe chic. Le caniche est un chien d'eau sportif et brillant qui apprend tout.",
+  "it": "Molto più di una pettinatura elegante. Il barboncino è un cane d'acqua sportivo e brillante."
+ },
+ "Siberian Husky": {
+  "en": "Built to pull sleds across the snow, with eyes that stop you in your tracks and a voice they love to use.",
+  "nl": "Gebouwd om sleeën door de sneeuw te trekken, met ogen om bij stil te staan en een stem die ze graag gebruiken.",
+  "de": "Gebaut, um Schlitten durch den Schnee zu ziehen, mit Augen zum Verlieben und einer Stimme, die er gern benutzt.",
+  "fr": "Taillé pour tirer des traîneaux, avec un regard saisissant et une voix qu'il adore faire entendre.",
+  "it": "Nato per trainare slitte sulla neve, con occhi che incantano e una voce che ama usare."
+ },
+ "Alaskan Malamute": {
+  "en": "A powerful Arctic freight dog with a fluffy coat and a famously friendly, talkative nature.",
+  "nl": "Een krachtige poolhond met een dikke vacht en een beroemd vriendelijk, spraakzaam karakter.",
+  "de": "Ein kraftvoller Arktis-Lastenhund mit dickem Fell und bekannt freundlichem, gesprächigem Wesen.",
+  "fr": "Un puissant chien de traîneau arctique, à la fourrure épaisse et au tempérament bavard et amical.",
+  "it": "Un potente cane da slitta artico, dal pelo folto e dal carattere amichevole e chiacchierone."
+ },
+ "Samoyed": {
+  "en": "Famous for the 'Sammy smile'. A cloud of white fluff with a sunny, sociable nature.",
+  "nl": "Beroemd om de 'Sammy-smile'. Een witte wolk met een zonnig, sociaal karakter.",
+  "de": "Berühmt für das „Sammy-Lächeln“. Eine weiße Wolke mit sonnigem, geselligem Wesen.",
+  "fr": "Célèbre pour son « sourire Samoyède ». Un nuage blanc au caractère solaire et sociable.",
+  "it": "Famoso per il suo 'sorriso Samoiedo'. Una nuvola bianca dal carattere solare e socievole."
+ },
+ "Whippet": {
+  "en": "Sprinter outside, couch potato inside. Whippets go from zero to blur, then nap for hours.",
+  "nl": "Sprinter buiten, bankhanger binnen. Een Whippet sprint als de wind en slaapt daarna urenlang.",
+  "de": "Draußen Sprinter, drinnen Sofakissen. Ein Whippet rennt wie der Wind und schläft dann stundenlang.",
+  "fr": "Sprinteur dehors, pantouflard dedans. Le Whippet file comme le vent puis dort des heures.",
+  "it": "Velocista fuori, pantofolaio dentro. Il Whippet corre come il vento e poi dorme per ore."
+ },
+ "Shih Tzu": {
+  "en": "The 'little lion dog' of Chinese palaces. Proud, affectionate and happiest close to you.",
+  "nl": "Het 'leeuwhondje' uit Chinese paleizen. Trots, aanhankelijk en het liefst dicht bij jou.",
+  "de": "Der „kleine Löwenhund“ chinesischer Paläste. Stolz, anhänglich und am liebsten ganz nah bei dir.",
+  "fr": "Le « petit chien lion » des palais chinois. Fier, affectueux et heureux tout près de vous.",
+  "it": "Il 'piccolo cane leone' dei palazzi cinesi. Fiero, affettuoso e felice vicino a te."
+ },
+ "Pomeranian": {
+  "en": "A tiny fox-faced puffball with the confidence of a much bigger dog.",
+  "nl": "Een piepklein pluizenbolletje met een vossensnoet en het zelfvertrouwen van een grote hond.",
+  "de": "Ein winziges Fellknäuel mit Fuchsgesicht und dem Selbstbewusstsein eines großen Hundes.",
+  "fr": "Une minuscule boule de poils au museau de renard, avec l'aplomb d'un grand chien.",
+  "it": "Un minuscolo batuffolo dal muso di volpe con la sicurezza di un cane grande."
+ },
+ "Jack Russell Terrier": {
+  "en": "Endless energy in a small package. Jacks are fearless, funny and always up for the next game.",
+  "nl": "Eindeloze energie in een klein pakketje. Onverschrokken, grappig en altijd in voor een spelletje.",
+  "de": "Grenzenlose Energie im Kleinformat. Furchtlos, witzig und immer bereit für das nächste Spiel.",
+  "fr": "Une énergie sans fin en petit format. Intrépide, drôle et toujours partant pour jouer.",
+  "it": "Energia infinita in formato ridotto. Impavido, buffo e sempre pronto a giocare."
+ },
+ "Maltese": {
+  "en": "Silky white coat and a playful spirit. Maltese have charmed people since ancient Rome.",
+  "nl": "Zijdezachte witte vacht en een speels karakter. De Maltezer betovert mensen al sinds het oude Rome.",
+  "de": "Seidiges weißes Fell und verspielter Charakter. Der Malteser bezaubert Menschen seit dem alten Rom.",
+  "fr": "Pelage blanc soyeux et esprit joueur. Le Bichon maltais charme depuis la Rome antique.",
+  "it": "Mantello bianco di seta e spirito giocoso. Il Maltese incanta le persone dai tempi dell'antica Roma."
+ },
+ "Bichon Frise": {
+  "en": "A cheerful powder puff that loves an audience. Bichons were circus favourites for a reason.",
+  "nl": "Een vrolijk poederdonsje dat dol is op publiek. Niet voor niets waren Bichons sterren in het circus.",
+  "de": "Eine fröhliche Puderquaste mit Hang zum Publikum. Bichons waren nicht umsonst Zirkuslieblinge.",
+  "fr": "Une houppette joyeuse qui adore son public. Le Bichon fut une star du cirque, et ça se voit.",
+  "it": "Un piumino allegro che adora il pubblico. Non a caso i Bichon erano stelle del circo."
+ },
+ "Havanese": {
+  "en": "Cuba's national dog: sociable, silky and a natural little entertainer.",
+  "nl": "De nationale hond van Cuba: sociaal, zijdezacht en een geboren entertainer.",
+  "de": "Kubas Nationalhund: gesellig, seidig und ein geborener kleiner Entertainer.",
+  "fr": "Le chien national de Cuba : sociable, soyeux et amuseur né.",
+  "it": "Il cane nazionale di Cuba: socievole, setoso e intrattenitore nato."
+ },
+ "Chihuahua": {
+  "en": "The world's smallest breed with one of the biggest personalities. Utterly devoted to its person.",
+  "nl": "Het kleinste ras ter wereld met een van de grootste persoonlijkheden. Volledig toegewijd aan zijn mens.",
+  "de": "Die kleinste Rasse der Welt mit einer der größten Persönlichkeiten. Voll und ganz seinem Menschen ergeben.",
+  "fr": "La plus petite race du monde, avec l'une des plus grandes personnalités. Dévoué corps et âme à son humain.",
+  "it": "La razza più piccola al mondo con una delle personalità più grandi. Devotissimo al suo umano."
+ },
+ "Pug": {
+  "en": "A wrinkly little comedian who lives to be near you. Pugs were bred purely as companions to emperors.",
+  "nl": "Een gerimpelde komiek die altijd bij je wil zijn. Mopshonden werden gefokt als gezelschap voor keizers.",
+  "de": "Ein faltiger kleiner Komiker, der immer bei dir sein will. Möpse waren einst Begleiter von Kaisern.",
+  "fr": "Un petit comique tout ridé qui veut toujours être près de vous. Il tenait compagnie aux empereurs.",
+  "it": "Un piccolo comico pieno di rughe che vuole starti sempre vicino. Faceva compagnia agli imperatori."
+ },
+ "Yorkshire Terrier": {
+  "en": "A big terrier spirit in a silky toy-sized coat. Bold, bright and full of sparkle.",
+  "nl": "Een echte terriër in een zijdezacht mini-jasje. Moedig, slim en vol sprankeling.",
+  "de": "Ein echter Terrier im seidigen Mini-Mantel. Mutig, aufgeweckt und voller Funkeln.",
+  "fr": "Une âme de terrier dans un manteau de soie miniature. Hardi, vif et pétillant.",
+  "it": "Un'anima da terrier in un mantello di seta in miniatura. Audace, sveglio e frizzante."
+ },
+ "West Highland White Terrier": {
+  "en": "The Westie: a jaunty white Scot with a confident strut and a cheeky grin.",
+  "nl": "De Westie: een parmantige witte Schot met een zelfverzekerde tred en een ondeugende grijns.",
+  "de": "Der Westie: ein keckes weißes Schottenhündchen mit stolzem Gang und frechem Grinsen.",
+  "fr": "Le Westie : un petit Écossais blanc et crâneur, à la démarche assurée et au sourire coquin.",
+  "it": "Il Westie: un vivace scozzese bianco dal passo sicuro e dal sorriso sfacciato."
+ },
+ "Border Terrier": {
+  "en": "Scruffy, tough and good-natured. Border Terriers are game for any adventure and easy to love.",
+  "nl": "Ruig, stoer en goedaardig. Een Border Terrier is in voor elk avontuur en makkelijk om van te houden.",
+  "de": "Struppig, robust und gutmütig. Ein Border Terrier ist für jedes Abenteuer zu haben.",
+  "fr": "Hirsute, robuste et de bonne humeur. Le Border Terrier est partant pour toutes les aventures.",
+  "it": "Arruffato, tosto e di buon carattere. Il Border Terrier è pronto a ogni avventura."
+ },
+ "Norwich Terrier": {
+  "en": "One of the smallest working terriers, with prick ears and a happy-go-lucky attitude.",
+  "nl": "Een van de kleinste werkterriërs, met spitse oortjes en een zorgeloos vrolijk karakter.",
+  "de": "Einer der kleinsten Arbeitsterrier, mit Stehohren und unbekümmert fröhlichem Gemüt.",
+  "fr": "L'un des plus petits terriers de travail, oreilles dressées et bonne humeur à toute épreuve.",
+  "it": "Uno dei terrier da lavoro più piccoli, con orecchie dritte e un'allegria contagiosa."
+ },
+ "Boston Terrier": {
+  "en": "The 'American gentleman' in a tuxedo coat. Lively, friendly and great fun to be around.",
+  "nl": "De 'Amerikaanse gentleman' in smoking. Levendig, vriendelijk en heel leuk gezelschap.",
+  "de": "Der „amerikanische Gentleman“ im Smoking. Lebhaft, freundlich und herrlich unterhaltsam.",
+  "fr": "Le « gentleman américain » en smoking. Vif, amical et très drôle au quotidien.",
+  "it": "Il 'gentiluomo americano' in smoking. Vivace, amichevole e divertentissimo."
+ },
+ "Bull Terrier": {
+  "en": "That egg-shaped head is unmistakable, and so is the playful, mischievous spirit behind it.",
+  "nl": "Die eivormige kop is onmiskenbaar, en het speelse, ondeugende karakter erachter ook.",
+  "de": "Der eiförmige Kopf ist unverwechselbar, genau wie der verspielte Schalk dahinter.",
+  "fr": "Sa tête en forme d'œuf est inimitable, tout comme l'espièglerie qui se cache derrière.",
+  "it": "La testa a forma d'uovo è inconfondibile, come lo spirito giocoso e birichino che nasconde."
+ },
+ "Tibetan Terrier": {
+  "en": "The 'holy dog' of Tibetan monasteries, with snowshoe feet and a sweet, sensitive nature.",
+  "nl": "De 'heilige hond' uit Tibetaanse kloosters, met sneeuwschoenpoten en een lief, gevoelig karakter.",
+  "de": "Der „heilige Hund“ tibetischer Klöster, mit Schneeschuhpfoten und sanftem, feinfühligem Wesen.",
+  "fr": "Le « chien sacré » des monastères tibétains, aux pattes-raquettes et au tempérament doux et sensible.",
+  "it": "Il 'cane sacro' dei monasteri tibetani, con zampe da racchetta e un animo dolce e sensibile."
+ },
+ "Weimaraner": {
+  "en": "The 'grey ghost': silver coat, amber eyes and an athlete who wants to be part of everything you do.",
+  "nl": "De 'grijze geest': zilveren vacht, amberkleurige ogen en een atleet die overal bij wil zijn.",
+  "de": "Der „graue Geist“: silbernes Fell, Bernsteinaugen und ein Athlet, der überall dabei sein will.",
+  "fr": "Le « fantôme gris » : robe argentée, yeux d'ambre et un athlète qui veut participer à tout.",
+  "it": "Il 'fantasma grigio': mantello argento, occhi ambra e un atleta che vuole partecipare a tutto."
+ },
+ "Rhodesian Ridgeback": {
+  "en": "Famous for the ridge of hair along its back. Bred in Africa, dignified and quietly affectionate.",
+  "nl": "Beroemd om de haarkam op zijn rug. Afkomstig uit Afrika, waardig en stil aanhankelijk.",
+  "de": "Berühmt für den Haarkamm auf dem Rücken. Aus Afrika, würdevoll und still verschmust.",
+  "fr": "Célèbre pour la crête de poils sur son dos. Né en Afrique, digne et discrètement affectueux.",
+  "it": "Famoso per la cresta di pelo sul dorso. Nato in Africa, dignitoso e affettuoso con discrezione."
+ },
+ "Great Dane": {
+  "en": "A gentle giant who often forgets how big it is, especially when it wants to sit on your lap.",
+  "nl": "Een zachtaardige reus die vaak vergeet hoe groot hij is, zeker als hij op schoot wil.",
+  "de": "Ein sanfter Riese, der oft vergisst, wie groß er ist, vor allem wenn er auf den Schoß will.",
+  "fr": "Un doux géant qui oublie souvent sa taille, surtout quand il veut monter sur vos genoux.",
+  "it": "Un gigante buono che spesso dimentica quanto è grande, soprattutto quando vuole salirti in braccio."
+ },
+ "Dogue de Bordeaux": {
+  "en": "France's great red mastiff: a massive head, an expressive face and a calm, loving temperament.",
+  "nl": "De grote rode mastiff uit Frankrijk: een enorme kop, een expressief gezicht en een rustig, lief karakter.",
+  "de": "Frankreichs großer roter Mastiff: mächtiger Kopf, ausdrucksstarkes Gesicht und ruhiges, liebes Wesen.",
+  "fr": "Le grand dogue rouge français : tête massive, visage expressif et tempérament calme et aimant.",
+  "it": "Il grande molosso rosso di Francia: testa possente, muso espressivo e carattere calmo e affettuoso."
+ },
+ "Bullmastiff": {
+  "en": "Bred as the gamekeeper's night watchman. Quiet, steady and a big softie at home.",
+  "nl": "Gefokt als nachtwaker van de jachtopziener. Rustig, stabiel en thuis een grote knuffelbeer.",
+  "de": "Einst Nachtwächter der Wildhüter. Ruhig, gelassen und zu Hause ein großer Schmusebär.",
+  "fr": "Ancien veilleur de nuit des gardes-chasse. Calme, posé et gros nounours à la maison.",
+  "it": "Nato come guardiano notturno dei guardacaccia. Tranquillo, equilibrato e un gran tenerone in casa."
+ },
+ "Dalmatian": {
+  "en": "Spots, stamina and style. Dalmatians once ran alongside horse carriages for miles.",
+  "nl": "Stippen, uithoudingsvermogen en stijl. Dalmatiërs renden vroeger kilometers naast koetsen mee.",
+  "de": "Punkte, Ausdauer und Stil. Dalmatiner liefen früher kilometerweit neben Kutschen her.",
+  "fr": "Des taches, de l'endurance et du style. Le Dalmatien courait jadis des kilomètres à côté des calèches.",
+  "it": "Macchie, resistenza e stile. Il Dalmata un tempo correva per chilometri accanto alle carrozze."
+ },
+ "Giant Schnauzer": {
+  "en": "A bearded powerhouse with a sharp mind. Giant Schnauzers love work, play and their family.",
+  "nl": "Een bebaarde krachtpatser met een scherp verstand. Dol op werk, spel en zijn gezin.",
+  "de": "Ein bärtiges Kraftpaket mit wachem Verstand. Liebt Arbeit, Spiel und seine Familie.",
+  "fr": "Un costaud barbu à l'esprit vif. Il adore travailler, jouer et sa famille.",
+  "it": "Un concentrato di forza con la barba e una mente acuta. Ama lavoro, gioco e famiglia."
+ },
+ "Pembroke Welsh Corgi": {
+  "en": "Short legs, big personality. Corgis herd cattle, charm royals and steal hearts everywhere.",
+  "nl": "Korte pootjes, grote persoonlijkheid. Corgi's hoeden vee, charmeren koningshuizen en stelen harten.",
+  "de": "Kurze Beine, große Persönlichkeit. Corgis hüten Rinder, bezaubern Königshäuser und stehlen Herzen.",
+  "fr": "Pattes courtes, grande personnalité. Le Corgi garde les vaches, séduit la famille royale et vole les cœurs.",
+  "it": "Zampe corte, personalità enorme. Il Corgi raduna il bestiame, conquista i reali e ruba cuori."
+ },
+ "Shiba Inu": {
+  "en": "Japan's fox-like little hunter: independent, spirited and famous for its expressive 'Shiba scream'.",
+  "nl": "Japans vosachtige jagertje: zelfstandig, pittig en beroemd om zijn expressieve 'Shiba-scream'.",
+  "de": "Japans fuchsähnlicher kleiner Jäger: eigenständig, temperamentvoll und berühmt für seinen „Shiba-Schrei“.",
+  "fr": "Le petit chasseur japonais au look de renard : indépendant, fougueux et connu pour son « cri du Shiba ».",
+  "it": "Il piccolo cacciatore giapponese dall'aria di volpe: indipendente, vivace e famoso per l''urlo Shiba'."
+ },
+ "Akita": {
+  "en": "A dignified Japanese spitz famed for its devotion, made legendary by the story of Hachikō.",
+  "nl": "Een waardige Japanse spits, beroemd om zijn trouw dankzij het verhaal van Hachikō.",
+  "de": "Ein würdevoller japanischer Spitz, berühmt für seine Treue dank der Geschichte von Hachikō.",
+  "fr": "Un spitz japonais plein de dignité, célèbre pour sa fidélité grâce à l'histoire de Hachikō.",
+  "it": "Uno spitz giapponese pieno di dignità, famoso per la sua fedeltà grazie alla storia di Hachikō."
+ },
+ "Chow Chow": {
+  "en": "A lion's mane and a blue-black tongue. Chows are calm, cat-like and quietly devoted.",
+  "nl": "Een leeuwenmanen en een blauwzwarte tong. Rustig, katachtig en stil toegewijd.",
+  "de": "Eine Löwenmähne und eine blauschwarze Zunge. Ruhig, katzenhaft und still ergeben.",
+  "fr": "Une crinière de lion et une langue bleu-noir. Calme, un brin félin et discrètement attaché.",
+  "it": "Criniera da leone e lingua blu-nera. Calmo, un po' felino e devoto in silenzio."
+ },
+ "Eurasier": {
+  "en": "A plush, even-tempered spitz from Germany, bred to be the ideal relaxed family dog.",
+  "nl": "Een pluizige, evenwichtige spits uit Duitsland, gefokt als ideale relaxte gezinshond.",
+  "de": "Ein plüschiger, ausgeglichener Spitz aus Deutschland, gezüchtet als entspannter Familienhund.",
+  "fr": "Un spitz allemand tout en douceur et en équilibre, pensé pour être le chien de famille idéal.",
+  "it": "Uno spitz tedesco morbido ed equilibrato, selezionato come cane da famiglia ideale."
+ },
+ "Brittany": {
+  "en": "A bouncy French bird dog with a happy face and energy for every adventure.",
+  "nl": "Een springerige Franse vogelhond met een blij koppie en energie voor elk avontuur.",
+  "de": "Ein quirliger französischer Vorstehhund mit fröhlichem Gesicht und Energie für jedes Abenteuer.",
+  "fr": "L'Épagneul breton : chien d'arrêt plein d'entrain, frimousse joyeuse et énergie à revendre.",
+  "it": "Un vivace cane da ferma francese dal muso allegro e con energia per ogni avventura."
+ },
+ "Gordon Setter": {
+  "en": "Scotland's black-and-tan setter: elegant in the field, devoted and affectionate at home.",
+  "nl": "De zwart-bruine setter uit Schotland: elegant in het veld, aanhankelijk en toegewijd thuis.",
+  "de": "Schottlands schwarz-lohfarbener Setter: elegant im Feld, anhänglich und treu zu Hause.",
+  "fr": "Le setter noir et feu d'Écosse : élégant sur le terrain, affectueux à la maison.",
+  "it": "Il setter nero focato di Scozia: elegante sul campo, affettuoso e devoto in casa."
+ },
+ "Italian Spinone": {
+  "en": "A shaggy Italian pointer with soulful eyes and a famously gentle, patient nature.",
+  "nl": "Een ruwharige Italiaanse staande hond met gevoelige ogen en een beroemd geduldig karakter.",
+  "de": "Ein rauhaariger italienischer Vorstehhund mit seelenvollem Blick und berühmt geduldigem Wesen.",
+  "fr": "Un chien d'arrêt italien hirsute au regard tendre, connu pour sa patience et sa douceur.",
+  "it": "Un cane da ferma italiano dal pelo ruvido, occhi pieni d'anima e un carattere dolce e paziente."
+ },
+ "Saluki": {
+  "en": "One of the oldest breeds, the graceful sighthound of desert royalty. Gentle and dignified at home.",
+  "nl": "Een van de oudste rassen: de sierlijke windhond van woestijnvorsten. Zacht en waardig thuis.",
+  "de": "Eine der ältesten Rassen, der anmutige Windhund der Wüstenfürsten. Sanft und würdevoll zu Hause.",
+  "fr": "L'une des plus anciennes races, le lévrier gracieux des princes du désert. Doux et digne à la maison.",
+  "it": "Una delle razze più antiche, l'elegante levriero dei principi del deserto. Dolce e dignitoso in casa."
+ },
+ "Bavarian Mountain Hound": {
+  "en": "A specialist scent tracker from the Alps. Calm at home, unstoppable on a trail.",
+  "nl": "Een gespecialiseerde zweethond uit de Alpen. Rustig thuis, niet te stoppen op een spoor.",
+  "de": "Ein spezialisierter Schweißhund aus den Alpen. Ruhig zu Hause, unaufhaltsam auf der Fährte.",
+  "fr": "Un pisteur spécialisé venu des Alpes. Calme à la maison, infatigable sur une piste.",
+  "it": "Un segugio da traccia specializzato delle Alpi. Calmo in casa, inarrestabile su una pista."
+ }
+}

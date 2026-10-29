@@ -1,0 +1,532 @@
+{
+ "Labrador Retriever": {
+  "file": "/img/breeds/labrador-retriever-640.webp",
+  "file_small": "/img/breeds/labrador-retriever-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Labrador_on_Quantock_(2175262184).jpg",
+  "author": "IDS.photos from Tiverton, UK",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Golden Retriever": {
+  "file": "/img/breeds/golden-retriever-640.webp",
+  "file_small": "/img/breeds/golden-retriever-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Golden_Retriever_Dukedestiny01_drvd.jpg",
+  "author": "Dukedestiny01.jpg: \"Janneke Vreugdenhil\"\nderivative work: Anka Friedrich ([[User talk:Ankaaswe\nTrix Friedrich|talk]])",
+  "license": "Public domain",
+  "license_url": ""
+ },
+ "Cockapoo": {
+  "file": "/img/breeds/cockapoo-640.webp",
+  "file_small": "/img/breeds/cockapoo-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Cockapoo_apricot_standing.jpg",
+  "author": "No machine-readable author provided. BetacommandBot assumed (based on copyright claims).",
+  "license": "CC BY 2.5",
+  "license_url": "https://creativecommons.org/licenses/by/2.5"
+ },
+ "Cavapoo": {
+  "file": "/img/breeds/cavapoo-640.webp",
+  "file_small": "/img/breeds/cavapoo-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:JArabright.jpg",
+  "author": "BAVhah",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Labradoodle": {
+  "file": "/img/breeds/labradoodle-640.webp",
+  "file_small": "/img/breeds/labradoodle-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Labradoodle-Brown-Male-SideFace.jpg",
+  "author": "Anton Porsche",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Goldendoodle": {
+  "file": "/img/breeds/goldendoodle-640.webp",
+  "file_small": "/img/breeds/goldendoodle-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Golden_Doodle_Standing_(HD).jpg",
+  "author": "Gullpavon",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "French Bulldog": {
+  "file": "/img/breeds/french-bulldog-640.webp",
+  "file_small": "/img/breeds/french-bulldog-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:2008-07-28_Dog_at_Frolick_Field.jpg",
+  "author": "Ildar Sagdejev (Specious)",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Dachshund": {
+  "file": "/img/breeds/dachshund-640.webp",
+  "file_small": "/img/breeds/dachshund-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:%EB%8B%A5%EC%8A%A4%ED%9B%88%ED%8A%B8(%EB%8B%A8%EB%AA%A8%EC%A2%85)_(Dachshund_(Short)).jpg",
+  "author": "Katemil94",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Cocker Spaniel": {
+  "file": "/img/breeds/cocker-spaniel-640.webp",
+  "file_small": "/img/breeds/cocker-spaniel-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Gessa_d%27Aran_Copo_de_Nieve-_arancio_roano-_prop.Kalesa.jpg",
+  "author": "Fcocker",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "English Springer Spaniel": {
+  "file": "/img/breeds/english-springer-spaniel-640.webp",
+  "file_small": "/img/breeds/english-springer-spaniel-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Springer_Spaniel_Wide_Shot.jpg",
+  "author": "Ratsniffer",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Cavalier King Charles Spaniel": {
+  "file": "/img/breeds/cavalier-king-charles-spaniel-640.webp",
+  "file_small": "/img/breeds/cavalier-king-charles-spaniel-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:CarterBIS.Tiki.13.6.09.jpg",
+  "author": "Andreweatock",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "German Shepherd": {
+  "file": "/img/breeds/german-shepherd-640.webp",
+  "file_small": "/img/breeds/german-shepherd-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:German_Shepherd_-_DSC_0346_(10096362833).jpg",
+  "author": "gomagoti",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "White Swiss Shepherd": {
+  "file": "/img/breeds/white-swiss-shepherd-640.webp",
+  "file_small": "/img/breeds/white-swiss-shepherd-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:White_Swiss_Shepherd_Dog_Djinn_(cropped).JPG",
+  "author": "Durdur31",
+  "license": "Public domain",
+  "license_url": ""
+ },
+ "Border Collie": {
+  "file": "/img/breeds/border-collie-640.webp",
+  "file_small": "/img/breeds/border-collie-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Border_Collie_600.jpg",
+  "author": "Unknown",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Staffordshire Bull Terrier": {
+  "file": "/img/breeds/staffordshire-bull-terrier-640.webp",
+  "file_small": "/img/breeds/staffordshire-bull-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:%D7%A1%D7%90%D7%98%D7%A3_%D7%90%D7%A0%D7%92%D7%9C%D7%99.jpg",
+  "author": "Or Logassi",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Cane Corso": {
+  "file": "/img/breeds/cane-corso-640.webp",
+  "file_small": "/img/breeds/cane-corso-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Cane_corso_temi_1_1024x768x24_(cropped).png",
+  "author": "Claudio Domiziani",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Rottweiler": {
+  "file": "/img/breeds/rottweiler-640.webp",
+  "file_small": "/img/breeds/rottweiler-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Rottweiler_standing_facing_left.jpg",
+  "author": "Dr. Manfred Herrmann Allgemeiner Deutscher Rottweiler-Klub (ADRK) e.V. http://www.ADRK.de",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Boxer": {
+  "file": "/img/breeds/boxer-640.webp",
+  "file_small": "/img/breeds/boxer-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Male_fawn_Boxer_undocked.jpg",
+  "author": "Mood210",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Poodle": {
+  "file": "/img/breeds/poodle-640.webp",
+  "file_small": "/img/breeds/poodle-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Full_attention_(8067543690).jpg",
+  "author": "Tim Wilson from Blaine, MN, USA",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Siberian Husky": {
+  "file": "/img/breeds/siberian-husky-640.webp",
+  "file_small": "/img/breeds/siberian-husky-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Husky_L.jpg",
+  "author": "xJaM (talk · contribs)",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Alaskan Malamute": {
+  "file": "/img/breeds/alaskan-malamute-640.webp",
+  "file_small": "/img/breeds/alaskan-malamute-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Alaskan_Malamute.jpg",
+  "author": "SCMW",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0"
+ },
+ "Samoyed": {
+  "file": "/img/breeds/samoyed-640.webp",
+  "file_small": "/img/breeds/samoyed-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Samojed00.jpg",
+  "author": "No machine-readable author provided. Pleple2000 assumed (based on copyright claims).",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Whippet": {
+  "file": "/img/breeds/whippet-640.webp",
+  "file_small": "/img/breeds/whippet-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Whippet_2018_6.jpg",
+  "author": "Canarian",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Shih Tzu": {
+  "file": "/img/breeds/shih-tzu-640.webp",
+  "file_small": "/img/breeds/shih-tzu-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Shihtzu_(cropped).jpg",
+  "author": "Canino21",
+  "license": "Public domain",
+  "license_url": ""
+ },
+ "Jack Russell Terrier": {
+  "file": "/img/breeds/jack-russell-terrier-640.webp",
+  "file_small": "/img/breeds/jack-russell-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Jack_Russell_Terrier_1.jpg",
+  "author": "Plank",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0"
+ },
+ "Maltese": {
+  "file": "/img/breeds/maltese-640.webp",
+  "file_small": "/img/breeds/maltese-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Maltese_600.jpg",
+  "author": "Sannse",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Bichon Frise": {
+  "file": "/img/breeds/bichon-frise-640.webp",
+  "file_small": "/img/breeds/bichon-frise-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Bichon_Fris%C3%A9_-_studdogbichon.jpg",
+  "author": "Heike Andres",
+  "license": "CC BY-SA 3.0 de",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en"
+ },
+ "Havanese": {
+  "file": "/img/breeds/havanese-640.webp",
+  "file_small": "/img/breeds/havanese-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:A_Havanese_judging.jpg",
+  "author": "audrey_sel",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Chihuahua": {
+  "file": "/img/breeds/chihuahua-640.webp",
+  "file_small": "/img/breeds/chihuahua-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Chihuahua1_bvdb.jpg",
+  "author": "Bonnie van den Born, http://www.bonfoto.nl. The original uploader was Cwazi at Dutch Wikipedia.",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Pug": {
+  "file": "/img/breeds/pug-640.webp",
+  "file_small": "/img/breeds/pug-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Mops_oct09_cropped2.jpg",
+  "author": "Mops_oct09.jpg: Dagur Brynjólfsson from Hafnarfjordur, Iceland;\n\nderivative work: Anka Friedrich",
+  "license": "CC BY-SA 2.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.0"
+ },
+ "Yorkshire Terrier": {
+  "file": "/img/breeds/yorkshire-terrier-640.webp",
+  "file_small": "/img/breeds/yorkshire-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:(2_version)_Grupp_3,_YORKSHIRETERRIER,_NO_UCH_SE_UCH_Oxzar_Amazing_Bel%E2%80%99s_Toffy_(24310212305).jpg",
+  "author": "Svenska Mässan from Sweden",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "West Highland White Terrier": {
+  "file": "/img/breeds/west-highland-white-terrier-640.webp",
+  "file_small": "/img/breeds/west-highland-white-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:West_Highland_White_Terrier_Krakow.jpg",
+  "author": "Christopher Walker from Krakow, Poland",
+  "license": "CC BY 2.0",
+  "license_url": "https://creativecommons.org/licenses/by/2.0"
+ },
+ "Norwich Terrier": {
+  "file": "/img/breeds/norwich-terrier-640.webp",
+  "file_small": "/img/breeds/norwich-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Norwichterrier.jpg",
+  "author": "H. Gisin",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Boston Terrier": {
+  "file": "/img/breeds/boston-terrier-640.webp",
+  "file_small": "/img/breeds/boston-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Boston-terrier-carlos-de.JPG",
+  "author": "Andreas Schlaugat",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0"
+ },
+ "Bull Terrier": {
+  "file": "/img/breeds/bull-terrier-640.webp",
+  "file_small": "/img/breeds/bull-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Bullterrier-3453301920.jpg",
+  "author": "Pixabay User TC-TORRES",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Tibetan Terrier": {
+  "file": "/img/breeds/tibetan-terrier-640.webp",
+  "file_small": "/img/breeds/tibetan-terrier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Tibet_Terrier_Bennie_(cropped).jpg",
+  "author": "Mr407SW",
+  "license": "Public domain",
+  "license_url": ""
+ },
+ "Weimaraner": {
+  "file": "/img/breeds/weimaraner-640.webp",
+  "file_small": "/img/breeds/weimaraner-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Weimaraner_Freika-2.jpg",
+  "author": "Rufus46",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Rhodesian Ridgeback": {
+  "file": "/img/breeds/rhodesian-ridgeback-640.webp",
+  "file_small": "/img/breeds/rhodesian-ridgeback-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Rhodesian_ridgeback.jpg",
+  "author": "Bonnie van den Born, http://www.bonfoto.nl",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Great Dane": {
+  "file": "/img/breeds/great-dane-640.webp",
+  "file_small": "/img/breeds/great-dane-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Dog_niemiecki_%C5%BC%C3%B3%C5%82ty_LM980.jpg",
+  "author": "Lilly M",
+  "license": "CC BY-SA 2.5",
+  "license_url": "https://creativecommons.org/licenses/by-sa/2.5"
+ },
+ "Dogue de Bordeaux": {
+  "file": "/img/breeds/dogue-de-bordeaux-640.webp",
+  "file_small": "/img/breeds/dogue-de-bordeaux-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:French_Mastiff_female_4.jpg",
+  "author": "Canarian",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Bullmastiff": {
+  "file": "/img/breeds/bullmastiff-640.webp",
+  "file_small": "/img/breeds/bullmastiff-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Bullmastiff_edited.JPG",
+  "author": "Fausto Moreno",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Dalmatian": {
+  "file": "/img/breeds/dalmatian-640.webp",
+  "file_small": "/img/breeds/dalmatian-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Sun_Dog_Dalmatian.jpg",
+  "author": "Bradlien",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Giant Schnauzer": {
+  "file": "/img/breeds/giant-schnauzer-640.webp",
+  "file_small": "/img/breeds/giant-schnauzer-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Nev_Lemar_Barbara1.jpg",
+  "author": "Petrucha",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Pembroke Welsh Corgi": {
+  "file": "/img/breeds/pembroke-welsh-corgi-640.webp",
+  "file_small": "/img/breeds/pembroke-welsh-corgi-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Welsh_Pembroke_Corgi.jpg",
+  "author": "Dog breed facts",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Shiba Inu": {
+  "file": "/img/breeds/shiba-inu-640.webp",
+  "file_small": "/img/breeds/shiba-inu-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Taka_Shiba.jpg",
+  "author": "Takashiba at English Wikipedia",
+  "license": "Public domain",
+  "license_url": ""
+ },
+ "Akita": {
+  "file": "/img/breeds/akita-640.webp",
+  "file_small": "/img/breeds/akita-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Akita_Collage.png",
+  "author": "Peter Theakston; Keetanii; Melodorakitas; Sevenfatdogs",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0"
+ },
+ "Chow Chow": {
+  "file": "/img/breeds/chow-chow-640.webp",
+  "file_small": "/img/breeds/chow-chow-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Chow-chow_in_Tallinn.JPG",
+  "author": "Томасина",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Eurasier": {
+  "file": "/img/breeds/eurasier-640.webp",
+  "file_small": "/img/breeds/eurasier-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Eurasier_BailyWtatze.jpg",
+  "author": "Kerstin Kühnel Wuppertatzen",
+  "license": "CC0",
+  "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+ },
+ "Brittany": {
+  "file": "/img/breeds/brittany-640.webp",
+  "file_small": "/img/breeds/brittany-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Zuri_txakurra_1_(cropped).JPG",
+  "author": "Olatz / souligne",
+  "license": "CC BY-SA 4.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/4.0"
+ },
+ "Gordon Setter": {
+  "file": "/img/breeds/gordon-setter-640.webp",
+  "file_small": "/img/breeds/gordon-setter-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Orrvilas_enska_w800px.jpg",
+  "author": "Unknown",
+  "license": "CC BY-SA 3.0",
+  "license_url": "http://creativecommons.org/licenses/by-sa/3.0/"
+ },
+ "Italian Spinone": {
+  "file": "/img/breeds/italian-spinone-640.webp",
+  "file_small": "/img/breeds/italian-spinone-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:05042363_Spinone_braun.jpg",
+  "author": "Alephalpha",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Saluki": {
+  "file": "/img/breeds/saluki-640.webp",
+  "file_small": "/img/breeds/saluki-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Red_Smooth_Saluki.jpg",
+  "author": "r.",
+  "license": "CC BY-SA 3.0",
+  "license_url": "https://creativecommons.org/licenses/by-sa/3.0"
+ },
+ "Bavarian Mountain Hound": {
+  "file": "/img/breeds/bavarian-mountain-hound-640.webp",
+  "file_small": "/img/breeds/bavarian-mountain-hound-320.webp",
+  "width": 640,
+  "height": 480,
+  "source": "https://commons.wikimedia.org/wiki/File:Zoran_Spod_Ruskiej_Granicy_the_Bavarian_Mountain_Hound.jpg",
+  "author": "Ralf Lotys (Sicherlich)",
+  "license": "CC BY 3.0",
+  "license_url": "https://creativecommons.org/licenses/by/3.0"
+ }
+}

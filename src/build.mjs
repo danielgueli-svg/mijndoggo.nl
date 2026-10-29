@@ -71,6 +71,12 @@ ${sections(T, l, cs)}<script src="/signup.js" defer></script></body></html>`);
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
 const BP = J('data/breed_pages.json'), LI = Object.fromEntries(LANGS.map((l, i) => [l, i]));
 const bName = (b, l) => b[LI[l]];
+const BIMG = J('data/breed_images.json'), BBL = J('data/breed_blurbs.json');
+const SHOWALL = { en: 'Show all breeds', nl: 'Toon alle rassen', de: 'Alle Rassen anzeigen', fr: 'Voir toutes les races', it: 'Mostra tutte le razze' };
+const PHOTO = { en: 'Photo', nl: 'Foto', de: 'Foto', fr: 'Photo', it: 'Foto' }, ALT = { en: '{b} dog', nl: '{b}, hond', de: '{b}, Hund', fr: 'Chien {b}', it: 'Cane {b}' };
+const credit = (m, l) => /^(public domain|pd|cc0)/i.test(m.license) ? `<a href="${esc(m.source)}" rel="nofollow noopener">${PHOTO[l]}</a>: ${esc(m.author)} (${esc(m.license)})` : `<a href="${esc(m.source)}" rel="nofollow noopener">${PHOTO[l]}</a>: ${esc(m.author)}, ${m.license_url ? `<a href="${esc(m.license_url)}" rel="license nofollow noopener">${esc(m.license)}</a>` : esc(m.license)}`;
+const bFig = (b, l) => { const m = BIMG[b[0]]; if (!m) return ''; return `<figure class="breed-photo"><img src="${m.file_small}" srcset="${m.file_small} 320w, ${m.file} 640w" sizes="(max-width: 599px) 180px, 320px" width="${m.width}" height="${m.height}" loading="lazy" decoding="async" alt="${esc(ALT[l].replace('{b}', bName(b, l)))}"><figcaption>${credit(m, l)}</figcaption></figure>`; };
+const bThumb = (b, l) => { const m = BIMG[b[0]]; return m ? `<img class="bthumb" src="${m.file_small}" width="48" height="36" loading="lazy" decoding="async" alt="">` : ''; };
 const breedIdx = l => `${pre(l)}/${i18n[l].bSeg}/`, breedPath = (l, b) => `${breedIdx(l)}${slugify(bName(b, l))}/`;
 const bSlugs = new Set(); for (const l of LANGS) for (const b of BP) { const p = breedPath(l, b); if (bSlugs.has(p)) throw new Error('dup breed path ' + p); bSlugs.add(p); }
 for (const l of LANGS) {
@@ -80,7 +86,7 @@ for (const l of LANGS) {
 <label class="step"><select class="go" aria-label="${esc(T.homeStep)}"><option value="">${esc(T.chooseC)}</option>${cs.map(c => `<option value="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</option>`).join('')}</select></label>
 <p class="closed">${esc(T.closed)}</p><ul class="card-notes"><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div>`;
   const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
-  const list = skip => `<ul class="ctry-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
+  const list = skip => `<ul class="ctry-grid breed-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${bThumb(b, l)}${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
   const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">PuppyAlert</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© PuppyAlert.eu</p></div></footer><script src="/home.js" defer></script></body></html>`;
   write(breedIdx(l), head(l, `${T.bH} | PuppyAlert`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div>${picker}</div></section>
@@ -89,9 +95,9 @@ for (const l of LANGS) {
   for (const b of BP) {
     const pf = x => breedPath(x, b), r = s => s.replaceAll('{b}', bName(b, l));
     write(pf(l), head(l, r(T.bTitle), r(T.bDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1><p class="lead">${esc(r(T.bLead))}</p><p><span class="badge-soon dark">${esc(T.soon)}</span></p></div>${picker}</div></section>
+<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1>${bFig(b, l)}<p class="breed-fame">${esc(BBL[b[0]][l])}</p><p class="lead">${esc(r(T.bLead))}</p><p><span class="badge-soon dark">${esc(T.soon)}</span></p></div>${picker}</div></section>
 <section class="section trust"><div class="wrap two"><div>${story(T)}</div><div><h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p></div></div></section>
-<section class="section countries"><div class="wrap"><h2>${esc(T.bOthers)}</h2>${list(b)}</div></section></main>${foot}`);
+<section class="section countries"><div class="wrap"><h2>${esc(T.bOthers)}</h2><details class="all-breeds"><summary>${esc(SHOWALL[l])}</summary>${list(b)}</details></div></section></main>${foot}`);
     if (l === 'en') sm.push(pf);
   }
 }
