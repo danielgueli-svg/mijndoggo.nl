@@ -7,10 +7,12 @@ const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;',
 const GJH = '<a href="https://gypsyjazzhub.com">Gypsy Jazz Hub</a>';
 const enName = new Intl.DisplayNames(['en'], { type: 'region' });
 const cname = (row, l) => row[2]?.[l] || new Intl.DisplayNames([l], { type: 'region' }).of(row[0]);
-const slugOf = row => (row[2]?.en || enName.of(row[0])).normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
-// URL pattern (mirrors WRA /europe/<country>/): home = / , /nl/ ...; country = /europe/<slug>/ , /nl/europe/<slug>/ ...
+const slugify = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const slugOf = (row, l = 'en') => slugify(cname(row, l));
+const isoAlias = row => ({ 'GB-ENG': 'eng', 'GB-SCT': 'sct', 'GB-WLS': 'wls', 'GB-NIR': 'nir' })[row[0]] || row[0].toLowerCase();
+// URL pattern: home = / (en), /nl/, /de/, /fr/; country = /<lang>/<country name in that language, ascii slug>/ e.g. /en/netherlands/, /nl/nederland/
 const pre = l => l === 'en' ? '' : `/${l}`;
-const homePath = l => `${pre(l)}/`, countryPath = (l, row) => `${pre(l)}/europe/${slugOf(row)}/`;
+const homePath = l => `${pre(l)}/`, countryPath = (l, row) => `/${l}/${slugOf(row, l)}/`;
 rmSync(OUT, { recursive: true, force: true }); mkdirSync(OUT, { recursive: true });
 cpSync(new URL('../public/', import.meta.url).pathname, OUT, { recursive: true });
 const alt = pathFor => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${pathFor(l)}">`).join('') + `<link rel="alternate" hreflang="x-default" href="${SITE}${pathFor('en')}">`;
@@ -61,7 +63,22 @@ ${sections(T, l, cs)}<script src="/signup.js" defer></script></body></html>`);
     if (l === 'en') sm.push(pf);
   }
 }
+// 301 redirects (Cloudflare Pages _redirects). Language homepages /nl/ /de/ /fr/ are real pages and always win:
+// no rule ever targets a bare /<lang>/ path, and iso shortcuts only exist one level deeper (/<lang>/<iso>/).
+const R = new Map(), add = (from, to) => { if (from !== to && !R.has(from)) R.set(from, to); };
+add('/en/', '/');
+const homes = new Set(LANGS.map(homePath));
+for (const row of countries) {
+  for (const l of LANGS) {
+    add(`/${l}/${isoAlias(row)}/`, countryPath(l, row));            // /nl/nl/ -> /nl/nederland/
+    add(`${pre(l)}/europe/${slugify(cname(row, 'en'))}/`, countryPath(l, row)); // old WRA-style paths
+  }
+  for (const l of LANGS) { const bare = `/${slugOf(row, l)}/`; if (!homes.has(bare)) add(bare, countryPath('en', row)); } // bare slug -> EN
+}
+const canon = new Set(sm.flatMap(pf => LANGS.map(pf)));
+for (const k of R.keys()) if (canon.has(k) || homes.has(k)) throw new Error('redirect clashes with a real page: ' + k);
+writeFileSync(OUT + '_redirects', [...R].map(([a, b]) => `${a} ${b} 301`).join('\n') + '\n');
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);
 const links = pf => LANGS.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${SITE}${pf(x)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${pf('en')}"/>`;
 writeFileSync(OUT + 'sitemap.xml', `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n${sm.flatMap(pf => LANGS.map(l => `<url><loc>${SITE}${pf(l)}</loc>${links(pf)}</url>`)).join('\n')}\n</urlset>\n`);
-console.log('built', sm.length * LANGS.length, 'pages,', countries.length, 'countries');
+console.log('built', sm.length * LANGS.length, 'pages,', countries.length, 'countries,', R.size, 'redirects');
