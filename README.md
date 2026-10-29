@@ -6,6 +6,7 @@ Static site + Cloudflare Pages Functions, same pattern as EuroRentAlert (`src/bu
 - `npm run build` → `dist/` (en at `/`, nl/de/fr at `/nl/ /de/ /fr/`), robots.txt, sitemap.xml with hreflang.
 - Languages: English default; Dutch, German, French behind the 🇪🇺 switcher.
 - Logo: `public/logo-doghead.png` is the unchanged dog illustration from mijndoggo.nl; the wordmark "PuppyAlert" is HTML text next to it.
+- Visual: WorldRentAlert green tokens + Inter/Newsreader fonts; header shows only logo + wordmark.
 - Counts show "coming soon". No numbers, no listings, no prices anywhere on the site.
 
 ## Signup

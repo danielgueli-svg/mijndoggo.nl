@@ -19,18 +19,19 @@ for (const l of LANGS) {
 <title>${esc(T.title)}</title><meta name="description" content="${esc(T.desc)}"><link rel="canonical" href="${SITE}${path(l)}">${hreflang}
 <link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/style.css">
 <meta property="og:title" content="${esc(T.title)}"><meta property="og:url" content="${SITE}${path(l)}"><meta property="og:image" content="${SITE}/logo-doghead.png"></head>
-<body><header class="top"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="56" height="56"><span>PuppyAlert</span></a>${langMenu(l)}</header>
-<main class="grid"><section class="left">
-<h2>${esc(T.h_story)}</h2><p>${esc(T.story)}</p>
-<h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap).replace('{GJH}', GJH)}</p>
-<h2>${esc(T.h_net)}</h2><p>${esc(T.net)}</p><p class="soon">${esc(T.counts)}</p>
-</section><section class="right"><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-need="${esc(T.need)}">
+<body><header class="site-header"><div class="wrap"><a class="brand" href="${path(l)}"><img src="/logo-doghead.png" alt="" width="44" height="44"><span class="wordmark">PuppyAlert</span></a></div></header>
+<main id="content"><section class="hero"><div class="wrap langbar">${langMenu(l)}</div><div class="wrap split"><div class="hero-copy">
+<p class="eyebrow">${esc(T.eyebrow)}</p><h1>${esc(T.h1)}</h1><p class="hero-line">${esc(T.lead)}</p>
+<h2>${esc(T.h_story)}</h2><p>${esc(T.story).replace('{GJH}', GJH)}</p>
+<h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p>
+<h2>${esc(T.h_net)}</h2><p>${esc(T.net)}</p><p class="badge-soon">${esc(T.counts)}</p>
+</div><div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-need="${esc(T.need)}">
 <fieldset data-max="3" data-msg="maxB"><legend>${esc(T.s1)}</legend><div class="chips">${opts('breed', breeds.map(b => [b, esc(b)]))}</div><p class="limit" hidden></p></fieldset>
 <fieldset data-max="3" data-msg="maxC"><legend>${esc(T.s2)}</legend><div class="chips">${opts('country', cs.map(([cc, f, n]) => [cc, `${f} ${esc(n)}`]))}</div><p class="limit" hidden></p></fieldset>
 <fieldset><legend>${esc(T.s3)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label>
 <p class="pay">${esc(T.pay)}</p><label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label><p class="small">${esc(T.optin)}</p>
-<button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset></form></section></main>
-<footer>© PuppyAlert.eu</footer><script src="/signup.js" defer></script></body></html>`;
+<button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset></form></div></div></section></main>
+<footer class="site-footer"><div class="wrap">© PuppyAlert.eu</div></footer><script src="/signup.js" defer></script></body></html>`;
   mkdirSync(OUT + path(l), { recursive: true }); writeFileSync(OUT + path(l) + 'index.html', html);
 }
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);
