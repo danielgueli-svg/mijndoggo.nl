@@ -20,7 +20,7 @@
   "optin": "First we'll send you an email to confirm your address. Every email has an unsubscribe link.",
   "consent": "Yes, send me PuppyAlert emails.",
   "submit": "Confirm my email",
-  "ok": "Nearly done. Check your inbox and confirm your email address.",
+  "ok": "Signups open soon, thanks! We'll be ready for you shortly.",
   "err": "Something went wrong. Please try again.",
   "need": "Pick at least one breed and one country.",
   "eyebrow": "Puppy alerts across Europe",
@@ -72,7 +72,8 @@
   "cH1a": "New puppy in {c}?",
   "cH1b": "We'll email you.",
   "cLead": "Pick up to 3 breeds. {c} is already selected, and you can add up to 2 more countries.",
-  "backHome": "All countries"
+  "backHome": "All countries",
+  "closed": "Coming soon! We're putting the final touches on alerts here. Check back shortly."
  },
  "nl": {
   "name": "Nederlands",
@@ -95,7 +96,7 @@
   "optin": "Eerst sturen we je een mail om je adres te bevestigen. Elke mail heeft een afmeldlink.",
   "consent": "Ja, stuur me e-mails van PuppyAlert.",
   "submit": "Bevestig mijn e-mail",
-  "ok": "Bijna klaar. Kijk in je inbox en bevestig je e-mailadres.",
+  "ok": "Aanmelden kan binnenkort, bedankt! We zijn er bijna klaar voor.",
   "err": "Er ging iets mis. Probeer het opnieuw.",
   "need": "Kies minstens één ras en één land.",
   "eyebrow": "Puppy-alerts in heel Europa",
@@ -147,7 +148,8 @@
   "cH1a": "Nieuwe pup in {c}?",
   "cH1b": "Wij mailen je.",
   "cLead": "Kies tot 3 rassen. {c} staat al aangevinkt, en je kunt er nog 2 landen bij kiezen.",
-  "backHome": "Alle landen"
+  "backHome": "Alle landen",
+  "closed": "Binnenkort! We leggen de laatste hand aan de alerts hier. Kom snel nog eens kijken."
  },
  "de": {
   "name": "Deutsch",
@@ -170,7 +172,7 @@
   "optin": "Zuerst schicken wir dir eine E-Mail, um deine Adresse zu bestätigen. Jede E-Mail enthält einen Abmeldelink.",
   "consent": "Ja, schickt mir E-Mails von PuppyAlert.",
   "submit": "E-Mail bestätigen",
-  "ok": "Fast geschafft. Schau in dein Postfach und bestätige deine E-Mail-Adresse.",
+  "ok": "Anmelden geht bald los, danke! Wir sind gleich so weit.",
   "err": "Etwas ist schiefgelaufen. Bitte versuche es erneut.",
   "need": "Wähle mindestens eine Rasse und ein Land.",
   "eyebrow": "Welpen-Alerts in ganz Europa",
@@ -222,7 +224,8 @@
   "cH1a": "Neuer Welpe in {c}?",
   "cH1b": "Wir schreiben dir.",
   "cLead": "Wähle bis zu 3 Rassen. {c} ist schon ausgewählt, du kannst noch 2 Länder hinzufügen.",
-  "backHome": "Alle Länder"
+  "backHome": "Alle Länder",
+  "closed": "Bald geht's los! Wir legen hier letzte Hand an die Alerts. Schau bald wieder vorbei."
  },
  "fr": {
   "name": "Français",
@@ -245,7 +248,7 @@
   "optin": "Nous vous envoyons d'abord un e-mail pour confirmer votre adresse. Chaque e-mail contient un lien de désinscription.",
   "consent": "Oui, envoyez-moi les e-mails de PuppyAlert.",
   "submit": "Confirmer mon e-mail",
-  "ok": "Presque fini. Ouvrez votre boîte mail et confirmez votre adresse.",
+  "ok": "Les inscriptions ouvrent bientôt, merci ! On est presque prêts.",
   "err": "Une erreur s'est produite. Veuillez réessayer.",
   "need": "Choisissez au moins une race et un pays.",
   "eyebrow": "Alertes chiots partout en Europe",
@@ -297,6 +300,7 @@
   "cH1a": "Un nouveau chiot ({c}) ?",
   "cH1b": "On vous écrit.",
   "cLead": "Choisissez jusqu'à 3 races. {c} est déjà sélectionné, vous pouvez ajouter 2 autres pays.",
-  "backHome": "Tous les pays"
+  "backHome": "Tous les pays",
+  "closed": "Bientôt ! On peaufine les alertes ici. Revenez très vite."
  }
 }

@@ -1,3 +1,4 @@
+import OPEN from '../data/open.json' with { type: 'json' };
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 const J = p => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
 const i18n = J('data/i18n.json'), breeds = J('data/breeds.json'), countries = J('data/countries.json'), places = J('data/places.json');
@@ -17,7 +18,7 @@ rmSync(OUT, { recursive: true, force: true }); mkdirSync(OUT, { recursive: true 
 cpSync(new URL('../public/', import.meta.url).pathname, OUT, { recursive: true });
 const alt = pathFor => LANGS.map(l => `<link rel="alternate" hreflang="${l}" href="${SITE}${pathFor(l)}">`).join('') + `<link rel="alternate" hreflang="x-default" href="${SITE}${pathFor('en')}">`;
 // 🇪🇺 language switcher keeps you on the same page (home or same country)
-const langMenu = (l, pathFor) => `<details class="lang"><summary>🇪🇺 ${i18n[l].name}</summary><ul>${LANGS.map(x => `<li><a href="${pathFor(x)}" hreflang="${x}"${x === l ? ' aria-current="true"' : ''}>${i18n[x].name}</a></li>`).join('')}</ul></details>`;
+const langMenu = (l, pathFor) => `<details class="lang"><summary>🇪🇺 ${i18n[l].name}</summary><ul>${LANGS.map(x => `<li><a href="${pathFor(x)}" hreflang="${x}" onclick="document.cookie='lang=${x};path=/;max-age=31536000;samesite=lax'"${x === l ? ' aria-current="true"' : ''}>${i18n[x].name}</a></li>`).join('')}</ul></details>`;
 const head = (l, title, desc, pathFor) => `<!doctype html><html lang="${l}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>${esc(title)}</title><meta name="description" content="${esc(desc)}"><link rel="canonical" href="${SITE}${pathFor(l)}">${alt(pathFor)}
 <link rel="icon" href="/favicon.png"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="stylesheet" href="/style.css">
@@ -58,7 +59,7 @@ ${sections(T, l, cs)}<script src="/home.js" defer></script></body></html>`);
     const pf = x => countryPath(x, c.row), r = s => s.replaceAll('{c}', c.name);
     write(pf(l), head(l, r(T.cTitle), r(T.cDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><p class="eyebrow">${esc(r(T.cEyebrow))}</p><h1>${esc(r(T.cH1a))} <span class="h1-accent">${esc(T.cH1b)}</span></h1><p class="lead">${esc(r(T.cLead))}</p><p><span class="badge-soon dark">${esc(T.counts)}</span></p>
-</div>${signup(T, l, cs, c.cc)}</div></section>
+</div>${OPEN[c.cc] ? signup(T, l, cs, c.cc) : `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><p class="closed">${esc(T.closed)}</p></div>`}</div></section>
 ${sections(T, l, cs)}<script src="/signup.js" defer></script></body></html>`);
     if (l === 'en') sm.push(pf);
   }
@@ -77,6 +78,7 @@ for (const row of countries) {
 }
 const canon = new Set(sm.flatMap(pf => LANGS.map(pf)));
 for (const k of R.keys()) if (canon.has(k) || homes.has(k)) throw new Error('redirect clashes with a real page: ' + k);
+for (const [a, t] of [...R]) if (a.length > 1 && a.endsWith('/')) add(a.slice(0, -1), t); // no-trailing-slash variants
 writeFileSync(OUT + '_redirects', [...R].map(([a, b]) => `${a} ${b} 301`).join('\n') + '\n');
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);
 const links = pf => LANGS.map(x => `<xhtml:link rel="alternate" hreflang="${x}" href="${SITE}${pf(x)}"/>`).join('') + `<xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${pf('en')}"/>`;
