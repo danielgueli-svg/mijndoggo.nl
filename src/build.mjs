@@ -37,17 +37,21 @@ ${home ? breedTicker(T, l) : `<section class="section countries"><div class="wra
 <footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer>`;
 const opts = (name, items, pre = []) => items.map(([v, label]) => `<label class="chip"><input type="checkbox" name="${name}" value="${esc(v)}"${pre.includes(v) ? ' checked' : ''}><span>${label}</span></label>`).join('');
 const PROV = J('data/provinces.json');
+// Breed row: native select (one breed per line), first row pre-filled with the page breed; + adds a row (max 3), ✕ removes extra rows.
+const brow = (BPs, sel, rm) => `<div class="brow"><select name="breed" class="bsel"><option value="">Kies een ras</option>${BPs.map(b => `<option value="${esc(b[0])}"${b[0] === sel ? ' selected' : ''}>${esc(b[1])}</option>`).join('')}</select>${rm ? '<button type="button" class="rmb" aria-label="Ras verwijderen">✕</button>' : ''}<button type="button" class="addb" aria-label="Nog een ras toevoegen">+</button></div>`;
+// Old PuppyAlert 'Klein clubje' box (5-9 breeders), word for word from PuppyAlert nl gate.t2h/t2/t2tip.
+const GATE = `<div class="gate" data-tier="2" hidden><p class="gate-h"></p><p class="gate-t">Weinig fokkers betekent ook weinig concurrentie voor een pup. Zonder alert vind je deze fokkers bijna niet. Wij houden ze allemaal in de gaten en mailen je meteen als er een nieuwe bij komt.</p><p class="gate-tip">Wil je nog meer kans? Zoek ook over de grens.</p></div>`;
 const signup = (T, cur) => { const BPs = [...J('data/breed_pages.json')].sort((a, b) => a[1].localeCompare(b[1], 'nl'));
   return `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="nl" data-maxb="${esc(T.maxB)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-nearbad="${esc(T.nearBad)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
 <input type="hidden" name="country" value="NL">
-<fieldset data-max="3" data-msg="maxB"><legend class="step">${esc(T.st1)}</legend><details class="picker"><summary><span>${esc(T.pickB)} (<b class="n">1</b>/3)</span></summary><div class="chips">${opts('breed', BPs.map(b => [b[0], esc(b[1])]), [cur[0]])}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset class="bstep"><legend class="step">${esc(T.st1)}</legend><div class="brows">${brow(BPs, cur[0], false)}</div><template class="browt">${brow(BPs, '', true)}</template><p class="limit" hidden></p></fieldset>
 <fieldset><legend class="step">Stap 2 · Waar in Nederland? (optioneel)</legend><div class="near-body"><p class="note">Land: Nederland. Laat de provincie leeg voor alerts uit heel Nederland.</p>
 <label>Provincie<select name="province"><option value="">Heel Nederland</option>${Object.keys(PROV).sort((a, b) => a.localeCompare(b, 'nl')).map(p => `<option value="${esc(p)}" data-reach='${esc(JSON.stringify(PROV[p]))}'>${esc(p)}</option>`).join('')}</select></label>
 <label>Zoekradius<select name="radius">${[25, 50, 100, 150].map(k => `<option value="${k}"${k === 50 ? ' selected' : ''}>${k} km</option>`).join('')}</select></label>
 <label class="consent"><input type="checkbox" name="crossBorder"> Ook resultaten over de grens (België en Duitsland)</label><p class="note xbnote" hidden></p></div></fieldset>
 <fieldset><legend class="step">${esc(T.st3)}</legend><div class="plans"><label class="plan"><input type="radio" name="plan" value="12m" checked><span>${esc(T.p12)}</span></label></div><p class="note"><strong>${esc(T.once)}</strong> Je betaalt via Mollie (iDEAL of kaart). Testomgeving: er wordt niets echt afgeschreven.</p></fieldset>
 <fieldset><legend class="step">${esc(T.st4)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
-<label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label>
+${GATE}<label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label>
 <button type="submit">Aanmelden en betalen</button><p class="status" role="status"></p></fieldset>
 <ul class="card-notes"><li>${esc(T.optin)}</li><li>${esc(T.noauto)}</li></ul></form></div>`; };
 const write = (p, html) => { mkdirSync(OUT + p, { recursive: true }); writeFileSync(OUT + p + 'index.html', html); };
@@ -59,9 +63,9 @@ for (const l of LANGS) {
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <h1>${esc(T.heroH)}</h1><figure class="hero-photo"><img src="/img/hero/golden-retriever-puppy-320.webp" srcset="/img/hero/golden-retriever-puppy-320.webp 320w, /img/hero/golden-retriever-puppy-640.webp 640w" sizes="(max-width: 599px) 200px, 360px" width="640" height="480" fetchpriority="high" decoding="async" alt="Golden retriever-pup die op een houten vloer ligt"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_12weeks.JPG" rel="nofollow noopener">Foto</a>: Beatrice Milek, <a href="https://creativecommons.org/licenses/by/3.0" rel="license nofollow noopener">CC BY 3.0</a></figcaption></figure><p class="hero-line">${esc(T.heroSub)}</p>${COUNTER('data-scope="all"')}<div class="hero-story">${story(T)}</div>
 </div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2>
-<label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${[...J('data/breed_pages.json')].map(b => [b[1], `${pre(l)}/${T.bSeg}/${slugify(b[1])}/`]).sort((a, b) => a[0].localeCompare(b[0], l)).map(([n, u]) => `<option value="${u}">${esc(n)}</option>`).join('')}</select></label>
+<label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${[...J('data/breed_pages.json')].map(b => [b[1], `${pre(l)}/${T.bSeg}/${slugify(b[1])}/`, slugify(b[0])]).sort((a, b) => a[0].localeCompare(b[0], l)).map(([n, u, sl]) => `<option value="${u}" data-s="${sl}">${esc(n)}</option>`).join('')}</select></label>
 <ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>
-${sections(T, l, cs, true)}<script src="/home.js" defer></script></body></html>`);
+${sections(T, l, cs, true)}<script src="/home.js" defer></script><script src="/thresh.js" defer></script></body></html>`);
   if (l === 'nl') sm.push(homePath);
 }
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
@@ -80,15 +84,15 @@ for (const l of LANGS) {
   const cs = countries.map(row => ({ row, name: cname(row, l), flag: row[1] })).sort((a, b) => a.name.localeCompare(b.name, l));
   const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
   const list = skip => `<ul class="ctry-grid breed-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${bThumb(b, l)}${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
-  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script></body></html>`;
+  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script><script src="/thresh.js" defer></script></body></html>`;
   write(breedIdx(l), head(l, `${T.bH} | MijnDoggo`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2><label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${sorted.map(b => `<option value="${breedPath(l, b)}">${esc(bName(b, l))}</option>`).join('')}</select></label></div></div></section>
+<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2><label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${sorted.map(b => `<option value="${breedPath(l, b)}" data-s="${slugify(b[0])}">${esc(bName(b, l))}</option>`).join('')}</select></label></div></div></section>
 <section class="section countries"><div class="wrap"><h2>${esc(T.bAll)}</h2>${list()}</div></section></main>${foot}`);
   if (l === 'nl') sm.push(breedIdx);
   for (const b of BP) {
     const pf = x => breedPath(x, b), r = s => s.replaceAll('{b}', bName(b, l));
     write(pf(l), head(l, r(T.bTitle), r(T.bDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1>${bFig(b, l)}<p class="breed-fame">${esc(BBL[b[0]][l])}</p><p class="lead">${esc(r(T.bLead))}</p>${COUNTER(`data-breed="${esc(b[0])}"`)}</div>${signup(T, b)}</div></section>
+<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1>${bFig(b, l)}<p class="breed-fame">${esc(BBL[b[0]][l])}</p><p class="lead">${esc(r(T.bLead))}</p>${COUNTER(`data-breed="${slugify(b[0])}"`)}</div>${signup(T, b)}</div></section>
 <section class="section trust"><div class="wrap two"><div>${story(T)}</div><div><h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p></div></div></section>
 <section class="section countries"><div class="wrap"><h2>${esc(T.bOthers)}</h2><details class="all-breeds"><summary>${esc(SHOWALL[l])}</summary>${list(b)}</details></div></section></main>${foot}`);
     if (l === 'nl') sm.push(pf);

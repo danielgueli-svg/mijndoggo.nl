@@ -1,11 +1,15 @@
-// Breed page signup (NL only): max 3 breeds, optional NL place + radius with cross-border option, plan, email twice, then Mollie (test) checkout.
+// Breed page signup (NL only): up to 3 breed rows, optional NL place + radius with cross-border option, plan, email twice, then Mollie (test) checkout.
 const f = document.getElementById('signup');
 if (f) {
-  f.querySelectorAll('fieldset[data-max]').forEach(fs => { const max = +fs.dataset.max, msg = fs.querySelector('.limit');
-    const sync = () => { const boxes = [...fs.querySelectorAll('input[name=breed]')], n = boxes.filter(b => b.checked).length;
-      boxes.forEach(b => { if (!b.checked) { b.disabled = n >= max; b.parentElement.classList.toggle('off', n >= max); } });
-      fs.querySelector('.n').textContent = n; msg.hidden = n < max; msg.textContent = f.dataset.maxb; };
-    fs.addEventListener('change', sync); sync(); });
+  // Step 1: breed rows (native selects, one breed per line), first pre-filled with the page breed; + adds a row, max 3; ✕ removes.
+  const rows = f.querySelector('.brows'), tpl = f.querySelector('.browt'), lim = f.querySelector('.bstep .limit'), sels = () => [...f.querySelectorAll('.brows select[name=breed]')];
+  const syncB = () => { const ss = sels(), full = ss.length >= 3;
+    ss.forEach((s, i) => { s.setAttribute('aria-label', 'Ras ' + (i + 1)); s.parentElement.querySelector('.addb').hidden = full || i !== ss.length - 1; });
+    lim.hidden = !full; lim.textContent = f.dataset.maxb; };
+  rows.addEventListener('click', e => {
+    if (e.target.closest('.addb') && sels().length < 3) { rows.append(tpl.content.cloneNode(true)); syncB(); sels().at(-1).focus(); f.dispatchEvent(new Event('change')); }
+    const rm = e.target.closest('.rmb'); if (rm) { rm.parentElement.remove(); syncB(); sels().at(-1).focus(); f.dispatchEvent(new Event('change')); } });
+  syncB();
   const prov = f.querySelector('select[name=province]'), rad = f.querySelector('select[name=radius]'), xbn = f.querySelector('.xbnote'), xbc = f.querySelector('input[name=crossBorder]');
   const syncXb = () => { if (!xbc.checked) { xbn.hidden = true; return; } const o = prov.selectedOptions[0];
     const r = o && o.value ? (JSON.parse(o.dataset.reach)['km' + rad.value] || []) : ['BE', 'DE'];
@@ -13,7 +17,7 @@ if (f) {
   f.addEventListener('change', syncXb); syncXb();
   f.addEventListener('submit', async e => { e.preventDefault();
     const st = f.querySelector('.status'), fd = new FormData(f), btn = f.querySelector('button[type=submit]');
-    const body = { email: fd.get('email'), email2: fd.get('email2'), consent: !!fd.get('consent'), breeds: fd.getAll('breed'), plan: fd.get('plan') };
+    const body = { email: fd.get('email'), email2: fd.get('email2'), consent: !!fd.get('consent'), breeds: [...new Set(fd.getAll('breed').filter(Boolean))], plan: fd.get('plan') };
     body.province = fd.get('province') || null; body.radius = +fd.get('radius'); body.crossBorder = xbc.checked;
     const mis = f.querySelector('.mis'); mis.hidden = fd.get('email').trim().toLowerCase() === fd.get('email2').trim().toLowerCase();
     if (!mis.hidden) { st.textContent = f.dataset.mis; return; }

@@ -99,3 +99,13 @@ input[type=text],select{display:block;width:100%;margin-top:.25rem;padding:.6rem
 .hero-photo figcaption{font-size:11px;line-height:1.3;opacity:.7;margin-top:4px;overflow-wrap:anywhere}
 .hero-photo figcaption a{color:inherit}
 @media (max-width:599px){.hero-photo{max-width:200px}}
+/* Breed rows (ported from PuppyAlert e099783) */
+.brows{display:flex;flex-direction:column;gap:.5rem}.brow{display:flex;gap:.4rem;align-items:center}.brow .bsel{flex:1;min-width:0;margin:0}
+.rmb,.addb{width:2.3rem;height:2.3rem;flex:none;border-radius:50%;border:1px solid var(--border);background:#fff;cursor:pointer;padding:0;font-size:1.1rem}.rmb{color:#8a4b2a}.addb{border-color:var(--accent);color:var(--accent);font-weight:700}.addb[hidden]{display:none}
+/* Breeder-count tiers (ported from PuppyAlert 38b4e75) */
+.bthr{margin:.35rem 0 .6rem;font-size:.9rem;line-height:1.35}.bthr b{font-weight:700;margin-right:.25rem}.bthr[data-t=mid]{color:#8a5a00}.bthr[data-t=lo]{color:#b3261e}.bthr[data-t=ok]{color:#1b6e2f}
+.pup-counter[data-t=lo]{background:#fdf1f0;border-color:#f0b3ab;color:#b3261e}.pup-counter[data-t=mid]{background:#fff7ef;border-color:#f3c79b;color:#8a5a00}.pup-counter[data-t=ok]{background:#eef7ee;border-color:#a5d6a7;color:#1b6e2f}
+.pc-tier{display:block;font-size:.85rem;margin-top:.15rem}.pup-counter[data-t]{border-radius:12px}
+.gate{margin:.75rem 0;padding:.75rem 1rem;border-radius:12px;background:#fff7ef;border:1px solid #f3c79b}.gate[hidden]{display:none}.gate-h{margin:0 0 .25rem;font-size:1.05rem;font-weight:600}.gate-t,.gate-tip{margin:.25rem 0;font-size:.92rem}
+/* One breed per line in the all-breeds lists */
+.breed-grid,.all-breeds .breed-grid{display:flex!important;flex-direction:column;gap:6px}

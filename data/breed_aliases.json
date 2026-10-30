@@ -1,0 +1,456 @@
+{
+ "australian-shepherd": [
+  "Australian Shepherd",
+  "Aussie",
+  "Australische Herder",
+  "Australischer Schäferhund",
+  "Berger australien",
+  "Pastore australiano",
+  "Pastor australiano",
+  "Owczarek australijski"
+ ],
+ "bernese-mountain-dog": [
+  "Bernese Mountain Dog",
+  "Bernese",
+  "Berner Sennenhond",
+  "Berner Sennenhund",
+  "Berner",
+  "Bouvier bernois",
+  "Bovaro del Bernese",
+  "Boyero de Berna",
+  "Berneński pies pasterski"
+ ],
+ "german-spitz": [
+  "German Spitz",
+  "Kleinspitz",
+  "Mittelspitz",
+  "Grossspitz",
+  "Großspitz",
+  "Deutscher Spitz",
+  "Duitse Spits",
+  "Kleine Keeshond",
+  "Middenslag Keeshond",
+  "Spitz allemand",
+  "Spitz tedesco",
+  "Spitz alemán",
+  "Szpic niemiecki",
+  "German Spitz Klein",
+  "German Spitz Mittel"
+ ],
+ "japanese-spitz": [
+  "Japanese Spitz",
+  "Japanse Spits",
+  "Japan-Spitz",
+  "Japanspitz",
+  "Spitz japonais",
+  "Spitz giapponese",
+  "Spitz japonés",
+  "Szpic japoński"
+ ],
+ "miniature-schnauzer": [
+  "Miniature Schnauzer",
+  "Zwergschnauzer",
+  "Dwergschnauzer",
+  "Schnauzer nain",
+  "Schnauzer nano",
+  "Schnauzer miniatura",
+  "Sznaucer miniaturowy"
+ ],
+ "giant-schnauzer": [
+  "Giant Schnauzer",
+  "Riesenschnauzer",
+  "Reuzenschnauzer",
+  "Schnauzer géant",
+  "Schnauzer gigante",
+  "Sznaucer olbrzym"
+ ],
+ "pomeranian": [
+  "Pomeranian",
+  "Pomeriaan",
+  "Zwergspitz",
+  "Spitz nain",
+  "Volpino di Pomerania",
+  "Pomerania",
+  "Spitz enano",
+  "Szpic miniaturowy",
+  "Pom"
+ ],
+ "german-shepherd": [
+  "German Shepherd",
+  "Deutscher Schäferhund",
+  "Duitse Herder",
+  "Berger allemand",
+  "Pastore tedesco",
+  "Pastor alemán",
+  "Owczarek niemiecki",
+  "Alsatian"
+ ],
+ "white-swiss-shepherd": [
+  "White Swiss Shepherd",
+  "Weißer Schweizer Schäferhund",
+  "Weisser Schweizer Schäferhund",
+  "Witte Herder",
+  "Berger blanc suisse",
+  "Pastore svizzero bianco",
+  "Pastor blanco suizo",
+  "Biały owczarek szwajcarski"
+ ],
+ "labrador-retriever": [
+  "Labrador Retriever",
+  "Labrador",
+  "Retriever du Labrador",
+  "Cobrador de Labrador",
+  "Labrador retriever"
+ ],
+ "golden-retriever": [
+  "Golden Retriever",
+  "Golden",
+  "Cobrador dorado"
+ ],
+ "french-bulldog": [
+  "French Bulldog",
+  "Franse Bulldog",
+  "Französische Bulldogge",
+  "Bouledogue français",
+  "Bulldog francese",
+  "Bulldog francés",
+  "Buldog francuski",
+  "Frenchie"
+ ],
+ "english-bulldog": [
+  "English Bulldog",
+  "British Bulldog",
+  "Engelse Bulldog",
+  "Englische Bulldogge",
+  "Bulldog anglais",
+  "Bulldog inglese",
+  "Bulldog inglés",
+  "Buldog angielski"
+ ],
+ "dachshund": [
+  "Dachshund",
+  "Teckel",
+  "Dackel",
+  "Dachshund/Teckel",
+  "Bassotto",
+  "Perro salchicha",
+  "Jamnik"
+ ],
+ "poodle": [
+  "Poodle",
+  "Poedel",
+  "Pudel",
+  "Caniche",
+  "Barboncino",
+  "Barbone",
+  "Pudel miniaturowy",
+  "Toy Poodle",
+  "Miniature Poodle",
+  "Standard Poodle",
+  "Zwergpudel",
+  "Kleinpudel",
+  "Grosspudel",
+  "Toypudel"
+ ],
+ "great-dane": [
+  "Great Dane",
+  "Duitse Dog",
+  "Deutsche Dogge",
+  "Dogue allemand",
+  "Alano",
+  "Gran danés",
+  "Dog niemiecki"
+ ],
+ "dalmatian": [
+  "Dalmatian",
+  "Dalmatiër",
+  "Dalmatiner",
+  "Dalmatien",
+  "Dalmata",
+  "Dálmata",
+  "Dalmatyńczyk"
+ ],
+ "pug": [
+  "Pug",
+  "Mopshond",
+  "Mops",
+  "Carlin",
+  "Carlino",
+  "Carlino (pug)"
+ ],
+ "maltese": [
+  "Maltese",
+  "Maltezer",
+  "Malteser",
+  "Bichon maltais",
+  "Bichón maltés",
+  "Maltańczyk"
+ ],
+ "havanese": [
+  "Havanese",
+  "Havanezer",
+  "Havaneser",
+  "Bichon havanais",
+  "Bichon avanese",
+  "Bichón habanero",
+  "Hawańczyk"
+ ],
+ "cavalier-king-charles-spaniel": [
+  "Cavalier King Charles Spaniel",
+  "Cavalier King Charles",
+  "Cavalier"
+ ],
+ "cocker-spaniel": [
+  "Cocker Spaniel",
+  "English Cocker Spaniel",
+  "Working Cocker Spaniel",
+  "Cocker anglais",
+  "Cocker spaniel inglese",
+  "Cocker spaniel inglés",
+  "Cocker spaniel angielski",
+  "Englischer Cocker Spaniel"
+ ],
+ "dobermann": [
+  "Dobermann",
+  "Doberman",
+  "Dobermann Pinscher",
+  "Dóberman"
+ ],
+ "siberian-husky": [
+  "Siberian Husky",
+  "Husky",
+  "Siberische Husky",
+  "Husky de Sibérie",
+  "Husky siberiano",
+  "Husky syberyjski"
+ ],
+ "samoyed": [
+  "Samoyed",
+  "Samojeed",
+  "Samojede",
+  "Samoyède",
+  "Samoiedo",
+  "Samoyedo",
+  "Samojed"
+ ],
+ "pembroke-welsh-corgi": [
+  "Pembroke Welsh Corgi",
+  "Welsh Corgi Pembroke",
+  "Welsh Corgi",
+  "Corgi"
+ ],
+ "brittany": [
+  "Brittany",
+  "Brittany Spaniel",
+  "Épagneul Breton",
+  "Epagneul Breton",
+  "Spaniel bretón",
+  "Spaniel bretoński"
+ ],
+ "akita": [
+  "Akita",
+  "Akita Inu",
+  "Japanese Akita Inu"
+ ],
+ "tibetan-terrier": [
+  "Tibetan Terrier",
+  "Tibet Terrier",
+  "Tibetaanse Terriër",
+  "Terrier du Tibet",
+  "Terrier tibetano",
+  "Terier tybetański"
+ ],
+ "bull-terrier": [
+  "Bull Terrier",
+  "Bullterrier",
+  "Bull Terriër",
+  "Bulterier"
+ ],
+ "italian-spinone": [
+  "Italian Spinone",
+  "Spinone Italiano",
+  "Spinone italien",
+  "Spinone"
+ ],
+ "bavarian-mountain-hound": [
+  "Bavarian Mountain Hound",
+  "Bayerischer Gebirgsschweißhund",
+  "Beierse Bergzweethond",
+  "Chien de rouge de Bavière",
+  "Segugio bavarese da montagna",
+  "Sabueso de montaña de Baviera",
+  "Bawarski posokowiec górski"
+ ],
+ "labradoodle": [
+  "Labradoodle",
+  "Australian Labradoodle",
+  "Labradoedel",
+  "Labradudel"
+ ],
+ "goldendoodle": [
+  "Goldendoodle",
+  "Groodle",
+  "Goldendoedel",
+  "Goldendudel"
+ ],
+ "cockapoo": [
+  "Cockapoo",
+  "Cockerpoo",
+  "Cockerpudel",
+  "Cocker-Pudel"
+ ],
+ "cavapoo": [
+  "Cavapoo",
+  "Cavoodle",
+  "Cavadoodle"
+ ],
+ "maltipoo": [
+  "Maltipoo",
+  "Maltipu",
+  "Maltepoo"
+ ],
+ "aussiedoodle": [
+  "Aussiedoodle",
+  "Aussiedoedel",
+  "Aussiedudel"
+ ],
+ "bernedoodle": [
+  "Bernedoodle",
+  "Bernedoedel",
+  "Bernedudel"
+ ],
+ "sheepadoodle": [
+  "Sheepadoodle",
+  "Sheepadoedel"
+ ],
+ "cavachon": [
+  "Cavachon"
+ ],
+ "pomsky": [
+  "Pomsky"
+ ],
+ "puggle": [
+  "Puggle"
+ ],
+ "schnoodle": [
+  "Schnoodle",
+  "Schnoedel"
+ ],
+ "shih-poo": [
+  "Shih-poo",
+  "Shihpoo",
+  "Shih Poo",
+  "Shoodle"
+ ],
+ "yorkipoo": [
+  "Yorkipoo",
+  "Yorkie-poo",
+  "Yorkiepoo"
+ ],
+ "jackapoo": [
+  "Jackapoo",
+  "Jack-a-poo",
+  "Jackadoodle"
+ ],
+ "sprocker": [
+  "Sprocker",
+  "Sprocker Spaniel"
+ ],
+ "chiweenie": [
+  "Chiweenie"
+ ],
+ "miniature-american-shepherd": [
+  "Miniature American Shepherd",
+  "Mini Aussie",
+  "Miniature Australian Shepherd",
+  "Mini Australian Shepherd",
+  "Miniatur Amerikanischer Schäferhund",
+  "Berger américain miniature",
+  "Pastore americano miniatura",
+  "Pastor americano miniatura",
+  "Miniaturowy owczarek amerykański"
+ ],
+ "keeshond": [
+  "Keeshond",
+  "Wolfsspitz",
+  "Wolfspitz",
+  "Keeshond (Wolfsspitz)",
+  "Spitz loup",
+  "Volpino lupo"
+ ],
+ "finnish-spitz": [
+  "Finnish Spitz",
+  "Suomenpystykorva",
+  "Finse Spits",
+  "Finnenspitz",
+  "Spitz finlandais",
+  "Spitz finlandese",
+  "Szpic fiński"
+ ],
+ "volpino-italiano": [
+  "Volpino Italiano",
+  "Italian Volpino"
+ ],
+ "lapponian-herder": [
+  "Lapponian Herder",
+  "Lapinporokoira",
+  "Lapsk vallhund",
+  "Lappländischer Rentierhund",
+  "Berger lapon",
+  "Pastore lappone",
+  "Lapoński pies pasterski"
+ ],
+ "finnish-lapphund": [
+  "Finnish Lapphund",
+  "Suomenlapinkoira",
+  "Finsk lapphund",
+  "Finse Lappenhond",
+  "Finnischer Lapphund",
+  "Chien finnois de Laponie",
+  "Lapphund finlandese",
+  "Lapphund finlandés",
+  "Fiński lapphund"
+ ],
+ "swedish-lapphund": [
+  "Swedish Lapphund",
+  "Ruotsinlapinkoira",
+  "Svensk lapphund",
+  "Zweedse Lappenhond",
+  "Schwedischer Lapphund",
+  "Berger lapon suédois",
+  "Lapphund svedese",
+  "Szwedzki lapphund"
+ ],
+ "swedish-vallhund": [
+  "Swedish Vallhund",
+  "Västgötaspets",
+  "Vastgotaspets",
+  "Länsigöötanmaanpystykorva",
+  "Zweedse Vallhund",
+  "Schwedischer Vallhund",
+  "Vallhund suédois",
+  "Vallhund svedese",
+  "Vallhund sueco",
+  "Szwedzki vallhund"
+ ],
+ "tibetan-spaniel": [
+  "Tibetan Spaniel",
+  "Tiibetinspanieli",
+  "Tibetansk spaniel",
+  "Tibetaanse Spaniël",
+  "Tibet-Spaniel",
+  "Épagneul tibétain",
+  "Spaniel tibetano",
+  "Spaniel tybetański"
+ ],
+ "standard-schnauzer": [
+  "Standard Schnauzer",
+  "Mittelschnauzer",
+  "Middenslag Schnauzer",
+  "Schnauzer moyen",
+  "Schnauzer medio",
+  "Schnauzer médio",
+  "Sznaucer średni",
+  "Snautseri"
+ ]
+}
