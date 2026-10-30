@@ -2,7 +2,7 @@
  "nl": {
   "name": "Nederlands",
   "title": "MijnDoggo: een mail zodra er pups van jouw ras zijn",
-  "desc": "Kies tot 3 rassen en 3 EU-landen. We mailen je zodra fokkers pups hebben.",
+  "desc": "Kies tot 3 rassen. We mailen je zodra Nederlandse fokkers pups hebben.",
   "h_story": "Waarom MijnDoggo?",
   "story": "Wie een pup zoekt, klikt meestal steeds opnieuw door fokkerssites, in de hoop op nieuws. Dat moest makkelijker kunnen. MijnDoggo houdt die sites voor je in de gaten.",
   "h_cheap": "Waarom zo betaalbaar?",
@@ -64,7 +64,7 @@
   "stLang": "Stap 1 · Kies je taal",
   "stCountry": "Stap 2 · Kies een land (opent de landpagina)",
   "chooseC": "Kies een land…",
-  "homeNote": "Op de landpagina kies je rassen, tot 3 landen en je e-mailadres.",
+  "homeNote": "Kies je rassen en je e-mailadres.",
   "cTitle": "Puppy-alerts in {c} | MijnDoggo",
   "cDesc": "Krijg een mail zodra er een pup van jouw ras beschikbaar is in {c}. Kies tot 3 rassen. Eenmalige betaling, geen automatische verlenging.",
   "cEyebrow": "Puppy-alerts · {c}",
