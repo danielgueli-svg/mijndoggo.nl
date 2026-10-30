@@ -241,7 +241,7 @@ export default function BreedDirectory({ catalog, mode, heading, intro }: Props)
             })}
           </div>
         )}
-        <ul className="mt-3 columns-2 gap-x-6 text-sm font-extrabold sm:columns-3 md:columns-4">
+        <ul className="mt-3 flex max-h-96 flex-col overflow-auto text-sm font-extrabold">
           {[...all]
             .sort((a, b) => a.name.localeCompare(b.name, "nl"))
             .filter((breed) => {

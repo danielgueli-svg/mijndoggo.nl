@@ -97,7 +97,7 @@ const sections = [
         {alertBreeds.map((b) => <option value={b.url}>{b.name}</option>)}
       </select>
       <noscript>
-        <ul class="mt-4 columns-2 gap-x-6 text-sm font-bold sm:columns-3">
+        <ul class="mt-4 flex flex-col text-sm font-bold">
           {alertBreeds.map((b) => <li><a class="text-sky-deep underline" href={b.url}>{b.name}</a></li>)}
         </ul>
       </noscript>
