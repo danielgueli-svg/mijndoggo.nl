@@ -1,11 +1,12 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero.astro";
+import Logo from "../components/Logo.astro";
 import BreedDirectory from "../components/BreedDirectory.tsx";
 import HeaderSearch from "../components/HeaderSearch.tsx";
 import TipCard from "../components/TipCard.astro";
 import { loadBreeds } from "../lib/breeds";
 import { unsplashSrc } from "../lib/images";
+import { heroPhotos, heroSrc, site } from "../data/site";
 import { toCatalogBreed } from "../lib/serialize-breeds";
 import { getCollection } from "astro:content";
 
@@ -13,22 +14,60 @@ const catalog = (await loadBreeds()).map(toCatalogBreed);
 const tips = (await getCollection("tips"))
   .sort((a, b) => Number(b.data.featured) - Number(a.data.featured))
   .slice(0, 3);
+const hero = heroPhotos[0];
 ---
 
 <BaseLayout>
-  <Hero />
-  <div class="mx-auto max-w-6xl px-4 pt-2 sm:px-6">
+  <div class="mx-auto flex max-w-3xl flex-col items-center px-4 pt-10 text-center sm:px-6">
+    <!-- 1. Merk + kop -->
+    <a href="/" class="group flex flex-col items-center gap-2">
+      <Logo class="h-32 w-32 drop-shadow-lg transition-transform group-hover:rotate-6 sm:h-40 sm:w-40" />
+      <span class="block text-xs font-bold uppercase tracking-widest text-muted">{site.domain}</span>
+    </a>
+    <h1 class="mt-6 font-display text-3xl font-semibold leading-[1.15] tracking-tight text-ink sm:text-4xl lg:text-5xl">
+      MijnDoggo is de plek om andere hondenbezitters te ontmoeten: deel foto’s, wissel tips uit, en plan een wandeling
+    </h1>
+
+    <!-- 2. Herofoto -->
+    <figure class="mt-8 w-full overflow-hidden rounded-[1.75rem] bg-white shadow-pop-lg ring-2 ring-ink/10 aspect-[16/9]">
+      <img src={heroSrc(hero.unsplashId)} alt={hero.alt} width="900" height="560" class="h-full w-full object-cover" loading="eager" />
+      <figcaption class="sr-only">{hero.caption} — foto {hero.photographer} op Unsplash</figcaption>
+    </figure>
+
+    <!-- 3. Introregel + bestaande knoppen -->
+    <p class="mt-8 text-lg font-semibold leading-relaxed text-muted">
+      Wij brengen hondenmensen bij elkaar. Zoek je ras, vind baasjes in de buurt en ga samen naar buiten.
+    </p>
+    <div class="mt-5 flex flex-wrap justify-center gap-3">
+      <a href="/aanmelden" class="rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush">Aanmelden</a>
+      <a href="/community" class="rounded-full bg-white px-5 py-3 text-sm font-extrabold text-ink shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-sun">Community</a>
+    </div>
+
+    <!-- 5. Welk ras zoek je? (drie zoekvelden + rasklikker) -->
+    <h2 class="mt-12 font-display text-3xl font-semibold sm:text-4xl">Welk ras zoek je?</h2>
+  </div>
+  <div class="mx-auto max-w-3xl px-4 pt-4 sm:px-6">
     <HeaderSearch client:load breeds={catalog} />
   </div>
-  <BreedDirectory
-    client:load
-    catalog={catalog}
-    mode="home"
-    heading="Acht bekende rassen — zoek hierboven naar alle"
-    intro="We zetten acht populaire honden vooraan. Typ in het zoekveld om élk ras te vinden — inclusief rassen die jij zelf hebt toegevoegd."
-  />
+  <div class="mx-auto max-w-3xl">
+    <BreedDirectory
+      client:load
+      catalog={catalog}
+      mode="home"
+      heading="Acht bekende rassen — zoek hierboven naar alle"
+      intro="We zetten acht populaire honden vooraan. Typ in het zoekveld om élk ras te vinden — inclusief rassen die jij zelf hebt toegevoegd."
+    />
+  </div>
 
-  <section class="mx-auto max-w-6xl px-4 py-8 sm:px-6">
+  <!-- 6. Gids -->
+  <div class="mx-auto max-w-3xl px-4 pb-4 text-center sm:px-6">
+    <a href="/goede-fokker-herkennen" class="inline-block rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-pop ring-2 ring-ink/10 transition hover:-translate-y-0.5 hover:bg-blush">
+      Zo herken je een goede fokker – lees de gids
+    </a>
+  </div>
+
+  <!-- 8. Tips (aside) -->
+  <section class="mx-auto max-w-3xl px-4 py-8 sm:px-6">
     <div class="flex items-end justify-between gap-4">
       <div>
         <p class="text-xs font-extrabold uppercase tracking-widest text-sky-deep">Tips & trucs</p>
@@ -42,7 +81,7 @@ const tips = (await getCollection("tips"))
         Alle tips bekijken
       </a>
     </div>
-    <div class="mt-6 grid gap-4 md:grid-cols-3">
+    <div class="mt-6 grid gap-4 sm:grid-cols-3">
       {
         tips.map((tip) => (
           <TipCard
