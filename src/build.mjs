@@ -36,17 +36,20 @@ const sections = (T, l, cs, home = false) => `<section class="section trust"><di
 ${home ? breedTicker(T, l) : `<section class="section countries"><div class="wrap"><h2>${esc(T.h_ctry)}</h2><p>${esc(T.ctry_note)}</p><ul class="ctry-grid">${cs.map(c => `<li><a href="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</a><span class="badge-soon">${esc(T.soon)}</span></li>`).join('')}</ul></div></section>`}</main>
 <footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer>`;
 const opts = (name, items, pre = []) => items.map(([v, label]) => `<label class="chip"><input type="checkbox" name="${name}" value="${esc(v)}"${pre.includes(v) ? ' checked' : ''}><span>${label}</span></label>`).join('');
-const signup = (T, l, cs, cc) => `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="${l}" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-nearbad="${esc(T.nearBad)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
-<fieldset data-max="3" data-msg="maxB"><legend class="step">${esc(T.st1)}</legend><details class="picker"><summary><span>${esc(T.pickB)} (<b class="n">0</b>/3)</span></summary><div class="chips">${opts('breed', [...breeds].sort((a, b) => a.localeCompare(b, l)).map(b => [b, esc(b)]))}</div></details><p class="limit" hidden></p></fieldset>
-<fieldset data-max="3" data-msg="maxC"><legend class="step">${esc(T.st2)}</legend><details class="picker"><summary><span>${esc(T.pickC)} (<b class="n">1</b>/3)</span></summary><div class="chips">${opts('country', cs.map(c => [c.cc, `${c.flag} ${esc(c.name)}`]), [cc])}</div></details><p class="limit" hidden></p>
-<details class="picker near"><summary><span>${esc(T.nearT)}</span></summary><div class="near-body"><p class="note">${esc(T.nearHint)}</p>
-<label>${esc(T.nearPlace)}<input type="text" name="place" list="places" placeholder="${esc(T.nearPh)}" autocomplete="off"></label><datalist id="places">${places.map(([pc, n, , , reach]) => `<option value="${esc(n)} (${pc})" data-reach='${esc(JSON.stringify(reach))}'>`).join('')}</datalist>
-<label>${esc(T.nearRad)}<select name="radius" data-km="50,100,150" data-mi="50,100"></select></label><label class="consent xb" hidden><input type="checkbox" name="crossBorder" checked> ${esc(T.xb)}</label><p class="limit badplace" hidden>${esc(T.nearBad)}</p></div></details></fieldset>
-<fieldset><legend class="step">${esc(T.st3)}</legend><div class="plans"><label class="plan"><input type="radio" name="plan" value="6m" checked><span>${esc(T.p6)}</span></label><label class="plan"><input type="radio" name="plan" value="12m"><span>${esc(T.p12)}</span></label></div><p class="note"><strong>${esc(T.once)}</strong> ${esc(T.payoff)}</p></fieldset>
+const PROV = J('data/provinces.json');
+const signup = (T, cur) => { const BPs = [...J('data/breed_pages.json')].sort((a, b) => a[1].localeCompare(b[1], 'nl'));
+  return `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" data-lang="nl" data-maxb="${esc(T.maxB)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-nearbad="${esc(T.nearBad)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}">
+<input type="hidden" name="country" value="NL">
+<fieldset data-max="3" data-msg="maxB"><legend class="step">${esc(T.st1)}</legend><details class="picker"><summary><span>${esc(T.pickB)} (<b class="n">1</b>/3)</span></summary><div class="chips">${opts('breed', BPs.map(b => [b[0], esc(b[1])]), [cur[0]])}</div></details><p class="limit" hidden></p></fieldset>
+<fieldset><legend class="step">Stap 2 · Waar in Nederland? (optioneel)</legend><div class="near-body"><p class="note">Land: Nederland. Laat de provincie leeg voor alerts uit heel Nederland.</p>
+<label>Provincie<select name="province"><option value="">Heel Nederland</option>${Object.keys(PROV).sort((a, b) => a.localeCompare(b, 'nl')).map(p => `<option value="${esc(p)}" data-reach='${esc(JSON.stringify(PROV[p]))}'>${esc(p)}</option>`).join('')}</select></label>
+<label>Zoekradius<select name="radius">${[25, 50, 100, 150].map(k => `<option value="${k}"${k === 50 ? ' selected' : ''}>${k} km</option>`).join('')}</select></label>
+<label class="consent"><input type="checkbox" name="crossBorder"> Ook resultaten over de grens (België en Duitsland)</label><p class="note xbnote" hidden></p></div></fieldset>
+<fieldset><legend class="step">${esc(T.st3)}</legend><div class="plans"><label class="plan"><input type="radio" name="plan" value="6m" checked><span>${esc(T.p6)}</span></label><label class="plan"><input type="radio" name="plan" value="12m"><span>${esc(T.p12)}</span></label></div><p class="note"><strong>${esc(T.once)}</strong> Je betaalt via Mollie (iDEAL of kaart). Testomgeving: er wordt niets echt afgeschreven.</p></fieldset>
 <fieldset><legend class="step">${esc(T.st4)}</legend><label>${esc(T.email)}<input type="email" name="email" required autocomplete="email"></label><label>${esc(T.email2)}<input type="email" name="email2" required autocomplete="email"></label><p class="limit mis" hidden>${esc(T.mis)}</p>
 <label class="consent"><input type="checkbox" name="consent" required> ${esc(T.consent)}</label>
-<button type="submit">${esc(T.submit)}</button><p class="status" role="status"></p></fieldset>
-<ul class="card-notes"><li>${esc(T.optin)}</li><li>${esc(T.noauto)}</li></ul></form></div>`;
+<button type="submit">Aanmelden en betalen</button><p class="status" role="status"></p></fieldset>
+<ul class="card-notes"><li>${esc(T.optin)}</li><li>${esc(T.noauto)}</li></ul></form></div>`; };
 const write = (p, html) => { mkdirSync(OUT + p, { recursive: true }); writeFileSync(OUT + p + 'index.html', html); };
 const sm = [];
 for (const l of LANGS) {
@@ -60,14 +63,6 @@ for (const l of LANGS) {
 <ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>
 ${sections(T, l, cs, true)}<script src="/home.js" defer></script></body></html>`);
   if (l === 'nl') sm.push(homePath);
-  for (const c of cs) {
-    const pf = x => countryPath(x, c.row), r = s => s.replaceAll('{c}', c.name);
-    write(pf(l), head(l, r(T.cTitle), r(T.cDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><p class="eyebrow">${esc(r(T.cEyebrow))}</p><h1>${esc(r(T.cH1a))} <span class="h1-accent">${esc(T.cH1b)}</span></h1><p class="lead">${esc(r(T.cLead))}</p>${COUNTER(`data-country="${esc(c.cc)}"`)}
-</div>${OPEN[c.cc] ? signup(T, l, cs, c.cc) : `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><p class="closed">${esc(T.closed)}</p></div>`}</div></section>
-${sections(T, l, cs)}<script src="/home.js" defer></script></body></html>`);
-    if (l === 'nl') sm.push(pf);
-  }
 }
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
 const BP = J('data/breed_pages.json'), LI = Object.fromEntries([['nl', 1]]);
@@ -83,40 +78,32 @@ const bSlugs = new Set(); for (const l of LANGS) for (const b of BP) { const p =
 for (const l of LANGS) {
   const T = i18n[l];
   const cs = countries.map(row => ({ row, name: cname(row, l), flag: row[1] })).sort((a, b) => a.name.localeCompare(b.name, l));
-  const picker = `<div class="card"><h2 class="card-title">${esc(T.homeStep)}</h2>
-<label class="step"><select class="go" aria-label="${esc(T.homeStep)}"><option value="">${esc(T.chooseC)}</option>${cs.map(c => `<option value="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</option>`).join('')}</select></label>
-<p class="closed">${esc(T.closed)}</p><ul class="card-notes"><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div>`;
   const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
   const list = skip => `<ul class="ctry-grid breed-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${bThumb(b, l)}${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
-  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script></body></html>`;
+  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script></body></html>`;
   write(breedIdx(l), head(l, `${T.bH} | MijnDoggo`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div>${picker}</div></section>
+<p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2><label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${sorted.map(b => `<option value="${breedPath(l, b)}">${esc(bName(b, l))}</option>`).join('')}</select></label></div></div></section>
 <section class="section countries"><div class="wrap"><h2>${esc(T.bAll)}</h2>${list()}</div></section></main>${foot}`);
   if (l === 'nl') sm.push(breedIdx);
   for (const b of BP) {
     const pf = x => breedPath(x, b), r = s => s.replaceAll('{b}', bName(b, l));
     write(pf(l), head(l, r(T.bTitle), r(T.bDesc), pf) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
-<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1>${bFig(b, l)}<p class="breed-fame">${esc(BBL[b[0]][l])}</p><p class="lead">${esc(r(T.bLead))}</p>${COUNTER(`data-breed="${esc(b[0])}"`)}</div>${picker}</div></section>
+<p class="crumb"><a href="${breedIdx(l)}">← ${esc(T.bAll)}</a></p><p class="eyebrow">${esc(r(T.bEyebrow))}</p><h1>${esc(r(T.bH1))}</h1>${bFig(b, l)}<p class="breed-fame">${esc(BBL[b[0]][l])}</p><p class="lead">${esc(r(T.bLead))}</p>${COUNTER(`data-breed="${esc(b[0])}"`)}</div>${signup(T, b)}</div></section>
 <section class="section trust"><div class="wrap two"><div>${story(T)}</div><div><h2>${esc(T.h_cheap)}</h2><p>${esc(T.cheap)}</p></div></div></section>
 <section class="section countries"><div class="wrap"><h2>${esc(T.bOthers)}</h2><details class="all-breeds"><summary>${esc(SHOWALL[l])}</summary>${list(b)}</details></div></section></main>${foot}`);
     if (l === 'nl') sm.push(pf);
   }
 }
+function write404() { const T = i18n.nl; writeFileSync(OUT + '404.html', head('nl', 'Pagina niet gevonden | MijnDoggo', T.desc, homePath).replace('<link rel="canonical"', '<meta name="robots" content="noindex"><link rel="x"') + `<main id="content"><section class="hero"><div class="wrap"><h1>Deze pagina bestaat niet</h1><p class="hero-line">Woef! Hier is niets te vinden.</p><p><a class="mail-btn" href="/">Naar de homepage</a> <a class="mail-btn" href="/rassen/">Alle rassen</a></p></div></section></main></body></html>`); }
 // 301 redirects (Cloudflare Pages _redirects). Language homepages /nl/ /de/ /fr/ are real pages and always win:
 // no rule ever targets a bare /<lang>/ path, and iso shortcuts only exist one level deeper (/<lang>/<iso>/).
 const R = new Map(), add = (from, to) => { if (from !== to && !R.has(from)) R.set(from, to); };
 
 const homes = new Set(LANGS.map(homePath));
-for (const row of countries) {
-  for (const l of LANGS) {
-    add(`/landen/${isoAlias(row)}/`, countryPath(l, row));            // /nl/nl/ -> /nl/nederland/
-    add(`${pre(l)}/europe/${slugify(cname(row, 'nl'))}/`, countryPath(l, row)); // old WRA-style paths
-  }
-  
-}
 const canon = new Set(sm.flatMap(pf => LANGS.map(pf)));
 for (const k of R.keys()) if (canon.has(k) || homes.has(k)) throw new Error('redirect clashes with a real page: ' + k);
 for (const [a, t] of [...R]) if (a.length > 1 && a.endsWith('/')) add(a.slice(0, -1), t); // no-trailing-slash variants
+write404();
 writeFileSync(OUT + '_redirects', [...R].map(([a, b]) => `${a} ${b} 301`).join('\n') + '\n');
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);
 const links = () => '';

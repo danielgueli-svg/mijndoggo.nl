@@ -6,3 +6,13 @@ compatibility_date = "2026-10-01"
 binding = "LISTINGS"
 database_name = "puppyalert-listings"
 database_id = "2c984792-7b8c-4e82-a213-84e252824590"
+
+# Own subscriber DB for the preview (signups only). Never the shared listings DB.
+[[d1_databases]]
+binding = "SUBS"
+database_name = "mijndoggo-preview-signups"
+database_id = "9cc3fde3-5a75-4614-ae77-ff45a0e6003b"
+
+[vars]
+SIGNUPS_OPEN = "true"   # preview: form live; payments Mollie TEST only (secret MOLLIE_TEST_API_KEY)
+# MAIL_FROM unset: no Resend-verified sending domain for mijndoggo.nl yet -> confirmation mail returns 'not_configured'.
