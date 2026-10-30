@@ -1,0 +1,80 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const sections = [
+  {
+    title: "Gezondheidstesten",
+    body: [
+      "Veel rassen hebben erfelijke aandoeningen waar je op kunt testen, zoals heupdysplasie, elleboogdysplasie, oogaandoeningen of bepaalde DNA-afwijkingen. Een goede fokker weet welke testen bij het ras horen en laat ze bij beide ouderdieren doen.",
+      "Vraag naar de uitslagen en kijk ze zelf in. Een fokker die zegt dat de honden \"gezond zijn, dat zie je zo\" maar geen papieren kan laten zien, heeft het huiswerk niet gedaan. Twijfel je welke testen belangrijk zijn voor jouw ras? De rasvereniging kan je dat vertellen.",
+    ],
+  },
+  {
+    title: "Transparantie",
+    body: [
+      "Een goede fokker stelt jou net zoveel vragen als jij hem. Hoe woon je, hoeveel tijd heb je, heb je eerder een hond gehad? Dat is geen bemoeizucht: hij wil weten waar zijn pup terechtkomt.",
+      "Andersom krijg je eerlijke antwoorden. Over de afstamming, over de inentingen en ontworming, over de chip en de papieren, en ook over de minder leuke kanten van het ras. Je krijgt de tijd om na te denken en je hoeft nooit meteen te beslissen. Een goede fokker blijft ook na de verkoop bereikbaar.",
+    ],
+  },
+  {
+    title: "Pup én moeder zien",
+    body: [
+      "Bezoek de pup thuis bij de fokker en vraag altijd naar de moederhond. Zij hoort bij haar pups te zijn. Let op hoe ze zich gedraagt: een rustige, gezonde en vriendelijke moeder zegt veel over hoe de pups zijn opgegroeid.",
+      "Kijk ook naar de plek waar de pups leven. Groeien ze op in huis, tussen de geluiden en mensen van het dagelijks leven? Zien ze er schoon en levendig uit? Ga liever een keer extra kijken dan dat je een pup ophaalt die je nooit bij de moeder hebt gezien.",
+    ],
+  },
+  {
+    title: "Broodfokkers vermijden",
+    body: [
+      "Broodfokkers fokken vooral voor het geld. Ze hebben vaak meerdere rassen tegelijk, altijd pups beschikbaar en weinig aandacht voor gezondheid of socialisatie. Hun pups lopen een groter risico op ziektes en gedragsproblemen.",
+    ],
+    list: [
+      "De moederhond is \"net even weg\" of je mag haar niet zien.",
+      "Je mag niet binnenkomen, of de pup wordt bij een parkeerplaats of station overgedragen.",
+      "Er zijn altijd pups, van allerlei rassen.",
+      "De pup is jonger dan acht weken of je moet vandaag nog beslissen.",
+      "Er zijn geen papieren of testuitslagen, of ze kloppen niet met wat er verteld wordt.",
+      "Alleen contant betalen, zonder koopcontract.",
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="Zo herken je een goede fokker"
+  description="Waar let je op als je een pup zoekt? Over gezondheidstesten, eerlijke fokkers, pup én moeder zien en broodfokkers herkennen."
+>
+  <div class="mx-auto max-w-3xl px-4 py-10 sm:px-6">
+    <p class="text-xs font-extrabold uppercase tracking-widest text-coral">Gids</p>
+    <h1 class="mt-2 font-display text-4xl font-semibold sm:text-5xl">Zo herken je een goede fokker</h1>
+    <p class="mt-6 text-lg leading-relaxed text-ink">
+      Een pup haal je voor jaren in huis. Daarom loont het om goed te kijken waar hij vandaan komt.
+      Een goede fokker herken je niet aan een mooie website, maar aan hoe hij met zijn honden omgaat
+      en hoe open hij is. Hieronder lees je waar je op kunt letten.
+    </p>
+
+    {sections.map((s) => (
+      <section class="mt-8 rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10 sm:p-8">
+        <h2 class="font-display text-2xl font-semibold">{s.title}</h2>
+        {s.body.map((p) => <p class="mt-3 text-lg leading-relaxed text-ink">{p}</p>)}
+        {s.list && (
+          <>
+            <p class="mt-4 font-bold text-ink">Signalen om op te letten:</p>
+            <ul class="mt-2 list-disc space-y-1 pl-6 text-lg leading-relaxed text-ink">
+              {s.list.map((li) => <li>{li}</li>)}
+            </ul>
+          </>
+        )}
+      </section>
+    ))}
+
+    <p class="mt-8 text-lg leading-relaxed text-ink">
+      Klopt er iets niet? Loop dan weg, hoe schattig de pup ook is. Er komt een volgend nestje bij een
+      fokker die het wel goed doet.
+    </p>
+
+    <p class="mt-8 text-sm font-bold">
+      <a class="text-sky-deep underline decoration-2 underline-offset-2" href="/rassen">← Naar alle rassen</a>
+    </p>
+  </div>
+</BaseLayout>
