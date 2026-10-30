@@ -1,5 +1,6 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import alertBreeds from "../data/alert-breeds.json";
 
 const sections = [
   {
@@ -84,6 +85,23 @@ const sections = [
       Klopt er iets niet? Loop dan weg, hoe schattig de pup ook is. Er komt een volgend nestje bij een
       fokker die het wel goed doet.
     </p>
+
+    <section class="mt-8 rounded-[1.8rem] bg-white p-6 shadow-pop ring-2 ring-ink/10 sm:p-8">
+      <label for="gids-ras" class="font-display text-2xl font-semibold">Kies je ras</label>
+      <select
+        id="gids-ras"
+        class="mt-4 w-full rounded-full border-2 border-ink/15 bg-white px-5 py-3 text-sm font-bold text-ink shadow-pop outline-none"
+        onchange="if (this.value) location.href = this.value"
+      >
+        <option value="">Kies een ras…</option>
+        {alertBreeds.map((b) => <option value={b.url}>{b.name}</option>)}
+      </select>
+      <noscript>
+        <ul class="mt-4 columns-2 gap-x-6 text-sm font-bold sm:columns-3">
+          {alertBreeds.map((b) => <li><a class="text-sky-deep underline" href={b.url}>{b.name}</a></li>)}
+        </ul>
+      </noscript>
+    </section>
 
     <p class="mt-8 text-sm font-bold">
       <a class="text-sky-deep underline decoration-2 underline-offset-2" href="/rassen">← Naar alle rassen</a>

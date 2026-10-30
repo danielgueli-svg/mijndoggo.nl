@@ -1,0 +1,352 @@
+[
+ {
+  "name": "Akita",
+  "url": "https://puppyalert.eu/nl/rassen/akita/",
+  "site": "pa"
+ },
+ {
+  "name": "Alaskan Malamute",
+  "url": "https://puppyalert.eu/nl/rassen/alaskan-malamute/",
+  "site": "pa"
+ },
+ {
+  "name": "Australian Shepherd",
+  "url": "/rassen/australische-herder/",
+  "site": "md"
+ },
+ {
+  "name": "Beierse Bergzweethond",
+  "url": "https://puppyalert.eu/nl/rassen/beierse-bergzweethond/",
+  "site": "pa"
+ },
+ {
+  "name": "Berner Sennenhond",
+  "url": "/rassen/berner-sennenhond/",
+  "site": "md"
+ },
+ {
+  "name": "Bichon Frisé",
+  "url": "https://puppyalert.eu/nl/rassen/bichon-frise/",
+  "site": "pa"
+ },
+ {
+  "name": "Bordeauxdog",
+  "url": "https://puppyalert.eu/nl/rassen/bordeauxdog/",
+  "site": "pa"
+ },
+ {
+  "name": "Border Collie",
+  "url": "/rassen/border-collie/",
+  "site": "md"
+ },
+ {
+  "name": "Border Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/border-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Boston Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/boston-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Boxer",
+  "url": "/rassen/boxer/",
+  "site": "md"
+ },
+ {
+  "name": "Bull Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/bull-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Bullmastiff",
+  "url": "https://puppyalert.eu/nl/rassen/bullmastiff/",
+  "site": "pa"
+ },
+ {
+  "name": "Cane Corso",
+  "url": "https://puppyalert.eu/nl/rassen/cane-corso/",
+  "site": "pa"
+ },
+ {
+  "name": "Cavalier King Charles Spaniël",
+  "url": "/rassen/cavalier-king-charles-spaniel/",
+  "site": "md"
+ },
+ {
+  "name": "Cavapoo",
+  "url": "https://puppyalert.eu/nl/rassen/cavapoo/",
+  "site": "pa"
+ },
+ {
+  "name": "Chihuahua",
+  "url": "/rassen/chihuahua/",
+  "site": "md"
+ },
+ {
+  "name": "Chow Chow",
+  "url": "/rassen/chow-chow/",
+  "site": "md"
+ },
+ {
+  "name": "Cockapoo",
+  "url": "https://puppyalert.eu/nl/rassen/cockapoo/",
+  "site": "pa"
+ },
+ {
+  "name": "Cocker Spaniel",
+  "url": "/rassen/cocker-spaniel/",
+  "site": "md"
+ },
+ {
+  "name": "Dalmatiër",
+  "url": "https://puppyalert.eu/nl/rassen/dalmatier/",
+  "site": "pa"
+ },
+ {
+  "name": "Dobermann",
+  "url": "/rassen/dobermann/",
+  "site": "md"
+ },
+ {
+  "name": "Duitse Dog",
+  "url": "https://puppyalert.eu/nl/rassen/duitse-dog/",
+  "site": "pa"
+ },
+ {
+  "name": "Duitse Herder",
+  "url": "/rassen/duitse-herder/",
+  "site": "md"
+ },
+ {
+  "name": "Duitse Spits",
+  "url": "https://puppyalert.eu/nl/rassen/duitse-spits/",
+  "site": "pa"
+ },
+ {
+  "name": "Dwergschnauzer",
+  "url": "https://puppyalert.eu/nl/rassen/dwergschnauzer/",
+  "site": "pa"
+ },
+ {
+  "name": "Engelse Bulldog",
+  "url": "https://puppyalert.eu/nl/rassen/engelse-bulldog/",
+  "site": "pa"
+ },
+ {
+  "name": "Engelse Springer Spaniël",
+  "url": "https://puppyalert.eu/nl/rassen/engelse-springer-spaniel/",
+  "site": "pa"
+ },
+ {
+  "name": "Épagneul Breton",
+  "url": "https://puppyalert.eu/nl/rassen/epagneul-breton/",
+  "site": "pa"
+ },
+ {
+  "name": "Eurasier",
+  "url": "https://puppyalert.eu/nl/rassen/eurasier/",
+  "site": "pa"
+ },
+ {
+  "name": "Finse Lappenhond",
+  "url": "https://puppyalert.eu/nl/rassen/finse-lappenhond/",
+  "site": "pa"
+ },
+ {
+  "name": "Franse Bulldog",
+  "url": "/rassen/franse-bulldog/",
+  "site": "md"
+ },
+ {
+  "name": "Golden Retriever",
+  "url": "/rassen/golden-retriever/",
+  "site": "md"
+ },
+ {
+  "name": "Goldendoodle",
+  "url": "https://puppyalert.eu/nl/rassen/goldendoodle/",
+  "site": "pa"
+ },
+ {
+  "name": "Gordon Setter",
+  "url": "https://puppyalert.eu/nl/rassen/gordon-setter/",
+  "site": "pa"
+ },
+ {
+  "name": "Havanezer",
+  "url": "https://puppyalert.eu/nl/rassen/havanezer/",
+  "site": "pa"
+ },
+ {
+  "name": "Jack Russell Terriër",
+  "url": "/rassen/jack-russell-terrier/",
+  "site": "md"
+ },
+ {
+  "name": "Japanse Spits",
+  "url": "https://puppyalert.eu/nl/rassen/japanse-spits/",
+  "site": "pa"
+ },
+ {
+  "name": "Labradoodle",
+  "url": "https://puppyalert.eu/nl/rassen/labradoodle/",
+  "site": "pa"
+ },
+ {
+  "name": "Labrador Retriever",
+  "url": "/rassen/labrador-retriever/",
+  "site": "md"
+ },
+ {
+  "name": "Lapinporokoira",
+  "url": "https://puppyalert.eu/nl/rassen/lapinporokoira/",
+  "site": "pa"
+ },
+ {
+  "name": "Maltezer",
+  "url": "/rassen/maltezer/",
+  "site": "md"
+ },
+ {
+  "name": "Maltipoo",
+  "url": "https://puppyalert.eu/nl/rassen/maltipoo/",
+  "site": "pa"
+ },
+ {
+  "name": "Middenslag Schnauzer",
+  "url": "https://puppyalert.eu/nl/rassen/middenslag-schnauzer/",
+  "site": "pa"
+ },
+ {
+  "name": "Miniature American Shepherd",
+  "url": "https://puppyalert.eu/nl/rassen/miniature-american-shepherd/",
+  "site": "pa"
+ },
+ {
+  "name": "Mopshond",
+  "url": "/rassen/mopshond/",
+  "site": "md"
+ },
+ {
+  "name": "Norwich Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/norwich-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Poedel",
+  "url": "/rassen/poedel/",
+  "site": "md"
+ },
+ {
+  "name": "Pomeriaan",
+  "url": "https://puppyalert.eu/nl/rassen/pomeriaan/",
+  "site": "pa"
+ },
+ {
+  "name": "Reuzenschnauzer",
+  "url": "https://puppyalert.eu/nl/rassen/reuzenschnauzer/",
+  "site": "pa"
+ },
+ {
+  "name": "Rhodesian Ridgeback",
+  "url": "https://puppyalert.eu/nl/rassen/rhodesian-ridgeback/",
+  "site": "pa"
+ },
+ {
+  "name": "Rottweiler",
+  "url": "/rassen/rottweiler/",
+  "site": "md"
+ },
+ {
+  "name": "Saluki",
+  "url": "https://puppyalert.eu/nl/rassen/saluki/",
+  "site": "pa"
+ },
+ {
+  "name": "Samojeed",
+  "url": "https://puppyalert.eu/nl/rassen/samojeed/",
+  "site": "pa"
+ },
+ {
+  "name": "Shiba Inu",
+  "url": "https://puppyalert.eu/nl/rassen/shiba-inu/",
+  "site": "pa"
+ },
+ {
+  "name": "Shih Tzu",
+  "url": "/rassen/shih-tzu/",
+  "site": "md"
+ },
+ {
+  "name": "Siberische Husky",
+  "url": "/rassen/siberische-husky/",
+  "site": "md"
+ },
+ {
+  "name": "Spinone Italiano",
+  "url": "https://puppyalert.eu/nl/rassen/spinone-italiano/",
+  "site": "pa"
+ },
+ {
+  "name": "Staffordshire Bull Terriër",
+  "url": "/rassen/staffordshire-bull-terrier/",
+  "site": "md"
+ },
+ {
+  "name": "Teckel",
+  "url": "/rassen/teckel/",
+  "site": "md"
+ },
+ {
+  "name": "Tibetaanse Spaniël",
+  "url": "https://puppyalert.eu/nl/rassen/tibetaanse-spaniel/",
+  "site": "pa"
+ },
+ {
+  "name": "Tibetaanse Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/tibetaanse-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Weimaraner",
+  "url": "https://puppyalert.eu/nl/rassen/weimaraner/",
+  "site": "pa"
+ },
+ {
+  "name": "Welsh Corgi Pembroke",
+  "url": "/rassen/welsh-corgi/",
+  "site": "md"
+ },
+ {
+  "name": "West Highland White Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/west-highland-white-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Whippet",
+  "url": "https://puppyalert.eu/nl/rassen/whippet/",
+  "site": "pa"
+ },
+ {
+  "name": "Witte Herder",
+  "url": "https://puppyalert.eu/nl/rassen/witte-herder/",
+  "site": "pa"
+ },
+ {
+  "name": "Yorkshire Terriër",
+  "url": "https://puppyalert.eu/nl/rassen/yorkshire-terrier/",
+  "site": "pa"
+ },
+ {
+  "name": "Zweedse Lappenhond",
+  "url": "https://puppyalert.eu/nl/rassen/zweedse-lappenhond/",
+  "site": "pa"
+ },
+ {
+  "name": "Zweedse Vallhund",
+  "url": "https://puppyalert.eu/nl/rassen/zweedse-vallhund/",
+  "site": "pa"
+ }
+]
