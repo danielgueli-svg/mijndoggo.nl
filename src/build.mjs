@@ -61,7 +61,7 @@ for (const l of LANGS) {
 </div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2>
 <label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${[...J('data/breed_pages.json')].map(b => [b[1], `${pre(l)}/${T.bSeg}/${slugify(b[1])}/`]).sort((a, b) => a[0].localeCompare(b[0], l)).map(([n, u]) => `<option value="${u}">${esc(n)}</option>`).join('')}</select></label>
 <ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>
-${sections(T, l, cs, true)}<script src="/home.js" defer></script></body></html>`);
+${sections(T, l, cs, true)}<script src="/home.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`);
   if (l === 'nl') sm.push(homePath);
 }
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
@@ -80,7 +80,7 @@ for (const l of LANGS) {
   const cs = countries.map(row => ({ row, name: cname(row, l), flag: row[1] })).sort((a, b) => a.name.localeCompare(b.name, l));
   const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
   const list = skip => `<ul class="ctry-grid breed-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${bThumb(b, l)}${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
-  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script></body></html>`;
+  const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`;
   write(breedIdx(l), head(l, `${T.bH} | MijnDoggo`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <p class="crumb"><a href="${homePath(l)}">← ${esc(T.backHome)}</a></p><h1>${esc(T.bH)}</h1><p class="hero-line">${esc(T.heroSub)}</p></div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2><label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${sorted.map(b => `<option value="${breedPath(l, b)}">${esc(bName(b, l))}</option>`).join('')}</select></label></div></div></section>
 <section class="section countries"><div class="wrap"><h2>${esc(T.bAll)}</h2>${list()}</div></section></main>${foot}`);
@@ -94,7 +94,7 @@ for (const l of LANGS) {
     if (l === 'nl') sm.push(pf);
   }
 }
-function write404() { const T = i18n.nl; writeFileSync(OUT + '404.html', head('nl', 'Pagina niet gevonden | MijnDoggo', T.desc, homePath).replace('<link rel="canonical"', '<meta name="robots" content="noindex"><link rel="x"') + `<main id="content"><section class="hero"><div class="wrap"><h1>Deze pagina bestaat niet</h1><p class="hero-line">Woef! Hier is niets te vinden.</p><p><a class="mail-btn" href="/">Naar de homepage</a> <a class="mail-btn" href="/rassen/">Alle rassen</a></p></div></section></main></body></html>`); }
+function write404() { const T = i18n.nl; writeFileSync(OUT + '404.html', head('nl', 'Pagina niet gevonden | MijnDoggo', T.desc, homePath).replace('<link rel="canonical"', '<meta name="robots" content="noindex"><link rel="x"') + `<main id="content"><section class="hero"><div class="wrap"><h1>Deze pagina bestaat niet</h1><p class="hero-line">Woef! Hier is niets te vinden.</p><p><a class="mail-btn" href="/">Naar de homepage</a> <a class="mail-btn" href="/rassen/">Alle rassen</a></p></div></section></main><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`); }
 // 301 redirects (Cloudflare Pages _redirects). Language homepages /nl/ /de/ /fr/ are real pages and always win:
 // no rule ever targets a bare /<lang>/ path, and iso shortcuts only exist one level deeper (/<lang>/<iso>/).
 const R = new Map(), add = (from, to) => { if (from !== to && !R.has(from)) R.set(from, to); };
