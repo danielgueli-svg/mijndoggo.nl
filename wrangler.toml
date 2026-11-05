@@ -1,3 +1,4 @@
+# Pages project. Do not rename: `name` is the project `wrangler pages deploy` targets.
 name = "mijndoggo-preview"
 pages_build_output_dir = "dist"
 compatibility_date = "2026-10-01"
@@ -7,12 +8,17 @@ binding = "LISTINGS"
 database_name = "puppyalert-listings"
 database_id = "2c984792-7b8c-4e82-a213-84e252824590"
 
-# Own subscriber DB for the preview (signups only). Never the shared listings DB.
+# Own subscriber DB (signups only). Production database mijndoggo-signups. Never the shared listings DB.
 [[d1_databases]]
 binding = "SUBS"
-database_name = "mijndoggo-preview-signups"
-database_id = "9cc3fde3-5a75-4614-ae77-ff45a0e6003b"
+database_name = "mijndoggo-signups"
+database_id = "bc13da38-8a2e-4076-a0a6-a6613d043a09"
+
+# Cloudflare Email Sending. Pages Functions read this as env.EMAIL.
+# Unrestricted: after mijndoggo.nl is onboarded to Email Sending, mail can go to the signup address.
+[[send_email]]
+name = "EMAIL"
 
 [vars]
-SIGNUPS_OPEN = "true"   # preview: form live; payments Mollie TEST only (secret MOLLIE_TEST_API_KEY)
-# MAIL_FROM unset: no Resend-verified sending domain for mijndoggo.nl yet -> confirmation mail returns 'not_configured'.
+SIGNUPS_OPEN = "true"   # form live; payments Mollie TEST only (secret MOLLIE_TEST_API_KEY)
+MAIL_FROM = "MijnDoggo <alerts@mijndoggo.nl>"
