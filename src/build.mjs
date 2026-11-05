@@ -2,6 +2,10 @@ import OPEN from '../data/open.json' with { type: 'json' };
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 const J = p => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
 const i18n = J('data/i18n.json'), breeds = J('data/breeds.json'), countries = J('data/countries.json'), places = J('data/places.json');
+// Active listings per breed (Europe-wide), baked like PuppyAlert data/breed_counts.json. Forms and breed lists sort on this; /api/counts can refresh it.
+const COUNTS = J('data/breed_counts.json');
+const breedN = id => +COUNTS[id] || 0;
+const byBreeders = (a, b) => breedN(b[0]) - breedN(a[0]) || String(a[1]).localeCompare(String(b[1]), 'nl');
 const SITE = 'https://mijndoggo.nl', OUT = new URL('../dist/', import.meta.url).pathname;
 const LANGS = ['nl']; // en = default (no prefix), others under /<lang>/
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' })[c]);
@@ -35,7 +39,7 @@ const sections = (T, l, cs, home = false) => `<section class="section trust"><di
 <div class="mail" aria-label="${esc(T.prev_note)}"><div class="mail-head"><p>${esc(T.m_from)}</p><p><strong>${esc(T.m_subj)}</strong></p></div><div class="mail-body"><img src="/logo-doghead.png" alt="" width="36" height="36"><p>${esc(T.m_body)}</p><span class="mail-btn">${esc(T.m_btn)}</span><p class="mail-foot"><u>${esc(T.m_unsub)}</u></p></div></div></div></section>
 ${home ? breedTicker(T, l) : `<section class="section countries"><div class="wrap"><h2>${esc(T.h_ctry)}</h2><p>${esc(T.ctry_note)}</p><ul class="ctry-grid">${cs.map(c => `<li><a href="${countryPath(l, c.row)}">${c.flag} ${esc(c.name)}</a><span class="badge-soon">${esc(T.soon)}</span></li>`).join('')}</ul></div></section>`}</main>
 <footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer>`;
-const breedOptions = selected => `<option value="">${esc(i18n.nl.bChoose)}</option>` + [...J('data/breed_pages.json')].sort((a, b) => a[1].localeCompare(b[1], 'nl')).map(b => `<option value="${esc(b[0])}" data-n="0"${b[0] === selected ? ' selected' : ''}>${esc(b[1])}</option>`).join('');
+const breedOptions = selected => `<option value="">${esc(i18n.nl.bChoose)}</option>` + [...J('data/breed_pages.json')].sort(byBreeders).map(b => `<option value="${esc(b[0])}" data-n="${breedN(b[0])}"${b[0] === selected ? ' selected' : ''}>${esc(b[1])}</option>`).join('');
 const countryOptions = selected => countries.map(row => ({ code: row[0], flag: row[1], name: cname(row, 'nl') })).sort((a, b) => a.name.localeCompare(b.name, 'nl')).map(c => `<option value="${esc(c.code)}"${c.code === selected ? ' selected' : ''}>${c.flag} ${esc(c.name)}</option>`).join('');
 const signup = (T, cur) => `<div class="card"><h2 class="card-title">${esc(T.card)}</h2><form id="signup" class="v2" data-lang="nl" data-maxb="${esc(T.maxB)}" data-maxc="${esc(T.maxC)}" data-ok="${esc(T.ok)}" data-err="${esc(T.err)}" data-nearbad="${esc(T.nearBad)}" data-mis="${esc(T.mis)}" data-need="${esc(T.need)}" data-nohit="${esc(T.nohit)}" data-any="${esc(T.anyRegion)}" data-search="${esc(T.searchB)}" data-gate="${esc(JSON.stringify(T.gate))}" data-minopen="5" data-cleanfrom="10" data-bmin="4">
 <fieldset class="bstep" data-max="3"><legend class="step2"><span class="num">1</span>${esc(T.stBreeds)}</legend><input type="search" class="sel bfind" placeholder="${esc(T.searchB)}" aria-label="${esc(T.searchB)}" autocomplete="off" enterkeyhint="search"><ul class="bsug" hidden role="listbox"></ul><div class="brows"><div class="brow"><select name="breed" class="sel bsel" aria-label="${esc(T.stBreeds)} 1">${breedOptions(cur[0])}</select><button type="button" class="addb" aria-label="${esc(T.addB)}" title="${esc(T.addB)}">+</button></div></div><template class="browt"><div class="brow"><select name="breed" class="sel bsel">${breedOptions('')}</select><button type="button" class="addb" aria-label="${esc(T.addB)}" title="${esc(T.addB)}">+</button><button type="button" class="rmb" aria-label="${esc(T.rmB)}" title="${esc(T.rmB)}">✕</button></div></template><p class="limit" hidden></p></fieldset>
@@ -52,13 +56,11 @@ const sm = [];
 for (const l of LANGS) {
   const T = i18n[l];
   const cs = countries.map(row => ({ row, cc: row[0], flag: row[1], name: cname(row, l) })).sort((a, b) => a.name.localeCompare(b.name, l));
-  // Homepage: language selector + country selector, no signup form.
+  // Homepage uses the same signup form as the breed pages (no breed pre-selected).
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <h1>${esc(T.heroH)}</h1><figure class="hero-photo"><img src="/img/hero/golden-retriever-puppy-320.webp" srcset="/img/hero/golden-retriever-puppy-320.webp 320w, /img/hero/golden-retriever-puppy-640.webp 640w" sizes="(max-width: 599px) 200px, 360px" width="640" height="480" fetchpriority="high" decoding="async" alt="Golden retriever-pup die op een houten vloer ligt"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_12weeks.JPG" rel="nofollow noopener">Foto</a>: Beatrice Milek, <a href="https://creativecommons.org/licenses/by/3.0" rel="license nofollow noopener">CC BY 3.0</a></figcaption></figure><p class="hero-line">${esc(T.heroSub)}</p>${COUNTER('data-scope="all"')}<div class="hero-story">${story(T)}</div>
-</div><div class="card"><h2 class="card-title">${esc(T.bStep)}</h2>
-<label class="step"><select class="go" aria-label="${esc(T.bStep)}"><option value="">${esc(T.bChoose)}</option>${[...J('data/breed_pages.json')].map(b => [b[1], `${pre(l)}/${T.bSeg}/${slugify(b[1])}/`]).sort((a, b) => a[0].localeCompare(b[0], l)).map(([n, u]) => `<option value="${u}">${esc(n)}</option>`).join('')}</select></label>
-<ul class="card-notes"><li>${esc(T.homeNote)}</li><li>${esc(T.once)}</li><li>${esc(T.noauto)}</li></ul></div></div></section>
-${sections(T, l, cs, true)}<script src="/home.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`);
+</div>${signup(T, [])}</div></section>
+${sections(T, l, cs, true)}<script src="/home.js" defer></script><script src="/signup.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`);
   if (l === 'nl') sm.push(homePath);
 }
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
@@ -75,7 +77,7 @@ const bSlugs = new Set(); for (const l of LANGS) for (const b of BP) { const p =
 for (const l of LANGS) {
   const T = i18n[l];
   const cs = countries.map(row => ({ row, name: cname(row, l), flag: row[1] })).sort((a, b) => a.name.localeCompare(b.name, l));
-  const sorted = [...BP].sort((a, b) => bName(a, l).localeCompare(bName(b, l), l));
+  const sorted = [...BP].sort((a, b) => breedN(b[0]) - breedN(a[0]) || bName(a, l).localeCompare(bName(b, l), l));
   const list = skip => `<ul class="ctry-grid breed-grid">${sorted.filter(b => b !== skip).map(b => `<li><a href="${breedPath(l, b)}">${bThumb(b, l)}${esc(bName(b, l))}</a></li>`).join('')}</ul>`;
   const foot = `<footer class="site-footer"><div class="wrap foot-row"><a class="brand" href="${homePath(l)}"><img src="/logo-doghead.png" alt="" width="32" height="32"><span class="wordmark">MijnDoggo</span></a><p>${esc(T.f_unsub)}</p></div><div class="wrap"><p class="small">© MijnDoggo.nl</p></div></footer><script src="/home.js" defer></script><script src="/signup.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`;
   write(breedIdx(l), head(l, `${T.bH} | MijnDoggo`, T.desc, breedIdx) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
@@ -101,7 +103,7 @@ const canon = new Set(sm.flatMap(pf => LANGS.map(pf)));
 for (const k of R.keys()) if (canon.has(k) || homes.has(k)) throw new Error('redirect clashes with a real page: ' + k);
 for (const [a, t] of [...R]) if (a.length > 1 && a.endsWith('/')) add(a.slice(0, -1), t); // no-trailing-slash variants
 write404();
-writeFileSync(OUT + 'breed-index.json', JSON.stringify(BP.map(b => ({ id: b[0], slug: slugify(b[0]), n: 0, names: b }))));
+writeFileSync(OUT + 'breed-index.json', JSON.stringify(BP.map(b => ({ id: b[0], slug: slugify(b[0]), n: breedN(b[0]), names: b }))));
 cpSync(new URL('../data/regions.json', import.meta.url).pathname, OUT + 'regions.json');
 writeFileSync(OUT + '_redirects', [...R].map(([a, b]) => `${a} ${b} 301`).join('\n') + '\n');
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);

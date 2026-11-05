@@ -23,7 +23,13 @@ let catalog = [], counts = null;
 const applyCounts = () => {
   if (!counts || !catalog.length) return;
   catalog.forEach(b => { if (typeof counts[b.slug] === 'number') b.n = counts[b.slug]; });
-  sels().forEach(sortBreedSelect);
+  sels().forEach(sel => {
+    [...sel.options].forEach(o => {
+      const b = catalog.find(x => x.id === o.value);
+      if (b && b.n != null) o.dataset.n = String(b.n);
+    });
+    sortBreedSelect(sel);
+  });
 };
 const taken = () => new Set(sels().map(s => s.value).filter(Boolean));
 const fillBreed = id => {
