@@ -56,11 +56,12 @@ const sm = [];
 for (const l of LANGS) {
   const T = i18n[l];
   const cs = countries.map(row => ({ row, cc: row[0], flag: row[1], name: cname(row, l) })).sort((a, b) => a.name.localeCompare(b.name, l));
-  // Homepage uses the same signup form as the breed pages (no breed pre-selected).
+  // Homepage: breed search only. The full signup form stays on the breed pages.
+  const homeBreed = `<div class="card v2 home-breed" data-lang="nl" data-bseg="${esc(T.bSeg)}" data-nohit="${esc(T.nohit)}"><h2 class="card-title">${esc(T.bStep)}</h2><input type="search" class="sel bfind" placeholder="${esc(T.searchB)}" aria-label="${esc(T.bStep)}" autocomplete="off" enterkeyhint="search"><ul class="bsug" hidden role="listbox"></ul></div>`;
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <h1>${esc(T.heroH)}</h1><figure class="hero-photo"><img src="/img/hero/golden-retriever-puppy-320.webp" srcset="/img/hero/golden-retriever-puppy-320.webp 320w, /img/hero/golden-retriever-puppy-640.webp 640w" sizes="(max-width: 599px) 200px, 360px" width="640" height="480" fetchpriority="high" decoding="async" alt="Golden retriever-pup die op een houten vloer ligt"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_12weeks.JPG" rel="nofollow noopener">Foto</a>: Beatrice Milek, <a href="https://creativecommons.org/licenses/by/3.0" rel="license nofollow noopener">CC BY 3.0</a></figcaption></figure><p class="hero-line">${esc(T.heroSub)}</p>${COUNTER('data-scope="all"')}<div class="hero-story">${story(T)}</div>
-</div>${signup(T, [])}</div></section>
-${sections(T, l, cs, true)}<script src="/home.js" defer></script><script src="/signup.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`);
+</div>${homeBreed}</div></section>
+${sections(T, l, cs, true)}<script src="/home.js" defer></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"8e1136cf637345998ad9c91fa1f40765"}'></script></body></html>`);
   if (l === 'nl') sm.push(homePath);
 }
 // Breed landing pages: /breeds/<slug>/ (en), /nl/rassen/<slug>/, /de/rassen/, /fr/races/, /it/razze/. No listings, counts or prices.
