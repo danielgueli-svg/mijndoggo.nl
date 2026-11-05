@@ -15,6 +15,7 @@ database_name = "mijndoggo-signups"
 database_id = "bc13da38-8a2e-4076-a0a6-a6613d043a09"
 
 [vars]
-SIGNUPS_OPEN = "true"   # form live; payments Mollie TEST only (secret MOLLIE_TEST_API_KEY)
+SIGNUPS_OPEN = "true"
+MOLLIE_MODE = "live"   # live payments, secret MOLLIE_API_KEY (Daniel, 5 Nov 14:07)
 MAIL_FROM = "Mijndoggo <alerts@mijndoggo.nl>"
 # CF_EMAIL_TOKEN is a Pages secret set on deploy, not a var. Resend is only the fallback when that secret is unset.

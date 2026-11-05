@@ -1,7 +1,7 @@
 // POST /api/signup. Validates breeds (max 3), stacked countries (max 3) and an optional
 // province/region plus radius (150/300/500 km). Stores a pending signup, sends the double
 // opt-in mail to the signer only, then creates a Mollie TEST payment and returns its checkout URL.
-import { json, token, confirmEmail, sendMail, mollie, mollieKey, PRICES } from '../../lib/backend.js';
+import { json, token, confirmEmail, sendMail, mollie, mollieKey, PRICES, METHODS } from '../../lib/backend.js';
 import { BREEDS, RADII, listingCountry } from '../../lib/data.js';
 import REGIONS from '../../data/regions.json' with { type: 'json' };
 export async function onRequestPost({ request, env }) {
@@ -40,10 +40,10 @@ export async function onRequestPost({ request, env }) {
   const base = new URL(request.url).origin;
   const mail = await sendMail(env, email, confirmEmail(base, tok, row.unsub_token));
   const [value, label] = PRICES[b.plan];
-  const r = await mollie(env, '/payments', { method: 'POST', body: JSON.stringify({ amount: { currency: 'EUR', value }, description: `MijnDoggo puppy-alert ${label}`,
+  const r = await mollie(env, '/payments', { method: 'POST', body: JSON.stringify({ amount: { currency: 'EUR', value }, description: `MijnDoggo puppy-alert ${label}`, method: METHODS,
     redirectUrl: `${base}/api/betaald?token=${tok}`, webhookUrl: `${base}/api/mollie-webhook`, locale: 'nl_NL', metadata: { token: tok } }) }).catch(() => null);
   const pay = r && r.ok ? await r.json() : null;
   await env.SUBS.prepare('UPDATE signups SET mail_status = ?, payment_id = ?, payment_status = ? WHERE email = ?').bind(mail, pay?.id || null, pay?.status || 'create_failed', email).run();
   if (!pay) return json({ ok: false, stored: true, mail, error: 'payment_create_failed' }, 502);
-  return json({ ok: true, stored: true, mail, checkoutUrl: pay._links.checkout.href, test: true });
+  return json({ ok: true, stored: true, mail, checkoutUrl: pay._links.checkout.href, test: env.MOLLIE_MODE !== 'live' });
 }
