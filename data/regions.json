@@ -1,0 +1,3060 @@
+{
+  "NL": {
+    "term": {
+      "en": "Province",
+      "nl": "Provincie",
+      "de": "Provinz",
+      "fr": "Province",
+      "it": "Provincia",
+      "fi": "Provinssi",
+      "sv": "Provins",
+      "pt": "Província",
+      "da": "Provins",
+      "sk": "Provincia"
+    },
+    "regions": [
+      {
+        "id": "NL-DR",
+        "name": "Drenthe",
+        "lat": 52.88,
+        "lon": 6.63
+      },
+      {
+        "id": "NL-FL",
+        "name": "Flevoland",
+        "lat": 52.44,
+        "lon": 5.55
+      },
+      {
+        "id": "NL-FR",
+        "name": "Friesland",
+        "lat": 53.16,
+        "lon": 5.79
+      },
+      {
+        "id": "NL-GE",
+        "name": "Gelderland",
+        "lat": 52.06,
+        "lon": 5.96
+      },
+      {
+        "id": "NL-GR",
+        "name": "Groningen",
+        "lat": 53.22,
+        "lon": 6.57
+      },
+      {
+        "id": "NL-LI",
+        "name": "Limburg",
+        "lat": 51.21,
+        "lon": 5.94
+      },
+      {
+        "id": "NL-NB",
+        "name": "Noord-Brabant",
+        "lat": 51.56,
+        "lon": 5.09
+      },
+      {
+        "id": "NL-NH",
+        "name": "Noord-Holland",
+        "lat": 52.52,
+        "lon": 4.79
+      },
+      {
+        "id": "NL-OV",
+        "name": "Overijssel",
+        "lat": 52.44,
+        "lon": 6.45
+      },
+      {
+        "id": "NL-UT",
+        "name": "Utrecht",
+        "lat": 52.09,
+        "lon": 5.16
+      },
+      {
+        "id": "NL-ZE",
+        "name": "Zeeland",
+        "lat": 51.49,
+        "lon": 3.85
+      },
+      {
+        "id": "NL-ZH",
+        "name": "Zuid-Holland",
+        "lat": 51.95,
+        "lon": 4.47
+      }
+    ]
+  },
+  "DE": {
+    "term": {
+      "en": "State",
+      "nl": "Deelstaat",
+      "de": "Bundesland",
+      "fr": "Land",
+      "it": "Land",
+      "fi": "Osavaltio",
+      "sv": "Förbundsland",
+      "pt": "Estado",
+      "da": "Forbundsland",
+      "sk": "Spolková krajina"
+    },
+    "regions": [
+      {
+        "id": "DE-BW",
+        "name": "Baden-Württemberg",
+        "lat": 48.66,
+        "lon": 9.35
+      },
+      {
+        "id": "DE-BY",
+        "name": "Bayern",
+        "lat": 48.79,
+        "lon": 11.5
+      },
+      {
+        "id": "DE-BE",
+        "name": "Berlin",
+        "lat": 52.52,
+        "lon": 13.4
+      },
+      {
+        "id": "DE-BB",
+        "name": "Brandenburg",
+        "lat": 52.41,
+        "lon": 12.56
+      },
+      {
+        "id": "DE-HB",
+        "name": "Bremen",
+        "lat": 53.08,
+        "lon": 8.8
+      },
+      {
+        "id": "DE-HH",
+        "name": "Hamburg",
+        "lat": 53.55,
+        "lon": 9.99
+      },
+      {
+        "id": "DE-HE",
+        "name": "Hessen",
+        "lat": 50.61,
+        "lon": 9.03
+      },
+      {
+        "id": "DE-MV",
+        "name": "Mecklenburg-Vorpommern",
+        "lat": 53.77,
+        "lon": 12.5
+      },
+      {
+        "id": "DE-NI",
+        "name": "Niedersachsen",
+        "lat": 52.64,
+        "lon": 9.85
+      },
+      {
+        "id": "DE-NW",
+        "name": "Nordrhein-Westfalen",
+        "lat": 51.48,
+        "lon": 7.55
+      },
+      {
+        "id": "DE-RP",
+        "name": "Rheinland-Pfalz",
+        "lat": 49.91,
+        "lon": 7.45
+      },
+      {
+        "id": "DE-SL",
+        "name": "Saarland",
+        "lat": 49.4,
+        "lon": 6.97
+      },
+      {
+        "id": "DE-SN",
+        "name": "Sachsen",
+        "lat": 51.1,
+        "lon": 13.2
+      },
+      {
+        "id": "DE-ST",
+        "name": "Sachsen-Anhalt",
+        "lat": 51.95,
+        "lon": 11.69
+      },
+      {
+        "id": "DE-SH",
+        "name": "Schleswig-Holstein",
+        "lat": 54.22,
+        "lon": 9.7
+      },
+      {
+        "id": "DE-TH",
+        "name": "Thüringen",
+        "lat": 50.9,
+        "lon": 11.04
+      }
+    ]
+  },
+  "FR": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "FR-ARA",
+        "name": "Auvergne-Rhône-Alpes",
+        "lat": 45.52,
+        "lon": 4.62
+      },
+      {
+        "id": "FR-BFC",
+        "name": "Bourgogne-Franche-Comté",
+        "lat": 47.05,
+        "lon": 5.04
+      },
+      {
+        "id": "FR-BRE",
+        "name": "Bretagne",
+        "lat": 48.2,
+        "lon": -2.93
+      },
+      {
+        "id": "FR-CVL",
+        "name": "Centre-Val de Loire",
+        "lat": 47.49,
+        "lon": 1.68
+      },
+      {
+        "id": "FR-20R",
+        "name": "Corse",
+        "lat": 42.15,
+        "lon": 9.1
+      },
+      {
+        "id": "FR-GES",
+        "name": "Grand Est",
+        "lat": 48.7,
+        "lon": 5.58
+      },
+      {
+        "id": "FR-HDF",
+        "name": "Hauts-de-France",
+        "lat": 49.92,
+        "lon": 2.7
+      },
+      {
+        "id": "FR-IDF",
+        "name": "Île-de-France",
+        "lat": 48.7,
+        "lon": 2.5
+      },
+      {
+        "id": "FR-NOR",
+        "name": "Normandie",
+        "lat": 49.12,
+        "lon": 0.11
+      },
+      {
+        "id": "FR-NAQ",
+        "name": "Nouvelle-Aquitaine",
+        "lat": 45.2,
+        "lon": 0.2
+      },
+      {
+        "id": "FR-OCC",
+        "name": "Occitanie",
+        "lat": 43.67,
+        "lon": 2.0
+      },
+      {
+        "id": "FR-PDL",
+        "name": "Pays de la Loire",
+        "lat": 47.47,
+        "lon": -0.79
+      },
+      {
+        "id": "FR-PAC",
+        "name": "Provence-Alpes-Côte d'Azur",
+        "lat": 43.93,
+        "lon": 6.07
+      }
+    ]
+  },
+  "AT": {
+    "term": {
+      "en": "State",
+      "nl": "Deelstaat",
+      "de": "Bundesland",
+      "fr": "Land",
+      "it": "Land",
+      "fi": "Osavaltio",
+      "sv": "Förbundsland",
+      "pt": "Estado",
+      "da": "Forbundsland",
+      "sk": "Spolková krajina"
+    },
+    "regions": [
+      {
+        "id": "AT-1",
+        "name": "Burgenland",
+        "lat": 47.5,
+        "lon": 16.55
+      },
+      {
+        "id": "AT-2",
+        "name": "Kärnten",
+        "lat": 46.75,
+        "lon": 13.87
+      },
+      {
+        "id": "AT-3",
+        "name": "Niederösterreich",
+        "lat": 48.2,
+        "lon": 15.75
+      },
+      {
+        "id": "AT-4",
+        "name": "Oberösterreich",
+        "lat": 48.12,
+        "lon": 14.0
+      },
+      {
+        "id": "AT-5",
+        "name": "Salzburg",
+        "lat": 47.55,
+        "lon": 13.2
+      },
+      {
+        "id": "AT-6",
+        "name": "Steiermark",
+        "lat": 47.22,
+        "lon": 15.17
+      },
+      {
+        "id": "AT-7",
+        "name": "Tirol",
+        "lat": 47.27,
+        "lon": 11.4
+      },
+      {
+        "id": "AT-8",
+        "name": "Vorarlberg",
+        "lat": 47.25,
+        "lon": 9.9
+      },
+      {
+        "id": "AT-9",
+        "name": "Wien",
+        "lat": 48.21,
+        "lon": 16.37
+      }
+    ]
+  },
+  "BE": {
+    "term": {
+      "en": "Province",
+      "nl": "Provincie",
+      "de": "Provinz",
+      "fr": "Province",
+      "it": "Provincia",
+      "fi": "Provinssi",
+      "sv": "Provins",
+      "pt": "Província",
+      "da": "Provins",
+      "sk": "Provincia"
+    },
+    "regions": [
+      {
+        "id": "BE-VAN",
+        "name": "Antwerpen",
+        "lat": 51.22,
+        "lon": 4.4
+      },
+      {
+        "id": "BE-VBR",
+        "name": "Vlaams-Brabant",
+        "lat": 50.87,
+        "lon": 4.6
+      },
+      {
+        "id": "BE-WBR",
+        "name": "Brabant wallon",
+        "lat": 50.67,
+        "lon": 4.58
+      },
+      {
+        "id": "BE-VWV",
+        "name": "West-Vlaanderen",
+        "lat": 51.05,
+        "lon": 3.12
+      },
+      {
+        "id": "BE-VOV",
+        "name": "Oost-Vlaanderen",
+        "lat": 51.04,
+        "lon": 3.74
+      },
+      {
+        "id": "BE-WHT",
+        "name": "Hainaut",
+        "lat": 50.45,
+        "lon": 3.82
+      },
+      {
+        "id": "BE-WLG",
+        "name": "Liège",
+        "lat": 50.63,
+        "lon": 5.57
+      },
+      {
+        "id": "BE-VLI",
+        "name": "Limburg",
+        "lat": 50.97,
+        "lon": 5.34
+      },
+      {
+        "id": "BE-WLX",
+        "name": "Luxembourg",
+        "lat": 49.92,
+        "lon": 5.53
+      },
+      {
+        "id": "BE-WNA",
+        "name": "Namur",
+        "lat": 50.47,
+        "lon": 4.87
+      },
+      {
+        "id": "BE-BRU",
+        "name": "Bruxelles-Capitale",
+        "lat": 50.85,
+        "lon": 4.35
+      }
+    ]
+  },
+  "IT": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "IT-21",
+        "name": "Piemonte",
+        "lat": 45.07,
+        "lon": 7.69
+      },
+      {
+        "id": "IT-23",
+        "name": "Valle d'Aosta",
+        "lat": 45.74,
+        "lon": 7.44
+      },
+      {
+        "id": "IT-25",
+        "name": "Lombardia",
+        "lat": 45.48,
+        "lon": 9.19
+      },
+      {
+        "id": "IT-32",
+        "name": "Trentino-Alto Adige",
+        "lat": 46.07,
+        "lon": 11.12
+      },
+      {
+        "id": "IT-34",
+        "name": "Veneto",
+        "lat": 45.44,
+        "lon": 12.32
+      },
+      {
+        "id": "IT-36",
+        "name": "Friuli-Venezia Giulia",
+        "lat": 45.65,
+        "lon": 13.77
+      },
+      {
+        "id": "IT-42",
+        "name": "Liguria",
+        "lat": 44.41,
+        "lon": 8.93
+      },
+      {
+        "id": "IT-45",
+        "name": "Emilia-Romagna",
+        "lat": 44.49,
+        "lon": 11.34
+      },
+      {
+        "id": "IT-52",
+        "name": "Toscana",
+        "lat": 43.77,
+        "lon": 11.25
+      },
+      {
+        "id": "IT-55",
+        "name": "Umbria",
+        "lat": 43.11,
+        "lon": 12.39
+      },
+      {
+        "id": "IT-57",
+        "name": "Marche",
+        "lat": 43.62,
+        "lon": 13.52
+      },
+      {
+        "id": "IT-62",
+        "name": "Lazio",
+        "lat": 41.9,
+        "lon": 12.5
+      },
+      {
+        "id": "IT-67",
+        "name": "Abruzzo",
+        "lat": 42.35,
+        "lon": 13.4
+      },
+      {
+        "id": "IT-72",
+        "name": "Molise",
+        "lat": 41.56,
+        "lon": 14.67
+      },
+      {
+        "id": "IT-75",
+        "name": "Campania",
+        "lat": 40.85,
+        "lon": 14.27
+      },
+      {
+        "id": "IT-77",
+        "name": "Puglia",
+        "lat": 41.12,
+        "lon": 16.87
+      },
+      {
+        "id": "IT-78",
+        "name": "Basilicata",
+        "lat": 40.64,
+        "lon": 15.8
+      },
+      {
+        "id": "IT-82",
+        "name": "Calabria",
+        "lat": 38.91,
+        "lon": 16.59
+      },
+      {
+        "id": "IT-82S",
+        "name": "Sicilia",
+        "lat": 37.6,
+        "lon": 14.02
+      },
+      {
+        "id": "IT-88",
+        "name": "Sardegna",
+        "lat": 40.08,
+        "lon": 9.03
+      }
+    ]
+  },
+  "ES": {
+    "term": {
+      "en": "Autonomous community",
+      "nl": "Autonome gemeenschap",
+      "de": "Autonome Gemeinschaft",
+      "fr": "Communauté autonome",
+      "it": "Comunità autonoma",
+      "fi": "Itsehallintoalue",
+      "sv": "Autonom region",
+      "pt": "Comunidade autónoma",
+      "da": "Autonom region",
+      "sk": "Autonómne spoločenstvo"
+    },
+    "regions": [
+      {
+        "id": "ES-AN",
+        "name": "Andalucía",
+        "lat": 37.39,
+        "lon": -5.98
+      },
+      {
+        "id": "ES-AR",
+        "name": "Aragón",
+        "lat": 41.65,
+        "lon": -0.88
+      },
+      {
+        "id": "ES-AS",
+        "name": "Asturias",
+        "lat": 43.36,
+        "lon": -5.85
+      },
+      {
+        "id": "ES-IB",
+        "name": "Illes Balears",
+        "lat": 39.57,
+        "lon": 2.65
+      },
+      {
+        "id": "ES-CN",
+        "name": "Canarias",
+        "lat": 28.29,
+        "lon": -16.63
+      },
+      {
+        "id": "ES-CB",
+        "name": "Cantabria",
+        "lat": 43.18,
+        "lon": -4.03
+      },
+      {
+        "id": "ES-CL",
+        "name": "Castilla y León",
+        "lat": 41.65,
+        "lon": -4.73
+      },
+      {
+        "id": "ES-CM",
+        "name": "Castilla-La Mancha",
+        "lat": 39.86,
+        "lon": -4.02
+      },
+      {
+        "id": "ES-CT",
+        "name": "Catalunya",
+        "lat": 41.39,
+        "lon": 2.17
+      },
+      {
+        "id": "ES-EX",
+        "name": "Extremadura",
+        "lat": 39.17,
+        "lon": -6.17
+      },
+      {
+        "id": "ES-GA",
+        "name": "Galicia",
+        "lat": 42.88,
+        "lon": -8.54
+      },
+      {
+        "id": "ES-MD",
+        "name": "Madrid",
+        "lat": 40.42,
+        "lon": -3.7
+      },
+      {
+        "id": "ES-MC",
+        "name": "Murcia",
+        "lat": 37.99,
+        "lon": -1.13
+      },
+      {
+        "id": "ES-NC",
+        "name": "Navarra",
+        "lat": 42.82,
+        "lon": -1.65
+      },
+      {
+        "id": "ES-PV",
+        "name": "Euskadi",
+        "lat": 43.26,
+        "lon": -2.93
+      },
+      {
+        "id": "ES-RI",
+        "name": "La Rioja",
+        "lat": 42.47,
+        "lon": -2.45
+      },
+      {
+        "id": "ES-VC",
+        "name": "Comunitat Valenciana",
+        "lat": 39.47,
+        "lon": -0.38
+      },
+      {
+        "id": "ES-CE",
+        "name": "Ceuta",
+        "lat": 35.89,
+        "lon": -5.32
+      },
+      {
+        "id": "ES-ML",
+        "name": "Melilla",
+        "lat": 35.29,
+        "lon": -2.94
+      }
+    ]
+  },
+  "PT": {
+    "term": {
+      "en": "District",
+      "nl": "District",
+      "de": "Distrikt",
+      "fr": "District",
+      "it": "Distretto",
+      "fi": "Piiri",
+      "sv": "Distrikt",
+      "pt": "Distrito",
+      "da": "Distrikt",
+      "sk": "Distrikt"
+    },
+    "regions": [
+      {
+        "id": "PT-01",
+        "name": "Aveiro",
+        "lat": 40.64,
+        "lon": -8.65
+      },
+      {
+        "id": "PT-02",
+        "name": "Beja",
+        "lat": 38.02,
+        "lon": -7.86
+      },
+      {
+        "id": "PT-03",
+        "name": "Braga",
+        "lat": 41.55,
+        "lon": -8.43
+      },
+      {
+        "id": "PT-04",
+        "name": "Bragança",
+        "lat": 41.81,
+        "lon": -6.76
+      },
+      {
+        "id": "PT-05",
+        "name": "Castelo Branco",
+        "lat": 39.82,
+        "lon": -7.5
+      },
+      {
+        "id": "PT-06",
+        "name": "Coimbra",
+        "lat": 40.21,
+        "lon": -8.43
+      },
+      {
+        "id": "PT-07",
+        "name": "Évora",
+        "lat": 38.57,
+        "lon": -7.91
+      },
+      {
+        "id": "PT-08",
+        "name": "Faro",
+        "lat": 37.02,
+        "lon": -7.93
+      },
+      {
+        "id": "PT-09",
+        "name": "Guarda",
+        "lat": 40.54,
+        "lon": -7.27
+      },
+      {
+        "id": "PT-10",
+        "name": "Leiria",
+        "lat": 39.74,
+        "lon": -8.81
+      },
+      {
+        "id": "PT-11",
+        "name": "Lisboa",
+        "lat": 38.72,
+        "lon": -9.14
+      },
+      {
+        "id": "PT-12",
+        "name": "Portalegre",
+        "lat": 39.29,
+        "lon": -7.43
+      },
+      {
+        "id": "PT-13",
+        "name": "Porto",
+        "lat": 41.15,
+        "lon": -8.61
+      },
+      {
+        "id": "PT-14",
+        "name": "Santarém",
+        "lat": 39.24,
+        "lon": -8.69
+      },
+      {
+        "id": "PT-15",
+        "name": "Setúbal",
+        "lat": 38.52,
+        "lon": -8.89
+      },
+      {
+        "id": "PT-16",
+        "name": "Viana do Castelo",
+        "lat": 41.69,
+        "lon": -8.83
+      },
+      {
+        "id": "PT-17",
+        "name": "Vila Real",
+        "lat": 41.3,
+        "lon": -7.75
+      },
+      {
+        "id": "PT-18",
+        "name": "Viseu",
+        "lat": 40.66,
+        "lon": -7.91
+      },
+      {
+        "id": "PT-20",
+        "name": "Açores",
+        "lat": 37.74,
+        "lon": -25.67
+      },
+      {
+        "id": "PT-30",
+        "name": "Madeira",
+        "lat": 32.65,
+        "lon": -16.91
+      }
+    ]
+  },
+  "FI": {
+    "term": {
+      "en": "Region",
+      "nl": "Landschap",
+      "de": "Landschaft",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Maakunta",
+      "sv": "Landskap",
+      "pt": "Região",
+      "da": "Landskab",
+      "sk": "Kraj"
+    },
+    "regions": [
+      {
+        "id": "FI-01",
+        "name": "Ahvenanmaa",
+        "lat": 60.12,
+        "lon": 19.94
+      },
+      {
+        "id": "FI-02",
+        "name": "Etelä-Karjala",
+        "lat": 61.06,
+        "lon": 28.19
+      },
+      {
+        "id": "FI-03",
+        "name": "Etelä-Pohjanmaa",
+        "lat": 62.79,
+        "lon": 22.84
+      },
+      {
+        "id": "FI-04",
+        "name": "Etelä-Savo",
+        "lat": 61.69,
+        "lon": 27.27
+      },
+      {
+        "id": "FI-05",
+        "name": "Kainuu",
+        "lat": 64.23,
+        "lon": 27.73
+      },
+      {
+        "id": "FI-06",
+        "name": "Kanta-Häme",
+        "lat": 60.99,
+        "lon": 24.46
+      },
+      {
+        "id": "FI-07",
+        "name": "Keski-Pohjanmaa",
+        "lat": 63.84,
+        "lon": 23.13
+      },
+      {
+        "id": "FI-08",
+        "name": "Keski-Suomi",
+        "lat": 62.24,
+        "lon": 25.75
+      },
+      {
+        "id": "FI-09",
+        "name": "Kymenlaakso",
+        "lat": 60.62,
+        "lon": 26.93
+      },
+      {
+        "id": "FI-10",
+        "name": "Lappi",
+        "lat": 66.5,
+        "lon": 25.73
+      },
+      {
+        "id": "FI-11",
+        "name": "Pirkanmaa",
+        "lat": 61.5,
+        "lon": 23.76
+      },
+      {
+        "id": "FI-12",
+        "name": "Pohjanmaa",
+        "lat": 63.1,
+        "lon": 21.62
+      },
+      {
+        "id": "FI-13",
+        "name": "Pohjois-Karjala",
+        "lat": 62.6,
+        "lon": 29.77
+      },
+      {
+        "id": "FI-14",
+        "name": "Pohjois-Pohjanmaa",
+        "lat": 65.01,
+        "lon": 25.47
+      },
+      {
+        "id": "FI-15",
+        "name": "Pohjois-Savo",
+        "lat": 62.89,
+        "lon": 27.68
+      },
+      {
+        "id": "FI-16",
+        "name": "Päijät-Häme",
+        "lat": 60.98,
+        "lon": 25.66
+      },
+      {
+        "id": "FI-17",
+        "name": "Satakunta",
+        "lat": 61.49,
+        "lon": 21.8
+      },
+      {
+        "id": "FI-18",
+        "name": "Uusimaa",
+        "lat": 60.17,
+        "lon": 24.94
+      },
+      {
+        "id": "FI-19",
+        "name": "Varsinais-Suomi",
+        "lat": 60.45,
+        "lon": 22.27
+      }
+    ]
+  },
+  "SE": {
+    "term": {
+      "en": "County",
+      "nl": "Provincie",
+      "de": "Län",
+      "fr": "Comté",
+      "it": "Contea",
+      "fi": "Lääni",
+      "sv": "Län",
+      "pt": "Condado",
+      "da": "Län",
+      "sk": "Län"
+    },
+    "regions": [
+      {
+        "id": "SE-AB",
+        "name": "Stockholms län",
+        "lat": 59.33,
+        "lon": 18.07
+      },
+      {
+        "id": "SE-C",
+        "name": "Uppsala län",
+        "lat": 59.86,
+        "lon": 17.64
+      },
+      {
+        "id": "SE-D",
+        "name": "Södermanlands län",
+        "lat": 59.38,
+        "lon": 16.51
+      },
+      {
+        "id": "SE-E",
+        "name": "Östergötlands län",
+        "lat": 58.41,
+        "lon": 15.62
+      },
+      {
+        "id": "SE-F",
+        "name": "Jönköpings län",
+        "lat": 57.78,
+        "lon": 14.16
+      },
+      {
+        "id": "SE-G",
+        "name": "Kronobergs län",
+        "lat": 56.88,
+        "lon": 14.81
+      },
+      {
+        "id": "SE-H",
+        "name": "Kalmar län",
+        "lat": 56.66,
+        "lon": 16.36
+      },
+      {
+        "id": "SE-I",
+        "name": "Gotlands län",
+        "lat": 57.63,
+        "lon": 18.3
+      },
+      {
+        "id": "SE-K",
+        "name": "Blekinge län",
+        "lat": 56.16,
+        "lon": 15.59
+      },
+      {
+        "id": "SE-M",
+        "name": "Skåne län",
+        "lat": 55.87,
+        "lon": 13.37
+      },
+      {
+        "id": "SE-N",
+        "name": "Hallands län",
+        "lat": 56.73,
+        "lon": 12.82
+      },
+      {
+        "id": "SE-O",
+        "name": "Västra Götalands län",
+        "lat": 58.04,
+        "lon": 12.03
+      },
+      {
+        "id": "SE-S",
+        "name": "Värmlands län",
+        "lat": 59.38,
+        "lon": 13.5
+      },
+      {
+        "id": "SE-T",
+        "name": "Örebro län",
+        "lat": 59.27,
+        "lon": 15.21
+      },
+      {
+        "id": "SE-U",
+        "name": "Västmanlands län",
+        "lat": 59.61,
+        "lon": 16.55
+      },
+      {
+        "id": "SE-AC",
+        "name": "Västerbottens län",
+        "lat": 64.75,
+        "lon": 17.5
+      },
+      {
+        "id": "SE-BD",
+        "name": "Norrbottens län",
+        "lat": 66.83,
+        "lon": 20.4
+      },
+      {
+        "id": "SE-X",
+        "name": "Gävleborgs län",
+        "lat": 61.3,
+        "lon": 16.4
+      },
+      {
+        "id": "SE-Y",
+        "name": "Västernorrlands län",
+        "lat": 62.63,
+        "lon": 17.94
+      },
+      {
+        "id": "SE-Z",
+        "name": "Jämtlands län",
+        "lat": 63.17,
+        "lon": 14.64
+      },
+      {
+        "id": "SE-W",
+        "name": "Dalarnas län",
+        "lat": 60.68,
+        "lon": 15.0
+      }
+    ]
+  },
+  "DK": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "DK-84",
+        "name": "Region Hovedstaden",
+        "lat": 55.68,
+        "lon": 12.57
+      },
+      {
+        "id": "DK-82",
+        "name": "Region Midtjylland",
+        "lat": 56.16,
+        "lon": 10.2
+      },
+      {
+        "id": "DK-81",
+        "name": "Region Nordjylland",
+        "lat": 57.05,
+        "lon": 9.92
+      },
+      {
+        "id": "DK-85",
+        "name": "Region Sjælland",
+        "lat": 55.44,
+        "lon": 11.79
+      },
+      {
+        "id": "DK-83",
+        "name": "Region Syddanmark",
+        "lat": 55.4,
+        "lon": 9.4
+      }
+    ]
+  },
+  "SK": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Kraj",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Kraj",
+      "sv": "Kraj",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Kraj"
+    },
+    "regions": [
+      {
+        "id": "SK-BC",
+        "name": "Banskobystrický kraj",
+        "lat": 48.74,
+        "lon": 19.15
+      },
+      {
+        "id": "SK-BL",
+        "name": "Bratislavský kraj",
+        "lat": 48.15,
+        "lon": 17.11
+      },
+      {
+        "id": "SK-KI",
+        "name": "Košický kraj",
+        "lat": 48.72,
+        "lon": 21.26
+      },
+      {
+        "id": "SK-NI",
+        "name": "Nitriansky kraj",
+        "lat": 48.31,
+        "lon": 18.09
+      },
+      {
+        "id": "SK-PV",
+        "name": "Prešovský kraj",
+        "lat": 49.0,
+        "lon": 21.24
+      },
+      {
+        "id": "SK-TC",
+        "name": "Trenčiansky kraj",
+        "lat": 48.89,
+        "lon": 18.04
+      },
+      {
+        "id": "SK-TA",
+        "name": "Trnavský kraj",
+        "lat": 48.38,
+        "lon": 17.59
+      },
+      {
+        "id": "SK-ZI",
+        "name": "Žilinský kraj",
+        "lat": 49.22,
+        "lon": 18.74
+      }
+    ]
+  },
+  "PL": {
+    "term": {
+      "en": "Voivodeship",
+      "nl": "Woiwodschap",
+      "de": "Woiwodschaft",
+      "fr": "Voïvodie",
+      "it": "Voivodato",
+      "fi": "Voivodikunta",
+      "sv": "Vojvodskap",
+      "pt": "Voivodia",
+      "da": "Voivodskab",
+      "sk": "Vojvodstvo"
+    },
+    "regions": [
+      {
+        "id": "PL-02",
+        "name": "Dolnośląskie",
+        "lat": 51.11,
+        "lon": 17.04
+      },
+      {
+        "id": "PL-04",
+        "name": "Kujawsko-pomorskie",
+        "lat": 53.01,
+        "lon": 18.6
+      },
+      {
+        "id": "PL-06",
+        "name": "Lubelskie",
+        "lat": 51.25,
+        "lon": 22.57
+      },
+      {
+        "id": "PL-08",
+        "name": "Lubuskie",
+        "lat": 52.15,
+        "lon": 15.51
+      },
+      {
+        "id": "PL-10",
+        "name": "Łódzkie",
+        "lat": 51.76,
+        "lon": 19.46
+      },
+      {
+        "id": "PL-12",
+        "name": "Małopolskie",
+        "lat": 50.06,
+        "lon": 19.94
+      },
+      {
+        "id": "PL-14",
+        "name": "Mazowieckie",
+        "lat": 52.23,
+        "lon": 21.01
+      },
+      {
+        "id": "PL-16",
+        "name": "Opolskie",
+        "lat": 50.67,
+        "lon": 17.92
+      },
+      {
+        "id": "PL-18",
+        "name": "Podkarpackie",
+        "lat": 50.04,
+        "lon": 22.0
+      },
+      {
+        "id": "PL-20",
+        "name": "Podlaskie",
+        "lat": 53.13,
+        "lon": 23.16
+      },
+      {
+        "id": "PL-22",
+        "name": "Pomorskie",
+        "lat": 54.35,
+        "lon": 18.65
+      },
+      {
+        "id": "PL-24",
+        "name": "Śląskie",
+        "lat": 50.26,
+        "lon": 19.02
+      },
+      {
+        "id": "PL-26",
+        "name": "Świętokrzyskie",
+        "lat": 50.87,
+        "lon": 20.63
+      },
+      {
+        "id": "PL-28",
+        "name": "Warmińsko-mazurskie",
+        "lat": 53.78,
+        "lon": 20.49
+      },
+      {
+        "id": "PL-30",
+        "name": "Wielkopolskie",
+        "lat": 52.41,
+        "lon": 16.93
+      },
+      {
+        "id": "PL-32",
+        "name": "Zachodniopomorskie",
+        "lat": 53.43,
+        "lon": 14.55
+      }
+    ]
+  },
+  "CZ": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Kraj"
+    },
+    "regions": [
+      {
+        "id": "CZ-10",
+        "name": "Praha",
+        "lat": 50.08,
+        "lon": 14.44
+      },
+      {
+        "id": "CZ-20",
+        "name": "Středočeský kraj",
+        "lat": 50.0,
+        "lon": 14.4
+      },
+      {
+        "id": "CZ-31",
+        "name": "Jihočeský kraj",
+        "lat": 48.97,
+        "lon": 14.47
+      },
+      {
+        "id": "CZ-32",
+        "name": "Plzeňský kraj",
+        "lat": 49.75,
+        "lon": 13.38
+      },
+      {
+        "id": "CZ-41",
+        "name": "Karlovarský kraj",
+        "lat": 50.23,
+        "lon": 12.87
+      },
+      {
+        "id": "CZ-42",
+        "name": "Ústecký kraj",
+        "lat": 50.66,
+        "lon": 13.83
+      },
+      {
+        "id": "CZ-51",
+        "name": "Liberecký kraj",
+        "lat": 50.77,
+        "lon": 15.06
+      },
+      {
+        "id": "CZ-52",
+        "name": "Královéhradecký kraj",
+        "lat": 50.21,
+        "lon": 15.83
+      },
+      {
+        "id": "CZ-53",
+        "name": "Pardubický kraj",
+        "lat": 49.95,
+        "lon": 15.8
+      },
+      {
+        "id": "CZ-63",
+        "name": "Vysočina",
+        "lat": 49.4,
+        "lon": 15.59
+      },
+      {
+        "id": "CZ-64",
+        "name": "Jihomoravský kraj",
+        "lat": 49.2,
+        "lon": 16.61
+      },
+      {
+        "id": "CZ-71",
+        "name": "Olomoucký kraj",
+        "lat": 49.59,
+        "lon": 17.25
+      },
+      {
+        "id": "CZ-72",
+        "name": "Zlínský kraj",
+        "lat": 49.23,
+        "lon": 17.67
+      },
+      {
+        "id": "CZ-80",
+        "name": "Moravskoslezský kraj",
+        "lat": 49.82,
+        "lon": 18.26
+      }
+    ]
+  },
+  "HU": {
+    "term": {
+      "en": "County",
+      "nl": "Comitaat",
+      "de": "Komitat",
+      "fr": "Comitat",
+      "it": "Contea",
+      "fi": "Megye",
+      "sv": "Län",
+      "pt": "Condado",
+      "da": "Megye",
+      "sk": "Župa"
+    },
+    "regions": [
+      {
+        "id": "HU-BU",
+        "name": "Budapest",
+        "lat": 47.5,
+        "lon": 19.04
+      },
+      {
+        "id": "HU-BK",
+        "name": "Bács-Kiskun",
+        "lat": 46.67,
+        "lon": 19.5
+      },
+      {
+        "id": "HU-BA",
+        "name": "Baranya",
+        "lat": 46.07,
+        "lon": 18.23
+      },
+      {
+        "id": "HU-BE",
+        "name": "Békés",
+        "lat": 46.68,
+        "lon": 21.09
+      },
+      {
+        "id": "HU-BZ",
+        "name": "Borsod-Abaúj-Zemplén",
+        "lat": 48.1,
+        "lon": 20.79
+      },
+      {
+        "id": "HU-CS",
+        "name": "Csongrád-Csanád",
+        "lat": 46.25,
+        "lon": 20.15
+      },
+      {
+        "id": "HU-FE",
+        "name": "Fejér",
+        "lat": 47.19,
+        "lon": 18.41
+      },
+      {
+        "id": "HU-GS",
+        "name": "Győr-Moson-Sopron",
+        "lat": 47.68,
+        "lon": 17.65
+      },
+      {
+        "id": "HU-HB",
+        "name": "Hajdú-Bihar",
+        "lat": 47.53,
+        "lon": 21.62
+      },
+      {
+        "id": "HU-HE",
+        "name": "Heves",
+        "lat": 47.9,
+        "lon": 20.37
+      },
+      {
+        "id": "HU-JN",
+        "name": "Jász-Nagykun-Szolnok",
+        "lat": 47.17,
+        "lon": 20.2
+      },
+      {
+        "id": "HU-KE",
+        "name": "Komárom-Esztergom",
+        "lat": 47.61,
+        "lon": 18.32
+      },
+      {
+        "id": "HU-NO",
+        "name": "Nógrád",
+        "lat": 48.0,
+        "lon": 19.3
+      },
+      {
+        "id": "HU-PE",
+        "name": "Pest",
+        "lat": 47.5,
+        "lon": 19.35
+      },
+      {
+        "id": "HU-SO",
+        "name": "Somogy",
+        "lat": 46.45,
+        "lon": 17.6
+      },
+      {
+        "id": "HU-SZ",
+        "name": "Szabolcs-Szatmár-Bereg",
+        "lat": 47.96,
+        "lon": 22.08
+      },
+      {
+        "id": "HU-TO",
+        "name": "Tolna",
+        "lat": 46.42,
+        "lon": 18.55
+      },
+      {
+        "id": "HU-VA",
+        "name": "Vas",
+        "lat": 47.23,
+        "lon": 16.62
+      },
+      {
+        "id": "HU-VE",
+        "name": "Veszprém",
+        "lat": 47.09,
+        "lon": 17.91
+      },
+      {
+        "id": "HU-ZA",
+        "name": "Zala",
+        "lat": 46.84,
+        "lon": 16.85
+      }
+    ]
+  },
+  "IE": {
+    "term": {
+      "en": "Province",
+      "nl": "Provincie",
+      "de": "Provinz",
+      "fr": "Province",
+      "it": "Provincia",
+      "fi": "Provinssi",
+      "sv": "Provins",
+      "pt": "Província",
+      "da": "Provins",
+      "sk": "Provincia"
+    },
+    "regions": [
+      {
+        "id": "IE-C",
+        "name": "Connacht",
+        "lat": 53.8,
+        "lon": -9.0
+      },
+      {
+        "id": "IE-L",
+        "name": "Leinster",
+        "lat": 53.35,
+        "lon": -6.26
+      },
+      {
+        "id": "IE-M",
+        "name": "Munster",
+        "lat": 52.27,
+        "lon": -8.27
+      },
+      {
+        "id": "IE-U",
+        "name": "Ulster",
+        "lat": 54.6,
+        "lon": -7.3
+      }
+    ]
+  },
+  "GR": {
+    "term": {
+      "en": "Region",
+      "nl": "Periferie",
+      "de": "Region",
+      "fr": "Périphérie",
+      "it": "Periferia",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Periféria"
+    },
+    "regions": [
+      {
+        "id": "GR-A",
+        "name": "Anatolikí Makedonía kai Thráki",
+        "lat": 41.12,
+        "lon": 24.95
+      },
+      {
+        "id": "GR-B",
+        "name": "Kentrikí Makedonía",
+        "lat": 40.64,
+        "lon": 22.94
+      },
+      {
+        "id": "GR-C",
+        "name": "Dytikí Makedonía",
+        "lat": 40.3,
+        "lon": 21.79
+      },
+      {
+        "id": "GR-D",
+        "name": "Ípeiros",
+        "lat": 39.67,
+        "lon": 20.85
+      },
+      {
+        "id": "GR-E",
+        "name": "Thessalía",
+        "lat": 39.37,
+        "lon": 22.56
+      },
+      {
+        "id": "GR-F",
+        "name": "Ionian Islands",
+        "lat": 38.9,
+        "lon": 20.7
+      },
+      {
+        "id": "GR-G",
+        "name": "Dytikí Elláda",
+        "lat": 38.25,
+        "lon": 21.73
+      },
+      {
+        "id": "GR-H",
+        "name": "Stereá Elláda",
+        "lat": 38.62,
+        "lon": 22.38
+      },
+      {
+        "id": "GR-I",
+        "name": "Attikí",
+        "lat": 37.98,
+        "lon": 23.73
+      },
+      {
+        "id": "GR-J",
+        "name": "Pelopónnisos",
+        "lat": 37.5,
+        "lon": 22.4
+      },
+      {
+        "id": "GR-K",
+        "name": "Vóreio Aigaío",
+        "lat": 39.1,
+        "lon": 26.05
+      },
+      {
+        "id": "GR-L",
+        "name": "Nótio Aigaío",
+        "lat": 37.1,
+        "lon": 25.4
+      },
+      {
+        "id": "GR-M",
+        "name": "Kríti",
+        "lat": 35.24,
+        "lon": 24.81
+      }
+    ]
+  },
+  "RO": {
+    "term": {
+      "en": "County",
+      "nl": "District",
+      "de": "Kreis",
+      "fr": "Județ",
+      "it": "Distretto",
+      "fi": "Piirikunta",
+      "sv": "Län",
+      "pt": "Distrito",
+      "da": "Distrikt",
+      "sk": "Župa"
+    },
+    "regions": [
+      {
+        "id": "RO-AB",
+        "name": "Alba",
+        "lat": 46.07,
+        "lon": 23.58
+      },
+      {
+        "id": "RO-AR",
+        "name": "Arad",
+        "lat": 46.19,
+        "lon": 21.31
+      },
+      {
+        "id": "RO-AG",
+        "name": "Argeș",
+        "lat": 44.86,
+        "lon": 24.87
+      },
+      {
+        "id": "RO-BC",
+        "name": "Bacău",
+        "lat": 46.57,
+        "lon": 26.91
+      },
+      {
+        "id": "RO-BH",
+        "name": "Bihor",
+        "lat": 47.07,
+        "lon": 21.92
+      },
+      {
+        "id": "RO-BN",
+        "name": "Bistrița-Năsăud",
+        "lat": 47.13,
+        "lon": 24.5
+      },
+      {
+        "id": "RO-BT",
+        "name": "Botoșani",
+        "lat": 47.75,
+        "lon": 26.66
+      },
+      {
+        "id": "RO-BR",
+        "name": "Brăila",
+        "lat": 45.27,
+        "lon": 27.97
+      },
+      {
+        "id": "RO-BV",
+        "name": "Brașov",
+        "lat": 45.66,
+        "lon": 25.61
+      },
+      {
+        "id": "RO-B",
+        "name": "București",
+        "lat": 44.43,
+        "lon": 26.1
+      },
+      {
+        "id": "RO-BZ",
+        "name": "Buzău",
+        "lat": 45.15,
+        "lon": 26.82
+      },
+      {
+        "id": "RO-CL",
+        "name": "Călărași",
+        "lat": 44.2,
+        "lon": 27.33
+      },
+      {
+        "id": "RO-CS",
+        "name": "Caraș-Severin",
+        "lat": 45.3,
+        "lon": 21.89
+      },
+      {
+        "id": "RO-CJ",
+        "name": "Cluj",
+        "lat": 46.77,
+        "lon": 23.59
+      },
+      {
+        "id": "RO-CT",
+        "name": "Constanța",
+        "lat": 44.16,
+        "lon": 28.63
+      },
+      {
+        "id": "RO-CV",
+        "name": "Covasna",
+        "lat": 45.86,
+        "lon": 26.18
+      },
+      {
+        "id": "RO-DB",
+        "name": "Dâmbovița",
+        "lat": 44.93,
+        "lon": 25.46
+      },
+      {
+        "id": "RO-DJ",
+        "name": "Dolj",
+        "lat": 44.32,
+        "lon": 23.8
+      },
+      {
+        "id": "RO-GL",
+        "name": "Galați",
+        "lat": 45.44,
+        "lon": 28.05
+      },
+      {
+        "id": "RO-GR",
+        "name": "Giurgiu",
+        "lat": 43.89,
+        "lon": 25.97
+      },
+      {
+        "id": "RO-GJ",
+        "name": "Gorj",
+        "lat": 45.04,
+        "lon": 23.27
+      },
+      {
+        "id": "RO-HR",
+        "name": "Harghita",
+        "lat": 46.36,
+        "lon": 25.8
+      },
+      {
+        "id": "RO-HD",
+        "name": "Hunedoara",
+        "lat": 45.75,
+        "lon": 22.89
+      },
+      {
+        "id": "RO-IL",
+        "name": "Ialomița",
+        "lat": 44.57,
+        "lon": 27.37
+      },
+      {
+        "id": "RO-IS",
+        "name": "Iași",
+        "lat": 47.16,
+        "lon": 27.59
+      },
+      {
+        "id": "RO-IF",
+        "name": "Ilfov",
+        "lat": 44.54,
+        "lon": 26.2
+      },
+      {
+        "id": "RO-MM",
+        "name": "Maramureș",
+        "lat": 47.66,
+        "lon": 23.58
+      },
+      {
+        "id": "RO-MH",
+        "name": "Mehedinți",
+        "lat": 44.63,
+        "lon": 22.66
+      },
+      {
+        "id": "RO-MS",
+        "name": "Mureș",
+        "lat": 46.54,
+        "lon": 24.56
+      },
+      {
+        "id": "RO-NT",
+        "name": "Neamț",
+        "lat": 46.93,
+        "lon": 26.37
+      },
+      {
+        "id": "RO-OT",
+        "name": "Olt",
+        "lat": 44.43,
+        "lon": 24.37
+      },
+      {
+        "id": "RO-PH",
+        "name": "Prahova",
+        "lat": 45.0,
+        "lon": 26.02
+      },
+      {
+        "id": "RO-SJ",
+        "name": "Sălaj",
+        "lat": 47.18,
+        "lon": 23.06
+      },
+      {
+        "id": "RO-SM",
+        "name": "Satu Mare",
+        "lat": 47.79,
+        "lon": 22.89
+      },
+      {
+        "id": "RO-SB",
+        "name": "Sibiu",
+        "lat": 45.8,
+        "lon": 24.15
+      },
+      {
+        "id": "RO-SV",
+        "name": "Suceava",
+        "lat": 47.65,
+        "lon": 26.26
+      },
+      {
+        "id": "RO-TR",
+        "name": "Teleorman",
+        "lat": 43.98,
+        "lon": 25.33
+      },
+      {
+        "id": "RO-TM",
+        "name": "Timiș",
+        "lat": 45.76,
+        "lon": 21.23
+      },
+      {
+        "id": "RO-TL",
+        "name": "Tulcea",
+        "lat": 45.18,
+        "lon": 28.8
+      },
+      {
+        "id": "RO-VL",
+        "name": "Vâlcea",
+        "lat": 45.1,
+        "lon": 24.37
+      },
+      {
+        "id": "RO-VS",
+        "name": "Vaslui",
+        "lat": 46.64,
+        "lon": 27.73
+      },
+      {
+        "id": "RO-VN",
+        "name": "Vrancea",
+        "lat": 45.7,
+        "lon": 27.18
+      }
+    ]
+  },
+  "BG": {
+    "term": {
+      "en": "Province",
+      "nl": "Oblast",
+      "de": "Oblast",
+      "fr": "Oblast",
+      "it": "Oblast",
+      "fi": "Alue",
+      "sv": "Oblast",
+      "pt": "Província",
+      "da": "Oblast",
+      "sk": "Oblasť"
+    },
+    "regions": [
+      {
+        "id": "BG-01",
+        "name": "Blagoevgrad",
+        "lat": 42.02,
+        "lon": 23.1
+      },
+      {
+        "id": "BG-02",
+        "name": "Burgas",
+        "lat": 42.5,
+        "lon": 27.47
+      },
+      {
+        "id": "BG-03",
+        "name": "Varna",
+        "lat": 43.21,
+        "lon": 27.92
+      },
+      {
+        "id": "BG-04",
+        "name": "Veliko Tarnovo",
+        "lat": 43.08,
+        "lon": 25.63
+      },
+      {
+        "id": "BG-05",
+        "name": "Vidin",
+        "lat": 43.99,
+        "lon": 22.87
+      },
+      {
+        "id": "BG-06",
+        "name": "Vratsa",
+        "lat": 43.21,
+        "lon": 23.56
+      },
+      {
+        "id": "BG-07",
+        "name": "Gabrovo",
+        "lat": 42.87,
+        "lon": 25.32
+      },
+      {
+        "id": "BG-08",
+        "name": "Dobrich",
+        "lat": 43.57,
+        "lon": 27.83
+      },
+      {
+        "id": "BG-09",
+        "name": "Kardzhali",
+        "lat": 41.65,
+        "lon": 25.37
+      },
+      {
+        "id": "BG-10",
+        "name": "Kyustendil",
+        "lat": 42.28,
+        "lon": 22.69
+      },
+      {
+        "id": "BG-11",
+        "name": "Lovech",
+        "lat": 43.14,
+        "lon": 24.72
+      },
+      {
+        "id": "BG-12",
+        "name": "Montana",
+        "lat": 43.41,
+        "lon": 23.23
+      },
+      {
+        "id": "BG-13",
+        "name": "Pazardzhik",
+        "lat": 42.2,
+        "lon": 24.33
+      },
+      {
+        "id": "BG-14",
+        "name": "Pernik",
+        "lat": 42.6,
+        "lon": 23.03
+      },
+      {
+        "id": "BG-15",
+        "name": "Pleven",
+        "lat": 43.42,
+        "lon": 24.62
+      },
+      {
+        "id": "BG-16",
+        "name": "Plovdiv",
+        "lat": 42.14,
+        "lon": 24.75
+      },
+      {
+        "id": "BG-17",
+        "name": "Razgrad",
+        "lat": 43.53,
+        "lon": 26.52
+      },
+      {
+        "id": "BG-18",
+        "name": "Ruse",
+        "lat": 43.85,
+        "lon": 25.97
+      },
+      {
+        "id": "BG-19",
+        "name": "Silistra",
+        "lat": 44.12,
+        "lon": 27.27
+      },
+      {
+        "id": "BG-20",
+        "name": "Sliven",
+        "lat": 42.68,
+        "lon": 26.33
+      },
+      {
+        "id": "BG-21",
+        "name": "Smolyan",
+        "lat": 41.58,
+        "lon": 24.69
+      },
+      {
+        "id": "BG-22",
+        "name": "Sofia-grad",
+        "lat": 42.7,
+        "lon": 23.32
+      },
+      {
+        "id": "BG-23",
+        "name": "Sofia",
+        "lat": 42.65,
+        "lon": 23.7
+      },
+      {
+        "id": "BG-24",
+        "name": "Stara Zagora",
+        "lat": 42.43,
+        "lon": 25.64
+      },
+      {
+        "id": "BG-25",
+        "name": "Targovishte",
+        "lat": 43.25,
+        "lon": 26.57
+      },
+      {
+        "id": "BG-26",
+        "name": "Haskovo",
+        "lat": 41.93,
+        "lon": 25.57
+      },
+      {
+        "id": "BG-27",
+        "name": "Shumen",
+        "lat": 43.27,
+        "lon": 26.93
+      },
+      {
+        "id": "BG-28",
+        "name": "Yambol",
+        "lat": 42.48,
+        "lon": 26.5
+      }
+    ]
+  },
+  "HR": {
+    "term": {
+      "en": "County",
+      "nl": "Provincie",
+      "de": "Gespanschaft",
+      "fr": "Comitat",
+      "it": "Regione",
+      "fi": "Maakunta",
+      "sv": "Län",
+      "pt": "Condado",
+      "da": "Amt",
+      "sk": "Župa"
+    },
+    "regions": [
+      {
+        "id": "HR-21",
+        "name": "Grad Zagreb",
+        "lat": 45.81,
+        "lon": 15.98
+      },
+      {
+        "id": "HR-01",
+        "name": "Zagrebačka",
+        "lat": 45.8,
+        "lon": 16.0
+      },
+      {
+        "id": "HR-02",
+        "name": "Krapinsko-zagorska",
+        "lat": 46.16,
+        "lon": 15.88
+      },
+      {
+        "id": "HR-03",
+        "name": "Sisačko-moslavačka",
+        "lat": 45.48,
+        "lon": 16.37
+      },
+      {
+        "id": "HR-04",
+        "name": "Karlovačka",
+        "lat": 45.49,
+        "lon": 15.55
+      },
+      {
+        "id": "HR-05",
+        "name": "Varaždinska",
+        "lat": 46.3,
+        "lon": 16.34
+      },
+      {
+        "id": "HR-06",
+        "name": "Koprivničko-križevačka",
+        "lat": 46.16,
+        "lon": 16.83
+      },
+      {
+        "id": "HR-07",
+        "name": "Bjelovarsko-bilogorska",
+        "lat": 45.9,
+        "lon": 16.84
+      },
+      {
+        "id": "HR-08",
+        "name": "Primorsko-goranska",
+        "lat": 45.33,
+        "lon": 14.44
+      },
+      {
+        "id": "HR-09",
+        "name": "Ličko-senjska",
+        "lat": 44.7,
+        "lon": 15.37
+      },
+      {
+        "id": "HR-10",
+        "name": "Virovitičko-podravska",
+        "lat": 45.83,
+        "lon": 17.38
+      },
+      {
+        "id": "HR-11",
+        "name": "Požeško-slavonska",
+        "lat": 45.34,
+        "lon": 17.68
+      },
+      {
+        "id": "HR-12",
+        "name": "Brodsko-posavska",
+        "lat": 45.16,
+        "lon": 18.01
+      },
+      {
+        "id": "HR-13",
+        "name": "Zadarska",
+        "lat": 44.12,
+        "lon": 15.23
+      },
+      {
+        "id": "HR-14",
+        "name": "Osječko-baranjska",
+        "lat": 45.55,
+        "lon": 18.69
+      },
+      {
+        "id": "HR-15",
+        "name": "Šibensko-kninska",
+        "lat": 43.74,
+        "lon": 15.89
+      },
+      {
+        "id": "HR-16",
+        "name": "Vukovarsko-srijemska",
+        "lat": 45.29,
+        "lon": 18.8
+      },
+      {
+        "id": "HR-17",
+        "name": "Splitsko-dalmatinska",
+        "lat": 43.51,
+        "lon": 16.44
+      },
+      {
+        "id": "HR-18",
+        "name": "Istarska",
+        "lat": 45.24,
+        "lon": 13.94
+      },
+      {
+        "id": "HR-19",
+        "name": "Dubrovačko-neretvanska",
+        "lat": 42.65,
+        "lon": 18.09
+      },
+      {
+        "id": "HR-20",
+        "name": "Međimurska",
+        "lat": 46.38,
+        "lon": 16.43
+      }
+    ]
+  },
+  "SI": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "SI-01",
+        "name": "Pomurska",
+        "lat": 46.66,
+        "lon": 16.17
+      },
+      {
+        "id": "SI-02",
+        "name": "Podravska",
+        "lat": 46.55,
+        "lon": 15.65
+      },
+      {
+        "id": "SI-03",
+        "name": "Koroška",
+        "lat": 46.55,
+        "lon": 15.05
+      },
+      {
+        "id": "SI-04",
+        "name": "Savinjska",
+        "lat": 46.24,
+        "lon": 15.27
+      },
+      {
+        "id": "SI-05",
+        "name": "Zasavska",
+        "lat": 46.15,
+        "lon": 15.0
+      },
+      {
+        "id": "SI-06",
+        "name": "Posavska",
+        "lat": 45.91,
+        "lon": 15.6
+      },
+      {
+        "id": "SI-07",
+        "name": "Jugovzhodna Slovenija",
+        "lat": 45.7,
+        "lon": 15.17
+      },
+      {
+        "id": "SI-08",
+        "name": "Osrednjeslovenska",
+        "lat": 46.06,
+        "lon": 14.51
+      },
+      {
+        "id": "SI-09",
+        "name": "Gorenjska",
+        "lat": 46.36,
+        "lon": 14.17
+      },
+      {
+        "id": "SI-10",
+        "name": "Primorsko-notranjska",
+        "lat": 45.73,
+        "lon": 14.4
+      },
+      {
+        "id": "SI-11",
+        "name": "Goriška",
+        "lat": 46.05,
+        "lon": 13.73
+      },
+      {
+        "id": "SI-12",
+        "name": "Obalno-kraška",
+        "lat": 45.55,
+        "lon": 13.73
+      }
+    ]
+  },
+  "EE": {
+    "term": {
+      "en": "County",
+      "nl": "Provincie",
+      "de": "Kreis",
+      "fr": "Comté",
+      "it": "Contea",
+      "fi": "Maakunta",
+      "sv": "Län",
+      "pt": "Condado",
+      "da": "Amt",
+      "sk": "Kraj"
+    },
+    "regions": [
+      {
+        "id": "EE-37",
+        "name": "Harjumaa",
+        "lat": 59.44,
+        "lon": 24.75
+      },
+      {
+        "id": "EE-39",
+        "name": "Hiiumaa",
+        "lat": 58.92,
+        "lon": 22.59
+      },
+      {
+        "id": "EE-45",
+        "name": "Ida-Virumaa",
+        "lat": 59.35,
+        "lon": 27.42
+      },
+      {
+        "id": "EE-50",
+        "name": "Jõgevamaa",
+        "lat": 58.75,
+        "lon": 26.39
+      },
+      {
+        "id": "EE-52",
+        "name": "Järvamaa",
+        "lat": 58.89,
+        "lon": 25.56
+      },
+      {
+        "id": "EE-56",
+        "name": "Läänemaa",
+        "lat": 58.94,
+        "lon": 23.54
+      },
+      {
+        "id": "EE-60",
+        "name": "Lääne-Virumaa",
+        "lat": 59.35,
+        "lon": 26.36
+      },
+      {
+        "id": "EE-64",
+        "name": "Põlvamaa",
+        "lat": 58.06,
+        "lon": 27.07
+      },
+      {
+        "id": "EE-68",
+        "name": "Pärnumaa",
+        "lat": 58.39,
+        "lon": 24.5
+      },
+      {
+        "id": "EE-71",
+        "name": "Raplamaa",
+        "lat": 58.99,
+        "lon": 24.8
+      },
+      {
+        "id": "EE-74",
+        "name": "Saaremaa",
+        "lat": 58.25,
+        "lon": 22.48
+      },
+      {
+        "id": "EE-79",
+        "name": "Tartumaa",
+        "lat": 58.38,
+        "lon": 26.72
+      },
+      {
+        "id": "EE-81",
+        "name": "Valgamaa",
+        "lat": 57.78,
+        "lon": 26.03
+      },
+      {
+        "id": "EE-84",
+        "name": "Viljandimaa",
+        "lat": 58.36,
+        "lon": 25.59
+      },
+      {
+        "id": "EE-87",
+        "name": "Võrumaa",
+        "lat": 57.85,
+        "lon": 26.99
+      }
+    ]
+  },
+  "LV": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "LV-RIX",
+        "name": "Rīga",
+        "lat": 56.95,
+        "lon": 24.11
+      },
+      {
+        "id": "LV-VID",
+        "name": "Vidzeme",
+        "lat": 57.31,
+        "lon": 25.59
+      },
+      {
+        "id": "LV-LAT",
+        "name": "Latgale",
+        "lat": 56.51,
+        "lon": 27.33
+      },
+      {
+        "id": "LV-KUR",
+        "name": "Kurzeme",
+        "lat": 56.97,
+        "lon": 21.97
+      },
+      {
+        "id": "LV-ZEM",
+        "name": "Zemgale",
+        "lat": 56.52,
+        "lon": 23.72
+      }
+    ]
+  },
+  "LT": {
+    "term": {
+      "en": "County",
+      "nl": "Provincie",
+      "de": "Bezirk",
+      "fr": "Comté",
+      "it": "Contea",
+      "fi": "Apskritis",
+      "sv": "Län",
+      "pt": "Condado",
+      "da": "Amt",
+      "sk": "Apskritis"
+    },
+    "regions": [
+      {
+        "id": "LT-AL",
+        "name": "Alytaus apskritis",
+        "lat": 54.4,
+        "lon": 24.05
+      },
+      {
+        "id": "LT-KU",
+        "name": "Kauno apskritis",
+        "lat": 54.9,
+        "lon": 23.89
+      },
+      {
+        "id": "LT-KL",
+        "name": "Klaipėdos apskritis",
+        "lat": 55.7,
+        "lon": 21.14
+      },
+      {
+        "id": "LT-MR",
+        "name": "Marijampolės apskritis",
+        "lat": 54.56,
+        "lon": 23.35
+      },
+      {
+        "id": "LT-PN",
+        "name": "Panevėžio apskritis",
+        "lat": 55.73,
+        "lon": 24.35
+      },
+      {
+        "id": "LT-SA",
+        "name": "Šiaulių apskritis",
+        "lat": 55.93,
+        "lon": 23.32
+      },
+      {
+        "id": "LT-TA",
+        "name": "Tauragės apskritis",
+        "lat": 55.25,
+        "lon": 22.29
+      },
+      {
+        "id": "LT-TE",
+        "name": "Telšių apskritis",
+        "lat": 55.98,
+        "lon": 22.25
+      },
+      {
+        "id": "LT-UT",
+        "name": "Utenos apskritis",
+        "lat": 55.5,
+        "lon": 25.6
+      },
+      {
+        "id": "LT-VL",
+        "name": "Vilniaus apskritis",
+        "lat": 54.69,
+        "lon": 25.28
+      }
+    ]
+  },
+  "LU": {
+    "term": {
+      "en": "Canton",
+      "nl": "Kanton",
+      "de": "Kanton",
+      "fr": "Canton",
+      "it": "Cantone",
+      "fi": "Kanton",
+      "sv": "Kanton",
+      "pt": "Cantão",
+      "da": "Kanton",
+      "sk": "Kantón"
+    },
+    "regions": [
+      {
+        "id": "LU-CA",
+        "name": "Capellen",
+        "lat": 49.64,
+        "lon": 5.99
+      },
+      {
+        "id": "LU-CL",
+        "name": "Clervaux",
+        "lat": 50.05,
+        "lon": 6.03
+      },
+      {
+        "id": "LU-DI",
+        "name": "Diekirch",
+        "lat": 49.87,
+        "lon": 6.16
+      },
+      {
+        "id": "LU-EC",
+        "name": "Echternach",
+        "lat": 49.81,
+        "lon": 6.42
+      },
+      {
+        "id": "LU-ES",
+        "name": "Esch-sur-Alzette",
+        "lat": 49.5,
+        "lon": 6.0
+      },
+      {
+        "id": "LU-GR",
+        "name": "Grevenmacher",
+        "lat": 49.68,
+        "lon": 6.44
+      },
+      {
+        "id": "LU-LU",
+        "name": "Luxembourg",
+        "lat": 49.61,
+        "lon": 6.13
+      },
+      {
+        "id": "LU-ME",
+        "name": "Mersch",
+        "lat": 49.75,
+        "lon": 6.11
+      },
+      {
+        "id": "LU-RD",
+        "name": "Redange",
+        "lat": 49.76,
+        "lon": 5.89
+      },
+      {
+        "id": "LU-RM",
+        "name": "Remich",
+        "lat": 49.54,
+        "lon": 6.37
+      },
+      {
+        "id": "LU-VD",
+        "name": "Vianden",
+        "lat": 49.93,
+        "lon": 6.21
+      },
+      {
+        "id": "LU-WI",
+        "name": "Wiltz",
+        "lat": 49.97,
+        "lon": 5.93
+      }
+    ]
+  },
+  "MT": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Reġjun",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "MT-C",
+        "name": "Ċentrali",
+        "lat": 35.9,
+        "lon": 14.47
+      },
+      {
+        "id": "MT-G",
+        "name": "Għawdex",
+        "lat": 36.04,
+        "lon": 14.25
+      },
+      {
+        "id": "MT-N",
+        "name": "Tramuntana",
+        "lat": 35.94,
+        "lon": 14.42
+      },
+      {
+        "id": "MT-SE",
+        "name": "Xlokk",
+        "lat": 35.88,
+        "lon": 14.54
+      },
+      {
+        "id": "MT-S",
+        "name": "Nofsinhar",
+        "lat": 35.85,
+        "lon": 14.49
+      }
+    ]
+  },
+  "CY": {
+    "term": {
+      "en": "District",
+      "nl": "District",
+      "de": "Bezirk",
+      "fr": "District",
+      "it": "Distretto",
+      "fi": "Piirikunta",
+      "sv": "Distrikt",
+      "pt": "Distrito",
+      "da": "Distrikt",
+      "sk": "Okres"
+    },
+    "regions": [
+      {
+        "id": "CY-01",
+        "name": "Lefkosia",
+        "lat": 35.17,
+        "lon": 33.36
+      },
+      {
+        "id": "CY-02",
+        "name": "Lemesos",
+        "lat": 34.68,
+        "lon": 33.04
+      },
+      {
+        "id": "CY-03",
+        "name": "Larnaka",
+        "lat": 34.92,
+        "lon": 33.63
+      },
+      {
+        "id": "CY-04",
+        "name": "Ammochostos",
+        "lat": 35.12,
+        "lon": 33.94
+      },
+      {
+        "id": "CY-05",
+        "name": "Pafos",
+        "lat": 34.78,
+        "lon": 32.42
+      },
+      {
+        "id": "CY-06",
+        "name": "Keryneia",
+        "lat": 35.34,
+        "lon": 33.32
+      }
+    ]
+  },
+  "GB-ENG": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "GB-ENG-NE",
+        "name": "North East",
+        "lat": 54.98,
+        "lon": -1.61
+      },
+      {
+        "id": "GB-ENG-NW",
+        "name": "North West",
+        "lat": 53.48,
+        "lon": -2.24
+      },
+      {
+        "id": "GB-ENG-YH",
+        "name": "Yorkshire and the Humber",
+        "lat": 53.8,
+        "lon": -1.55
+      },
+      {
+        "id": "GB-ENG-EM",
+        "name": "East Midlands",
+        "lat": 52.95,
+        "lon": -1.15
+      },
+      {
+        "id": "GB-ENG-WM",
+        "name": "West Midlands",
+        "lat": 52.49,
+        "lon": -1.89
+      },
+      {
+        "id": "GB-ENG-EE",
+        "name": "East of England",
+        "lat": 52.2,
+        "lon": 0.4
+      },
+      {
+        "id": "GB-ENG-LO",
+        "name": "London",
+        "lat": 51.51,
+        "lon": -0.13
+      },
+      {
+        "id": "GB-ENG-SE",
+        "name": "South East",
+        "lat": 51.27,
+        "lon": -0.8
+      },
+      {
+        "id": "GB-ENG-SW",
+        "name": "South West",
+        "lat": 50.9,
+        "lon": -3.5
+      }
+    ]
+  },
+  "GB-SCT": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "GB-SCT-HI",
+        "name": "Highlands and Islands",
+        "lat": 57.48,
+        "lon": -4.23
+      },
+      {
+        "id": "GB-SCT-NE",
+        "name": "North East Scotland",
+        "lat": 57.15,
+        "lon": -2.09
+      },
+      {
+        "id": "GB-SCT-MS",
+        "name": "Mid Scotland and Fife",
+        "lat": 56.2,
+        "lon": -3.45
+      },
+      {
+        "id": "GB-SCT-LO",
+        "name": "Lothian",
+        "lat": 55.95,
+        "lon": -3.19
+      },
+      {
+        "id": "GB-SCT-GL",
+        "name": "Glasgow",
+        "lat": 55.86,
+        "lon": -4.25
+      },
+      {
+        "id": "GB-SCT-WS",
+        "name": "West Scotland",
+        "lat": 55.79,
+        "lon": -4.43
+      },
+      {
+        "id": "GB-SCT-CS",
+        "name": "Central Scotland",
+        "lat": 55.98,
+        "lon": -3.99
+      },
+      {
+        "id": "GB-SCT-SO",
+        "name": "South Scotland",
+        "lat": 55.42,
+        "lon": -3.0
+      }
+    ]
+  },
+  "GB-WLS": {
+    "term": {
+      "en": "Region",
+      "nl": "Regio",
+      "de": "Region",
+      "fr": "Région",
+      "it": "Regione",
+      "fi": "Alue",
+      "sv": "Region",
+      "pt": "Região",
+      "da": "Region",
+      "sk": "Región"
+    },
+    "regions": [
+      {
+        "id": "GB-WLS-GW",
+        "name": "Gwynedd",
+        "lat": 53.0,
+        "lon": -4.1
+      },
+      {
+        "id": "GB-WLS-CL",
+        "name": "Clwyd",
+        "lat": 53.2,
+        "lon": -3.4
+      },
+      {
+        "id": "GB-WLS-PW",
+        "name": "Powys",
+        "lat": 52.5,
+        "lon": -3.4
+      },
+      {
+        "id": "GB-WLS-DY",
+        "name": "Dyfed",
+        "lat": 51.86,
+        "lon": -4.31
+      },
+      {
+        "id": "GB-WLS-WG",
+        "name": "West Glamorgan",
+        "lat": 51.62,
+        "lon": -3.94
+      },
+      {
+        "id": "GB-WLS-MG",
+        "name": "Mid Glamorgan",
+        "lat": 51.6,
+        "lon": -3.4
+      },
+      {
+        "id": "GB-WLS-SG",
+        "name": "South Glamorgan",
+        "lat": 51.48,
+        "lon": -3.18
+      },
+      {
+        "id": "GB-WLS-GT",
+        "name": "Gwent",
+        "lat": 51.65,
+        "lon": -3.0
+      }
+    ]
+  },
+  "GB-NIR": {
+    "term": {
+      "en": "County",
+      "nl": "Graafschap",
+      "de": "Grafschaft",
+      "fr": "Comté",
+      "it": "Contea",
+      "fi": "Kreivikunta",
+      "sv": "Grevskap",
+      "pt": "Condado",
+      "da": "Grevskab",
+      "sk": "Grófstvo"
+    },
+    "regions": [
+      {
+        "id": "GB-NIR-AN",
+        "name": "Antrim",
+        "lat": 54.72,
+        "lon": -6.21
+      },
+      {
+        "id": "GB-NIR-AR",
+        "name": "Armagh",
+        "lat": 54.35,
+        "lon": -6.65
+      },
+      {
+        "id": "GB-NIR-DO",
+        "name": "Down",
+        "lat": 54.33,
+        "lon": -5.72
+      },
+      {
+        "id": "GB-NIR-FE",
+        "name": "Fermanagh",
+        "lat": 54.35,
+        "lon": -7.64
+      },
+      {
+        "id": "GB-NIR-LD",
+        "name": "Londonderry",
+        "lat": 54.95,
+        "lon": -6.85
+      },
+      {
+        "id": "GB-NIR-TY",
+        "name": "Tyrone",
+        "lat": 54.6,
+        "lon": -7.3
+      }
+    ]
+  }
+}
