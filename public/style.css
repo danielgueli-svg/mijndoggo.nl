@@ -61,6 +61,7 @@ button:hover{background:var(--accent)}
 .ctry-grid li{border:1px solid var(--border);border-radius:var(--radius);padding:.6rem .8rem;display:flex;justify-content:space-between;align-items:center;gap:.4rem;font-size:.9rem}
 .badge-soon{font-size:.72rem;color:var(--ink-2);background:var(--ivory);border-radius:999px;padding:.1rem .5rem;white-space:nowrap}
 .site-footer{background:var(--green-deep);color:var(--on-dark-2);padding:2rem 0;font-size:.9rem}.site-footer p{margin:.4rem 0}
+.foot-contact a{color:inherit;text-decoration:underline;text-underline-offset:2px}
 .small{font-size:.8rem}
 .picker.near{margin-top:.6rem;border-width:1px;border-color:var(--border-input)}.picker.near summary{font-weight:400;font-size:.92rem}.near-body{padding:0 .9rem .9rem}
 input[type=text],select{display:block;width:100%;margin-top:.25rem;padding:.6rem;border:1px solid var(--border-input);border-radius:var(--radius);font:inherit;background:#fff}

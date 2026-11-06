@@ -1,6 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { readFileSync } from 'node:fs';
+import { readFileSync, readdirSync, statSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
 import { breedKeys, listingCountry, RADII } from '../lib/data.js';
 import { matchQuery } from '../lib/match.js';
 import { onRequestPost } from '../functions/api/signup.js';
@@ -116,6 +117,15 @@ test('built breed page wires Dutch search, stack, radius and gate', () => {
   const rassen = readFileSync(new URL('../dist/rassen/index.html', import.meta.url), 'utf8');
   assert.match(rassen, /breed-grid"><li><a href="\/rassen\/labrador-retriever\/"/);
   const regions = JSON.parse(readFileSync(new URL('../dist/regions.json', import.meta.url), 'utf8'));
+  const contact = 'Mijndoggo · Amsterdam, Nederland · <a href="mailto:info@mijndoggo.nl">info@mijndoggo.nl</a>';
+  assert.match(home, new RegExp(contact.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  assert.match(home, /Elke mail heeft een afmeldlink\./);
+  assert.match(html, new RegExp(contact.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+  const pagesHtml = [];
+  const walk = dir => { for (const name of readdirSync(dir)) { const p = dir + '/' + name; if (statSync(p).isDirectory()) walk(p); else if (name.endsWith('.html')) pagesHtml.push(readFileSync(p, 'utf8')); } };
+  walk(fileURLToPath(new URL('../dist/', import.meta.url)));
+  assert.ok(pagesHtml.length > 60);
+  for (const page of pagesHtml) assert.ok(page.includes(contact));
   assert.equal(regions.NL.term.nl, 'Provincie');
   assert.equal(regions.DE.term.nl, 'Deelstaat');
   assert.ok(regions.NL.regions.some(r => r.id === 'NL-NH'));
