@@ -79,7 +79,10 @@ test('built breed page wires Dutch search, stack, radius and gate', () => {
   assert.match(home, /Geen ras gevonden/);
   assert.match(home, /src="\/home\.js"/);
   assert.match(home, /MijnDoggo/);
+  assert.match(home, /class="pc-nl"/);
+  assert.match(home, /Nederlandse fokkers en <strong class="pc-eu"><\/strong> fokkers in heel Europa plus het VK/);
   assert.doesNotMatch(home, /id="signup"/);
+  assert.doesNotMatch(html, /heel Europa plus het VK/);
   assert.doesNotMatch(home, /name="country"/);
   assert.doesNotMatch(home, /name="region"/);
   assert.doesNotMatch(home, /name="radius"/);

@@ -46,8 +46,18 @@ document.querySelectorAll('select.go').forEach(s => s.addEventListener('change',
 })();
 const pcs = document.querySelectorAll('.pup-counter');
 if (pcs.length) fetch('/api/counts').then(r => r.ok ? r.json() : null).then(d => { if (!d || d.total == null) return;
-  pcs.forEach(p => { let n, l;
+  const fmt = n => n.toLocaleString('nl-NL');
+  pcs.forEach(p => {
+    if (p.dataset.scope === 'all') {
+      const nl = typeof d.nl === 'number' ? d.nl : d.countries && d.countries.NL;
+      const eu = d.europe;
+      const nlEl = p.querySelector('.pc-nl'), euEl = p.querySelector('.pc-eu');
+      if (typeof nl !== 'number' || typeof eu !== 'number' || !nlEl || !euEl) return;
+      nlEl.textContent = fmt(nl); euEl.textContent = fmt(eu); p.hidden = false; return;
+    }
+    let n, l;
     if (p.dataset.breed) { n = d.by_breed[p.dataset.breed] || 0; l = 'actieve aanbiedingen van dit ras bij Nederlandse fokkers'; }
     else if (p.dataset.country) { n = d.countries[p.dataset.country === 'GB-ENG' || p.dataset.country.startsWith('GB-') ? 'GB' : p.dataset.country] || 0; l = 'actieve aanbiedingen in dit land'; }
     else { n = d.total; l = 'actieve aanbiedingen van Nederlandse fokkers in onze gegevens'; }
-    p.querySelector('.pc-n').textContent = n.toLocaleString('nl-NL'); p.querySelector('.pc-l').textContent = l; p.hidden = false; }); }).catch(() => {});
+    p.querySelector('.pc-n').textContent = fmt(n); p.querySelector('.pc-l').textContent = l; p.hidden = false;
+  }); }).catch(() => {});
