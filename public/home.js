@@ -12,36 +12,49 @@ document.querySelectorAll('select.go').forEach(s => s.addEventListener('change',
   const norm = t => String(t || '').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
   const slugify = t => norm(t).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   const href = b => '/' + bseg + '/' + slugify(b.names[i] || b.names[0]) + '/';
-  let catalog = [];
+  let catalog = [], ready = false;
   const hide = () => { sug.hidden = true; sug.innerHTML = ''; };
+  const label = b => {
+    const name = b.names[i] || b.names[0];
+    if (typeof b.nl === 'number' && typeof b.eu === 'number') return name + ' — ' + b.nl.toLocaleString('nl-NL') + ' NL · ' + b.eu.toLocaleString('nl-NL') + ' EU';
+    return name;
+  };
+  const go = li => { location.href = li.dataset.href; };
   const show = qstr => {
     const nq = norm(qstr).trim();
     if (!nq) { hide(); return; }
+    if (!ready) return;
     const hits = catalog.filter(b => b.names.some(n => norm(n).includes(nq)))
-      .sort((a, b) => (b.n || 0) - (a.n || 0) || (a.names[i] || a.names[0]).localeCompare(b.names[i] || b.names[0], lang));
+      .sort((a, b) => (b.eu || b.n || 0) - (a.eu || a.n || 0) || (a.names[i] || a.names[0]).localeCompare(b.names[i] || b.names[0], lang));
     sug.innerHTML = '';
     if (!hits.length) { const li = document.createElement('li'); li.className = 'bno'; li.textContent = box.dataset.nohit || ''; sug.append(li); sug.hidden = false; return; }
     hits.slice(0, 8).forEach(b => {
       const li = document.createElement('li'); li.setAttribute('role', 'option');
-      li.textContent = b.names[i] || b.names[0];
+      li.textContent = label(b);
       li.dataset.href = href(b);
-      li.addEventListener('mousedown', e => { e.preventDefault(); location.href = li.dataset.href; });
+      li.addEventListener('pointerdown', e => { e.preventDefault(); go(li); });
       sug.append(li);
     });
     sug.hidden = false;
+    const vv = window.visualViewport;
+    const room = (vv ? vv.height : window.innerHeight) - find.getBoundingClientRect().bottom;
+    if (room < 140) sug.scrollIntoView({ block: 'nearest' });
   };
   find.addEventListener('input', () => show(find.value));
+  find.addEventListener('search', () => show(find.value));
   find.addEventListener('keydown', e => {
     if (e.key === 'Escape') { hide(); find.blur(); }
     if (e.key === 'Enter') {
       e.preventDefault();
       const first = !sug.hidden && sug.querySelector('[data-href]');
-      if (first) location.href = first.dataset.href;
+      if (first) go(first);
     }
   });
-  find.addEventListener('blur', () => setTimeout(hide, 150));
+  find.addEventListener('blur', () => setTimeout(hide, 180));
   fetch('/breed-index.json').then(r => r.ok ? r.json() : []).then(list => {
-    catalog = (Array.isArray(list) ? list : []).slice().sort((a, b) => (b.n || 0) - (a.n || 0));
+    catalog = (Array.isArray(list) ? list : []).slice().sort((a, b) => (b.eu || b.n || 0) - (a.eu || a.n || 0));
+    ready = true;
+    if (norm(find.value).trim()) show(find.value);
   }).catch(() => {});
 })();
 const pcs = document.querySelectorAll('.pup-counter');

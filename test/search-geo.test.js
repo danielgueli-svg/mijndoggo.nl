@@ -67,8 +67,10 @@ test('built breed page wires Dutch search, stack, radius and gate', () => {
   const idx = JSON.parse(readFileSync(new URL('../dist/breed-index.json', import.meta.url), 'utf8'));
   const teckel = idx.find(b => b.id === 'Dachshund');
   assert.equal(teckel.names[1], 'Teckel');
-  assert.equal(teckel.n, 113);
-  assert.match(html, /data-n="113"/);
+  assert.equal(teckel.nl, 1);
+  assert.equal(teckel.eu, 73);
+  assert.equal(teckel.n, 73);
+  assert.match(html, /data-n="73"/);
   const home = readFileSync(new URL('../dist/index.html', import.meta.url), 'utf8');
   assert.match(home, /class="card v2 home-breed"/);
   assert.match(home, /data-lang="nl"/);
@@ -81,6 +83,25 @@ test('built breed page wires Dutch search, stack, radius and gate', () => {
   assert.match(home, /MijnDoggo/);
   assert.match(home, /class="pc-nl"/);
   assert.match(home, /Nederlandse fokkers en <strong class="pc-eu"><\/strong> fokkers in heel Europa plus het VK/);
+  assert.match(home, /class="rasklikker"/);
+  assert.match(home, /Toon alle rassen/);
+  const counts = JSON.parse(readFileSync(new URL('../data/breed_counts.json', import.meta.url), 'utf8'));
+  const pages = JSON.parse(readFileSync(new URL('../data/breed_pages.json', import.meta.url), 'utf8'));
+  const dutch = Object.fromEntries(pages.map(b => [b[0], b[1]]));
+  const ranked = Object.entries(counts).sort((a, b) => b[1].eu - a[1].eu || dutch[a[0]].localeCompare(dutch[b[0]], 'nl'));
+  const shown = [...home.matchAll(/<ol class="rasklikker">([\s\S]*?)<\/ol>/g)].map(m => [...m[1].matchAll(/href="([^"]+)"[\s\S]*?<span class="rn">([^<]+)<\/span><span class="rc">([^<]+)/g)].map(x => ({ href: x[1], name: x[2], rc: x[3] })));
+  assert.equal(shown.length, 2);
+  assert.equal(shown[0].length, 20);
+  assert.equal(shown[0][0].href, '/rassen/labrador-retriever/');
+  assert.equal(shown[0][0].rc, '7 NL · 558 EU');
+  const slug = t => t.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  shown.flat().forEach((row, i) => {
+    const [id, stat] = ranked[i];
+    assert.equal(row.name, dutch[id]);
+    assert.equal(row.href, '/rassen/' + slug(dutch[id]) + '/');
+    assert.equal(row.rc, stat.nl.toLocaleString('nl-NL') + ' NL · ' + stat.eu.toLocaleString('nl-NL') + ' EU');
+    if (i) assert.ok(ranked[i - 1][1].eu >= stat.eu);
+  });
   assert.doesNotMatch(home, /id="signup"/);
   assert.doesNotMatch(html, /heel Europa plus het VK/);
   assert.doesNotMatch(home, /name="country"/);
@@ -93,7 +114,7 @@ test('built breed page wires Dutch search, stack, radius and gate', () => {
   assert.match(html, /name="country"/);
   assert.match(html, /name="email"/);
   const rassen = readFileSync(new URL('../dist/rassen/index.html', import.meta.url), 'utf8');
-  assert.match(rassen, /breed-grid"><li><a href="\/rassen\/golden-retriever\/"/);
+  assert.match(rassen, /breed-grid"><li><a href="\/rassen\/labrador-retriever\/"/);
   const regions = JSON.parse(readFileSync(new URL('../dist/regions.json', import.meta.url), 'utf8'));
   assert.equal(regions.NL.term.nl, 'Provincie');
   assert.equal(regions.DE.term.nl, 'Deelstaat');

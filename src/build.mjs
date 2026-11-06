@@ -2,9 +2,12 @@ import OPEN from '../data/open.json' with { type: 'json' };
 import { readFileSync, writeFileSync, mkdirSync, rmSync, cpSync } from 'node:fs';
 const J = p => JSON.parse(readFileSync(new URL('../' + p, import.meta.url)));
 const i18n = J('data/i18n.json'), breeds = J('data/breeds.json'), countries = J('data/countries.json'), places = J('data/places.json');
-// Active listings per breed (Europe-wide), baked like PuppyAlert data/breed_counts.json. Forms and breed lists sort on this; /api/counts can refresh it.
+// Active listings per breed: nl = Netherlands, eu = EU plus the UK. Lists sort on eu (the wider count).
 const COUNTS = J('data/breed_counts.json');
-const breedN = id => +COUNTS[id] || 0;
+const breedStat = id => { const row = COUNTS[id] || {}; return { nl: +row.nl || 0, eu: +row.eu || 0 }; };
+const breedN = id => breedStat(id).eu;
+const fmtN = n => n.toLocaleString('nl-NL');
+const pair = id => { const s = breedStat(id); return `${fmtN(s.nl)} NL · ${fmtN(s.eu)} EU`; };
 const byBreeders = (a, b) => breedN(b[0]) - breedN(a[0]) || String(a[1]).localeCompare(String(b[1]), 'nl');
 const SITE = 'https://mijndoggo.nl', OUT = new URL('../dist/', import.meta.url).pathname;
 const LANGS = ['nl']; // en = default (no prefix), others under /<lang>/
@@ -57,7 +60,12 @@ for (const l of LANGS) {
   const T = i18n[l];
   const cs = countries.map(row => ({ row, cc: row[0], flag: row[1], name: cname(row, l) })).sort((a, b) => a.name.localeCompare(b.name, l));
   // Homepage: breed search only. The full signup form stays on the breed pages.
-  const homeBreed = `<div class="card v2 home-breed" data-lang="nl" data-bseg="${esc(T.bSeg)}" data-nohit="${esc(T.nohit)}"><h2 class="card-title">${esc(T.bStep)}</h2><input type="search" class="sel bfind" placeholder="${esc(T.searchB)}" aria-label="${esc(T.bStep)}" autocomplete="off" enterkeyhint="search"><ul class="bsug" hidden role="listbox"></ul></div>`;
+  const ranked = [...J('data/breed_pages.json')].sort(byBreeders);
+  const breedItem = b => `<li><a href="${pre(l)}/${T.bSeg}/${slugify(b[1])}/"><span class="rn">${esc(b[1])}</span><span class="rc">${esc(pair(b[0]))}</span></a></li>`;
+  const topList = ranked.slice(0, 20).map(breedItem).join('');
+  const restList = ranked.slice(20).map(breedItem).join('');
+  const moreBreeds = restList ? `<details class="more-breeds"><summary>Toon alle rassen</summary><ol class="rasklikker">${restList}</ol></details>` : '';
+  const homeBreed = `<div class="card v2 home-breed" data-lang="nl" data-bseg="${esc(T.bSeg)}" data-nohit="${esc(T.nohit)}"><h2 class="card-title">${esc(T.bStep)}</h2><div class="home-find"><input type="search" class="sel bfind" placeholder="${esc(T.searchB)}" aria-label="${esc(T.bStep)}" autocomplete="off" enterkeyhint="search"><ul class="bsug" hidden role="listbox"></ul></div><ol class="rasklikker">${topList}</ol>${moreBreeds}</div>`;
   write(homePath(l), head(l, T.title, T.desc, homePath) + `<main id="content"><section class="hero"><div class="wrap split"><div class="hero-copy">
 <h1>${esc(T.heroH)}</h1><figure class="hero-photo"><img src="/img/hero/golden-retriever-puppy-320.webp" srcset="/img/hero/golden-retriever-puppy-320.webp 320w, /img/hero/golden-retriever-puppy-640.webp 640w" sizes="(max-width: 599px) 200px, 360px" width="640" height="480" fetchpriority="high" decoding="async" alt="Golden retriever-pup die op een houten vloer ligt"><figcaption><a href="https://commons.wikimedia.org/wiki/File:Golden_Retriever_Puppy_12weeks.JPG" rel="nofollow noopener">Foto</a>: Beatrice Milek, <a href="https://creativecommons.org/licenses/by/3.0" rel="license nofollow noopener">CC BY 3.0</a></figcaption></figure><p class="hero-line">${esc(T.heroSub)}</p><p class="pup-counter" data-scope="all" hidden><strong class="pc-nl"></strong> Nederlandse fokkers en <strong class="pc-eu"></strong> fokkers in heel Europa plus het VK</p><div class="hero-story">${story(T)}</div>
 </div>${homeBreed}</div></section>
@@ -104,7 +112,7 @@ const canon = new Set(sm.flatMap(pf => LANGS.map(pf)));
 for (const k of R.keys()) if (canon.has(k) || homes.has(k)) throw new Error('redirect clashes with a real page: ' + k);
 for (const [a, t] of [...R]) if (a.length > 1 && a.endsWith('/')) add(a.slice(0, -1), t); // no-trailing-slash variants
 write404();
-writeFileSync(OUT + 'breed-index.json', JSON.stringify(BP.map(b => ({ id: b[0], slug: slugify(b[0]), n: breedN(b[0]), names: b }))));
+writeFileSync(OUT + 'breed-index.json', JSON.stringify(BP.map(b => { const s = breedStat(b[0]); return { id: b[0], slug: slugify(b[0]), n: s.eu, nl: s.nl, eu: s.eu, names: b }; })));
 cpSync(new URL('../data/regions.json', import.meta.url).pathname, OUT + 'regions.json');
 writeFileSync(OUT + '_redirects', [...R].map(([a, b]) => `${a} ${b} 301`).join('\n') + '\n');
 writeFileSync(OUT + 'robots.txt', `User-agent: *\nAllow: /\nDisallow: /api/\nSitemap: ${SITE}/sitemap.xml\n`);

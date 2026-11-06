@@ -1,61 +1,238 @@
 {
- "Golden Retriever": 662,
- "Labrador Retriever": 659,
- "German Shepherd": 246,
- "Boxer": 216,
- "Bernese Mountain Dog": 192,
- "Cavalier King Charles Spaniel": 190,
- "Poodle": 142,
- "White Swiss Shepherd": 122,
- "Border Collie": 120,
- "Dalmatian": 118,
- "Chihuahua": 115,
- "Dachshund": 113,
- "French Bulldog": 104,
- "Cocker Spaniel": 93,
- "English Springer Spaniel": 90,
- "Havanese": 76,
- "Rhodesian Ridgeback": 75,
- "Eurasier": 71,
- "Pembroke Welsh Corgi": 71,
- "Jack Russell Terrier": 68,
- "Dobermann": 66,
- "Giant Schnauzer": 65,
- "Great Dane": 64,
- "Border Terrier": 60,
- "Pug": 49,
- "Samoyed": 45,
- "Bichon Frise": 43,
- "Yorkshire Terrier": 41,
- "Whippet": 38,
- "Akita": 37,
- "Pomeranian": 36,
- "Cane Corso": 34,
- "Weimaraner": 30,
- "Rottweiler": 29,
- "Staffordshire Bull Terrier": 28,
- "Maltese": 27,
- "Shih Tzu": 26,
- "Alaskan Malamute": 25,
- "Bull Terrier": 24,
- "Saluki": 24,
- "Labradoodle": 21,
- "Bavarian Mountain Hound": 20,
- "Shiba Inu": 20,
- "English Bulldog": 19,
- "Gordon Setter": 18,
- "Bullmastiff": 16,
- "Cavapoo": 15,
- "Tibetan Terrier": 14,
- "Siberian Husky": 13,
- "West Highland White Terrier": 13,
- "Cockapoo": 12,
- "Brittany": 10,
- "Chow Chow": 6,
- "Maltipoo": 6,
- "Boston Terrier": 3,
- "Norwich Terrier": 2,
- "Goldendoodle": 1,
- "Italian Spinone": 1,
- "Dogue de Bordeaux": 0
+ "Labrador Retriever": {
+  "nl": 7,
+  "eu": 558
+ },
+ "Golden Retriever": {
+  "nl": 133,
+  "eu": 519
+ },
+ "German Shepherd": {
+  "nl": 4,
+  "eu": 228
+ },
+ "Boxer": {
+  "nl": 43,
+  "eu": 206
+ },
+ "Cavalier King Charles Spaniel": {
+  "nl": 17,
+  "eu": 143
+ },
+ "Pug": {
+  "nl": 0,
+  "eu": 135
+ },
+ "Bernese Mountain Dog": {
+  "nl": 31,
+  "eu": 131
+ },
+ "Dalmatian": {
+  "nl": 9,
+  "eu": 117
+ },
+ "Poodle": {
+  "nl": 2,
+  "eu": 109
+ },
+ "White Swiss Shepherd": {
+  "nl": 1,
+  "eu": 108
+ },
+ "Chihuahua": {
+  "nl": 19,
+  "eu": 104
+ },
+ "Border Collie": {
+  "nl": 4,
+  "eu": 101
+ },
+ "French Bulldog": {
+  "nl": 9,
+  "eu": 91
+ },
+ "Bichon Frise": {
+  "nl": 0,
+  "eu": 77
+ },
+ "Dachshund": {
+  "nl": 1,
+  "eu": 73
+ },
+ "Staffordshire Bull Terrier": {
+  "nl": 11,
+  "eu": 70
+ },
+ "Dobermann": {
+  "nl": 14,
+  "eu": 60
+ },
+ "Border Terrier": {
+  "nl": 8,
+  "eu": 59
+ },
+ "Great Dane": {
+  "nl": 0,
+  "eu": 58
+ },
+ "Jack Russell Terrier": {
+  "nl": 5,
+  "eu": 56
+ },
+ "English Springer Spaniel": {
+  "nl": 12,
+  "eu": 54
+ },
+ "Eurasier": {
+  "nl": 0,
+  "eu": 54
+ },
+ "Rhodesian Ridgeback": {
+  "nl": 12,
+  "eu": 53
+ },
+ "Cane Corso": {
+  "nl": 9,
+  "eu": 47
+ },
+ "Shiba Inu": {
+  "nl": 15,
+  "eu": 47
+ },
+ "Samoyed": {
+  "nl": 2,
+  "eu": 45
+ },
+ "Akita": {
+  "nl": 9,
+  "eu": 37
+ },
+ "Yorkshire Terrier": {
+  "nl": 0,
+  "eu": 37
+ },
+ "Bullmastiff": {
+  "nl": 0,
+  "eu": 36
+ },
+ "Havanese": {
+  "nl": 18,
+  "eu": 33
+ },
+ "Rottweiler": {
+  "nl": 2,
+  "eu": 28
+ },
+ "Weimaraner": {
+  "nl": 16,
+  "eu": 28
+ },
+ "Whippet": {
+  "nl": 0,
+  "eu": 28
+ },
+ "Alaskan Malamute": {
+  "nl": 0,
+  "eu": 25
+ },
+ "Shih Tzu": {
+  "nl": 0,
+  "eu": 24
+ },
+ "Bull Terrier": {
+  "nl": 0,
+  "eu": 23
+ },
+ "Siberian Husky": {
+  "nl": 0,
+  "eu": 23
+ },
+ "Cocker Spaniel": {
+  "nl": 10,
+  "eu": 22
+ },
+ "Bavarian Mountain Hound": {
+  "nl": 0,
+  "eu": 20
+ },
+ "Saluki": {
+  "nl": 3,
+  "eu": 20
+ },
+ "Pomeranian": {
+  "nl": 0,
+  "eu": 19
+ },
+ "Maltese": {
+  "nl": 7,
+  "eu": 17
+ },
+ "Cavapoo": {
+  "nl": 3,
+  "eu": 15
+ },
+ "Giant Schnauzer": {
+  "nl": 0,
+  "eu": 13
+ },
+ "Cockapoo": {
+  "nl": 1,
+  "eu": 12
+ },
+ "English Bulldog": {
+  "nl": 0,
+  "eu": 12
+ },
+ "Tibetan Terrier": {
+  "nl": 0,
+  "eu": 12
+ },
+ "Labradoodle": {
+  "nl": 1,
+  "eu": 8
+ },
+ "Chow Chow": {
+  "nl": 0,
+  "eu": 6
+ },
+ "Gordon Setter": {
+  "nl": 4,
+  "eu": 6
+ },
+ "Maltipoo": {
+  "nl": 2,
+  "eu": 6
+ },
+ "Brittany": {
+  "nl": 0,
+  "eu": 5
+ },
+ "West Highland White Terrier": {
+  "nl": 0,
+  "eu": 3
+ },
+ "Boston Terrier": {
+  "nl": 0,
+  "eu": 1
+ },
+ "Goldendoodle": {
+  "nl": 0,
+  "eu": 1
+ },
+ "Dogue de Bordeaux": {
+  "nl": 0,
+  "eu": 0
+ },
+ "Italian Spinone": {
+  "nl": 0,
+  "eu": 0
+ },
+ "Norwich Terrier": {
+  "nl": 0,
+  "eu": 0
+ },
+ "Pembroke Welsh Corgi": {
+  "nl": 0,
+  "eu": 0
+ }
 }
