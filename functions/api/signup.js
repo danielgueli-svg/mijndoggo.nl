@@ -34,7 +34,7 @@ export async function onRequestPost({ request, env }) {
   if (!mollieKey(env)) return json({ ok: false, error: 'payments_not_configured' }, 503);
   const tok = token(), unsub = token(), country = listingCountry(countries[0]);
   await env.SUBS.prepare(`INSERT INTO signups (email, breeds, country, near, plan, token, unsub_token) VALUES (?, ?, ?, ?, ?, ?, ?)
-    ON CONFLICT (email) DO UPDATE SET breeds = excluded.breeds, country = excluded.country, near = excluded.near, plan = excluded.plan, token = excluded.token, confirmed_at = NULL, unsubscribed_at = NULL, payment_id = NULL, payment_status = NULL, paid_at = NULL`)
+    ON CONFLICT (email) DO UPDATE SET breeds = excluded.breeds, country = excluded.country, near = excluded.near, plan = excluded.plan, token = excluded.token, confirmed_at = NULL, unsubscribed_at = NULL, payment_id = NULL, payment_status = NULL, paid_at = NULL, receipt_sent_at = NULL`)
     .bind(email, JSON.stringify(breeds), country, JSON.stringify(near), b.plan, tok, unsub).run();
   const row = await env.SUBS.prepare('SELECT unsub_token FROM signups WHERE email = ?').bind(email).first();
   const base = new URL(request.url).origin;
